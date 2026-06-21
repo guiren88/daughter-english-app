@@ -407,25 +407,60 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
             {quizMode === 'eng-to-chi' && (
               <>
                 请选择正确的中文释义：
-                <span className="question-word">{questions[currentQIndex].wordObj.word}</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
+                  <span className="question-word" style={{ margin: 0 }}>
+                    {questions[currentQIndex].wordObj.word}
+                  </span>
+                  <button 
+                    onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
+                    className="ctrl-btn" 
+                    style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
+                    title="重播发音"
+                    type="button"
+                  >
+                    <Volume2 size={20} />
+                  </button>
+                </div>
               </>
             )}
 
             {quizMode === 'chi-to-eng' && (
               <>
                 请选择正确的英文单词：
-                <span className="question-word" style={{ color: 'var(--accent-pink)' }}>
-                  {questions[currentQIndex].wordObj.translation}
-                </span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
+                  <span className="question-word" style={{ color: 'var(--accent-pink)', margin: 0 }}>
+                    {questions[currentQIndex].wordObj.translation}
+                  </span>
+                  <button 
+                    onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
+                    className="ctrl-btn" 
+                    style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
+                    title="播放发音"
+                    type="button"
+                  >
+                    <Volume2 size={20} />
+                  </button>
+                </div>
               </>
             )}
 
             {quizMode === 'spelling' && (
               <>
                 请拼写此英文单词：
-                <span className="question-word" style={{ color: 'var(--accent-yellow)' }}>
-                  {questions[currentQIndex].wordObj.translation}
-                </span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
+                  <span className="question-word" style={{ color: 'var(--accent-yellow)', margin: 0 }}>
+                    {questions[currentQIndex].wordObj.translation}
+                  </span>
+                  <button 
+                    onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
+                    className="ctrl-btn" 
+                    style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
+                    title="播放发音"
+                    type="button"
+                  >
+                    <Volume2 size={20} />
+                  </button>
+                </div>
               </>
             )}
           </div>
