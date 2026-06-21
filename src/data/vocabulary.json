@@ -1,0 +1,1754 @@
+{
+  "grade_1a": [
+    {
+      "unit": "Unit 1",
+      "title": "Greetings",
+      "words": [
+        {
+          "word": "morning",
+          "translation": "早上"
+        },
+        {
+          "word": "afternoon",
+          "translation": "下午"
+        },
+        {
+          "word": "evening",
+          "translation": "晚上"
+        },
+        {
+          "word": "goodbye",
+          "translation": "再见"
+        },
+        {
+          "word": "good",
+          "translation": "好的"
+        },
+        {
+          "word": "thank",
+          "translation": "谢谢"
+        },
+        {
+          "word": "class",
+          "translation": "同学们"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Good morning.",
+          "chinese": "早上好。"
+        },
+        {
+          "english": "Good afternoon.",
+          "chinese": "下午好。"
+        },
+        {
+          "english": "Good evening.",
+          "chinese": "晚上好。"
+        },
+        {
+          "english": "Goodbye.",
+          "chinese": "再见。"
+        },
+        {
+          "english": "How are you？",
+          "chinese": "你好吗？"
+        },
+        {
+          "english": "I’m fine. Thank you.",
+          "chinese": "我很好，谢谢。！ 三、语篇 A: Good morning (afternoon/evening), __________. B: Good morning (afternoon/evening), __________. A: How are you? B: I’m fine. Thank you. 请家长帮助贴在课本第 5 页。"
+        }
+      ],
+      "text": "二、句法\n你好吗？\n我很好，谢谢。！\nA: Good morning (afternoon/evening), __________.\nB: Good morning (afternoon/evening), __________.\nA: How are you?\nB: I’m fine. Thank you.",
+      "tips": []
+    },
+    {
+      "unit": "Unit 2",
+      "title": "New friends",
+      "words": [
+        {
+          "word": "Hi /Hello",
+          "translation": "你好；嗨"
+        },
+        {
+          "word": "friend",
+          "translation": "朋友"
+        },
+        {
+          "word": "welcome",
+          "translation": "欢迎"
+        },
+        {
+          "word": "name",
+          "translation": "名字"
+        },
+        {
+          "word": "my",
+          "translation": "我的"
+        },
+        {
+          "word": "nice",
+          "translation": "美好的"
+        },
+        {
+          "word": "meet",
+          "translation": "遇见"
+        },
+        {
+          "word": "China",
+          "translation": "中国"
+        },
+        {
+          "word": "sorry",
+          "translation": "对不起"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Hello, Minmin!",
+          "chinese": "你好，旻旻。"
+        },
+        {
+          "english": "Hi, Lily.",
+          "chinese": "你好，莉莉。"
+        },
+        {
+          "english": "I’m Lily / I am Lily.",
+          "chinese": "我是莉莉."
+        },
+        {
+          "english": "My name is Shenshen.",
+          "chinese": "我的名字是申申。"
+        },
+        {
+          "english": "Nice / Good to meet you, Lily",
+          "chinese": "很高兴见到你，莉莉。"
+        },
+        {
+          "english": "Nice / Good to meet you too.",
+          "chinese": "我也很高兴见到你。"
+        },
+        {
+          "english": "Welcome to China.",
+          "chinese": "欢迎来到中国。"
+        }
+      ],
+      "text": "二、句法\n-- Hi/ Hello. I'm.../ My name is ... Nice/Good to meet you.\n-- Hi/ Hello. I'm.../ My name is ... Nice/Good to meet you too.\n* 黑体为重点单词和句型\n我是莉莉.\n我的名字是申申。\n很高兴见到你，莉莉。\n我也很高兴见到你。\n欢迎来到中国。",
+      "tips": []
+    },
+    {
+      "unit": "Unit 3",
+      "title": "My schoolbag",
+      "words": [
+        {
+          "word": "schoolbag",
+          "translation": "书包"
+        },
+        {
+          "word": "pencil",
+          "translation": "铅笔"
+        },
+        {
+          "word": "ruler",
+          "translation": "尺子"
+        },
+        {
+          "word": "eraser",
+          "translation": "橡皮"
+        },
+        {
+          "word": "book",
+          "translation": "书"
+        },
+        {
+          "word": "pencil case",
+          "translation": "铅笔盒"
+        },
+        {
+          "word": "pack",
+          "translation": "收拾、整理"
+        },
+        {
+          "word": "my",
+          "translation": "我的"
+        },
+        {
+          "word": "use",
+          "translation": "使用"
+        },
+        {
+          "word": "worry",
+          "translation": "担心"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Pack my /pencils/ruler/eraser/pencil case/books/schoolbag.",
+          "chinese": "整理我的/铅笔/尺子/橡皮擦/文具盒/书/书包。"
+        },
+        {
+          "english": "Pack the ruler.",
+          "chinese": "整理这根尺子。"
+        },
+        {
+          "english": "Use my pencil/ruler/eraser.",
+          "chinese": "用我的铅笔/尺子/橡皮。"
+        },
+        {
+          "english": "Oh, no!",
+          "chinese": "哦，不！"
+        },
+        {
+          "english": "Don’t worry.",
+          "chinese": "不用担心。"
+        },
+        {
+          "english": "Thank you.",
+          "chinese": "谢谢你。"
+        },
+        {
+          "english": "What do I take to school?",
+          "chinese": "我该带什么去学校呢？"
+        }
+      ],
+      "text": "二、句法\nHi/ Hello I'm... / My name is...\nI can pack my schoolbag.\nPack my... Pack my... ...\n整理我的/铅笔/尺子/橡皮擦/文具盒/书/书包。\n整理这根尺子。\n用我的铅笔/尺子/橡皮。\n我该带什么去学校呢？",
+      "tips": [
+        "1. 名词复数：物品数量大于 1 时，要用复数形式（通常在后面加-s），如 pencils。",
+        "2. 冠词 the: 当表示特指某样物品时，要在物品前加 the，表示“这个；那个”。",
+        "3. 黑体为重点单词和句型, 请家长帮助贴在课本第 17 页。"
+      ]
+    },
+    {
+      "unit": "Unit 4",
+      "title": "My classroom",
+      "words": [
+        {
+          "word": "door",
+          "translation": "门"
+        },
+        {
+          "word": "desk",
+          "translation": "书桌、写字台"
+        },
+        {
+          "word": "chair",
+          "translation": "椅子"
+        },
+        {
+          "word": "floor",
+          "translation": "地板、地面"
+        },
+        {
+          "word": "blackboard",
+          "translation": "黑板"
+        },
+        {
+          "word": "classroom",
+          "translation": "教室、课堂"
+        },
+        {
+          "word": "clean",
+          "translation": "打扫、清洁"
+        },
+        {
+          "word": "on duty",
+          "translation": "值日"
+        },
+        {
+          "word": "your",
+          "translation": "你的、你们的"
+        },
+        {
+          "word": "our",
+          "translation": "我们的"
+        },
+        {
+          "word": "let",
+          "translation": "让"
+        },
+        {
+          "word": "me",
+          "translation": "我（宾格）"
+        },
+        {
+          "word": "help",
+          "translation": "帮助"
+        },
+        {
+          "word": "put...back",
+          "translation": "把...放回去"
+        },
+        {
+          "word": "who",
+          "translation": "谁"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Clean our classroom.",
+          "chinese": "打扫我们的教室。"
+        },
+        {
+          "english": "Clean your/my desk.",
+          "chinese": "清洁你的/我的书桌。"
+        },
+        {
+          "english": "Clean your/my chair.",
+          "chinese": "清洁你的/我的椅子。"
+        },
+        {
+          "english": "Let me clean the blackboard/floor.",
+          "chinese": "让我来擦黑板/扫地。"
+        },
+        {
+          "english": "Let me help you.",
+          "chinese": "让我来帮助你。"
+        },
+        {
+          "english": "Let me put the books back.",
+          "chinese": "让我把书放回去。"
+        },
+        {
+          "english": "Who’s on duty today?",
+          "chinese": "谁今天值日？"
+        },
+        {
+          "english": "That’s good.",
+          "chinese": "那很好。"
+        }
+      ],
+      "text": "二、句法\nA:Let me clean the...\nB:Let me help you.\nA:Thank you.\n打扫我们的教室。\n清洁你的/我的书桌。\n清洁你的/我的椅子。\n让我来擦黑板/扫地。\n让我来帮助你。\n让我把书放回去。\n谁今天值日？\n那很好。",
+      "tips": []
+    },
+    {
+      "unit": "Unit 5",
+      "title": "Lovely faces",
+      "words": [
+        {
+          "word": "face",
+          "translation": "脸"
+        },
+        {
+          "word": "eye",
+          "translation": "眼睛"
+        },
+        {
+          "word": "ear",
+          "translation": "耳朵"
+        },
+        {
+          "word": "nose",
+          "translation": "鼻子"
+        },
+        {
+          "word": "mouth",
+          "translation": "嘴巴"
+        },
+        {
+          "word": "draw",
+          "translation": "画画"
+        },
+        {
+          "word": "lovely",
+          "translation": "可爱的"
+        },
+        {
+          "word": "big",
+          "translation": "大的"
+        },
+        {
+          "word": "small",
+          "translation": "小的"
+        },
+        {
+          "word": "see",
+          "translation": "看见、看到"
+        },
+        {
+          "word": "funny",
+          "translation": "搞笑的、滑稽的"
+        },
+        {
+          "word": "red",
+          "translation": "红色的"
+        },
+        {
+          "word": "cute",
+          "translation": "可爱的"
+        },
+        {
+          "word": "happy",
+          "translation": "开心的"
+        },
+        {
+          "word": "look",
+          "translation": "看"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Draw a lovely face.",
+          "chinese": "画一张可爱的脸。"
+        },
+        {
+          "english": "I see a funny/cute/happy face.",
+          "chinese": "我看到一张滑稽/可爱/快乐的脸。"
+        },
+        {
+          "english": "Can you find the faces？",
+          "chinese": "你能找到这些脸吗？"
+        }
+      ],
+      "text": "二、句法\nLook!\nTwo ... eyes. Two... ears.\nA ... nose. A ... mouth.\nAha, a funny/cute/happy/lovely... face.\n以辅音发音开头的单数名词前用 a ; 如 a nose, a mouth。",
+      "tips": [
+        "1. 冠词 a / an 的用法: 以元音发音开头的单数名词前用 an，如 an eye, an ear。\n以辅音发音开头的单数名词前用 a ; 如 a nose, a mouth。",
+        "2. look 强调“看” 的动作，单独使用时用于吸引注意；see 强调 “看见”的结果。",
+        "3. 名词复数: 物品数量大于 1 时，要用复数形式（通常在后面加-s）;如：ears, eyes。",
+        "4. 黑体为重点单词和句型, 请家长帮助贴在课本第 29 页。"
+      ]
+    },
+    {
+      "unit": "Unit 6",
+      "title": "My family",
+      "words": [
+        {
+          "word": "family",
+          "translation": "家庭"
+        },
+        {
+          "word": "mum",
+          "translation": "妈妈"
+        },
+        {
+          "word": "dad",
+          "translation": "爸爸"
+        },
+        {
+          "word": "sister",
+          "translation": "姐姐，妹妹"
+        },
+        {
+          "word": "brother",
+          "translation": "哥哥、弟弟"
+        },
+        {
+          "word": "me",
+          "translation": "我"
+        },
+        {
+          "word": "warm",
+          "translation": "温暖的"
+        },
+        {
+          "word": "happy",
+          "translation": "快乐的"
+        },
+        {
+          "word": "love",
+          "translation": "爱，热爱"
+        },
+        {
+          "word": "kiss",
+          "translation": "亲"
+        },
+        {
+          "word": "hug",
+          "translation": "抱"
+        },
+        {
+          "word": "head",
+          "translation": "头"
+        },
+        {
+          "word": "hand",
+          "translation": "手"
+        },
+        {
+          "word": "heart",
+          "translation": "心"
+        },
+        {
+          "word": "arm",
+          "translation": "胳膊、手臂"
+        },
+        {
+          "word": "shoulder",
+          "translation": "肩膀"
+        },
+        {
+          "word": "cake",
+          "translation": "蛋糕"
+        },
+        {
+          "word": "plate",
+          "translation": "盘子"
+        },
+        {
+          "word": "grandpa",
+          "translation": "爷爷/外公"
+        },
+        {
+          "word": "grandma",
+          "translation": "奶奶/外婆"
+        },
+        {
+          "word": "and",
+          "translation": "和"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "This is my family.",
+          "chinese": "这是我的家庭。"
+        },
+        {
+          "english": "I love you, Mum / Dad.",
+          "chinese": "我爱你妈妈/爸爸。"
+        },
+        {
+          "english": "What is a family？",
+          "chinese": "家庭是什么？"
+        },
+        {
+          "english": "I am in your arms.",
+          "chinese": "我在你的怀里。"
+        },
+        {
+          "english": "You are in my heart.",
+          "chinese": "你在我的心里。"
+        }
+      ],
+      "text": "二、句法\nLook! This is my family. This is my mum. I love my mum.\nThis is my... I love my... ... My family is happy/warm/nice...\n这是我的家庭。\n我爱你妈妈/爸爸。",
+      "tips": [
+        "1. and 表示 “和”，用于连接具有并列关系的两部分。",
+        "2. on 表示“在……上面”；in 表示“在……里面 ”。",
+        "3. mum 是 mother“妈妈”的口语表达;dad 是 father “爸爸”的口语表达。",
+        "4. 黑体为重点单词和句型, 请家长帮助贴在课本第 35 页。"
+      ]
+    },
+    {
+      "unit": "Unit 7",
+      "title": "Animals in our lives",
+      "words": [
+        {
+          "word": "helpful",
+          "translation": "有益的、有帮助的"
+        },
+        {
+          "word": "animal",
+          "translation": "动物"
+        },
+        {
+          "word": "horse",
+          "translation": "马"
+        },
+        {
+          "word": "dog",
+          "translation": "狗"
+        },
+        {
+          "word": "hen",
+          "translation": "母鸡"
+        },
+        {
+          "word": "bee",
+          "translation": "蜜蜂"
+        },
+        {
+          "word": "cat",
+          "translation": "猫"
+        },
+        {
+          "word": "ride",
+          "translation": "骑"
+        },
+        {
+          "word": "love",
+          "translation": "爱，热爱"
+        },
+        {
+          "word": "lay eggs",
+          "translation": "下蛋"
+        },
+        {
+          "word": "make honey",
+          "translation": "制造蜂蜜"
+        },
+        {
+          "word": "house",
+          "translation": "房子"
+        },
+        {
+          "word": "cozy",
+          "translation": "舒适的"
+        },
+        {
+          "word": "round",
+          "translation": "圆的"
+        },
+        {
+          "word": "soft",
+          "translation": "柔软的"
+        },
+        {
+          "word": "clean",
+          "translation": "干净的"
+        },
+        {
+          "word": "help",
+          "translation": "帮助"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "The horses take us for rides.",
+          "chinese": "马供我们乘骑。"
+        },
+        {
+          "english": "What can I do for you？",
+          "chinese": "我能为你们/你做什么呢？"
+        },
+        {
+          "english": "I have a house / ball for Mira.",
+          "chinese": "我有一座房子/一个球给米拉。"
+        },
+        {
+          "english": "Dogs stay with us and love us.",
+          "chinese": "狗陪伴我们并爱我们。"
+        },
+        {
+          "english": "She is small /cute.",
+          "chinese": "她是小小的/可爱的。"
+        },
+        {
+          "english": "It’s warm /cozy /round /soft.",
+          "chinese": "它是温暖的/舒适的/圆圆的/柔软的。"
+        }
+      ],
+      "text": "二、句法\nI have a... for ...\nIt’s warm/ cozy/round/soft...\n马供我们乘骑。\n我能为你们/你做什么呢？",
+      "tips": [
+        "1. we “我们”是 I “我”的复数形式。our “我们的”是 my “我的”的复数形式。",
+        "2. for 为介词，意为 “为，给”。",
+        "3. 黑体为重点单词和句型, 请家长帮助贴在课本第 41 页。"
+      ]
+    },
+    {
+      "unit": "Unit 8",
+      "title": "Have a go",
+      "words": [
+        {
+          "word": "bird",
+          "translation": "鸟"
+        },
+        {
+          "word": "hill",
+          "translation": "山丘、小山"
+        },
+        {
+          "word": "fly away",
+          "translation": "飞离"
+        },
+        {
+          "word": "come back",
+          "translation": "回来、返回"
+        },
+        {
+          "word": "flap wings",
+          "translation": "拍打翅膀"
+        },
+        {
+          "word": "little",
+          "translation": "小的"
+        },
+        {
+          "word": "blackbird",
+          "translation": "黑鸟、乌鸫"
+        },
+        {
+          "word": "high",
+          "translation": "高的"
+        },
+        {
+          "word": "sit",
+          "translation": "坐"
+        },
+        {
+          "word": "ready",
+          "translation": "准备好的"
+        },
+        {
+          "word": "have a go",
+          "translation": "试一试"
+        },
+        {
+          "word": "hooray",
+          "translation": "好极啦"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Come back, Jack.",
+          "chinese": "回来吧，杰克。"
+        },
+        {
+          "english": "Fly away, Jill.",
+          "chinese": "飞走吧，吉尔"
+        },
+        {
+          "english": "It’s time to fly.",
+          "chinese": "是时候飞翔了。"
+        },
+        {
+          "english": "You can do it.",
+          "chinese": "你可以做到。"
+        },
+        {
+          "english": "Let me try.",
+          "chinese": "让我试一试。"
+        },
+        {
+          "english": "Good job！",
+          "chinese": "做得好！"
+        },
+        {
+          "english": "One named Jack /Jill.",
+          "chinese": "一个叫做杰克/吉尔。"
+        }
+      ],
+      "text": "二、句法\nTwo little blackbirds/bees/ ... (动物）\nSitting on a hill/tree..., (地点）\nOne named ... , (名字）\nOne named ....\nOh,no! 表示害怕或懊悔；\nGood job! 表示赞美或鼓励。",
+      "tips": [
+        "1. 句型 It's time to … “是时候…了。”",
+        "2. 语气词: Oh,my! 表示恐惧或震惊；\nOh,no! 表示害怕或懊悔；\nGood job! 表示赞美或鼓励。",
+        "3. 祈使句句子开头使用动词原形，通常表示请求或命令。如 Come back, Jack。",
+        "4. 黑体为重点单词和句型, 请家长帮助贴在课本第 47 页。"
+      ]
+    },
+    {
+      "unit": "Unit 9",
+      "title": "Yes, I can!",
+      "words": [
+        {
+          "word": "wash",
+          "translation": "洗"
+        },
+        {
+          "word": "tie shoelaces",
+          "translation": "系鞋带"
+        },
+        {
+          "word": "take a photo",
+          "translation": "拍照"
+        },
+        {
+          "word": "spoon",
+          "translation": "勺子"
+        },
+        {
+          "word": "lunch box",
+          "translation": "午餐盒"
+        },
+        {
+          "word": "look",
+          "translation": "看"
+        },
+        {
+          "word": "bag",
+          "translation": "包"
+        },
+        {
+          "word": "by myself",
+          "translation": "我自己"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "I can pack my pencil case.",
+          "chinese": "我可以整理我的铅笔盒。"
+        },
+        {
+          "english": "Can you take a photo for us，please？",
+          "chinese": "你能为我们拍一张照片吗？ Yes, I can. /No, I can’t. 好的，我可以/不，我不行。"
+        },
+        {
+          "english": "I’m sorry.",
+          "chinese": "对不起。"
+        },
+        {
+          "english": "Say “Cheese”",
+          "chinese": "说茄子。"
+        }
+      ],
+      "text": "二、句法\nI can ...\nI can ...\nI can do it by myself !\nLa, la, la, la, la, la, la...\nYes, I can. /No, I can’t. 好的，我可以/不，我不行。",
+      "tips": [
+        "1. take a photo 中的冠词 a 不能省略，或者写成 take photos",
+        "2. can 的用法：①can +动词原形 ②can 没有形式变化",
+        "3. 黑体为重点单词和句型, 请家长帮助贴在课本第 53 页。"
+      ]
+    },
+    {
+      "unit": "Unit 10",
+      "title": "Fun numbers",
+      "words": [
+        {
+          "word": "one",
+          "translation": "一"
+        },
+        {
+          "word": "two",
+          "translation": "二"
+        },
+        {
+          "word": "three",
+          "translation": "三"
+        },
+        {
+          "word": "four",
+          "translation": "四"
+        },
+        {
+          "word": "five",
+          "translation": "五"
+        },
+        {
+          "word": "six",
+          "translation": "六"
+        },
+        {
+          "word": "number",
+          "translation": "数字"
+        },
+        {
+          "word": "duck",
+          "translation": "鸭子"
+        },
+        {
+          "word": "flag",
+          "translation": "旗"
+        },
+        {
+          "word": "key",
+          "translation": "钥匙"
+        },
+        {
+          "word": "whistle",
+          "translation": "哨子"
+        },
+        {
+          "word": "skip",
+          "translation": "跳绳"
+        },
+        {
+          "word": "play",
+          "translation": "玩"
+        },
+        {
+          "word": "sports field",
+          "translation": "体育场"
+        },
+        {
+          "word": "play the hula hoop",
+          "translation": "玩呼啦圈"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Two is a duck.",
+          "chinese": "数字 2（的形态）是一只鸭子。"
+        },
+        {
+          "english": "We can skip.",
+          "chinese": "我们会跳绳。"
+        },
+        {
+          "english": "Come and play.",
+          "chinese": "过来玩吧。"
+        },
+        {
+          "english": "Well down！",
+          "chinese": "做得好。"
+        },
+        {
+          "english": "Watch me play the hula hoop.",
+          "chinese": "看我转呼啦圈。"
+        }
+      ],
+      "text": "二、句法\nLook！... (数字）/ I can see... (数字）\ncome and do sth. 过来做某事；\nlet sb. do sth. 让某人做某事",
+      "tips": [
+        "1. 区分：two “二”；too“太；也”",
+        "3. 搭配：watch sb.do sth. 看着某人做某事；\ncome and do sth. 过来做某事；\nlet sb. do sth. 让某人做某事",
+        "3. 黑体为重点单词和句型, 请家长帮助贴在课本第 59 页。"
+      ]
+    }
+  ],
+  "grade_1b": [
+    {
+      "unit": "Unit 1",
+      "title": "Core Words & Basics",
+      "words": [
+        {
+          "word": "today",
+          "translation": "今天"
+        },
+        {
+          "word": "back",
+          "translation": "回到"
+        },
+        {
+          "word": "new",
+          "translation": "新的"
+        },
+        {
+          "word": "hey",
+          "translation": "嘿"
+        },
+        {
+          "word": "happy",
+          "translation": "高兴"
+        },
+        {
+          "word": "fine",
+          "translation": "健康的、身体很好的"
+        },
+        {
+          "word": "great",
+          "translation": "身心健康的"
+        },
+        {
+          "word": "tired",
+          "translation": "疲倦的"
+        },
+        {
+          "word": "busy",
+          "translation": "忙碌的"
+        },
+        {
+          "word": "sleepy",
+          "translation": "昏昏欲睡的"
+        },
+        {
+          "word": "sit",
+          "translation": "坐下"
+        },
+        {
+          "word": "greet",
+          "translation": "打招呼"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Are you ready?",
+          "chinese": "你准备好了吗？"
+        },
+        {
+          "english": "I'm ready.",
+          "chinese": "我准备好了。"
+        },
+        {
+          "english": "Let me help you.",
+          "chinese": "让我帮助你。"
+        },
+        {
+          "english": "I miss you.",
+          "chinese": "我想念你。"
+        }
+      ],
+      "text": "",
+      "tips": [
+        "Core words are fundamental vocabulary used across all units in 1B."
+      ]
+    },
+    {
+      "unit": "Unit 2",
+      "title": "Lunch time",
+      "words": [
+        {
+          "word": "where",
+          "translation": "在哪里（引导地点特殊疑问句）"
+        },
+        {
+          "word": "them",
+          "translation": "他们 (宾格)"
+        },
+        {
+          "word": "time",
+          "translation": "时间"
+        },
+        {
+          "word": "lunch",
+          "translation": "午餐；午饭"
+        },
+        {
+          "word": "meatball",
+          "translation": "肉丸"
+        },
+        {
+          "word": "vegetable",
+          "translation": "蔬菜"
+        },
+        {
+          "word": "soup",
+          "translation": "汤；羹"
+        },
+        {
+          "word": "rice",
+          "translation": "大米；稻米"
+        },
+        {
+          "word": "apple",
+          "translation": "苹果"
+        },
+        {
+          "word": "juice",
+          "translation": "果汁"
+        },
+        {
+          "word": "yum",
+          "translation": "表示食物很美味"
+        },
+        {
+          "word": "too",
+          "translation": "也"
+        },
+        {
+          "word": "all",
+          "translation": "全部、所有"
+        },
+        {
+          "word": "have lunch",
+          "translation": "吃午饭"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "What do you have for lunch?",
+          "chinese": "你（你们）午餐吃什么？"
+        },
+        {
+          "english": "I have vegetables.",
+          "chinese": "我吃蔬菜。"
+        },
+        {
+          "english": "We have rice.",
+          "chinese": "我们吃米饭。"
+        },
+        {
+          "english": "l like apples.",
+          "chinese": "我喜欢（吃）苹果。"
+        },
+        {
+          "english": "Let's have lunch together.",
+          "chinese": "让我们一起吃午餐。"
+        },
+        {
+          "english": "Where is my ball？",
+          "chinese": "我的球在哪儿？"
+        },
+        {
+          "english": "That's not your ball.",
+          "chinese": "那不是你的球。"
+        }
+      ],
+      "text": "Hi, I'm ...  It's lunch time. I have ...  Let's have lunch together.",
+      "tips": [
+        "可数名词有复数形式，通常在词尾加s。如：meatballs, vegetables, apples, eggs;",
+        "不可数名词没有复数形式rice, soup, juice",
+        "Let's是Let us 的缩写形式，后面加动词原形。如：Let’s have lunch; Let’s play.",
+        "like后加可数名词复数形式。如：I like apples; I like dogs.",
+        "4. 黑体为重点单词和句型, 请家长帮助贴在课本第7页。"
+      ]
+    },
+    {
+      "unit": "Unit 3",
+      "title": "Colours in the park",
+      "words": [
+        {
+          "word": "park",
+          "translation": "公园"
+        },
+        {
+          "word": "hill",
+          "translation": "山丘"
+        },
+        {
+          "word": "red",
+          "translation": "红色的"
+        },
+        {
+          "word": "yellow",
+          "translation": "黄色的"
+        },
+        {
+          "word": "green",
+          "translation": "绿色的"
+        },
+        {
+          "word": "blue",
+          "translation": "蓝色的"
+        },
+        {
+          "word": "black",
+          "translation": "黑色的"
+        },
+        {
+          "word": "colour",
+          "translation": "颜色；涂色"
+        },
+        {
+          "word": "flower",
+          "translation": "花"
+        },
+        {
+          "word": "butterfly",
+          "translation": "蝴蝶"
+        },
+        {
+          "word": "sky",
+          "translation": "天空"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "What is red？",
+          "chinese": "什么是红色的？"
+        },
+        {
+          "english": "The flower is red.",
+          "chinese": "花是红色的。"
+        },
+        {
+          "english": "It's yellow.",
+          "chinese": "它是黄色的。"
+        },
+        {
+          "english": "Can you find me?",
+          "chinese": "你能找到我吗？"
+        },
+        {
+          "english": "What colour am I now?",
+          "chinese": "我现在是什么颜色的？"
+        },
+        {
+          "english": "I like the hill in your park.",
+          "chinese": "我喜你公园里的小山。"
+        }
+      ],
+      "text": "This is my park.\nLook！The sky is blue. The ... is ...",
+      "tips": [
+        "1.1ook 强调“看”的动作，单独使用时用于吸引注意; see强调“看”的结果。",
+        "look at +“看”的对象，at 不可省略。如：Look at the flower.",
+        "colour有两种词性。名词为“颜色”，动词为“涂色”",
+        "4. 黑体为重点单词和句型, 请家长帮助贴在课本第13页。"
+      ]
+    },
+    {
+      "unit": "Unit 4",
+      "title": "In the playground",
+      "words": [
+        {
+          "word": "playground",
+          "translation": "游乐场（尤指公园中的）"
+        },
+        {
+          "word": "school",
+          "translation": "学校"
+        },
+        {
+          "word": "classmate",
+          "translation": "同学"
+        },
+        {
+          "word": "ice cream shop",
+          "translation": "冰淇淋店"
+        },
+        {
+          "word": "slide",
+          "translation": "滑梯"
+        },
+        {
+          "word": "swing",
+          "translation": "秋千，荡秋千"
+        },
+        {
+          "word": "seesaw",
+          "translation": "跷跷板"
+        },
+        {
+          "word": "come and play",
+          "translation": "来玩"
+        },
+        {
+          "word": "up and down",
+          "translation": "上上下下"
+        },
+        {
+          "word": "sit up straight",
+          "translation": "坐直"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Come and play on the slide.",
+          "chinese": "来玩滑梯吧。"
+        },
+        {
+          "english": "Which do you like best ?",
+          "chinese": "你最喜欢(玩)哪一个？"
+        },
+        {
+          "english": "I like the slide.",
+          "chinese": "我喜欢（玩）滑梯。"
+        },
+        {
+          "english": "Be careful. Let's swing.",
+          "chinese": "小心点，让我们荡秋千。"
+        },
+        {
+          "english": "Put your hands here!",
+          "chinese": "把你的双手放在这儿！"
+        },
+        {
+          "english": "Let’s play together!",
+          "chinese": "让我们一起玩吧！"
+        }
+      ],
+      "text": "Safty tips (安全小提示）\nPut your hands here.\nHold on tight. / Sit up straight.\nBe careful.",
+      "tips": [
+        "祈使句以动词原形开头：",
+        "① Do 型祈使句，如：Come and play。②Be 型祈使句，如；Be careful.",
+        "2. Let's=Let us＋动词原形，表示“让我们做某事”；Let me＋动词原形表示 “让我做某事”。",
+        "3.on 表示 “在...上面”，如: on the slide; in表示 “在... 里面” 如: in the playground",
+        "4.黑体为重点单词和句型, 请家长帮助贴在课本第19页。"
+      ]
+    },
+    {
+      "unit": "Unit 5",
+      "title": "Weather & Cities",
+      "words": [
+        {
+          "word": "weather",
+          "translation": "天气、气象"
+        },
+        {
+          "word": "sunny",
+          "translation": "阳光充足的"
+        },
+        {
+          "word": "rainy",
+          "translation": "阴雨的、多雨的"
+        },
+        {
+          "word": "windy",
+          "translation": "多风的、大风的"
+        },
+        {
+          "word": "cloudy",
+          "translation": "阴天的、多云的"
+        },
+        {
+          "word": "snowy",
+          "translation": "下雪的、多雪的"
+        },
+        {
+          "word": "Sydney",
+          "translation": "悉尼"
+        },
+        {
+          "word": "Hong Kong",
+          "translation": "香港"
+        },
+        {
+          "word": "London",
+          "translation": "伦敦"
+        },
+        {
+          "word": "Shanghai",
+          "translation": "上海"
+        },
+        {
+          "word": "play outside",
+          "translation": "户外玩耍"
+        },
+        {
+          "word": "know",
+          "translation": "知道"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "How is the weather?",
+          "chinese": "天气怎么样？"
+        },
+        {
+          "english": "It is sunny.",
+          "chinese": "今天是晴天。"
+        },
+        {
+          "english": "It is rainy in London.",
+          "chinese": "伦敦正在下雨。"
+        },
+        {
+          "english": "It is windy.",
+          "chinese": "刮风了。"
+        },
+        {
+          "english": "How is the weather in Shanghai?",
+          "chinese": "上海的天气怎么样？"
+        }
+      ],
+      "text": "",
+      "tips": [
+        "Use 'in' before city names, e.g., in London, in Shanghai."
+      ]
+    },
+    {
+      "unit": "Unit 6",
+      "title": "Clothes",
+      "words": [
+        {
+          "word": "old",
+          "translation": "旧的"
+        },
+        {
+          "word": "cool",
+          "translation": "酷的"
+        },
+        {
+          "word": "clothes",
+          "translation": "衣服；服装"
+        },
+        {
+          "word": "hat",
+          "translation": "帽子"
+        },
+        {
+          "word": "shirt",
+          "translation": "衬衫"
+        },
+        {
+          "word": "blouse",
+          "translation": "女式衬衫"
+        },
+        {
+          "word": "dress",
+          "translation": "连衣裙"
+        },
+        {
+          "word": "skirt",
+          "translation": "女裙（短裙）"
+        },
+        {
+          "word": "trousers",
+          "translation": "裤子"
+        },
+        {
+          "word": "sock(s)",
+          "translation": "短袜"
+        },
+        {
+          "word": "shoe(s)",
+          "translation": "鞋子"
+        },
+        {
+          "word": "toe",
+          "translation": "脚趾"
+        },
+        {
+          "word": "put on",
+          "translation": "穿上"
+        },
+        {
+          "word": "get ready",
+          "translation": "准备好"
+        },
+        {
+          "word": "make new clothes",
+          "translation": "做新衣服"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Put on my dress.",
+          "chinese": "穿上我的连衣裙。"
+        },
+        {
+          "english": "She can make new clothes for me.",
+          "chinese": "她可以为我做新衣服。"
+        },
+        {
+          "english": "From head to toe.",
+          "chinese": "从头到脚。"
+        },
+        {
+          "english": "I’m ready!",
+          "chinese": "我准备好了！"
+        },
+        {
+          "english": "Where are Mum’s old trousers？",
+          "chinese": "妈妈的旧裤子在哪里？"
+        },
+        {
+          "english": "Choosing clothes for Grandma.",
+          "chinese": "为奶奶挑选衣服。"
+        }
+      ],
+      "text": "Put on my ...  How... (lovely/cute/nice/cool/pretty...)",
+      "tips": [
+        "1.裤子（trousers）、衣服（clothes）通常用复数形式.",
+        "2. is 和 are 都表示“是”。are用于可数名词复数后，如:“The trousers are new.”。",
+        "3.人称后加’s，表示 “某人的”。如Mum's 妈妈的；my sister’s 我姐姐／妹妹的。",
+        "4. from... to...   从......到......",
+        "5. make sth. for sb. 为某人做某物。如:“make new clothes for me” 为我做新衣服。",
+        "5. 黑体为重点单词和句型, 请家长帮助贴在课本第31页."
+      ]
+    },
+    {
+      "unit": "Unit 7",
+      "title": "After school",
+      "words": [
+        {
+          "word": "sport",
+          "translation": "运动"
+        },
+        {
+          "word": "ready",
+          "translation": "准备好"
+        },
+        {
+          "word": "after school",
+          "translation": "放学后"
+        },
+        {
+          "word": "over",
+          "translation": "结束"
+        },
+        {
+          "word": "throw sandbags",
+          "translation": "扔沙包"
+        },
+        {
+          "word": "hide-and-seek",
+          "translation": "捉迷藏游戏"
+        },
+        {
+          "word": "skip rope",
+          "translation": "跳绳"
+        },
+        {
+          "word": "move-and-freeze",
+          "translation": "木头人游戏"
+        },
+        {
+          "word": "climb a tree",
+          "translation": "爬树"
+        },
+        {
+          "word": "see",
+          "translation": "看见"
+        },
+        {
+          "word": "swim",
+          "translation": "游泳"
+        },
+        {
+          "word": "look at",
+          "translation": "看"
+        },
+        {
+          "word": "game",
+          "translation": "游戏；运动"
+        },
+        {
+          "word": "play",
+          "translation": "玩耍"
+        },
+        {
+          "word": "hula hoop",
+          "translation": "呼啦圈"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Are you ready?",
+          "chinese": "你准备好了吗？"
+        },
+        {
+          "english": "I like to play hide-and-seek.",
+          "chinese": "我喜欢玩捉迷藏。"
+        },
+        {
+          "english": "Let's play move-and-freeze.",
+          "chinese": "让我们一起玩木头人游戏。"
+        },
+        {
+          "english": "Come and join us.",
+          "chinese": "来加入我们吧。﻿"
+        },
+        {
+          "english": "We play sandbags together.",
+          "chinese": "我们一起玩沙包。"
+        },
+        {
+          "english": "Class is over.",
+          "chinese": "下课了。"
+        }
+      ],
+      "text": "I like to play ... (games）\nOne, two, three, four ...\nI’m super/cool/great ...",
+      "tips": [
+        "1. play 后面直接加游戏活动的名词 如：play hide-and-seek / move-and-freeze。",
+        "2. like后面可以加名词，或加动词to do形式。",
+        "3. come and do sth. 来做某事",
+        "4. join me / us 加入我/我们。",
+        "5. 黑体为重点单词和句型, 请家长帮助贴在课本第37页."
+      ]
+    },
+    {
+      "unit": "Unit 8",
+      "title": "Animals in Nature",
+      "words": [
+        {
+          "word": "change",
+          "translation": "改变"
+        },
+        {
+          "word": "magical",
+          "translation": "神奇的"
+        },
+        {
+          "word": "animal",
+          "translation": "动物"
+        },
+        {
+          "word": "panda",
+          "translation": "大熊猫"
+        },
+        {
+          "word": "tiger",
+          "translation": "老虎"
+        },
+        {
+          "word": "(an) elephant",
+          "translation": "大象"
+        },
+        {
+          "word": "monkey",
+          "translation": "猴子"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "What animal is it?",
+          "chinese": "它是什么动物？"
+        },
+        {
+          "english": "It is a panda.",
+          "chinese": "它是一只大熊猫。"
+        },
+        {
+          "english": "I see a tiger.",
+          "chinese": "我看见一只老虎。"
+        },
+        {
+          "english": "Look at the elephant.",
+          "chinese": "看那只大象。"
+        }
+      ],
+      "text": "",
+      "tips": [
+        "Use 'an' before 'elephant' because it starts with a vowel sound."
+      ]
+    },
+    {
+      "unit": "Unit 9",
+      "title": "Traffic Safety",
+      "words": [
+        {
+          "word": "help",
+          "translation": "帮助"
+        },
+        {
+          "word": "traffic light(s)",
+          "translation": "交通信号灯"
+        },
+        {
+          "word": "zebra crossing",
+          "translation": "斑马线"
+        },
+        {
+          "word": "police officer",
+          "translation": "警察"
+        },
+        {
+          "word": "road",
+          "translation": "马路"
+        },
+        {
+          "word": "way",
+          "translation": "路"
+        },
+        {
+          "word": "be careful",
+          "translation": "小心"
+        },
+        {
+          "word": "hold on tight",
+          "translation": "紧紧抓住"
+        },
+        {
+          "word": "stop",
+          "translation": "（使）停止；停下（红灯停）"
+        },
+        {
+          "word": "go",
+          "translation": "去"
+        },
+        {
+          "word": "wait",
+          "translation": "等"
+        },
+        {
+          "word": "walk across",
+          "translation": "步行穿过"
+        },
+        {
+          "word": "traffic safety",
+          "translation": "交通安全"
+        },
+        {
+          "word": "both",
+          "translation": "(两者) 都"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at the traffic light.",
+          "chinese": "看交通信号灯。"
+        },
+        {
+          "english": "Red light, stop.",
+          "chinese": "红灯停。"
+        },
+        {
+          "english": "Green light, go.",
+          "chinese": "绿灯行。"
+        },
+        {
+          "english": "Yellow light, wait.",
+          "chinese": "黄灯等。"
+        },
+        {
+          "english": "Walk across the road.",
+          "chinese": "穿过马路。"
+        },
+        {
+          "english": "Be careful!",
+          "chinese": "小心！"
+        }
+      ],
+      "text": "",
+      "tips": [
+        "Always cross the road at the zebra crossing.",
+        "Be careful and hold on tight when you are on the road."
+      ]
+    },
+    {
+      "unit": "Unit 10",
+      "title": "I like toys",
+      "words": [
+        {
+          "word": "which",
+          "translation": "哪一个（用于有范围的选择）"
+        },
+        {
+          "word": "or",
+          "translation": "或者（常用于选择疑问句）"
+        },
+        {
+          "word": "miss",
+          "translation": "想念"
+        },
+        {
+          "word": "gift",
+          "translation": "礼物"
+        },
+        {
+          "word": "surprise",
+          "translation": "惊喜"
+        },
+        {
+          "word": "ball",
+          "translation": "球"
+        },
+        {
+          "word": "kite",
+          "translation": "风筝"
+        },
+        {
+          "word": "cute",
+          "translation": "可爱的"
+        },
+        {
+          "word": "make a bookmark",
+          "translation": "制作书签"
+        },
+        {
+          "word": "toy train",
+          "translation": "玩具火车"
+        },
+        {
+          "word": "toy car",
+          "translation": "玩具汽车"
+        },
+        {
+          "word": "toy boat",
+          "translation": "玩具船"
+        },
+        {
+          "word": "go back to",
+          "translation": "回到（某地）"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Which toy do you like？",
+          "chinese": "你喜欢哪一个玩具？"
+        },
+        {
+          "english": "Which toy does Lily like？",
+          "chinese": "莉莉喜欢哪一个玩具？"
+        },
+        {
+          "english": "A kite or a car？",
+          "chinese": "一只风筝或一辆小车？"
+        },
+        {
+          "english": "I’m going back to London.",
+          "chinese": "我要回伦敦了。"
+        },
+        {
+          "english": "It’s for you.",
+          "chinese": "这是给你的。"
+        },
+        {
+          "english": "I’ll miss you.",
+          "chinese": "我会想你的。"
+        },
+        {
+          "english": "It’s a kite.  It's blue.",
+          "chinese": "它是一只风筝。它是蓝色的。"
+        },
+        {
+          "english": "Thank you.You're welcome.",
+          "chinese": "谢谢你。不客气。"
+        }
+      ],
+      "text": "Look! It is a...(toy)\nIt's big/small/round...  It's...(colour)   It's for ...(name)",
+      "tips": [
+        "1. or 表示“或者”；and 表示“和”；but 表示“但是”。",
+        "2. 主语为三单时，助动词 do 变为 does。",
+        "3. be going back to ＋ 地点，表示“将要回到某地”。",
+        "4. Which表示“哪一个”, 指在一定范围内选择一个。What表示“什么”,没有特定选择范围。",
+        "5. 黑体为重点单词和句型, 请家长帮助贴在课本第55页。"
+      ]
+    }
+  ]
+}
