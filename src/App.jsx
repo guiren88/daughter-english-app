@@ -81,6 +81,16 @@ function FloatingDecorations({ theme }) {
 
 export default function App() {
   const [grade, setGrade] = useState('1b') // '1a' or '1b'
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const [activeView, setActiveView] = useState('dashboard') // 'dashboard', 'flashcards', 'quiz', 'glossary', 'worksheet'
   const [selectedUnit, setSelectedUnit] = useState(null) // null = all units, or unit object
   const [bookmarkedWords, setBookmarkedWords] = useState([])
@@ -288,7 +298,7 @@ export default function App() {
       <FloatingDecorations theme={theme} />
 
       {/* Navigation bar */}
-      <nav className="navbar">
+      <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="nav-brand" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           {theme === 'kuromi' ? (
             <img 
@@ -306,7 +316,7 @@ export default function App() {
           ) : (
             <span className="brand-emoji" style={{ fontSize: '1.75rem' }}>{brand.emoji}</span>
           )}
-          <span style={{ fontSize: '1.35rem' }}>{brand.text}</span>
+          <span className="nav-brand-text" style={{ fontSize: '1.35rem' }}>{brand.text}</span>
         </div>
         <div className="nav-links">
           <button 

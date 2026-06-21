@@ -199,6 +199,39 @@ h1, h2, h3, h4, h5, h6 {
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: padding 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar.scrolled {
+  padding: 0.6rem 1.5rem;
+  background: rgba(13, 10, 27, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Scroll resizing transitions */
+.nav-brand img {
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.navbar.scrolled .nav-brand img {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+.nav-brand .brand-emoji {
+  transition: font-size 0.3s ease;
+}
+
+.navbar.scrolled .nav-brand .brand-emoji {
+  font-size: 1.25rem !important;
+}
+
+.nav-brand-text {
+  transition: font-size 0.3s ease;
+}
+
+.navbar.scrolled .nav-brand-text {
+  font-size: 1.05rem !important;
 }
 
 .nav-brand {
