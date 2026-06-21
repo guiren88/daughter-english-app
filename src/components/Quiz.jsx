@@ -43,10 +43,8 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       return;
     }
 
-    // Shuffle and pick words (all custom words or up to 10 standard pool words)
-    const selectedWords = customWords 
-      ? [...pool].sort(() => Math.random() - 0.5)
-      : [...pool].sort(() => Math.random() - 0.5).slice(0, 10);
+    // Shuffle and pick words (use all words in the pool, no longer restricted to 10)
+    const selectedWords = [...pool].sort(() => Math.random() - 0.5);
     
     // Build questions structure
     const generatedQuestions = selectedWords.map(wordObj => {
@@ -241,6 +239,32 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     });
   }
 
+  const timerCircle = (
+    <div 
+      style={{ 
+        fontSize: '2rem', 
+        fontWeight: '800', 
+        color: timeLeft <= 3 ? '#ef4444' : 'var(--accent-yellow)',
+        fontFamily: 'monospace, var(--font-title)',
+        width: '54px',
+        height: '54px',
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: timeLeft <= 3 ? 'rgba(239, 68, 68, 0.15)' : 'rgba(255, 255, 255, 0.05)',
+        borderRadius: '50%',
+        border: `2px solid ${timeLeft <= 3 ? '#ef4444' : 'var(--border-glass)'}`,
+        animation: timeLeft <= 3 ? 'pulse 1s infinite' : 'none',
+        flexShrink: 0,
+        boxShadow: timeLeft <= 3 ? '0 0 10px rgba(239, 68, 68, 0.4)' : 'none',
+        lineHeight: 1
+      }} 
+      title="剩余时间"
+    >
+      {timeLeft}
+    </div>
+  );
+
   return (
     <div className="quiz-container">
       {renderConfetti()}
@@ -296,7 +320,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
 
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1.5rem' }}>
             <button className="action-btn" onClick={() => startQuiz()} style={{ padding: '0.9rem 2.5rem', fontSize: '1.1rem' }}>
-              开始测试 (共10题)
+              开始测试 (共{activeUnit ? activeUnit.words.length : units.reduce((acc, u) => acc + u.words.length, 0)}题)
             </button>
             <button 
               className="ctrl-action-btn"
@@ -453,21 +477,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       ) : (
         /* Quiz Gameplay Stage */
         <div className="glass-card stagger-item" style={{ '--index': 0 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }} className="no-print">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-              <span style={{ 
-                fontSize: '0.9rem', 
-                background: timeLeft <= 3 ? 'rgba(239, 68, 68, 0.2)' : 'rgba(245, 158, 11, 0.15)', 
-                color: timeLeft <= 3 ? '#ef4444' : 'var(--accent-yellow)',
-                padding: '0.2rem 0.6rem',
-                borderRadius: '12px',
-                border: `1px solid ${timeLeft <= 3 ? '#ef4444' : 'var(--accent-yellow)'}`,
-                fontWeight: 'bold',
-                animation: timeLeft <= 3 ? 'pulse 1s infinite' : 'none'
-              }}>
-                ⏱️ 倒计时: {timeLeft}s
-              </span>
-            </div>
+          <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', marginBottom: '1rem' }} className="no-print">
             <button 
               onClick={() => {
                 if (window.confirm("确定要退出本次测试吗？当前进度将不会被保存。")) {
@@ -503,19 +513,22 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
             {quizMode === 'eng-to-chi' && (
               <>
                 请选择正确的中文释义：
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.25rem', marginTop: '0.5rem' }}>
+                  {selectedAnswer === null ? timerCircle : <div style={{ width: '54px', height: '54px', flexShrink: 0 }}></div>}
                   <span className="question-word" style={{ margin: 0 }}>
                     {questions[currentQIndex].wordObj.word}
                   </span>
-                  <button 
-                    onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
-                    className="ctrl-btn" 
-                    style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
-                    title="重播发音"
-                    type="button"
-                  >
-                    <Volume2 size={20} />
-                  </button>
+                  <div style={{ width: '54px', height: '54px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <button 
+                      onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
+                      className="ctrl-btn" 
+                      style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
+                      title="重播发音"
+                      type="button"
+                    >
+                      <Volume2 size={20} />
+                    </button>
+                  </div>
                 </div>
               </>
             )}
@@ -523,19 +536,22 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
             {quizMode === 'chi-to-eng' && (
               <>
                 请选择正确的英文单词：
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.25rem', marginTop: '0.5rem' }}>
+                  {selectedAnswer === null ? timerCircle : <div style={{ width: '54px', height: '54px', flexShrink: 0 }}></div>}
                   <span className="question-word" style={{ color: 'var(--accent-pink)', margin: 0 }}>
                     {questions[currentQIndex].wordObj.translation}
                   </span>
-                  <button 
-                    onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
-                    className="ctrl-btn" 
-                    style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
-                    title="播放发音"
-                    type="button"
-                  >
-                    <Volume2 size={20} />
-                  </button>
+                  <div style={{ width: '54px', height: '54px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <button 
+                      onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
+                      className="ctrl-btn" 
+                      style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
+                      title="播放发音"
+                      type="button"
+                    >
+                      <Volume2 size={20} />
+                    </button>
+                  </div>
                 </div>
               </>
             )}
@@ -543,19 +559,22 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
             {quizMode === 'spelling' && (
               <>
                 请拼写此英文单词：
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.25rem', marginTop: '0.5rem' }}>
+                  {selectedAnswer === null ? timerCircle : <div style={{ width: '54px', height: '54px', flexShrink: 0 }}></div>}
                   <span className="question-word" style={{ color: 'var(--accent-yellow)', margin: 0 }}>
                     {questions[currentQIndex].wordObj.translation}
                   </span>
-                  <button 
-                    onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
-                    className="ctrl-btn" 
-                    style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
-                    title="播放发音"
-                    type="button"
-                  >
-                    <Volume2 size={20} />
-                  </button>
+                  <div style={{ width: '54px', height: '54px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <button 
+                      onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
+                      className="ctrl-btn" 
+                      style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
+                      title="播放发音"
+                      type="button"
+                    >
+                      <Volume2 size={20} />
+                    </button>
+                  </div>
                 </div>
               </>
             )}
