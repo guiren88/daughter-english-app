@@ -393,16 +393,28 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
               
               const nextUnit = units[currentIdx + 1];
               return (
-                <button 
-                  className="action-btn"
-                  onClick={() => {
-                    setSelectedUnit(nextUnit);
-                    startQuiz(null, nextUnit);
-                  }}
-                  style={{ background: 'linear-gradient(135deg, var(--accent-green), var(--accent-cyan))', display: 'flex', alignItems: 'center', gap: '0.25rem' }}
-                >
-                  <span>➡️ 测试下一单元 ({nextUnit.unit})</span>
-                </button>
+                <>
+                  <button 
+                    className="action-btn"
+                    onClick={() => {
+                      setSelectedUnit(nextUnit);
+                      setActiveView('flashcards');
+                    }}
+                    style={{ background: 'linear-gradient(135deg, var(--accent-violet), var(--accent-pink))', display: 'flex', alignItems: 'center', gap: '0.25rem' }}
+                  >
+                    <span>📖 学习下一课 ({nextUnit.unit})</span>
+                  </button>
+                  <button 
+                    className="action-btn"
+                    onClick={() => {
+                      setSelectedUnit(nextUnit);
+                      startQuiz(null, nextUnit);
+                    }}
+                    style={{ background: 'linear-gradient(135deg, var(--accent-green), var(--accent-cyan))', display: 'flex', alignItems: 'center', gap: '0.25rem' }}
+                  >
+                    <span>➡️ 测试下一课 ({nextUnit.unit})</span>
+                  </button>
+                </>
               );
             })()}
 
