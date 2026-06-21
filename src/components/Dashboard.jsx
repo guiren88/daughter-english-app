@@ -37,7 +37,7 @@ export default function Dashboard({
             {grade.toUpperCase()} 英语核心知识点看板
           </h1>
           <p style={{ color: 'var(--text-secondary)' }}>
-            欢迎来到二实小 1A/1B 单元核心词汇与句法训练营
+            欢迎来到 1A/1B 单元核心词汇与句法训练营
           </p>
         </div>
 

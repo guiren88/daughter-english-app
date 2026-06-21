@@ -92,7 +92,7 @@ export default function Worksheet({ grade, units, selectedUnit, setSelectedUnit,
       <div className="printable-area">
         {/* Header (Unit metadata) */}
         <div className="print-header">
-          <h2>二实小作业设计</h2>
+          <h2>英语作业设计</h2>
           <h3>
             Oxford English {grade.toUpperCase()} — {activeUnit.unit} {activeUnit.title}
           </h3>
@@ -201,7 +201,7 @@ export default function Worksheet({ grade, units, selectedUnit, setSelectedUnit,
 
         {/* Footer print stamp */}
         <div style={{ marginTop: '4rem', textAlign: 'right', fontSize: '0.85rem', color: '#4b5563', borderTop: '1px solid #e5e7eb', paddingTop: '1rem' }}>
-          松江二实验小学一年级英语组 • 助学看板工具自动生成
+          女儿的英语课 一年级英语组 • 助学看板工具自动生成
         </div>
       </div>
     </div>
