@@ -163,10 +163,6 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     } else {
       // Quiz finished
       setQuizFinished(true);
-      if (score + (selectedAnswer !== null && selectedAnswer !== -1 ? 1 : 0) === questions.length) {
-        // Perfect score confetti trigger!
-        setShowConfetti(true);
-      }
     }
   }
 
@@ -218,23 +214,107 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     return () => clearInterval(timer);
   }, [quizStarted, currentQIndex, selectedAnswer, quizFinished, questions]);
 
-  // Confetti generator cells
+  // Play celebration music using Web Audio API oscillators
+  const playCelebrationMusic = () => {
+    try {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return;
+      const ctx = new AudioContextClass();
+      
+      const volSaved = localStorage.getItem('oxford_volume');
+      const volumeVal = volSaved !== null ? parseFloat(volSaved) : 1.0;
+      if (volumeVal === 0) return; // Muted
+
+      // Fanfare notes: [Frequency, StartOffset, Duration]
+      const notes = [
+        { note: 523.25, time: 0.0, dur: 0.12 }, // C5
+        { note: 523.25, time: 0.12, dur: 0.12 }, // C5
+        { note: 523.25, time: 0.24, dur: 0.12 }, // C5
+        { note: 523.25, time: 0.36, dur: 0.36 }, // C5
+        { note: 415.30, time: 0.72, dur: 0.36 }, // Ab4
+        { note: 466.16, time: 1.08, dur: 0.36 }, // Bb4
+        { note: 523.25, time: 1.44, dur: 0.72 }  // C5 (triumphant end)
+      ];
+
+      const harmony = [
+        { note: 659.25, time: 0.0, dur: 0.12 }, // E5
+        { note: 659.25, time: 0.12, dur: 0.12 }, // E5
+        { note: 659.25, time: 0.24, dur: 0.12 }, // E5
+        { note: 659.25, time: 0.36, dur: 0.36 }, // E5
+        { note: 523.25, time: 0.72, dur: 0.36 }, // C5
+        { note: 587.33, time: 1.08, dur: 0.36 }, // D5
+        { note: 659.25, time: 1.44, dur: 0.72 }  // E5
+      ];
+
+      const bass = [
+        { note: 392.00, time: 0.0, dur: 0.12 }, // G4
+        { note: 392.00, time: 0.12, dur: 0.12 }, // G4
+        { note: 392.00, time: 0.24, dur: 0.12 }, // G4
+        { note: 392.00, time: 0.36, dur: 0.36 }, // G4
+        { note: 311.13, time: 0.72, dur: 0.36 }, // Eb4
+        { note: 349.23, time: 1.08, dur: 0.36 }, // F4
+        { note: 392.00, time: 1.44, dur: 0.72 }  // G4
+      ];
+
+      const playVoice = (notesList, type) => {
+        notesList.forEach(item => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          
+          osc.type = type;
+          osc.frequency.setValueAtTime(item.note, ctx.currentTime + item.time);
+          
+          gain.gain.setValueAtTime(0.001, ctx.currentTime + item.time);
+          gain.gain.linearRampToValueAtTime(0.15 * volumeVal, ctx.currentTime + item.time + 0.02);
+          gain.gain.setValueAtTime(0.15 * volumeVal, ctx.currentTime + item.time + item.dur - 0.04);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + item.time + item.dur);
+          
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          
+          osc.start(ctx.currentTime + item.time);
+          osc.stop(ctx.currentTime + item.time + item.dur);
+        });
+      };
+
+      playVoice(notes, 'triangle');
+      playVoice(harmony, 'sine');
+      playVoice(bass, 'sine');
+    } catch (e) {
+      console.warn("Celebration music playback failed:", e);
+    }
+  };
+
+  // Celebration trigger effect
+  useEffect(() => {
+    if (quizFinished && score === questions.length && questions.length > 0) {
+      setShowConfetti(true);
+      playCelebrationMusic();
+    }
+  }, [quizFinished, score, questions.length]);
+
+  // Confetti generator cells (Sprinkling flower emojis)
   const renderConfetti = () => {
     if (!showConfetti) return null;
-    return Array.from({ length: 50 }).map((_, idx) => {
+    const flowers = ['🌸', '🌹', '🌺', '🌻', '🌼', '💐', '🌷'];
+    return Array.from({ length: 60 }).map((_, idx) => {
       const left = Math.random() * 100;
-      const animationDelay = Math.random() * 2;
-      const color = ['#8b5cf6', '#ec4899', '#06b6d4', '#10b981', '#f59e0b'][idx % 5];
+      const animationDelay = Math.random() * 3;
+      const size = 1.2 + Math.random() * 1.5;
+      const flower = flowers[idx % flowers.length];
       return (
         <div 
           key={idx} 
-          className="confetti" 
+          className="flower-confetti" 
           style={{ 
             left: `${left}%`, 
             animationDelay: `${animationDelay}s`,
-            background: color
+            fontSize: `${size}rem`,
+            animationDuration: `${3 + Math.random() * 3}s`
           }}
-        />
+        >
+          {flower}
+        </div>
       );
     });
   }
