@@ -15,12 +15,14 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
   const [answeredList, setAnsweredList] = useState([]); // track user answers for review
   const [showConfetti, setShowConfetti] = useState(false);
   const [timeLeft, setTimeLeft] = useState(10);
+  const [activeSongName, setActiveSongName] = useState('');
 
   const celebrationCtxRef = React.useRef(null);
   const celebrationTimerRef = React.useRef(null);
   const celebrationStopTimerRef = React.useRef(null);
 
   function stopCelebrationMusic() {
+    setActiveSongName('');
     if (celebrationTimerRef.current) {
       clearInterval(celebrationTimerRef.current);
       celebrationTimerRef.current = null;
@@ -234,7 +236,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     return () => clearInterval(timer);
   }, [quizStarted, currentQIndex, selectedAnswer, quizFinished, questions]);
 
-  // Play celebration music using Web Audio API oscillators (Looping Mary Had a Little Lamb)
+  // Play celebration music using Web Audio API oscillators (Rotating 10 children's nursery rhymes)
   const playCelebrationMusic = () => {
     try {
       const AudioContextClass = window.AudioContext || window.webkitAudioContext;
@@ -250,32 +252,215 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       const volumeVal = volSaved !== null ? parseFloat(volSaved) : 1.0;
       if (volumeVal === 0) return; // Muted
 
-      const melody = [
-        { note: 659.25, time: 0.0, dur: 0.45 }, // E5
-        { note: 587.33, time: 0.5, dur: 0.45 }, // D5
-        { note: 523.25, time: 1.0, dur: 0.45 }, // C5
-        { note: 587.33, time: 1.5, dur: 0.45 }, // D5
-        { note: 659.25, time: 2.0, dur: 0.45 }, // E5
-        { note: 659.25, time: 2.5, dur: 0.45 }, // E5
-        { note: 659.25, time: 3.0, dur: 0.90 }, // E5
-        { note: 587.33, time: 4.0, dur: 0.45 }, // D5
-        { note: 587.33, time: 4.5, dur: 0.45 }, // D5
-        { note: 587.33, time: 5.0, dur: 0.90 }, // D5
-        { note: 659.25, time: 6.0, dur: 0.45 }, // E5
-        { note: 783.99, time: 6.5, dur: 0.45 }, // G5
-        { note: 783.99, time: 7.0, dur: 0.90 }  // G5
+      // Database of 10 classic kids songs
+      const songs = [
+        {
+          name: "《玛丽有只小羔羊》 (Mary Had a Little Lamb)",
+          loopInterval: 8000,
+          melody: [
+            { note: 659.25, time: 0.0, dur: 0.45 }, { note: 587.33, time: 0.5, dur: 0.45 },
+            { note: 523.25, time: 1.0, dur: 0.45 }, { note: 587.33, time: 1.5, dur: 0.45 },
+            { note: 659.25, time: 2.0, dur: 0.45 }, { note: 659.25, time: 2.5, dur: 0.45 },
+            { note: 659.25, time: 3.0, dur: 0.90 }, { note: 587.33, time: 4.0, dur: 0.45 },
+            { note: 587.33, time: 4.5, dur: 0.45 }, { note: 587.33, time: 5.0, dur: 0.90 },
+            { note: 659.25, time: 6.0, dur: 0.45 }, { note: 783.99, time: 6.5, dur: 0.45 },
+            { note: 783.99, time: 7.0, dur: 0.90 }
+          ],
+          bass: [
+            { note: 261.63, time: 0.0, dur: 0.90 }, { note: 261.63, time: 2.0, dur: 0.90 },
+            { note: 196.00, time: 4.0, dur: 0.90 }, { note: 261.63, time: 6.0, dur: 0.90 }
+          ]
+        },
+        {
+          name: "《小星星》 (Twinkle Twinkle Little Star)",
+          loopInterval: 8000,
+          melody: [
+            { note: 523.25, time: 0.0, dur: 0.45 }, { note: 523.25, time: 0.5, dur: 0.45 },
+            { note: 783.99, time: 1.0, dur: 0.45 }, { note: 783.99, time: 1.5, dur: 0.45 },
+            { note: 880.00, time: 2.0, dur: 0.45 }, { note: 880.00, time: 2.5, dur: 0.45 },
+            { note: 783.99, time: 3.0, dur: 0.90 }, { note: 698.46, time: 4.0, dur: 0.45 },
+            { note: 698.46, time: 4.5, dur: 0.45 }, { note: 659.25, time: 5.0, dur: 0.45 },
+            { note: 659.25, time: 5.5, dur: 0.45 }, { note: 587.33, time: 6.0, dur: 0.45 },
+            { note: 587.33, time: 6.5, dur: 0.45 }, { note: 523.25, time: 7.0, dur: 0.90 }
+          ],
+          bass: [
+            { note: 261.63, time: 0.0, dur: 0.90 }, { note: 349.23, time: 2.0, dur: 0.90 },
+            { note: 261.63, time: 4.0, dur: 0.90 }, { note: 196.00, time: 6.0, dur: 0.90 }
+          ]
+        },
+        {
+          name: "《王老先生有块地》 (Old MacDonald Had a Farm)",
+          loopInterval: 6000,
+          melody: [
+            { note: 783.99, time: 0.0, dur: 0.35 }, { note: 783.99, time: 0.4, dur: 0.35 },
+            { note: 783.99, time: 0.8, dur: 0.35 }, { note: 587.33, time: 1.2, dur: 0.35 },
+            { note: 659.25, time: 1.6, dur: 0.35 }, { note: 659.25, time: 2.0, dur: 0.35 },
+            { note: 587.33, time: 2.4, dur: 0.75 }, { note: 987.77, time: 3.2, dur: 0.35 },
+            { note: 987.77, time: 3.6, dur: 0.35 }, { note: 880.00, time: 4.0, dur: 0.35 },
+            { note: 880.00, time: 4.4, dur: 0.35 }, { note: 783.99, time: 4.8, dur: 0.75 }
+          ],
+          bass: [
+            { note: 261.63, time: 0.0, dur: 0.80 }, { note: 261.63, time: 1.6, dur: 0.80 },
+            { note: 196.00, time: 3.2, dur: 0.80 }, { note: 261.63, time: 4.8, dur: 0.80 }
+          ]
+        },
+        {
+          name: "《划船歌》 (Row, Row, Row Your Boat)",
+          loopInterval: 8000,
+          melody: [
+            { note: 523.25, time: 0.0, dur: 0.45 }, { note: 523.25, time: 0.5, dur: 0.45 },
+            { note: 523.25, time: 1.0, dur: 0.30 }, { note: 587.33, time: 1.3, dur: 0.15 },
+            { note: 659.25, time: 1.5, dur: 0.45 }, { note: 659.25, time: 2.0, dur: 0.30 },
+            { note: 587.33, time: 2.3, dur: 0.15 }, { note: 659.25, time: 2.5, dur: 0.30 },
+            { note: 698.46, time: 2.8, dur: 0.15 }, { note: 783.99, time: 3.0, dur: 0.90 },
+            { note: 1046.50, time: 4.0, dur: 0.15 }, { note: 1046.50, time: 4.15, dur: 0.15 },
+            { note: 1046.50, time: 4.30, dur: 0.15 }, { note: 783.99, time: 4.45, dur: 0.15 },
+            { note: 783.99, time: 4.60, dur: 0.15 }, { note: 783.99, time: 4.75, dur: 0.15 },
+            { note: 659.25, time: 4.90, dur: 0.15 }, { note: 659.25, time: 5.05, dur: 0.15 },
+            { note: 659.25, time: 5.20, dur: 0.15 }, { note: 523.25, time: 5.35, dur: 0.15 },
+            { note: 523.25, time: 5.50, dur: 0.15 }, { note: 523.25, time: 5.65, dur: 0.15 },
+            { note: 783.99, time: 6.0, dur: 0.30 }, { note: 698.46, time: 6.3, dur: 0.15 },
+            { note: 659.25, time: 6.5, dur: 0.30 }, { note: 587.33, time: 6.8, dur: 0.15 },
+            { note: 523.25, time: 7.0, dur: 0.90 }
+          ],
+          bass: [
+            { note: 261.63, time: 0.0, dur: 0.90 }, { note: 261.63, time: 2.0, dur: 0.90 },
+            { note: 261.63, time: 4.0, dur: 0.90 }, { note: 196.00, time: 6.0, dur: 0.90 }
+          ]
+        },
+        {
+          name: "《两只老虎》 (Brother John)",
+          loopInterval: 8000,
+          melody: [
+            { note: 523.25, time: 0.0, dur: 0.40 }, { note: 587.33, time: 0.5, dur: 0.40 },
+            { note: 659.25, time: 1.0, dur: 0.40 }, { note: 523.25, time: 1.5, dur: 0.40 },
+            { note: 523.25, time: 2.0, dur: 0.40 }, { note: 587.33, time: 2.5, dur: 0.40 },
+            { note: 659.25, time: 3.0, dur: 0.40 }, { note: 523.25, time: 3.5, dur: 0.40 },
+            { note: 659.25, time: 4.0, dur: 0.40 }, { note: 698.46, time: 4.5, dur: 0.40 },
+            { note: 783.99, time: 5.0, dur: 0.80 }, { note: 659.25, time: 6.0, dur: 0.40 },
+            { note: 698.46, time: 6.5, dur: 0.40 }, { note: 783.99, time: 7.0, dur: 0.80 }
+          ],
+          bass: [
+            { note: 261.63, time: 0.0, dur: 0.90 }, { note: 261.63, time: 2.0, dur: 0.90 },
+            { note: 261.63, time: 4.0, dur: 0.90 }, { note: 261.63, time: 6.0, dur: 0.90 }
+          ]
+        },
+        {
+          name: "《祝你生日快乐》 (Happy Birthday to You)",
+          loopInterval: 8000,
+          melody: [
+            { note: 392.00, time: 0.0, dur: 0.30 }, { note: 392.00, time: 0.3, dur: 0.15 },
+            { note: 440.00, time: 0.5, dur: 0.45 }, { note: 392.00, time: 1.0, dur: 0.45 },
+            { note: 523.25, time: 1.5, dur: 0.45 }, { note: 493.88, time: 2.0, dur: 0.90 },
+            { note: 392.00, time: 3.0, dur: 0.30 }, { note: 392.00, time: 3.3, dur: 0.15 },
+            { note: 440.00, time: 3.5, dur: 0.45 }, { note: 392.00, time: 4.0, dur: 0.45 },
+            { note: 587.33, time: 4.5, dur: 0.45 }, { note: 523.25, time: 5.0, dur: 0.90 },
+            { note: 392.00, time: 6.0, dur: 0.30 }, { note: 392.00, time: 6.3, dur: 0.15 },
+            { note: 783.99, time: 6.5, dur: 0.45 }, { note: 659.25, time: 7.0, dur: 0.45 },
+            { note: 523.25, time: 7.5, dur: 0.45 }
+          ],
+          bass: [
+            { note: 196.00, time: 0.0, dur: 0.90 }, { note: 261.63, time: 1.5, dur: 0.90 },
+            { note: 196.00, time: 3.0, dur: 0.90 }, { note: 261.63, time: 5.0, dur: 0.90 }
+          ]
+        },
+        {
+          name: "《铃儿响叮当》 (Jingle Bells)",
+          loopInterval: 8000,
+          melody: [
+            { note: 659.25, time: 0.0, dur: 0.40 }, { note: 659.25, time: 0.5, dur: 0.40 },
+            { note: 659.25, time: 1.0, dur: 0.80 }, { note: 659.25, time: 2.0, dur: 0.40 },
+            { note: 659.25, time: 2.5, dur: 0.40 }, { note: 659.25, time: 3.0, dur: 0.80 },
+            { note: 659.25, time: 4.0, dur: 0.40 }, { note: 783.99, time: 4.5, dur: 0.40 },
+            { note: 523.25, time: 5.0, dur: 0.60 }, { note: 587.33, time: 5.6, dur: 0.20 },
+            { note: 659.25, time: 6.0, dur: 1.50 }
+          ],
+          bass: [
+            { note: 261.63, time: 0.0, dur: 0.90 }, { note: 261.63, time: 2.0, dur: 0.90 },
+            { note: 261.63, time: 4.0, dur: 0.90 }, { note: 261.63, time: 6.0, dur: 0.90 }
+          ]
+        },
+        {
+          name: "《伦敦大桥垮下来》 (London Bridge is Falling Down)",
+          loopInterval: 9500,
+          melody: [
+            { note: 783.99, time: 0.0, dur: 0.40 }, { note: 880.00, time: 0.4, dur: 0.20 },
+            { note: 783.99, time: 0.6, dur: 0.40 }, { note: 698.46, time: 1.0, dur: 0.20 },
+            { note: 659.25, time: 1.2, dur: 0.40 }, { note: 698.46, time: 1.6, dur: 0.20 },
+            { note: 783.99, time: 1.8, dur: 0.60 }, { note: 587.33, time: 2.5, dur: 0.40 },
+            { note: 659.25, time: 2.9, dur: 0.20 }, { note: 698.46, time: 3.1, dur: 0.60 },
+            { note: 659.25, time: 3.8, dur: 0.40 }, { note: 698.46, time: 4.2, dur: 0.20 },
+            { note: 783.99, time: 4.4, dur: 0.60 }, { note: 783.99, time: 5.0, dur: 0.40 },
+            { note: 880.00, time: 5.4, dur: 0.20 }, { note: 783.99, time: 5.6, dur: 0.40 },
+            { note: 698.46, time: 6.0, dur: 0.20 }, { note: 659.25, time: 6.2, dur: 0.40 },
+            { note: 698.46, time: 6.6, dur: 0.20 }, { note: 783.99, time: 6.8, dur: 0.60 },
+            { note: 587.33, time: 7.4, dur: 0.40 }, { note: 783.99, time: 7.8, dur: 0.40 },
+            { note: 659.25, time: 8.2, dur: 0.40 }, { note: 523.25, time: 8.6, dur: 0.80 }
+          ],
+          bass: [
+            { note: 261.63, time: 0.0, dur: 0.80 }, { note: 196.00, time: 2.5, dur: 0.80 },
+            { note: 261.63, time: 5.0, dur: 0.80 }, { note: 261.63, time: 7.4, dur: 0.80 }
+          ]
+        },
+        {
+          name: "《如果感到幸福你就拍拍手》 (If You're Happy and You Know It)",
+          loopInterval: 8000,
+          melody: [
+            { note: 523.25, time: 0.0, dur: 0.20 }, { note: 523.25, time: 0.2, dur: 0.20 },
+            { note: 698.46, time: 0.4, dur: 0.30 }, { note: 698.46, time: 0.7, dur: 0.15 },
+            { note: 698.46, time: 0.85, dur: 0.15 }, { note: 698.46, time: 1.0, dur: 0.15 },
+            { note: 698.46, time: 1.15, dur: 0.15 }, { note: 698.46, time: 1.3, dur: 0.30 },
+            { note: 523.25, time: 1.6, dur: 0.20 }, { note: 587.33, time: 1.8, dur: 0.20 },
+            { note: 783.99, time: 2.0, dur: 0.30 }, { note: 783.99, time: 2.3, dur: 0.15 },
+            { note: 783.99, time: 2.45, dur: 0.15 }, { note: 783.99, time: 2.60, dur: 0.15 },
+            { note: 783.99, time: 2.75, dur: 0.15 }, { note: 783.99, time: 2.9, dur: 0.30 },
+            { note: 659.25, time: 3.2, dur: 0.20 }, { note: 698.46, time: 3.4, dur: 0.20 },
+            { note: 783.99, time: 3.6, dur: 0.30 }, { note: 783.99, time: 3.9, dur: 0.15 },
+            { note: 783.99, time: 4.05, dur: 0.15 }, { note: 783.99, time: 4.20, dur: 0.15 },
+            { note: 783.99, time: 4.35, dur: 0.15 }, { note: 880.00, time: 4.5, dur: 0.30 },
+            { note: 698.46, time: 4.8, dur: 0.30 }, { note: 880.00, time: 5.1, dur: 0.30 },
+            { note: 783.99, time: 5.4, dur: 0.30 }, { note: 783.99, time: 5.7, dur: 0.15 },
+            { note: 783.99, time: 5.85, dur: 0.15 }, { note: 698.46, time: 6.0, dur: 0.15 },
+            { note: 659.25, time: 6.15, dur: 0.15 }, { note: 587.33, time: 6.3, dur: 0.30 },
+            { note: 659.25, time: 6.6, dur: 0.30 }, { note: 587.33, time: 6.9, dur: 0.30 },
+            { note: 523.25, time: 7.2, dur: 0.80 }
+          ],
+          bass: [
+            { note: 261.63, time: 0.4, dur: 0.80 }, { note: 196.00, time: 2.0, dur: 0.80 },
+            { note: 261.63, time: 3.6, dur: 0.80 }, { note: 261.63, time: 5.4, dur: 0.80 }
+          ]
+        },
+        {
+          name: "《宾果游戏》 (Bingo)",
+          loopInterval: 8000,
+          melody: [
+            { note: 392.00, time: 0.0, dur: 0.30 }, { note: 523.25, time: 0.3, dur: 0.30 },
+            { note: 523.25, time: 0.6, dur: 0.30 }, { note: 392.00, time: 0.9, dur: 0.30 },
+            { note: 392.00, time: 1.2, dur: 0.30 }, { note: 440.00, time: 1.5, dur: 0.30 },
+            { note: 440.00, time: 1.8, dur: 0.30 }, { note: 392.00, time: 2.1, dur: 0.60 },
+            { note: 392.00, time: 2.7, dur: 0.30 }, { note: 523.25, time: 3.0, dur: 0.30 },
+            { note: 523.25, time: 3.3, dur: 0.30 }, { note: 523.25, time: 3.6, dur: 0.30 },
+            { note: 493.88, time: 3.9, dur: 0.30 }, { note: 523.25, time: 4.2, dur: 0.30 },
+            { note: 587.33, time: 4.5, dur: 0.30 }, { note: 659.25, time: 4.8, dur: 0.30 },
+            { note: 523.25, time: 5.1, dur: 0.60 }, { note: 659.25, time: 5.7, dur: 0.30 },
+            { note: 659.25, time: 6.0, dur: 0.30 }, { note: 587.33, time: 6.3, dur: 0.30 },
+            { note: 587.33, time: 6.6, dur: 0.30 }, { note: 523.25, time: 6.9, dur: 0.90 }
+          ],
+          bass: [
+            { note: 261.63, time: 0.3, dur: 0.80 }, { note: 349.23, time: 1.5, dur: 0.80 },
+            { note: 261.63, time: 3.0, dur: 0.80 }, { note: 196.00, time: 4.5, dur: 0.80 },
+            { note: 261.63, time: 6.9, dur: 0.80 }
+          ]
+        }
       ];
 
-      const bass = [
-        { note: 261.63, time: 0.0, dur: 0.90 }, // C4
-        { note: 261.63, time: 2.0, dur: 0.90 }, // C4
-        { note: 196.00, time: 4.0, dur: 0.90 }, // G3
-        { note: 261.63, time: 6.0, dur: 0.90 }  // C4
-      ];
+      // Choose a random song from the list
+      const song = songs[Math.floor(Math.random() * songs.length)];
+      setActiveSongName(song.name);
 
       const playSegment = (startTime) => {
         // Schedule melody with warm triangle waves (music box plucks)
-        melody.forEach(item => {
+        song.melody.forEach(item => {
           const osc = ctx.createOscillator();
           const gain = ctx.createGain();
           
@@ -294,7 +479,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
         });
 
         // Schedule bass with sweet sine waves
-        bass.forEach(item => {
+        song.bass.forEach(item => {
           const osc = ctx.createOscillator();
           const gain = ctx.createGain();
           
@@ -316,15 +501,15 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       // Play immediately
       playSegment(ctx.currentTime);
 
-      // Loop every 8 seconds
+      // Loop every interval specified by the song
       celebrationTimerRef.current = setInterval(() => {
         playSegment(ctx.currentTime);
-      }, 8000);
+      }, song.loopInterval);
 
-      // Automatically stop after 60 seconds (1 minute)
+      // Automatically stop after 3 minutes (180000ms)
       celebrationStopTimerRef.current = setTimeout(() => {
         stopCelebrationMusic();
-      }, 60000);
+      }, 180000);
 
     } catch (e) {
       console.warn("Celebration music playback failed:", e);
@@ -483,8 +668,15 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
           </p>
 
           {score === questions.length && (
-            <div style={{ color: 'var(--accent-pink)', fontWeight: 'bold', fontSize: '1.2rem', animation: 'pulse 1.5s infinite' }}>
-              🎉 太棒了！拿到满分！
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
+              <div style={{ color: 'var(--accent-pink)', fontWeight: 'bold', fontSize: '1.2rem', animation: 'pulse 1.5s infinite' }}>
+                🎉 太棒了！拿到满分！
+              </div>
+              {activeSongName && (
+                <div style={{ fontSize: '0.85rem', color: 'var(--accent-cyan)', background: 'rgba(6, 182, 212, 0.1)', padding: '0.25rem 0.75rem', borderRadius: '12px', border: '1px solid rgba(6, 182, 212, 0.2)', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                  <span>🎵 正在播放童谣: {activeSongName}</span>
+                </div>
+              )}
             </div>
           )}
 
