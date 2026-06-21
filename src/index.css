@@ -244,6 +244,8 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(90deg, #ec4899, #8b5cf6, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -1029,8 +1031,8 @@ h1, h2, h3, h4, h5, h6 {
   100% { transform: translateY(400px) rotate(360deg); opacity: 0; }
 }
 
-/* Mobile Responsiveness Rules */
-@media (max-width: 768px) {
+/* Mobile & Tablet Responsiveness Rules */
+@media (max-width: 992px) {
   .navbar {
     padding: 1rem;
   }
@@ -1062,6 +1064,13 @@ h1, h2, h3, h4, h5, h6 {
   
   .print-matching-container {
     gap: 1.5rem;
+  }
+}
+
+/* Extra small mobile phone responsiveness */
+@media (max-width: 576px) {
+  .nav-brand-text {
+    display: none !important;
   }
 }
 
