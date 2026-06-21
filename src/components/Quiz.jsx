@@ -16,8 +16,28 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
   const [showConfetti, setShowConfetti] = useState(false);
   const [timeLeft, setTimeLeft] = useState(10);
 
+  const celebrationCtxRef = React.useRef(null);
+  const celebrationTimerRef = React.useRef(null);
+  const celebrationStopTimerRef = React.useRef(null);
+
+  function stopCelebrationMusic() {
+    if (celebrationTimerRef.current) {
+      clearInterval(celebrationTimerRef.current);
+      celebrationTimerRef.current = null;
+    }
+    if (celebrationStopTimerRef.current) {
+      clearTimeout(celebrationStopTimerRef.current);
+      celebrationStopTimerRef.current = null;
+    }
+    if (celebrationCtxRef.current) {
+      celebrationCtxRef.current.close().catch(() => {});
+      celebrationCtxRef.current = null;
+    }
+  }
+
   // Generate questions list
   const startQuiz = (customWords = null, targetUnit = null) => {
+    stopCelebrationMusic();
     // Gather vocabulary pool
     let pool = [];
     const activeUnitForQuiz = targetUnit !== null ? targetUnit : activeUnit;
@@ -214,58 +234,98 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     return () => clearInterval(timer);
   }, [quizStarted, currentQIndex, selectedAnswer, quizFinished, questions]);
 
-  // Play celebration music using Web Audio API oscillators (Music Box / Magic Chime sound)
+  // Play celebration music using Web Audio API oscillators (Looping Mary Had a Little Lamb)
   const playCelebrationMusic = () => {
     try {
       const AudioContextClass = window.AudioContext || window.webkitAudioContext;
       if (!AudioContextClass) return;
-      const ctx = new AudioContextClass();
       
+      // Stop any existing music first
+      stopCelebrationMusic();
+
+      const ctx = new AudioContextClass();
+      celebrationCtxRef.current = ctx;
+
       const volSaved = localStorage.getItem('oxford_volume');
       const volumeVal = volSaved !== null ? parseFloat(volSaved) : 1.0;
       if (volumeVal === 0) return; // Muted
 
-      // Music Box / Magic Level-Up Chime melody
-      const chimeNotes = [
-        // Fast magic arpeggio sweep (sparkling harp feel)
-        { note: 523.25, time: 0.0, dur: 0.12, type: 'sine' },   // C5
-        { note: 659.25, time: 0.06, dur: 0.12, type: 'sine' },  // E5
-        { note: 783.99, time: 0.12, dur: 0.12, type: 'sine' },  // G5
-        { note: 1046.50, time: 0.18, dur: 0.12, type: 'sine' }, // C6
-        { note: 1318.51, time: 0.24, dur: 0.12, type: 'sine' }, // E6
-        { note: 1567.98, time: 0.30, dur: 0.12, type: 'sine' }, // G6
-        { note: 2093.00, time: 0.36, dur: 0.40, type: 'sine' }, // C7
-        
-        // Upbeat level-up melody
-        { note: 1396.91, time: 0.60, dur: 0.12, type: 'triangle' }, // F6
-        { note: 1318.51, time: 0.72, dur: 0.12, type: 'triangle' }, // E6
-        { note: 1174.66, time: 0.84, dur: 0.12, type: 'triangle' }, // D6
-        { note: 1046.50, time: 0.96, dur: 0.60, type: 'triangle' }, // C6
-        
-        // Chord harmony under the final C6 note
-        { note: 523.25, time: 0.96, dur: 0.60, type: 'sine' },  // C5
-        { note: 659.25, time: 0.96, dur: 0.60, type: 'sine' },  // E5
-        { note: 783.99, time: 0.96, dur: 0.60, type: 'sine' }   // G5
+      const melody = [
+        { note: 659.25, time: 0.0, dur: 0.45 }, // E5
+        { note: 587.33, time: 0.5, dur: 0.45 }, // D5
+        { note: 523.25, time: 1.0, dur: 0.45 }, // C5
+        { note: 587.33, time: 1.5, dur: 0.45 }, // D5
+        { note: 659.25, time: 2.0, dur: 0.45 }, // E5
+        { note: 659.25, time: 2.5, dur: 0.45 }, // E5
+        { note: 659.25, time: 3.0, dur: 0.90 }, // E5
+        { note: 587.33, time: 4.0, dur: 0.45 }, // D5
+        { note: 587.33, time: 4.5, dur: 0.45 }, // D5
+        { note: 587.33, time: 5.0, dur: 0.90 }, // D5
+        { note: 659.25, time: 6.0, dur: 0.45 }, // E5
+        { note: 783.99, time: 6.5, dur: 0.45 }, // G5
+        { note: 783.99, time: 7.0, dur: 0.90 }  // G5
       ];
 
-      chimeNotes.forEach(item => {
-        const osc = ctx.createOscillator();
-        const gain = ctx.createGain();
-        
-        osc.type = item.type;
-        osc.frequency.setValueAtTime(item.note, ctx.currentTime + item.time);
-        
-        // Music box envelope: instant attack, exponential decay
-        gain.gain.setValueAtTime(0.001, ctx.currentTime + item.time);
-        gain.gain.linearRampToValueAtTime(0.25 * volumeVal, ctx.currentTime + item.time + 0.01);
-        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + item.time + item.dur);
-        
-        osc.connect(gain);
-        gain.connect(ctx.destination);
-        
-        osc.start(ctx.currentTime + item.time);
-        osc.stop(ctx.currentTime + item.time + item.dur);
-      });
+      const bass = [
+        { note: 261.63, time: 0.0, dur: 0.90 }, // C4
+        { note: 261.63, time: 2.0, dur: 0.90 }, // C4
+        { note: 196.00, time: 4.0, dur: 0.90 }, // G3
+        { note: 261.63, time: 6.0, dur: 0.90 }  // C4
+      ];
+
+      const playSegment = (startTime) => {
+        // Schedule melody with warm triangle waves (music box plucks)
+        melody.forEach(item => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(item.note, startTime + item.time);
+          
+          gain.gain.setValueAtTime(0.001, startTime + item.time);
+          gain.gain.linearRampToValueAtTime(0.20 * volumeVal, startTime + item.time + 0.01);
+          gain.gain.exponentialRampToValueAtTime(0.001, startTime + item.time + item.dur);
+          
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          
+          osc.start(startTime + item.time);
+          osc.stop(startTime + item.time + item.dur);
+        });
+
+        // Schedule bass with sweet sine waves
+        bass.forEach(item => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(item.note, startTime + item.time);
+          
+          gain.gain.setValueAtTime(0.001, startTime + item.time);
+          gain.gain.linearRampToValueAtTime(0.12 * volumeVal, startTime + item.time + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.001, startTime + item.time + item.dur);
+          
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          
+          osc.start(startTime + item.time);
+          osc.stop(startTime + item.time + item.dur);
+        });
+      };
+
+      // Play immediately
+      playSegment(ctx.currentTime);
+
+      // Loop every 8 seconds
+      celebrationTimerRef.current = setInterval(() => {
+        playSegment(ctx.currentTime);
+      }, 8000);
+
+      // Automatically stop after 30 seconds
+      celebrationStopTimerRef.current = setTimeout(() => {
+        stopCelebrationMusic();
+      }, 30000);
+
     } catch (e) {
       console.warn("Celebration music playback failed:", e);
     }
@@ -278,6 +338,13 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       playCelebrationMusic();
     }
   }, [quizFinished, score, questions.length]);
+
+  // Clean up celebration music on unmount
+  useEffect(() => {
+    return () => {
+      stopCelebrationMusic();
+    };
+  }, []);
 
   // Confetti generator cells (Sprinkling flower emojis)
   const renderConfetti = () => {
@@ -533,7 +600,10 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
 
             <button 
               className="action-btn" 
-              onClick={() => setQuizStarted(false)}
+              onClick={() => {
+                stopCelebrationMusic();
+                setQuizStarted(false);
+              }}
               style={{ background: 'rgba(255,255,255,0.05)', borderColor: 'var(--border-glass)', border: '1px solid' }}
             >
               返回大纲
