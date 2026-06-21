@@ -216,16 +216,16 @@ export default function App() {
   const getThemeBrand = () => {
     switch (theme) {
       case 'cinnamoroll':
-        return { emoji: '☁️', text: '大耳狗女儿英语课' };
+        return { emoji: '☁️', text: '大耳狗女儿的英语课' };
       case 'melody':
-        return { emoji: '🐰', text: '美乐蒂女儿英语课' };
+        return { emoji: '🐰', text: '美乐蒂女儿的英语课' };
       case 'purin':
-        return { emoji: '🍮', text: '布丁狗女儿英语课' };
+        return { emoji: '🍮', text: '布丁狗女儿的英语课' };
       case 'dark':
-        return { emoji: '🌌', text: '极简女儿英语课' };
+        return { emoji: '🌌', text: '极简女儿的英语课' };
       case 'kuromi':
       default:
-        return { emoji: '😈', text: '女儿英语课' };
+        return { emoji: '😈', text: '女儿的英语课' };
     }
   }
 
