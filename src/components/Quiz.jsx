@@ -321,10 +321,10 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
         playSegment(ctx.currentTime);
       }, 8000);
 
-      // Automatically stop after 30 seconds
+      // Automatically stop after 60 seconds (1 minute)
       celebrationStopTimerRef.current = setTimeout(() => {
         stopCelebrationMusic();
-      }, 30000);
+      }, 60000);
 
     } catch (e) {
       console.warn("Celebration music playback failed:", e);
