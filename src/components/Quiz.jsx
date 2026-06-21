@@ -17,13 +17,14 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
   const [timeLeft, setTimeLeft] = useState(10);
 
   // Generate questions list
-  const startQuiz = (customWords = null) => {
+  const startQuiz = (customWords = null, targetUnit = null) => {
     // Gather vocabulary pool
     let pool = [];
+    const activeUnitForQuiz = targetUnit !== null ? targetUnit : activeUnit;
     if (customWords) {
       pool = customWords;
-    } else if (activeUnit) {
-      pool = [...activeUnit.words];
+    } else if (activeUnitForQuiz) {
+      pool = [...activeUnitForQuiz.words];
     } else {
       units.forEach(unit => {
         pool = [...pool, ...unit.words];
@@ -385,6 +386,26 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
           )}
 
           <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            {activeUnit !== null && (() => {
+              const currentIdx = units.findIndex(u => u.unit === activeUnit.unit);
+              const hasNext = currentIdx !== -1 && currentIdx < units.length - 1;
+              if (!hasNext) return null;
+              
+              const nextUnit = units[currentIdx + 1];
+              return (
+                <button 
+                  className="action-btn"
+                  onClick={() => {
+                    setSelectedUnit(nextUnit);
+                    startQuiz(null, nextUnit);
+                  }}
+                  style={{ background: 'linear-gradient(135deg, var(--accent-green), var(--accent-cyan))', display: 'flex', alignItems: 'center', gap: '0.25rem' }}
+                >
+                  <span>➡️ 测试下一单元 ({nextUnit.unit})</span>
+                </button>
+              );
+            })()}
+
             <button className="action-btn" onClick={() => startQuiz()}>
               <RefreshCw size={18} style={{ marginRight: '0.5rem' }} />
               重新测试
