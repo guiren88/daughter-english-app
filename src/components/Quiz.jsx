@@ -14,6 +14,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
   const [quizFinished, setQuizFinished] = useState(false);
   const [answeredList, setAnsweredList] = useState([]); // track user answers for review
   const [showConfetti, setShowConfetti] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(10);
 
   // Generate questions list
   const startQuiz = (customWords = null) => {
@@ -163,12 +164,60 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     } else {
       // Quiz finished
       setQuizFinished(true);
-      if (score + (selectedAnswer !== null ? 1 : 0) === questions.length) {
+      if (score + (selectedAnswer !== null && selectedAnswer !== -1 ? 1 : 0) === questions.length) {
         // Perfect score confetti trigger!
         setShowConfetti(true);
       }
     }
   }
+
+  // Handle quiz timeout
+  const handleTimeout = () => {
+    if (selectedAnswer !== null) return;
+    
+    setSelectedAnswer(-1);
+    const q = questions[currentQIndex];
+    onAddMistake(q.wordObj);
+
+    setAnsweredList(prev => [...prev, {
+      word: q.wordObj.word,
+      translation: q.wordObj.translation,
+      userAnswer: '超时未答',
+      correctAnswer: quizMode === 'spelling' ? q.wordObj.word : q.wordObj.translation,
+      isCorrect: false
+    }]);
+
+    playAudio(q.wordObj.word);
+
+    setTimeout(() => {
+      proceedToNext();
+    }, 1800);
+  }
+
+  // Reset timer on new question
+  useEffect(() => {
+    if (quizStarted && !quizFinished && selectedAnswer === null) {
+      setTimeLeft(10);
+    }
+  }, [quizStarted, currentQIndex, selectedAnswer, quizFinished]);
+
+  // Quiz countdown timer effect
+  useEffect(() => {
+    if (!quizStarted || quizFinished || selectedAnswer !== null) return;
+
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          handleTimeout();
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [quizStarted, currentQIndex, selectedAnswer, quizFinished, questions]);
 
   // Confetti generator cells
   const renderConfetti = () => {
@@ -371,7 +420,21 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       ) : (
         /* Quiz Gameplay Stage */
         <div className="glass-card stagger-item" style={{ '--index': 0 }}>
-          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }} className="no-print">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }} className="no-print">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+              <span style={{ 
+                fontSize: '0.9rem', 
+                background: timeLeft <= 3 ? 'rgba(239, 68, 68, 0.2)' : 'rgba(245, 158, 11, 0.15)', 
+                color: timeLeft <= 3 ? '#ef4444' : 'var(--accent-yellow)',
+                padding: '0.2rem 0.6rem',
+                borderRadius: '12px',
+                border: `1px solid ${timeLeft <= 3 ? '#ef4444' : 'var(--accent-yellow)'}`,
+                fontWeight: 'bold',
+                animation: timeLeft <= 3 ? 'pulse 1s infinite' : 'none'
+              }}>
+                ⏱️ 倒计时: {timeLeft}s
+              </span>
+            </div>
             <button 
               onClick={() => {
                 if (window.confirm("确定要退出本次测试吗？当前进度将不会被保存。")) {
@@ -543,6 +606,10 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.25rem', marginTop: '1rem' }}>
                   {selectedAnswer === 1 ? (
                     <span style={{ color: 'var(--accent-green)', fontWeight: 'bold' }}>✓ 拼写正确！</span>
+                  ) : selectedAnswer === -1 ? (
+                    <span style={{ color: '#ef4444', fontWeight: 'bold' }}>
+                      ⏱️ 答题超时！正确拼写为: {questions[currentQIndex].wordObj.word}
+                    </span>
                   ) : (
                     <span style={{ color: '#ef4444', fontWeight: 'bold' }}>
                       ✗ 拼写错误。正确拼写为: {questions[currentQIndex].wordObj.word}
