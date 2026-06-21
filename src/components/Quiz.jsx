@@ -214,7 +214,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     return () => clearInterval(timer);
   }, [quizStarted, currentQIndex, selectedAnswer, quizFinished, questions]);
 
-  // Play celebration music using Web Audio API oscillators
+  // Play celebration music using Web Audio API oscillators (Music Box / Magic Chime sound)
   const playCelebrationMusic = () => {
     try {
       const AudioContextClass = window.AudioContext || window.webkitAudioContext;
@@ -225,61 +225,47 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       const volumeVal = volSaved !== null ? parseFloat(volSaved) : 1.0;
       if (volumeVal === 0) return; // Muted
 
-      // Fanfare notes: [Frequency, StartOffset, Duration]
-      const notes = [
-        { note: 523.25, time: 0.0, dur: 0.12 }, // C5
-        { note: 523.25, time: 0.12, dur: 0.12 }, // C5
-        { note: 523.25, time: 0.24, dur: 0.12 }, // C5
-        { note: 523.25, time: 0.36, dur: 0.36 }, // C5
-        { note: 415.30, time: 0.72, dur: 0.36 }, // Ab4
-        { note: 466.16, time: 1.08, dur: 0.36 }, // Bb4
-        { note: 523.25, time: 1.44, dur: 0.72 }  // C5 (triumphant end)
+      // Music Box / Magic Level-Up Chime melody
+      const chimeNotes = [
+        // Fast magic arpeggio sweep (sparkling harp feel)
+        { note: 523.25, time: 0.0, dur: 0.12, type: 'sine' },   // C5
+        { note: 659.25, time: 0.06, dur: 0.12, type: 'sine' },  // E5
+        { note: 783.99, time: 0.12, dur: 0.12, type: 'sine' },  // G5
+        { note: 1046.50, time: 0.18, dur: 0.12, type: 'sine' }, // C6
+        { note: 1318.51, time: 0.24, dur: 0.12, type: 'sine' }, // E6
+        { note: 1567.98, time: 0.30, dur: 0.12, type: 'sine' }, // G6
+        { note: 2093.00, time: 0.36, dur: 0.40, type: 'sine' }, // C7
+        
+        // Upbeat level-up melody
+        { note: 1396.91, time: 0.60, dur: 0.12, type: 'triangle' }, // F6
+        { note: 1318.51, time: 0.72, dur: 0.12, type: 'triangle' }, // E6
+        { note: 1174.66, time: 0.84, dur: 0.12, type: 'triangle' }, // D6
+        { note: 1046.50, time: 0.96, dur: 0.60, type: 'triangle' }, // C6
+        
+        // Chord harmony under the final C6 note
+        { note: 523.25, time: 0.96, dur: 0.60, type: 'sine' },  // C5
+        { note: 659.25, time: 0.96, dur: 0.60, type: 'sine' },  // E5
+        { note: 783.99, time: 0.96, dur: 0.60, type: 'sine' }   // G5
       ];
 
-      const harmony = [
-        { note: 659.25, time: 0.0, dur: 0.12 }, // E5
-        { note: 659.25, time: 0.12, dur: 0.12 }, // E5
-        { note: 659.25, time: 0.24, dur: 0.12 }, // E5
-        { note: 659.25, time: 0.36, dur: 0.36 }, // E5
-        { note: 523.25, time: 0.72, dur: 0.36 }, // C5
-        { note: 587.33, time: 1.08, dur: 0.36 }, // D5
-        { note: 659.25, time: 1.44, dur: 0.72 }  // E5
-      ];
-
-      const bass = [
-        { note: 392.00, time: 0.0, dur: 0.12 }, // G4
-        { note: 392.00, time: 0.12, dur: 0.12 }, // G4
-        { note: 392.00, time: 0.24, dur: 0.12 }, // G4
-        { note: 392.00, time: 0.36, dur: 0.36 }, // G4
-        { note: 311.13, time: 0.72, dur: 0.36 }, // Eb4
-        { note: 349.23, time: 1.08, dur: 0.36 }, // F4
-        { note: 392.00, time: 1.44, dur: 0.72 }  // G4
-      ];
-
-      const playVoice = (notesList, type) => {
-        notesList.forEach(item => {
-          const osc = ctx.createOscillator();
-          const gain = ctx.createGain();
-          
-          osc.type = type;
-          osc.frequency.setValueAtTime(item.note, ctx.currentTime + item.time);
-          
-          gain.gain.setValueAtTime(0.001, ctx.currentTime + item.time);
-          gain.gain.linearRampToValueAtTime(0.15 * volumeVal, ctx.currentTime + item.time + 0.02);
-          gain.gain.setValueAtTime(0.15 * volumeVal, ctx.currentTime + item.time + item.dur - 0.04);
-          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + item.time + item.dur);
-          
-          osc.connect(gain);
-          gain.connect(ctx.destination);
-          
-          osc.start(ctx.currentTime + item.time);
-          osc.stop(ctx.currentTime + item.time + item.dur);
-        });
-      };
-
-      playVoice(notes, 'triangle');
-      playVoice(harmony, 'sine');
-      playVoice(bass, 'sine');
+      chimeNotes.forEach(item => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        
+        osc.type = item.type;
+        osc.frequency.setValueAtTime(item.note, ctx.currentTime + item.time);
+        
+        // Music box envelope: instant attack, exponential decay
+        gain.gain.setValueAtTime(0.001, ctx.currentTime + item.time);
+        gain.gain.linearRampToValueAtTime(0.25 * volumeVal, ctx.currentTime + item.time + 0.01);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + item.time + item.dur);
+        
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        
+        osc.start(ctx.currentTime + item.time);
+        osc.stop(ctx.currentTime + item.time + item.dur);
+      });
     } catch (e) {
       console.warn("Celebration music playback failed:", e);
     }
