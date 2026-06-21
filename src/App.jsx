@@ -216,16 +216,16 @@ export default function App() {
   const getThemeBrand = () => {
     switch (theme) {
       case 'cinnamoroll':
-        return { emoji: '☁️', text: '大耳狗云端英语' };
+        return { emoji: '☁️', text: '大耳狗女儿英语课' };
       case 'melody':
-        return { emoji: '🐰', text: '美乐蒂草莓英语' };
+        return { emoji: '🐰', text: '美乐蒂女儿英语课' };
       case 'purin':
-        return { emoji: '🍮', text: '布丁狗焦糖英语' };
+        return { emoji: '🍮', text: '布丁狗女儿英语课' };
       case 'dark':
-        return { emoji: '🌌', text: '黑曜石极简英语' };
+        return { emoji: '🌌', text: '极简女儿英语课' };
       case 'kuromi':
       default:
-        return { emoji: '😈', text: '酷洛米魔幻英语' };
+        return { emoji: '😈', text: '女儿英语课' };
     }
   }
 
@@ -289,7 +289,11 @@ export default function App() {
 
       {/* Navigation bar */}
       <nav className="navbar">
-        <div className="nav-brand" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        <div 
+          className="nav-brand" 
+          style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer' }}
+          onClick={() => { setActiveView('dashboard'); setSelectedUnit(null); }}
+        >
           {theme === 'kuromi' ? (
             <img 
               src="/kuromi_icon.png" 
