@@ -372,15 +372,37 @@ export default function Dashboard({
             </span>
           )}
         </h2>
-        {unitFilter !== 'all' && (
+        <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
           <button 
-            className="ctrl-action-btn"
-            style={{ padding: '0.4rem 1rem', fontSize: '0.85rem', borderRadius: '20px' }}
-            onClick={() => setUnitFilter('all')}
+            className="action-btn"
+            style={{ 
+              padding: '0.45rem 1.25rem', 
+              fontSize: '0.85rem', 
+              borderRadius: '20px', 
+              background: 'linear-gradient(135deg, #fbbf24, #f59e0b)',
+              color: '#1e1b4b',
+              fontWeight: 'bold',
+              border: 'none',
+              boxShadow: '0 0 10px rgba(245, 158, 11, 0.3)',
+              cursor: 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.25rem'
+            }}
+            onClick={() => onSelectUnit(null, 'quiz')}
           >
-            显示全部单元
+            <span>🏆 挑战全册单词总测试 (共{totalWords}题)</span>
           </button>
-        )}
+          {unitFilter !== 'all' && (
+            <button 
+              className="ctrl-action-btn"
+              style={{ padding: '0.4rem 1rem', fontSize: '0.85rem', borderRadius: '20px' }}
+              onClick={() => setUnitFilter('all')}
+            >
+              显示全部单元
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Units Grid */}

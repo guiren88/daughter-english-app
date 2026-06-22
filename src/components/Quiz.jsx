@@ -910,8 +910,63 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
             </label>
           </div>
 
-          <div style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
-            {activeUnit ? `测验范围: ${activeUnit.unit} - ${activeUnit.title}` : `测验范围: 全量词库 (共 ${units.reduce((acc,u)=>acc+u.words.length,0)} 个单词)`}
+          <div style={{ 
+            fontSize: '0.95rem', 
+            color: 'var(--text-secondary)', 
+            marginBottom: '1.5rem',
+            background: 'rgba(255, 255, 255, 0.03)',
+            padding: '1rem',
+            borderRadius: '12px',
+            border: '1px solid var(--border-glass)',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '0.75rem',
+            alignItems: 'center',
+            maxWidth: '400px',
+            margin: '0 auto 1.5rem auto'
+          }}>
+            <div>
+              <strong>测验范围:</strong> {activeUnit ? `${activeUnit.unit} — ${activeUnit.title}` : '全册单词总测试 (全量词库)'} 
+              <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginLeft: '0.4rem' }}>
+                ({activeUnit ? `${activeUnit.words.length} 个单词` : `共 ${units.reduce((acc, u) => acc + u.words.length, 0)} 个单词`})
+              </span>
+            </div>
+
+            {/* Scope Switcher Controls */}
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
+              {activeUnit ? (
+                <button 
+                  onClick={() => setSelectedUnit(null)}
+                  className="ctrl-action-btn"
+                  style={{ padding: '0.3rem 0.75rem', fontSize: '0.8rem', borderRadius: '12px', borderColor: 'var(--accent-pink)', color: 'var(--accent-pink)' }}
+                  type="button"
+                >
+                  🚀 切换为全册总测试
+                </button>
+              ) : (
+                <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>切换为单课测试:</span>
+                  <select 
+                    value={activeUnit ? activeUnit.unit : ''}
+                    onChange={(e) => {
+                      if (e.target.value === '') {
+                        setSelectedUnit(null);
+                      } else {
+                        const found = units.find(u => u.unit === e.target.value);
+                        if (found) setSelectedUnit(found);
+                      }
+                    }}
+                    className="select-dropdown"
+                    style={{ padding: '0.25rem 0.5rem', fontSize: '0.8rem', height: 'auto', borderRadius: '6px' }}
+                  >
+                    <option value="">-- 选择课时 --</option>
+                    {units.map(u => (
+                      <option key={u.unit} value={u.unit}>{u.unit}: {u.title}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
+            </div>
           </div>
 
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1.5rem' }}>
