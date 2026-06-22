@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Check, X, Award, RefreshCw, Volume2, HelpCircle, ChevronLeft, AlertCircle } from 'lucide-react'
 
-export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, playAudio, setActiveView, mistakes, onAddMistake, onRemoveMistake }) {
+export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, playAudio, setActiveView, mistakes, onAddMistake, onRemoveMistake, onAwardStars, onAddStudyRecord }) {
   const activeUnit = selectedUnit || null;
 
   const [quizMode, setQuizMode] = useState('eng-to-chi'); // 'eng-to-chi', 'chi-to-eng', 'spelling'
@@ -16,6 +16,12 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
   const [showConfetti, setShowConfetti] = useState(false);
   const [timeLeft, setTimeLeft] = useState(10);
   const [activeSongName, setActiveSongName] = useState('');
+  const [initialMistakesCount, setInitialMistakesCount] = useState(0);
+  const [starsAwarded, setStarsAwarded] = useState(false);
+  const [historySaved, setHistorySaved] = useState(false);
+  const [isRecording, setIsRecording] = useState(false);
+  const [speechResult, setSpeechResult] = useState(''); // 'correct', 'wrong', or ''
+  const [recognizedText, setRecognizedText] = useState('');
 
   const celebrationCtxRef = React.useRef(null);
   const celebrationTimerRef = React.useRef(null);
@@ -24,7 +30,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
   function stopCelebrationMusic() {
     setActiveSongName('');
     if (celebrationTimerRef.current) {
-      clearInterval(celebrationTimerRef.current);
+      clearTimeout(celebrationTimerRef.current);
       celebrationTimerRef.current = null;
     }
     if (celebrationStopTimerRef.current) {
@@ -40,6 +46,8 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
   // Generate questions list
   const startQuiz = (customWords = null, targetUnit = null) => {
     stopCelebrationMusic();
+    const currentGradeMistakes = mistakes.filter(m => m.grade === grade).length;
+    setInitialMistakesCount(currentGradeMistakes);
     // Gather vocabulary pool
     let pool = [];
     const activeUnitForQuiz = targetUnit !== null ? targetUnit : activeUnit;
@@ -94,6 +102,8 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     setAnsweredList([]);
     setQuizFinished(false);
     setShowConfetti(false);
+    setStarsAwarded(false);
+    setHistorySaved(false);
     setQuizStarted(true);
   }
 
@@ -112,6 +122,202 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     }
   }, [quizStarted, currentQIndex, quizMode, questions, quizFinished])
 
+  // Play quiz sound effects (synthesized)
+  const playQuizSFX = (isCorrect) => {
+    try {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return;
+      const volSaved = localStorage.getItem('oxford_volume');
+      const volumeVal = volSaved !== null ? parseFloat(volSaved) : 1.0;
+      if (volumeVal === 0) return; // Muted
+
+      const ctx = new AudioContextClass();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      const now = ctx.currentTime;
+      if (isCorrect) {
+        // Correct SFX: A cheerful "ding-ding" (E6 -> G6)
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(659.25, now);
+        gain.gain.setValueAtTime(0.001, now);
+        gain.gain.linearRampToValueAtTime(0.12 * volumeVal, now + 0.05);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+
+        const osc2 = ctx.createOscillator();
+        const gain2 = ctx.createGain();
+        osc2.type = 'sine';
+        osc2.frequency.setValueAtTime(783.99, now + 0.12);
+        osc2.connect(gain2);
+        gain2.connect(ctx.destination);
+
+        gain2.gain.setValueAtTime(0.001, now + 0.12);
+        gain2.gain.linearRampToValueAtTime(0.12 * volumeVal, now + 0.17);
+        gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.32);
+
+        osc.start(now);
+        osc.stop(now + 0.16);
+        osc2.start(now + 0.12);
+        osc2.stop(now + 0.33);
+
+        setTimeout(() => {
+          ctx.close().catch(() => {});
+        }, 400);
+      } else {
+        // Incorrect SFX: A low-pitched sliding "womp" (F3 -> C3)
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(220, now);
+        osc.frequency.linearRampToValueAtTime(130, now + 0.25);
+        
+        gain.gain.setValueAtTime(0.001, now);
+        gain.gain.linearRampToValueAtTime(0.15 * volumeVal, now + 0.05);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.28);
+        
+        osc.start(now);
+        osc.stop(now + 0.30);
+
+        setTimeout(() => {
+          ctx.close().catch(() => {});
+        }, 400);
+      }
+    } catch (err) {
+      console.warn("SFX playback failed:", err);
+    }
+  };
+
+  // Play ticking sound for the last 3 seconds
+  const playTickSFX = () => {
+    try {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return;
+      const volSaved = localStorage.getItem('oxford_volume');
+      const volumeVal = volSaved !== null ? parseFloat(volSaved) : 1.0;
+      if (volumeVal === 0) return; // Muted
+
+      const ctx = new AudioContextClass();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      const now = ctx.currentTime;
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(1000, now);
+      gain.gain.setValueAtTime(0.001, now);
+      gain.gain.linearRampToValueAtTime(0.05 * volumeVal, now + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+
+      osc.start(now);
+      osc.stop(now + 0.06);
+
+      setTimeout(() => {
+        ctx.close().catch(() => {});
+      }, 100);
+    } catch (err) {}
+  };
+
+  const startSpeechRecognition = () => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert("您的浏览器或设备目前不支持语音识别功能。请使用电脑端的 Google Chrome 浏览器或苹果 Safari 浏览器访问！");
+      return;
+    }
+
+    try {
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.onstart = () => {
+        setIsRecording(true);
+        setSpeechResult('');
+        setRecognizedText('');
+      };
+
+      recognition.onerror = (event) => {
+        console.error("Speech recognition error:", event.error);
+        setIsRecording(false);
+        if (event.error === 'not-allowed') {
+          alert("麦克风权限被拒绝，请在浏览器地址栏左侧（通常是锁形图标）允许网页使用您的麦克风。");
+        } else if (event.error === 'no-speech') {
+          alert("好像没有听到声音哦，请靠近麦克风再试一次！");
+        } else {
+          alert("录音发生了一些小状况，请重试！");
+        }
+      };
+
+      recognition.onend = () => {
+        setIsRecording(false);
+      };
+
+      recognition.onresult = (event) => {
+        const result = event.results[0][0].transcript;
+        const cleanUser = result.trim().toLowerCase().replace(/[^a-z0-9\s]/g, '');
+        const targetWord = questions[currentQIndex].wordObj.word.trim().toLowerCase().replace(/[^a-z0-9\s]/g, '');
+        
+        setRecognizedText(result);
+        
+        // Match conditions: exact match, or user transcription includes the target word, or vice versa
+        const isMatched = cleanUser === targetWord || 
+                          cleanUser.split(' ').includes(targetWord) || 
+                          targetWord.split(' ').includes(cleanUser);
+        
+        if (isMatched) {
+          setSpeechResult('correct');
+          setSelectedAnswer(1); // lock answer input
+          setScore(prev => prev + 1);
+          playQuizSFX(true);
+          if (onRemoveMistake) {
+            onRemoveMistake(questions[currentQIndex].wordObj.word);
+          }
+          
+          setAnsweredList(prev => [...prev, {
+            word: questions[currentQIndex].wordObj.word,
+            translation: questions[currentQIndex].wordObj.translation,
+            userAnswer: `🗣️ 跟读正确 (您读的是: "${result}")`,
+            correctAnswer: questions[currentQIndex].wordObj.word,
+            isCorrect: true
+          }]);
+
+          setTimeout(() => {
+            setSelectedAnswer(null);
+            setSpeechResult('');
+            setRecognizedText('');
+            proceedToNext();
+          }, 2200);
+        } else {
+          setSpeechResult('wrong');
+          setSelectedAnswer(0); // lock answer input
+          onAddMistake(questions[currentQIndex].wordObj);
+          playQuizSFX(false);
+
+          setAnsweredList(prev => [...prev, {
+            word: questions[currentQIndex].wordObj.word,
+            translation: questions[currentQIndex].wordObj.translation,
+            userAnswer: `🗣️ 跟读错误 (您读的是: "${result || '未听清'}")`,
+            correctAnswer: questions[currentQIndex].wordObj.word,
+            isCorrect: false
+          }]);
+
+          setTimeout(() => {
+            setSelectedAnswer(null);
+            setSpeechResult('');
+            setRecognizedText('');
+            proceedToNext();
+          }, 2700);
+        }
+      };
+
+      recognition.start();
+    } catch (e) {
+      console.error("Speech recognition initiation failed:", e);
+      setIsRecording(false);
+    }
+  };
+
   // Handle choice submission
   const handleAnswerClick = (index) => {
     if (selectedAnswer !== null) return; // prevent double clicks
@@ -122,8 +328,13 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     
     if (isCorrect) {
       setScore(prev => prev + 1);
+      playQuizSFX(true);
+      if (onRemoveMistake) {
+        onRemoveMistake(q.wordObj.word);
+      }
     } else {
       onAddMistake(q.wordObj);
+      playQuizSFX(false);
     }
 
     setAnsweredList(prev => [...prev, {
@@ -134,8 +345,10 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       isCorrect
     }]);
 
-    // Play pronunciation on click to reinforce
-    playAudio(q.wordObj.word);
+    // Play pronunciation slightly delayed to reinforce
+    setTimeout(() => {
+      playAudio(q.wordObj.word);
+    }, 350);
 
     // Auto proceed after 1.5 seconds
     setTimeout(() => {
@@ -157,8 +370,13 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     
     if (isCorrect) {
       setScore(prev => prev + 1);
+      playQuizSFX(true);
+      if (onRemoveMistake) {
+        onRemoveMistake(q.wordObj.word);
+      }
     } else {
       onAddMistake(q.wordObj);
+      playQuizSFX(false);
     }
 
     setAnsweredList(prev => [...prev, {
@@ -169,7 +387,10 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       isCorrect
     }]);
 
-    playAudio(q.wordObj.word);
+    // Play pronunciation slightly delayed to reinforce
+    setTimeout(() => {
+      playAudio(q.wordObj.word);
+    }, 350);
 
     setTimeout(() => {
       proceedToNext();
@@ -195,6 +416,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
     setSelectedAnswer(-1);
     const q = questions[currentQIndex];
     onAddMistake(q.wordObj);
+    playQuizSFX(false);
 
     setAnsweredList(prev => [...prev, {
       word: q.wordObj.word,
@@ -204,7 +426,10 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
       isCorrect: false
     }]);
 
-    playAudio(q.wordObj.word);
+    // Play pronunciation slightly delayed to reinforce
+    setTimeout(() => {
+      playAudio(q.wordObj.word);
+    }, 350);
 
     setTimeout(() => {
       proceedToNext();
@@ -220,7 +445,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
 
   // Quiz countdown timer effect
   useEffect(() => {
-    if (!quizStarted || quizFinished || selectedAnswer !== null) return;
+    if (!quizStarted || quizFinished || selectedAnswer !== null || isRecording) return;
 
     const timer = setInterval(() => {
       setTimeLeft(prev => {
@@ -229,12 +454,44 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
           handleTimeout();
           return 0;
         }
-        return prev - 1;
+        const nextTime = prev - 1;
+        if (nextTime <= 3 && nextTime > 0) {
+          playTickSFX();
+        }
+        return nextTime;
       });
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [quizStarted, currentQIndex, selectedAnswer, quizFinished, questions]);
+  }, [quizStarted, quizFinished, selectedAnswer, isRecording]);
+
+  // Award stars and save study record when quiz completes
+  useEffect(() => {
+    if (quizFinished && !starsAwarded && questions.length > 0) {
+      setStarsAwarded(true);
+      let count = 1; // 1 star for completion
+      if (score === questions.length) {
+        count = 3; // 3 stars for perfect score
+      }
+      if (onAwardStars) {
+        onAwardStars(count);
+      }
+
+      if (onAddStudyRecord && !historySaved) {
+        setHistorySaved(true);
+        const record = {
+          date: new Date().toISOString().split('T')[0],
+          unitTitle: activeUnit ? activeUnit.unit : '全量测试',
+          score: Math.round((score / questions.length) * 100),
+          correctCount: score,
+          totalCount: questions.length,
+          mode: quizMode,
+          grade: grade
+        };
+        onAddStudyRecord(record);
+      }
+    }
+  }, [quizFinished, score, questions.length, starsAwarded, onAwardStars, historySaved, onAddStudyRecord, activeUnit, quizMode, grade]);
 
   // Play celebration music using Web Audio API oscillators (Rotating 10 children's nursery rhymes)
   const playCelebrationMusic = () => {
@@ -454,57 +711,67 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
         }
       ];
 
-      // Choose a random song from the list
-      const song = songs[Math.floor(Math.random() * songs.length)];
-      setActiveSongName(song.name);
+      // Choose a random starting song index
+      let currentSongIndex = Math.floor(Math.random() * songs.length);
 
-      const playSegment = (startTime) => {
-        // Schedule melody with warm triangle waves (music box plucks)
-        song.melody.forEach(item => {
-          const osc = ctx.createOscillator();
-          const gain = ctx.createGain();
-          
-          osc.type = 'triangle';
-          osc.frequency.setValueAtTime(item.note, startTime + item.time);
-          
-          gain.gain.setValueAtTime(0.001, startTime + item.time);
-          gain.gain.linearRampToValueAtTime(0.20 * volumeVal, startTime + item.time + 0.01);
-          gain.gain.exponentialRampToValueAtTime(0.001, startTime + item.time + item.dur);
-          
-          osc.connect(gain);
-          gain.connect(ctx.destination);
-          
-          osc.start(startTime + item.time);
-          osc.stop(startTime + item.time + item.dur);
-        });
+      const playNextSong = (startTime) => {
+        const volSaved = localStorage.getItem('oxford_volume');
+        const volumeVal = volSaved !== null ? parseFloat(volSaved) : 1.0;
+        
+        const song = songs[currentSongIndex];
+        setActiveSongName(song.name);
 
-        // Schedule bass with sweet sine waves
-        song.bass.forEach(item => {
-          const osc = ctx.createOscillator();
-          const gain = ctx.createGain();
-          
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(item.note, startTime + item.time);
-          
-          gain.gain.setValueAtTime(0.001, startTime + item.time);
-          gain.gain.linearRampToValueAtTime(0.12 * volumeVal, startTime + item.time + 0.02);
-          gain.gain.exponentialRampToValueAtTime(0.001, startTime + item.time + item.dur);
-          
-          osc.connect(gain);
-          gain.connect(ctx.destination);
-          
-          osc.start(startTime + item.time);
-          osc.stop(startTime + item.time + item.dur);
-        });
+        if (volumeVal > 0) {
+          // Schedule melody with warm triangle waves (music box plucks)
+          song.melody.forEach(item => {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(item.note, startTime + item.time);
+            
+            gain.gain.setValueAtTime(0.001, startTime + item.time);
+            gain.gain.linearRampToValueAtTime(0.20 * volumeVal, startTime + item.time + 0.01);
+            gain.gain.exponentialRampToValueAtTime(0.001, startTime + item.time + item.dur);
+            
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            
+            osc.start(startTime + item.time);
+            osc.stop(startTime + item.time + item.dur);
+          });
+
+          // Schedule bass with sweet sine waves
+          song.bass.forEach(item => {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(item.note, startTime + item.time);
+            
+            gain.gain.setValueAtTime(0.001, startTime + item.time);
+            gain.gain.linearRampToValueAtTime(0.12 * volumeVal, startTime + item.time + 0.02);
+            gain.gain.exponentialRampToValueAtTime(0.001, startTime + item.time + item.dur);
+            
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            
+            osc.start(startTime + item.time);
+            osc.stop(startTime + item.time + item.dur);
+          });
+        }
+
+        const songDurationSec = song.loopInterval / 1000;
+        currentSongIndex = (currentSongIndex + 1) % songs.length;
+
+        // Schedule next song in queue
+        celebrationTimerRef.current = setTimeout(() => {
+          playNextSong(startTime + songDurationSec);
+        }, song.loopInterval);
       };
 
       // Play immediately
-      playSegment(ctx.currentTime);
-
-      // Loop every interval specified by the song
-      celebrationTimerRef.current = setInterval(() => {
-        playSegment(ctx.currentTime);
-      }, song.loopInterval);
+      playNextSong(ctx.currentTime);
 
       // Automatically stop after 3 minutes (180000ms)
       celebrationStopTimerRef.current = setTimeout(() => {
@@ -630,6 +897,17 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
                 style={{ cursor: 'pointer' }}
               />
             </label>
+
+            <label className="option-btn" style={{ cursor: 'pointer', transform: 'none' }}>
+              <span>🗣️ 语音跟读挑战 (大声读词跟评)</span>
+              <input 
+                type="radio" 
+                name="quizMode" 
+                checked={quizMode === 'speech'} 
+                onChange={() => setQuizMode('speech')}
+                style={{ cursor: 'pointer' }}
+              />
+            </label>
           </div>
 
           <div style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
@@ -667,18 +945,50 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
             您一共答对了 <strong>{score}</strong> 题 / 满分 {questions.length} 题
           </p>
 
-          {score === questions.length && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
-              <div style={{ color: 'var(--accent-pink)', fontWeight: 'bold', fontSize: '1.2rem', animation: 'pulse 1.5s infinite' }}>
-                🎉 太棒了！拿到满分！
+          {(() => {
+            const currentGradeMistakesCount = mistakes.filter(m => m.grade === grade).length;
+            const clearedAllMistakes = initialMistakesCount > 0 && currentGradeMistakesCount === 0;
+            return (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'center', width: '100%' }}>
+                {clearedAllMistakes && (
+                  <div style={{ 
+                    background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(236, 72, 153, 0.15))',
+                    border: '2px dashed var(--accent-pink)',
+                    padding: '1.2rem',
+                    borderRadius: '16px',
+                    textAlign: 'center',
+                    margin: '1rem 0',
+                    width: '100%',
+                    boxShadow: '0 8px 24px rgba(236, 72, 153, 0.2)',
+                    animation: 'pulse 2s infinite'
+                  }}>
+                    <div style={{ fontSize: '2rem', marginBottom: '0.25rem' }}>⚔️ 🏆 ⚔️</div>
+                    <div style={{ color: 'var(--accent-pink)', fontWeight: '800', fontSize: '1.3rem' }}>
+                      恭喜获得【消灭错题勇士】勋章！
+                    </div>
+                    <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
+                      你太厉害了，已经清空了本册的所有错题！
+                    </div>
+                  </div>
+                )}
+
+                {score === questions.length && questions.length > 0 && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
+                    {!clearedAllMistakes && (
+                      <div style={{ color: 'var(--accent-pink)', fontWeight: 'bold', fontSize: '1.2rem', animation: 'pulse 1.5s infinite' }}>
+                        🎉 太棒了！拿到满分！
+                      </div>
+                    )}
+                    {activeSongName && (
+                      <div style={{ fontSize: '0.85rem', color: 'var(--accent-cyan)', background: 'rgba(6, 182, 212, 0.1)', padding: '0.25rem 0.75rem', borderRadius: '12px', border: '1px solid rgba(6, 182, 212, 0.2)', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                        <span>🎵 正在播放童谣: {activeSongName}</span>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
-              {activeSongName && (
-                <div style={{ fontSize: '0.85rem', color: 'var(--accent-cyan)', background: 'rgba(6, 182, 212, 0.1)', padding: '0.25rem 0.75rem', borderRadius: '12px', border: '1px solid rgba(6, 182, 212, 0.2)', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
-                  <span>🎵 正在播放童谣: {activeSongName}</span>
-                </div>
-              )}
-            </div>
-          )}
+            );
+          })()}
 
           {/* User Answers details listing */}
           <div style={{ width: '100%', marginTop: '2rem', textAlign: 'left' }}>
@@ -906,10 +1216,36 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
                 </div>
               </>
             )}
+
+            {quizMode === 'speech' && (
+              <>
+                请听发音并大声读出英文单词：
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.25rem', marginTop: '0.5rem' }}>
+                  {selectedAnswer === null ? timerCircle : <div style={{ width: '54px', height: '54px', flexShrink: 0 }}></div>}
+                  <span className="question-word" style={{ color: 'var(--accent-violet)', margin: 0 }}>
+                    {questions[currentQIndex].wordObj.word}
+                  </span>
+                  <div style={{ width: '54px', height: '54px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <button 
+                      onClick={() => playAudio(questions[currentQIndex].wordObj.word)}
+                      className="ctrl-btn" 
+                      style={{ width: '42px', height: '42px', border: '1px solid var(--border-glass)', background: 'rgba(255,255,255,0.05)', color: 'var(--accent-pink)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'var(--transition-smooth)', borderRadius: '50%' }}
+                      title="重播发音"
+                      type="button"
+                    >
+                      <Volume2 size={20} />
+                    </button>
+                  </div>
+                </div>
+                <div style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.5rem', fontWeight: 600 }}>
+                  💡 中文意思: {questions[currentQIndex].wordObj.translation}
+                </div>
+              </>
+            )}
           </div>
 
           {/* Form Option choice lists */}
-          {quizMode !== 'spelling' ? (
+          {quizMode === 'eng-to-chi' || quizMode === 'chi-to-eng' ? (
             <div className="options-list">
               {questions[currentQIndex].options.map((opt, idx) => {
                 let statusClass = '';
@@ -941,7 +1277,7 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
                 );
               })}
             </div>
-          ) : (
+          ) : quizMode === 'spelling' ? (
             /* Spelling form */
             <form onSubmit={handleSpellingSubmit} className="spelling-box">
               <input 
@@ -998,10 +1334,57 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
                 </div>
               )}
             </form>
+          ) : (
+            /* Speech Mode Form */
+            <div className="spelling-box" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', width: '100%' }}>
+              {selectedAnswer === null ? (
+                <button 
+                  type="button" 
+                  onClick={startSpeechRecognition} 
+                  disabled={isRecording}
+                  className="action-btn"
+                  style={{ 
+                    padding: '1rem 2.5rem', 
+                    fontSize: '1.15rem', 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '0.5rem',
+                    background: isRecording ? 'linear-gradient(135deg, #ef4444, #ec4899)' : 'linear-gradient(135deg, var(--accent-violet), var(--accent-pink))',
+                    animation: isRecording ? 'pulse 1s infinite' : 'none',
+                    borderColor: 'transparent',
+                    boxShadow: isRecording ? '0 0 15px rgba(239, 68, 68, 0.4)' : 'none'
+                  }}
+                >
+                  <span>{isRecording ? '🎙️ 正在录音，请大声朗读...' : '🎙️ 点击录音并跟读'}</span>
+                </button>
+              ) : (
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
+                  {speechResult === 'correct' ? (
+                    <div style={{ color: 'var(--accent-green)', fontWeight: 'bold', fontSize: '1.35rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+                      <span>✓ 读得非常标准！</span>
+                    </div>
+                  ) : (
+                    <div style={{ color: '#ef4444', fontWeight: 'bold', fontSize: '1.35rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+                      <span>✗ 没听清，再接再厉！</span>
+                    </div>
+                  )}
+                  {recognizedText && (
+                    <div style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>
+                      您读的是: <span style={{ fontWeight: 'bold', color: speechResult === 'correct' ? 'var(--accent-green)' : '#ef4444', textDecoration: 'underline' }}>"{recognizedText}"</span>
+                    </div>
+                  )}
+                </div>
+              )}
+              {isRecording && (
+                <div style={{ fontSize: '0.9rem', color: 'var(--accent-pink)', animation: 'pulse 1.5s infinite' }}>
+                  💡 读完后系统会自动识别并提交答案，请大声且清晰地朗读。
+                </div>
+              )}
+            </div>
           )}
 
           {/* Quick Voice pronouncer helper */}
-          {(quizMode === 'chi-to-eng' || quizMode === 'spelling') && selectedAnswer !== null && (
+          {(quizMode === 'chi-to-eng' || quizMode === 'spelling' || quizMode === 'speech') && selectedAnswer !== null && (
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
               <button 
                 onClick={() => playAudio(questions[currentQIndex].wordObj.word)}

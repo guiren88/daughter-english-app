@@ -7,6 +7,10 @@ export default function Worksheet({ grade, units, selectedUnit, setSelectedUnit,
   const [sheetType, setSheetType] = useState('matching'); // 'matching', 'cards', 'writing'
   const [shuffledWords, setShuffledWords] = useState([]);
   const [shuffledTranslations, setShuffledTranslations] = useState([]);
+  const [enableTracing, setEnableTracing] = useState(false);
+  const [hideEnglish, setHideEnglish] = useState(false);
+  const [hideChinese, setHideChinese] = useState(false);
+  const [writingStyle, setWritingStyle] = useState('boxes'); // 'boxes', 'lines'
 
   // Regenerate/shuffle sheet items when active unit or sheet type changes
   useEffect(() => {
@@ -32,60 +36,103 @@ export default function Worksheet({ grade, units, selectedUnit, setSelectedUnit,
   return (
     <div className="worksheet-view">
       {/* Worksheet Settings Dashboard Bar */}
-      <div className="worksheet-toolbar no-print">
-        <button 
-          className="ctrl-action-btn"
-          onClick={() => {
-            setActiveView('dashboard');
-            setSelectedUnit(null);
-          }}
-          style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', padding: '0.5rem 1rem', fontSize: '0.9rem', borderRadius: '20px' }}
-        >
-          <ChevronLeft size={16} />
-          <span>返回目录</span>
-        </button>
-
-        <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-          <span style={{ fontWeight: 600 }}>选择单元:</span>
-          <select 
-            className="select-dropdown"
-            value={activeUnit.unit}
-            onChange={(e) => {
-              const found = units.find(u => u.unit === e.target.value);
-              if (found) setSelectedUnit(found);
+      {/* Worksheet Settings Dashboard Bar */}
+      <div className="worksheet-toolbar no-print" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'stretch', padding: '1.25rem', background: 'rgba(0,0,0,0.12)', borderRadius: '12px', border: '1px solid var(--border-glass)', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
+          <button 
+            className="ctrl-action-btn"
+            onClick={() => {
+              setActiveView('dashboard');
+              setSelectedUnit(null);
             }}
+            style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', padding: '0.5rem 1rem', fontSize: '0.9rem', borderRadius: '20px' }}
           >
-            {units.map(u => (
-              <option key={u.unit} value={u.unit}>{u.unit}: {u.title}</option>
-            ))}
-          </select>
+            <ChevronLeft size={16} />
+            <span>返回目录</span>
+          </button>
+
+          <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+            <span style={{ fontWeight: 600 }}>选择单元:</span>
+            <select 
+              className="select-dropdown"
+              value={activeUnit.unit}
+              onChange={(e) => {
+                const found = units.find(u => u.unit === e.target.value);
+                if (found) setSelectedUnit(found);
+              }}
+              style={{ padding: '0.35rem 0.75rem', borderRadius: '8px' }}
+            >
+              {units.map(u => (
+                <option key={u.unit} value={u.unit}>{u.unit}: {u.title}</option>
+              ))}
+            </select>
+          </div>
+
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <button 
+              className={`nav-btn ${sheetType === 'matching' ? 'active' : ''}`}
+              onClick={() => setSheetType('matching')}
+              style={{ padding: '0.4rem 1rem', borderRadius: '8px' }}
+            >
+              连线测试纸
+            </button>
+            <button 
+              className={`nav-btn ${sheetType === 'writing' ? 'active' : ''}`}
+              onClick={() => setSheetType('writing')}
+              style={{ padding: '0.4rem 1rem', borderRadius: '8px' }}
+            >
+              书写默写纸
+            </button>
+            <button 
+              className={`nav-btn ${sheetType === 'cards' ? 'active' : ''}`}
+              onClick={() => setSheetType('cards')}
+              style={{ padding: '0.4rem 1rem', borderRadius: '8px' }}
+            >
+              卡片打印版
+            </button>
+          </div>
+
+          <button className="action-btn" onClick={handlePrint} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', borderRadius: '20px', padding: '0.5rem 1.5rem' }}>
+            <Printer size={18} />
+            <span>立即打印</span>
+          </button>
         </div>
 
-        <div style={{ display: 'flex', gap: '0.5rem' }}>
-          <button 
-            className={`nav-btn ${sheetType === 'matching' ? 'active' : ''}`}
-            onClick={() => setSheetType('matching')}
-          >
-            连线测试纸
-          </button>
-          <button 
-            className={`nav-btn ${sheetType === 'writing' ? 'active' : ''}`}
-            onClick={() => setSheetType('writing')}
-          >
-            描红写字本
-          </button>
-          <button 
-            className={`nav-btn ${sheetType === 'cards' ? 'active' : ''}`}
-            onClick={() => setSheetType('cards')}
-          >
-            卡片打印版
-          </button>
-        </div>
+        {/* Customization toggles row */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '0.75rem', fontSize: '0.9rem' }}>
+          <span style={{ fontWeight: 600, color: 'var(--text-muted)' }}>排版打印选项:</span>
 
-        <button className="action-btn" onClick={handlePrint} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <Printer size={18} />
-          <span>立即打印</span>
-        </button>
+          {sheetType === 'writing' && (
+            <>
+              <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', background: 'rgba(255,255,255,0.03)', padding: '0.25rem 0.75rem', borderRadius: '8px', border: '1px solid var(--border-glass)' }}>
+                <span style={{ color: 'var(--text-muted)' }}>书写格式:</span>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer' }}>
+                  <input type="radio" name="writingStyle" checked={writingStyle === 'boxes'} onChange={() => setWritingStyle('boxes')} style={{ cursor: 'pointer' }} />
+                  <span>拼写方格</span>
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer' }}>
+                  <input type="radio" name="writingStyle" checked={writingStyle === 'lines'} onChange={() => setWritingStyle('lines')} style={{ cursor: 'pointer' }} />
+                  <span>四线三格</span>
+                </label>
+              </div>
+
+              <label style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', cursor: 'pointer' }}>
+                <input type="checkbox" checked={enableTracing} onChange={(e) => setEnableTracing(e.target.checked)} style={{ cursor: 'pointer' }} />
+                <span>启用英文描红 (打印出浅灰字供孩子描摹)</span>
+              </label>
+            </>
+          )}
+
+          <label style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', cursor: 'pointer' }}>
+            <input type="checkbox" checked={hideEnglish} onChange={(e) => setHideEnglish(e.target.checked)} style={{ cursor: 'pointer' }} />
+            <span>隐藏英文单词 (仅打印方格/空行，做听写默写测试)</span>
+          </label>
+
+          <label style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', cursor: 'pointer' }}>
+            <input type="checkbox" checked={hideChinese} onChange={(e) => setHideChinese(e.target.checked)} style={{ cursor: 'pointer' }} />
+            <span>隐藏中文释义</span>
+          </label>
+        </div>
       </div>
 
       {/* Printable Area - Rendered white/black layout */}
@@ -120,7 +167,12 @@ export default function Worksheet({ grade, units, selectedUnit, setSelectedUnit,
                 {shuffledWords.map((item, idx) => (
                   <div key={idx} className="matching-item" style={{ height: '35px' }}>
                     <span className="matching-num">{idx + 1}.</span>
-                    <span style={{ fontWeight: 'bold', fontSize: '1.2rem', fontFamily: 'var(--font-title)' }}>
+                    <span style={{ 
+                      fontWeight: 'bold', 
+                      fontSize: '1.2rem', 
+                      fontFamily: 'var(--font-title)',
+                      visibility: hideEnglish ? 'hidden' : 'visible'
+                    }}>
                       {item.word}
                     </span>
                     <span className="matching-line-blank"></span>
@@ -135,7 +187,10 @@ export default function Worksheet({ grade, units, selectedUnit, setSelectedUnit,
                     <span className="matching-num" style={{ marginRight: '1rem' }}>
                       ({String.fromCharCode(65 + idx)})
                     </span>
-                    <span style={{ fontSize: '1.1rem' }}>{item.translation}</span>
+                    <span style={{ 
+                      fontSize: '1.1rem',
+                      visibility: hideChinese ? 'hidden' : 'visible'
+                    }}>{item.translation}</span>
                   </div>
                 ))}
               </div>
@@ -147,32 +202,61 @@ export default function Worksheet({ grade, units, selectedUnit, setSelectedUnit,
         {sheetType === 'writing' && (
           <div>
             <p style={{ fontWeight: 'bold', marginBottom: '1.5rem', fontSize: '1.05rem' }}>
-              题目：请根据左侧中文意思，在右侧格子中拼写出正确的英文单词。
+              题目：请根据左侧中文意思，在右侧{writingStyle === 'boxes' ? '格子' : '四线三格'}中拼写/摹写出正确的英文单词。
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginTop: '1rem' }}>
               {shuffledWords.map((item, idx) => (
-                <div key={idx} className="spelling-grid-item">
+                <div key={idx} className="spelling-grid-item" style={{ alignItems: 'center' }}>
                   <span style={{ width: '30px', fontWeight: 'bold' }}>{idx + 1}.</span>
-                  <div className="spelling-grid-trans">
+                  <div className="spelling-grid-trans" style={{ visibility: hideChinese ? 'hidden' : 'visible' }}>
                     <strong>{item.translation}</strong>
                   </div>
                   
-                  {/* Empty cells grids according to word length */}
-                  <div className="spelling-cells">
-                    {item.word.split('').map((char, charIdx) => {
-                      const isSpace = char === ' ';
-                      if (isSpace) {
-                        return <span key={charIdx} style={{ width: '15px' }}></span>;
-                      }
-                      return (
-                        <span 
-                          key={charIdx} 
-                          className="spelling-cell" 
-                          style={{ border: '1.5px solid #111827', width: '32px', height: '32px' }}
-                        ></span>
-                      );
-                    })}
-                  </div>
+                  {writingStyle === 'lines' ? (
+                    /* Four-line three-grid English writing lines */
+                    <div className="four-line-container">
+                      <div className="four-line-grid">
+                        {!hideEnglish && (
+                          <span 
+                            className="four-line-text"
+                            style={{ color: enableTracing ? '#cbd5e0' : '#111827' }}
+                          >
+                            {item.word}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  ) : (
+                    /* Empty cells grids according to word length */
+                    <div className="spelling-cells">
+                      {item.word.split('').map((char, charIdx) => {
+                        const isSpace = char === ' ';
+                        if (isSpace) {
+                          return <span key={charIdx} style={{ width: '15px' }}></span>;
+                        }
+                        return (
+                          <span 
+                            key={charIdx} 
+                            className="spelling-cell" 
+                            style={{ 
+                              border: '1.5px solid #111827', 
+                              width: '32px', 
+                              height: '32px',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              fontSize: '1.2rem',
+                              fontFamily: 'var(--font-title)',
+                              fontWeight: 'bold',
+                              color: enableTracing ? '#cbd5e0' : '#111827'
+                            }}
+                          >
+                            {!hideEnglish ? char : ''}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -188,8 +272,8 @@ export default function Worksheet({ grade, units, selectedUnit, setSelectedUnit,
             <div className="print-cards-grid">
               {shuffledWords.map((item, idx) => (
                 <div key={idx} className="print-card-cutout">
-                  <div className="print-card-eng">{item.word}</div>
-                  <div className="print-card-chi">{item.translation}</div>
+                  <div className="print-card-eng" style={{ visibility: hideEnglish ? 'hidden' : 'visible' }}>{item.word}</div>
+                  <div className="print-card-chi" style={{ visibility: hideChinese ? 'hidden' : 'visible' }}>{item.translation}</div>
                   <div style={{ fontSize: '0.65rem', color: '#9ca3af', marginTop: '10px' }}>
                     {grade.toUpperCase()} - {activeUnit.unit}
                   </div>

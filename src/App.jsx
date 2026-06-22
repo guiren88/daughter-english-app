@@ -90,6 +90,14 @@ export default function App() {
   });
   const [showOnlyBookmarks, setShowOnlyBookmarks] = useState(false);
   const [showOnlyMistakes, setShowOnlyMistakes] = useState(false);
+  const [stars, setStars] = useState(() => {
+    try {
+      const saved = localStorage.getItem('oxford_stars');
+      return saved ? parseInt(saved, 10) : 0;
+    } catch (e) {
+      return 0;
+    }
+  });
   const [mistakes, setMistakes] = useState(() => {
     try {
       const saved = localStorage.getItem('oxford_mistakes');
@@ -98,6 +106,32 @@ export default function App() {
       return [];
     }
   });
+  const [studyHistory, setStudyHistory] = useState(() => {
+    try {
+      const saved = localStorage.getItem('oxford_study_history');
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  });
+
+  // Sync studyHistory to localStorage
+  useEffect(() => {
+    localStorage.setItem('oxford_study_history', JSON.stringify(studyHistory));
+  }, [studyHistory]);
+
+  const addStudyRecord = (record) => {
+    setStudyHistory(prev => [...prev, record]);
+  };
+
+  // Sync stars to localStorage
+  useEffect(() => {
+    localStorage.setItem('oxford_stars', stars.toString());
+  }, [stars]);
+
+  const awardStars = (count) => {
+    setStars(prev => prev + count);
+  };
 
   // Sync mistakes to localStorage
   useEffect(() => {
@@ -216,13 +250,15 @@ export default function App() {
   const getThemeBrand = () => {
     switch (theme) {
       case 'cinnamoroll':
-        return { emoji: '☁️', text: '大耳狗女儿的英语课' };
+        return { emoji: '☁️', text: '大耳狗的英语课' };
       case 'melody':
-        return { emoji: '🐰', text: '美乐蒂女儿的英语课' };
+        return { emoji: '🐰', text: '美乐蒂的英语课' };
       case 'purin':
-        return { emoji: '🍮', text: '布丁狗女儿的英语课' };
+        return { emoji: '🍮', text: '布丁狗的英语课' };
+      case 'pikachu':
+        return { emoji: '⚡', text: '皮卡丘的英语课' };
       case 'dark':
-        return { emoji: '🌌', text: '极简女儿的英语课' };
+        return { emoji: '🌌', text: '极简的英语课' };
       case 'kuromi':
       default:
         return { emoji: '😈', text: '女儿的英语课' };
@@ -281,6 +317,24 @@ export default function App() {
     setSelectedUnit(unit);
     setActiveView(view);
   }
+
+  // Handle theme change
+  const handleThemeChange = (newTheme) => {
+    const limits = {
+      kuromi: 0,
+      dark: 0,
+      melody: 5,
+      cinnamoroll: 15,
+      purin: 25,
+      pikachu: 40
+    };
+    const required = limits[newTheme] || 0;
+    if (stars < required) {
+      alert(`🔒 解锁【${newTheme === 'melody' ? '美乐蒂' : newTheme === 'cinnamoroll' ? '大耳狗' : newTheme === 'purin' ? '布丁狗' : '皮卡丘'}主题】需要完成测试获得 ${required} 颗星星 ⭐！\n您当前拥有 ${stars} 颗星星，继续挑战获取更多星星吧！`);
+      return;
+    }
+    setTheme(newTheme);
+  };
 
   return (
     <div className="app-container">
@@ -349,6 +403,26 @@ export default function App() {
             <span>线下练习纸</span>
           </button>
 
+          {/* Stars Count Display */}
+          <div className="stars-badge no-print" style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.35rem', 
+            background: 'linear-gradient(135deg, #fbbf24, #f59e0b)', 
+            color: '#1e1b4b',
+            padding: '0.4rem 0.8rem', 
+            borderRadius: '8px', 
+            fontWeight: '800',
+            fontSize: '0.9rem',
+            boxShadow: '0 0 10px rgba(245, 158, 11, 0.4)',
+            border: '1px solid rgba(255,255,255,0.2)',
+            cursor: 'default',
+            marginRight: '0.25rem'
+          }} title="我的儿童学习星星积分">
+            <span>⭐</span>
+            <span>{stars}</span>
+          </div>
+
           {/* Volume Control Slider */}
           <div className="volume-control no-print" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(0,0,0,0.15)', padding: '0.4rem 0.8rem', borderRadius: '8px', border: '1px solid var(--border-glass)' }}>
             {volume === 0 ? (
@@ -393,7 +467,7 @@ export default function App() {
           {/* Theme Dropdown Selector */}
           <select 
             value={theme} 
-            onChange={(e) => setTheme(e.target.value)}
+            onChange={(e) => handleThemeChange(e.target.value)}
             className="select-dropdown no-print"
             style={{ 
               padding: '0.4rem 0.8rem', 
@@ -406,11 +480,12 @@ export default function App() {
               marginLeft: '0.5rem'
             }}
           >
-            <option value="kuromi" style={{ background: '#15102a', color: '#fff' }}>😈 酷洛米主题</option>
-            <option value="cinnamoroll" style={{ background: '#e0f2fe', color: '#0f172a' }}>☁️ 大耳狗主题</option>
-            <option value="melody" style={{ background: '#fce7f3', color: '#be185d' }}>🐰 美乐蒂主题</option>
-            <option value="purin" style={{ background: '#fef9c3', color: '#854d0e' }}>🍮 布丁狗主题</option>
-            <option value="dark" style={{ background: '#111', color: '#fff' }}>🌌 黑曜石主题</option>
+            <option value="kuromi" style={{ background: '#15102a', color: '#fff' }}>😈 酷洛米主题 (免费)</option>
+            <option value="dark" style={{ background: '#111', color: '#fff' }}>🌌 黑曜石主题 (免费)</option>
+            <option value="melody" style={{ background: '#fce7f3', color: '#be185d' }}>🐰 美乐蒂主题 {stars >= 5 ? '🔓' : '(🔒需5⭐)'}</option>
+            <option value="cinnamoroll" style={{ background: '#e0f2fe', color: '#0f172a' }}>☁️ 大耳狗主题 {stars >= 15 ? '🔓' : '(🔒需15⭐)'}</option>
+            <option value="purin" style={{ background: '#fef9c3', color: '#854d0e' }}>🍮 布丁狗主题 {stars >= 25 ? '🔓' : '(🔒需25⭐)'}</option>
+            <option value="pikachu" style={{ background: '#fef08a', color: '#854d0e' }}>⚡ 皮卡丘主题 {stars >= 40 ? '🔓' : '(🔒需40⭐)'}</option>
           </select>
         </div>
       </nav>
@@ -432,6 +507,7 @@ export default function App() {
               showOnlyMistakes={showOnlyMistakes}
               setShowOnlyMistakes={setShowOnlyMistakes}
               mistakes={mistakes}
+              studyHistory={studyHistory}
             />
           )}
           
@@ -461,6 +537,8 @@ export default function App() {
               mistakes={mistakes}
               onAddMistake={addMistake}
               onRemoveMistake={removeMistake}
+              onAwardStars={awardStars}
+              onAddStudyRecord={addStudyRecord}
             />
           )}
 
