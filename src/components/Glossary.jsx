@@ -18,11 +18,17 @@ export default function Glossary({
   const [searchTerm, setSearchTerm] = useState('');
   const [gradeFilter, setGradeFilter] = useState(currentGrade || 'all'); // 'all', '1a', '1b'
   const [unitFilter, setUnitFilter] = useState('all');
+  const [showAllGrades, setShowAllGrades] = useState(() => {
+    return ['3', '4', '5'].some(num => (currentGrade || '').startsWith(num));
+  });
 
   // Sync gradeFilter with currentGrade when currentGrade changes
   useEffect(() => {
     if (currentGrade) {
       setGradeFilter(currentGrade);
+      if (['3', '4', '5'].some(num => currentGrade.startsWith(num))) {
+        setShowAllGrades(true);
+      }
     }
   }, [currentGrade]);
 
@@ -42,6 +48,10 @@ export default function Glossary({
   
   Object.keys(vocabData).forEach(key => {
     const gradeVal = key.replace('grade_', '');
+    const isHighGrade = ['3', '4', '5'].some(num => gradeVal.startsWith(num));
+    if (isHighGrade && !showAllGrades) {
+      return; // Skip high grades if not toggled
+    }
     if (gradeFilter === 'all' || gradeFilter === gradeVal) {
       vocabData[key].forEach(unit => {
         unit.words.forEach(wordObj => {
@@ -122,11 +132,23 @@ export default function Glossary({
         <select 
           className="select-dropdown"
           value={gradeFilter}
-          onChange={(e) => setGradeFilter(e.target.value)}
+          onChange={(e) => {
+            if (e.target.value === 'show_more') {
+              setShowAllGrades(true);
+            } else {
+              setGradeFilter(e.target.value);
+            }
+          }}
         >
-          <option value="all">全套词库 (1A - 5B)</option>
+          <option value="all">
+            {showAllGrades ? '全套词库 (1A - 5B)' : '全套词库 (1A - 2B)'}
+          </option>
           {Object.keys(vocabData).map(key => {
             const val = key.replace('grade_', '');
+            const isHighGrade = ['3', '4', '5'].some(num => val.startsWith(num));
+            if (isHighGrade && !showAllGrades) {
+              return null;
+            }
             const display = val.toUpperCase();
             return (
               <option key={val} value={val}>
@@ -134,6 +156,11 @@ export default function Glossary({
               </option>
             );
           })}
+          {!showAllGrades && (
+            <option value="show_more" style={{ color: 'var(--accent-pink)', fontWeight: 'bold' }}>
+              ➕ 显示 3、4、5 年级高年级词库...
+            </option>
+          )}
         </select>
 
         {/* 3. Unit Filter Select (Disabled when All Grades selected) */}

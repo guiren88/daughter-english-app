@@ -17,6 +17,9 @@ export default function Dashboard({
   studyHistory
 }) {
   const [unitFilter, setUnitFilter] = useState('all'); // 'all' or 'completed'
+  const [showMoreGrades, setShowMoreGrades] = useState(() => {
+    return ['3', '4', '5'].some(num => grade.startsWith(num));
+  });
 
   // Compute dashboard metrics
   const totalUnits = units.length;
@@ -108,22 +111,63 @@ export default function Dashboard({
 
         <div className="grade-selector-container" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-start' }}>
           {/* 年级选择行 */}
-          <div className="toggle-group" style={{ margin: 0, padding: '2px', background: 'rgba(0,0,0,0.2)' }}>
-            {['1', '2', '3', '4', '5'].map((num) => {
-              const sem = grade.slice(-1); // 'a' or 'b'
-              const targetGrade = num + sem;
-              const isActive = grade.startsWith(num);
-              return (
-                <button
-                  key={num}
-                  className={`toggle-btn ${isActive ? 'active' : ''}`}
-                  onClick={() => setGrade(targetGrade)}
-                  style={{ padding: '0.4rem 1rem', fontSize: '0.85rem' }}
-                >
-                  {num}年级
-                </button>
-              );
-            })}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+            <div className="toggle-group" style={{ margin: 0, padding: '2px', background: 'rgba(0,0,0,0.2)' }}>
+              {['1', '2'].map((num) => {
+                const sem = grade.slice(-1); // 'a' or 'b'
+                const targetGrade = num + sem;
+                const isActive = grade.startsWith(num);
+                return (
+                  <button
+                    key={num}
+                    className={`toggle-btn ${isActive ? 'active' : ''}`}
+                    onClick={() => setGrade(targetGrade)}
+                    style={{ padding: '0.4rem 1rem', fontSize: '0.85rem' }}
+                  >
+                    {num}年级
+                  </button>
+                );
+              })}
+            </div>
+
+            <button
+              className="toggle-btn"
+              onClick={() => setShowMoreGrades(!showMoreGrades)}
+              style={{
+                padding: '0.4rem 1rem',
+                fontSize: '0.85rem',
+                background: showMoreGrades ? 'var(--accent-pink)' : 'rgba(255,255,255,0.05)',
+                color: showMoreGrades ? '#fff' : 'var(--text-secondary)',
+                border: '1px solid var(--border-glass)',
+                borderRadius: 'var(--radius-sm)',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                boxShadow: showMoreGrades ? '0 0 10px rgba(236,72,153,0.3)' : 'none',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              {showMoreGrades ? '收起高年级 ⬆️' : '更多年级... ⬇️'}
+            </button>
+
+            {showMoreGrades && (
+              <div className="toggle-group view-transition" style={{ margin: 0, padding: '2px', background: 'rgba(0,0,0,0.2)', display: 'flex' }}>
+                {['3', '4', '5'].map((num) => {
+                  const sem = grade.slice(-1); // 'a' or 'b'
+                  const targetGrade = num + sem;
+                  const isActive = grade.startsWith(num);
+                  return (
+                    <button
+                      key={num}
+                      className={`toggle-btn ${isActive ? 'active' : ''}`}
+                      onClick={() => setGrade(targetGrade)}
+                      style={{ padding: '0.4rem 1rem', fontSize: '0.85rem' }}
+                    >
+                      {num}年级
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
           {/* 上下册选择行 */}
           <div className="toggle-group" style={{ margin: 0, padding: '2px', background: 'rgba(0,0,0,0.2)', alignSelf: 'flex-end' }}>
