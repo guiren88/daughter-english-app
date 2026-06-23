@@ -310,7 +310,7 @@ export default function App() {
   }
 
   // Get current grade units
-  const currentUnits = grade === '1a' ? vocabData.grade_1a : vocabData.grade_1b;
+  const currentUnits = vocabData[`grade_${grade.toLowerCase()}`] || [];
 
   // Handle unit selection
   const handleSelectUnit = (unit, view = 'flashcards') => {

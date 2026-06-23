@@ -96,29 +96,53 @@ export default function Dashboard({
   return (
     <div>
       {/* Dashboard top section */}
-      <div className="dashboard-header">
+      <div className="dashboard-header" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2.5rem' }}>
         <div>
           <h1 style={{ fontSize: '2.25rem', marginBottom: '0.5rem' }}>
             {grade.toUpperCase()} 英语核心知识点看板
           </h1>
           <p style={{ color: 'var(--text-secondary)' }}>
-            欢迎来到 1A/1B 单元核心词汇与句法训练营
+            欢迎来到小学英语核心词汇与句法训练营
           </p>
         </div>
 
-        <div className="toggle-group">
-          <button 
-            className={`toggle-btn ${grade === '1a' ? 'active' : ''}`}
-            onClick={() => setGrade('1a')}
-          >
-            Grade 1A (上册)
-          </button>
-          <button 
-            className={`toggle-btn ${grade === '1b' ? 'active' : ''}`}
-            onClick={() => setGrade('1b')}
-          >
-            Grade 1B (下册)
-          </button>
+        <div className="grade-selector-container" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-start' }}>
+          {/* 年级选择行 */}
+          <div className="toggle-group" style={{ margin: 0, padding: '2px', background: 'rgba(0,0,0,0.2)' }}>
+            {['1', '2', '3', '4', '5'].map((num) => {
+              const sem = grade.slice(-1); // 'a' or 'b'
+              const targetGrade = num + sem;
+              const isActive = grade.startsWith(num);
+              return (
+                <button
+                  key={num}
+                  className={`toggle-btn ${isActive ? 'active' : ''}`}
+                  onClick={() => setGrade(targetGrade)}
+                  style={{ padding: '0.4rem 1rem', fontSize: '0.85rem' }}
+                >
+                  {num}年级
+                </button>
+              );
+            })}
+          </div>
+          {/* 上下册选择行 */}
+          <div className="toggle-group" style={{ margin: 0, padding: '2px', background: 'rgba(0,0,0,0.2)', alignSelf: 'flex-end' }}>
+            {['a', 'b'].map((sem) => {
+              const num = grade.slice(0, -1); // '1', '2', etc.
+              const targetGrade = num + sem;
+              const isActive = grade.endsWith(sem);
+              return (
+                <button
+                  key={sem}
+                  className={`toggle-btn ${isActive ? 'active' : ''}`}
+                  onClick={() => setGrade(targetGrade)}
+                  style={{ padding: '0.4rem 1rem', fontSize: '0.85rem' }}
+                >
+                  {sem === 'a' ? '上册 (A)' : '下册 (B)'}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
 

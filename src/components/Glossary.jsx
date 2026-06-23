@@ -33,39 +33,28 @@ export default function Glossary({
 
   // Get units list for the Unit dropdown based on selected grade
   const getDropdownUnits = () => {
-    if (gradeFilter === '1a') return vocabData.grade_1a;
-    if (gradeFilter === '1b') return vocabData.grade_1b;
-    return []; // No unit filter if "All Grades" is selected to avoid confusion
+    if (gradeFilter === 'all') return [];
+    return vocabData[`grade_${gradeFilter}`] || [];
   }
 
   // Compile words database based on Grade filter
   let allWords = [];
   
-  if (gradeFilter === 'all' || gradeFilter === '1a') {
-    vocabData.grade_1a.forEach(unit => {
-      unit.words.forEach(wordObj => {
-        allWords.push({
-          ...wordObj,
-          grade: '1a',
-          unitName: unit.unit,
-          unitTitle: unit.title
+  Object.keys(vocabData).forEach(key => {
+    const gradeVal = key.replace('grade_', '');
+    if (gradeFilter === 'all' || gradeFilter === gradeVal) {
+      vocabData[key].forEach(unit => {
+        unit.words.forEach(wordObj => {
+          allWords.push({
+            ...wordObj,
+            grade: gradeVal,
+            unitName: unit.unit,
+            unitTitle: unit.title
+          });
         });
       });
-    });
-  }
-
-  if (gradeFilter === 'all' || gradeFilter === '1b') {
-    vocabData.grade_1b.forEach(unit => {
-      unit.words.forEach(wordObj => {
-        allWords.push({
-          ...wordObj,
-          grade: '1b',
-          unitName: unit.unit,
-          unitTitle: unit.title
-        });
-      });
-    });
-  }
+    }
+  });
 
   // Filter words based on search term, unit, bookmarks, and mistakes
   const filteredWords = allWords.filter(wordObj => {
@@ -97,7 +86,7 @@ export default function Glossary({
     <div className="glass-card">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }} className="no-print">
         <h2 style={{ fontSize: '1.75rem', fontFamily: 'var(--font-title)', marginBottom: 0 }}>
-          🔍 核心词汇索引大纲 (全量 1A + 1B 词库)
+          🔍 核心词汇索引大纲 (全量 1A - 5B 词库)
         </h2>
         <button 
           className="ctrl-action-btn"
@@ -135,9 +124,16 @@ export default function Glossary({
           value={gradeFilter}
           onChange={(e) => setGradeFilter(e.target.value)}
         >
-          <option value="all">全套词库 (1A + 1B)</option>
-          <option value="1a">一年级上册 (1A)</option>
-          <option value="1b">一年级下册 (1B)</option>
+          <option value="all">全套词库 (1A - 5B)</option>
+          {Object.keys(vocabData).map(key => {
+            const val = key.replace('grade_', '');
+            const display = val.toUpperCase();
+            return (
+              <option key={val} value={val}>
+                {display.replace('A', 'A (上册)').replace('B', 'B (下册)')}
+              </option>
+            );
+          })}
         </select>
 
         {/* 3. Unit Filter Select (Disabled when All Grades selected) */}
@@ -238,9 +234,9 @@ export default function Glossary({
                           fontWeight: 'bold',
                           padding: '0.2rem 0.5rem', 
                           borderRadius: '12px',
-                          background: item.grade === '1a' ? 'rgba(236, 72, 153, 0.15)' : 'rgba(192, 132, 252, 0.15)',
-                          color: item.grade === '1a' ? 'var(--accent-pink)' : 'var(--accent-violet)',
-                          border: `1px solid ${item.grade === '1a' ? 'var(--accent-pink)' : 'var(--accent-violet)'}`
+                          background: item.grade.endsWith('a') ? 'rgba(236, 72, 153, 0.15)' : 'rgba(192, 132, 252, 0.15)',
+                          color: item.grade.endsWith('a') ? 'var(--accent-pink)' : 'var(--accent-violet)',
+                          border: `1px solid ${item.grade.endsWith('a') ? 'var(--accent-pink)' : 'var(--accent-violet)'}`
                         }}
                       >
                         {item.grade.toUpperCase()}

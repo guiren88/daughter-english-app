@@ -1750,5 +1750,3957 @@
         "5. 黑体为重点单词和句型, 请家长帮助贴在课本第55页。"
       ]
     }
+  ],
+  "grade_2a": [
+    {
+      "unit": "Unit 1",
+      "title": "Hello",
+      "words": [
+        {
+          "word": "morning",
+          "translation": "早晨，黎明"
+        },
+        {
+          "word": "afternoon",
+          "translation": "午后，下午"
+        },
+        {
+          "word": "evening",
+          "translation": "晚上，傍晚"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this morning.",
+          "chinese": "看这个早晨，黎明。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 2",
+      "title": "I'm Danny",
+      "words": [
+        {
+          "word": "night",
+          "translation": "夜晚，晚上"
+        },
+        {
+          "word": "boy",
+          "translation": "男孩，男人"
+        },
+        {
+          "word": "girl",
+          "translation": "女孩，姑娘"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this night.",
+          "chinese": "看这个夜晚，晚上。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 3",
+      "title": "Things I like to do",
+      "words": [
+        {
+          "word": "big",
+          "translation": "大的，重要的"
+        },
+        {
+          "word": "small",
+          "translation": "小件物品，矮小的人 adj. 少的"
+        },
+        {
+          "word": "seven",
+          "translation": "七个，七 n. 七个"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this big.",
+          "chinese": "看这个大的，重要的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 4",
+      "title": "My family",
+      "words": [
+        {
+          "word": "eight",
+          "translation": "八，八个"
+        },
+        {
+          "word": "nine",
+          "translation": "九，九个 num. 九"
+        },
+        {
+          "word": "ten",
+          "translation": "十个，十"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this eight.",
+          "chinese": "看这个八，八个。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 5",
+      "title": "My classmates",
+      "words": [
+        {
+          "word": "run",
+          "translation": "奔跑，赛跑"
+        },
+        {
+          "word": "write",
+          "translation": "写，写字"
+        },
+        {
+          "word": "swim",
+          "translation": "游泳，漂浮"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this run.",
+          "chinese": "看这个奔跑，赛跑。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 6",
+      "title": "My friends",
+      "words": [
+        {
+          "word": "fly",
+          "translation": "飞行，苍蝇"
+        },
+        {
+          "word": "young",
+          "translation": "年轻人，（动物的）崽"
+        },
+        {
+          "word": "old",
+          "translation": "陈旧的，古老的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this fly.",
+          "chinese": "看这个飞行，苍蝇。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 7",
+      "title": "In the playground",
+      "words": [
+        {
+          "word": "hair",
+          "translation": "头发，毛发"
+        },
+        {
+          "word": "head",
+          "translation": "头，头痛"
+        },
+        {
+          "word": "face",
+          "translation": "脸，表面"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this hair.",
+          "chinese": "看这个头发，毛发。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 8",
+      "title": "In the park",
+      "words": [
+        {
+          "word": "slide",
+          "translation": "滑动，幻灯片"
+        },
+        {
+          "word": "swing",
+          "translation": "摇摆，摆动"
+        },
+        {
+          "word": "seesaw",
+          "translation": "跷跷板，秋千 adj. 交互的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this slide.",
+          "chinese": "看这个滑动，幻灯片。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 9",
+      "title": "In the classroom",
+      "words": [
+        {
+          "word": "bag",
+          "translation": "袋，猎获物"
+        },
+        {
+          "word": "box",
+          "translation": "箱，盒子"
+        },
+        {
+          "word": "desk",
+          "translation": "办公桌，服务台"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this bag.",
+          "chinese": "看这个袋，猎获物。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 10",
+      "title": "Animals in the zoo",
+      "words": [
+        {
+          "word": "chair",
+          "translation": "椅子，讲座"
+        },
+        {
+          "word": "bowl",
+          "translation": "碗，木球"
+        },
+        {
+          "word": "plate",
+          "translation": "碟，金属板"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this chair.",
+          "chinese": "看这个椅子，讲座。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 11",
+      "title": "Weather",
+      "words": [
+        {
+          "word": "spoon",
+          "translation": "匙，勺子"
+        },
+        {
+          "word": "chopsticks",
+          "translation": "筷子"
+        },
+        {
+          "word": "sun",
+          "translation": "太阳 vt. 使晒 vi. 晒太阳"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this spoon.",
+          "chinese": "看这个匙，勺子。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 12",
+      "title": "Plants",
+      "words": [
+        {
+          "word": "moon",
+          "translation": "月亮，月球"
+        },
+        {
+          "word": "star",
+          "translation": "星，恒星"
+        },
+        {
+          "word": "fox",
+          "translation": "狐狸，狡猾的人 vt. 欺骗"
+        },
+        {
+          "word": "hippo",
+          "translation": "河马，吐根"
+        },
+        {
+          "word": "meat",
+          "translation": "肉，肉类（食用）"
+        },
+        {
+          "word": "grass",
+          "translation": "草，草地"
+        },
+        {
+          "word": "flower",
+          "translation": "花，精华"
+        },
+        {
+          "word": "tree",
+          "translation": "树，木料"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this moon.",
+          "chinese": "看这个月亮，月球。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    }
+  ],
+  "grade_2b": [
+    {
+      "unit": "Unit 1",
+      "title": "What can you see?",
+      "words": [
+        {
+          "word": "white",
+          "translation": "白色，洁白"
+        },
+        {
+          "word": "purple",
+          "translation": "紫色，紫袍 adj. 紫色的"
+        },
+        {
+          "word": "pink",
+          "translation": "粉红色，化身"
+        },
+        {
+          "word": "orange",
+          "translation": "橙色的，橘色的 n. 橙"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this white.",
+          "chinese": "看这个白色，洁白。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 2",
+      "title": "Touch and feel",
+      "words": [
+        {
+          "word": "brown",
+          "translation": "褐色，棕色 adj. 棕色的"
+        },
+        {
+          "word": "black",
+          "translation": "黑色，黑人"
+        },
+        {
+          "word": "watch",
+          "translation": "手表，监视"
+        },
+        {
+          "word": "bag",
+          "translation": "袋，猎获物"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this brown.",
+          "chinese": "看这个褐色，棕色 adj. 棕色的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 3",
+      "title": "What can you hear?",
+      "words": [
+        {
+          "word": "soft",
+          "translation": "柔性，柔软的东西"
+        },
+        {
+          "word": "hard",
+          "translation": "努力的，硬的"
+        },
+        {
+          "word": "rough",
+          "translation": "艰苦，高低不平的地面"
+        },
+        {
+          "word": "smooth",
+          "translation": "平滑部分，一块平地 adj. 顺利的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this soft.",
+          "chinese": "看这个柔性，柔软的东西。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 4",
+      "title": "Things I like doing",
+      "words": [
+        {
+          "word": "train",
+          "translation": "火车，行列"
+        },
+        {
+          "word": "bus",
+          "translation": "公共汽车 乘公共汽车"
+        },
+        {
+          "word": "car",
+          "translation": "汽车，车厢"
+        },
+        {
+          "word": "van",
+          "translation": "先锋，厢式货车"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this train.",
+          "chinese": "看这个火车，行列。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 5",
+      "title": "My favourite food",
+      "words": [
+        {
+          "word": "bicycle",
+          "translation": "自行车 vt. 骑自行车运送 vi. 骑脚踏车"
+        },
+        {
+          "word": "ship",
+          "translation": "船，舰"
+        },
+        {
+          "word": "run",
+          "translation": "奔跑，赛跑"
+        },
+        {
+          "word": "skate",
+          "translation": "溜冰，冰鞋 vi. 滑冰"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this bicycle.",
+          "chinese": "看这个自行车 vt. 骑自行车运送 vi. 骑脚踏车。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 6",
+      "title": "Animals I like",
+      "words": [
+        {
+          "word": "hop",
+          "translation": "搭乘 v. 单足跳跃 vi. 双足或齐足跳行 n. 蹦跳，跳跃"
+        },
+        {
+          "word": "skip",
+          "translation": "跳跃，跳读 vt. 跳过"
+        },
+        {
+          "word": "ride a bicycle",
+          "translation": "na. 骑自行车  骑车，骑脚踏车"
+        },
+        {
+          "word": "salad",
+          "translation": "色拉，尤指莴苣"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this hop.",
+          "chinese": "看这个搭乘 v. 单足跳跃 vi. 双足或齐足跳行 n. 蹦跳，跳跃。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 7",
+      "title": "The four seasons",
+      "words": [
+        {
+          "word": "carrot",
+          "translation": "胡萝卜 诱饵"
+        },
+        {
+          "word": "fish",
+          "translation": "鱼，鱼类 vt. 钓鱼"
+        },
+        {
+          "word": "chicken",
+          "translation": "鸡肉，小鸡"
+        },
+        {
+          "word": "banana",
+          "translation": "香蕉，喜剧演员"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this carrot.",
+          "chinese": "看这个胡萝卜 诱饵。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 8",
+      "title": "Rules",
+      "words": [
+        {
+          "word": "giraffe",
+          "translation": "长颈鹿"
+        },
+        {
+          "word": "snake",
+          "translation": "蛇，阴险的人 vt. 拉（木材等）"
+        },
+        {
+          "word": "elephant",
+          "translation": "象，大号图画纸"
+        },
+        {
+          "word": "zebra",
+          "translation": "斑马 adj. 有斑纹的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this giraffe.",
+          "chinese": "看这个长颈鹿。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 9",
+      "title": "My clothes",
+      "words": [
+        {
+          "word": "autumn",
+          "translation": "秋天，成熟期"
+        },
+        {
+          "word": "winter",
+          "translation": "冬季，年岁"
+        },
+        {
+          "word": "cool",
+          "translation": "凉爽，凉爽的空气 adj. 凉爽的"
+        },
+        {
+          "word": "cold",
+          "translation": "寒冷，感冒 adj. 寒冷的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this autumn.",
+          "chinese": "看这个秋天，成熟期。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 10",
+      "title": "Playtime",
+      "words": [
+        {
+          "word": "stop",
+          "translation": "停止，车站"
+        },
+        {
+          "word": "go",
+          "translation": "去，进行"
+        },
+        {
+          "word": "wait",
+          "translation": "等待，等候 vi. 等待"
+        },
+        {
+          "word": "light",
+          "translation": "光，光线"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this stop.",
+          "chinese": "看这个停止，车站。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 11",
+      "title": "New Year's Day",
+      "words": [
+        {
+          "word": "trousers",
+          "translation": "裤子，长裤"
+        },
+        {
+          "word": "sweater",
+          "translation": "毛线衣，运动衫"
+        },
+        {
+          "word": "shirt",
+          "translation": "衬衫，汗衫"
+        },
+        {
+          "word": "coat",
+          "translation": "外套 vt. 覆盖…的表面"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this trousers.",
+          "chinese": "看这个裤子，长裤。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 12",
+      "title": "Stories",
+      "words": [
+        {
+          "word": "play football",
+          "translation": "na. 踢足球，对难办的事采取踢皮球的态度  玩足球"
+        },
+        {
+          "word": "play basketball",
+          "translation": "打篮球，玩篮球"
+        },
+        {
+          "word": "play ping-pong",
+          "translation": ""
+        },
+        {
+          "word": "play cards",
+          "translation": "na. 打纸牌  打牌，打扑克"
+        },
+        {
+          "word": "letter",
+          "translation": "信，字母"
+        },
+        {
+          "word": "balloon",
+          "translation": "气球 adj. 像气球般鼓起的 vt. 使像气球般鼓起，使激增 vi. 激增"
+        },
+        {
+          "word": "carnation",
+          "translation": "康乃馨，肉色"
+        },
+        {
+          "word": "hungry",
+          "translation": "饥饿的，渴望的"
+        },
+        {
+          "word": "thirsty",
+          "translation": "口渴的，口干的"
+        },
+        {
+          "word": "bread",
+          "translation": "面包，生计 vt. 在…上洒面包屑"
+        },
+        {
+          "word": "milk",
+          "translation": "牛奶，乳状物 vt. 榨取"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this play football.",
+          "chinese": "看这个na. 踢足球，对难办的事采取踢皮球的态度  玩足球。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    }
+  ],
+  "grade_3a": [
+    {
+      "unit": "Unit 1",
+      "title": "Hello",
+      "words": [
+        {
+          "word": "Miss",
+          "translation": ""
+        },
+        {
+          "word": "Mr",
+          "translation": "abbr. 先生（Mister）"
+        },
+        {
+          "word": "Mrs",
+          "translation": "太太，夫人（用于已婚妇女姓名前的尊称）"
+        },
+        {
+          "word": "stand up",
+          "translation": "na. 站起来，持久"
+        },
+        {
+          "word": "sit down",
+          "translation": "na. 坐下，住定"
+        },
+        {
+          "word": "open",
+          "translation": "公开的，敞开的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this Miss.",
+          "chinese": "看这个。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 2",
+      "title": "How are you?",
+      "words": [
+        {
+          "word": "close",
+          "translation": "结束 adj. 紧密的，亲密的"
+        },
+        {
+          "word": "door",
+          "translation": "门，家"
+        },
+        {
+          "word": "name",
+          "translation": "名称，名字"
+        },
+        {
+          "word": "book",
+          "translation": "书籍，卷"
+        },
+        {
+          "word": "write",
+          "translation": "写，写字"
+        },
+        {
+          "word": "one",
+          "translation": "一个人，任何人 adj. 一的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this close.",
+          "chinese": "看这个结束 adj. 紧密的，亲密的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 3",
+      "title": "Are you a boy?",
+      "words": [
+        {
+          "word": "two",
+          "translation": "二 n. 两个 adj. 两个的"
+        },
+        {
+          "word": "three",
+          "translation": "三 n. 三，三个 adj. 三的"
+        },
+        {
+          "word": "four",
+          "translation": "四，四个 adj. 四的"
+        },
+        {
+          "word": "five",
+          "translation": "五，五个 n. 五"
+        },
+        {
+          "word": "six",
+          "translation": "六，六个 n. 六"
+        },
+        {
+          "word": "seven",
+          "translation": "七个，七 n. 七个"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this two.",
+          "chinese": "看这个二 n. 两个 adj. 两个的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 4",
+      "title": "My friend",
+      "words": [
+        {
+          "word": "eight",
+          "translation": "八，八个"
+        },
+        {
+          "word": "nine",
+          "translation": "九，九个 num. 九"
+        },
+        {
+          "word": "ten",
+          "translation": "十个，十"
+        },
+        {
+          "word": "today",
+          "translation": "今天，现今 adv. 今天"
+        },
+        {
+          "word": "fat",
+          "translation": "脂肪，肥肉 adj. 肥的"
+        },
+        {
+          "word": "thin",
+          "translation": "细小部分 adj. 薄的，瘦的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this eight.",
+          "chinese": "看这个八，八个。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 5",
+      "title": "My family",
+      "words": [
+        {
+          "word": "tall",
+          "translation": "高的，长的"
+        },
+        {
+          "word": "short",
+          "translation": "短，缺乏"
+        },
+        {
+          "word": "boy",
+          "translation": "男孩，男人"
+        },
+        {
+          "word": "girl",
+          "translation": "女孩，姑娘"
+        },
+        {
+          "word": "friend",
+          "translation": "朋友，助手"
+        },
+        {
+          "word": "grandfather",
+          "translation": "祖父，始祖 vt. 不受新规定限制"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this tall.",
+          "chinese": "看这个高的，长的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 6",
+      "title": "My body",
+      "words": [
+        {
+          "word": "grandmother",
+          "translation": "祖母，女祖先 vt. 当…的祖母 vi. 当祖母"
+        },
+        {
+          "word": "father",
+          "translation": "父亲，爸爸"
+        },
+        {
+          "word": "mother",
+          "translation": "母亲，大娘"
+        },
+        {
+          "word": "brother",
+          "translation": "兄弟，同事"
+        },
+        {
+          "word": "sister",
+          "translation": "姐妹，（称志同道合者）姐妹"
+        },
+        {
+          "word": "me",
+          "translation": "我（宾格） n. 自我，极端自私的人"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this grandmother.",
+          "chinese": "看这个祖母，女祖先 vt. 当…的祖母 vi. 当祖母。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 7",
+      "title": "In the classroom",
+      "words": [
+        {
+          "word": "eye",
+          "translation": "眼睛，视力"
+        },
+        {
+          "word": "nose",
+          "translation": "鼻子，嗅觉"
+        },
+        {
+          "word": "hair",
+          "translation": "头发，毛发"
+        },
+        {
+          "word": "ear",
+          "translation": "耳朵，穗"
+        },
+        {
+          "word": "mouth",
+          "translation": "口，嘴"
+        },
+        {
+          "word": "small",
+          "translation": "小件物品，矮小的人 adj. 少的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this eye.",
+          "chinese": "看这个眼睛，视力。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 8",
+      "title": "Fruit",
+      "words": [
+        {
+          "word": "long",
+          "translation": "长时间，长音节"
+        },
+        {
+          "word": "big",
+          "translation": "大的，重要的"
+        },
+        {
+          "word": "school",
+          "translation": "学校，学院"
+        },
+        {
+          "word": "library",
+          "translation": "图书馆，藏书室"
+        },
+        {
+          "word": "toilet",
+          "translation": "厕所，盥洗室"
+        },
+        {
+          "word": "hall",
+          "translation": "过道，门厅"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this long.",
+          "chinese": "看这个长时间，长音节。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 9",
+      "title": "In my room",
+      "words": [
+        {
+          "word": "playground",
+          "translation": "运动场，操场"
+        },
+        {
+          "word": "classroom",
+          "translation": "教室"
+        },
+        {
+          "word": "apple",
+          "translation": "苹果，苹果树"
+        },
+        {
+          "word": "orange",
+          "translation": "橙色的，橘色的 n. 橙"
+        },
+        {
+          "word": "banana",
+          "translation": "香蕉，喜剧演员"
+        },
+        {
+          "word": "peach",
+          "translation": "桃子，桃树"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this playground.",
+          "chinese": "看这个运动场，操场。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 10",
+      "title": "Numbers",
+      "words": [
+        {
+          "word": "boat",
+          "translation": "小船，轮船 vi. 划船"
+        },
+        {
+          "word": "balloon",
+          "translation": "气球 adj. 像气球般鼓起的 vt. 使像气球般鼓起，使激增 vi. 激增"
+        },
+        {
+          "word": "flower",
+          "translation": "花，精华"
+        },
+        {
+          "word": "kite",
+          "translation": "风筝 vi. 使用空头支票，像风筝一样飞"
+        },
+        {
+          "word": "red",
+          "translation": "红色，红颜料"
+        },
+        {
+          "word": "orange",
+          "translation": "橙色的，橘色的 n. 橙"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this boat.",
+          "chinese": "看这个小船，轮船 vi. 划船。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 11",
+      "title": "Animals",
+      "words": [
+        {
+          "word": "yellow",
+          "translation": "黄色，黄种人"
+        },
+        {
+          "word": "ladybird",
+          "translation": "瓢虫"
+        },
+        {
+          "word": "bee",
+          "translation": "蜜蜂，蜂"
+        },
+        {
+          "word": "butterfly",
+          "translation": "蝴蝶，蝶泳"
+        },
+        {
+          "word": "ant",
+          "translation": "蚂蚁"
+        },
+        {
+          "word": "fly",
+          "translation": "飞行，苍蝇"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this yellow.",
+          "chinese": "看这个黄色，黄种人。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 12",
+      "title": "Four seasons",
+      "words": [
+        {
+          "word": "black",
+          "translation": "黑色，黑人"
+        },
+        {
+          "word": "chick",
+          "translation": "小鸡，小鸟"
+        },
+        {
+          "word": "hen",
+          "translation": "母鸡，女人"
+        },
+        {
+          "word": "duck",
+          "translation": "鸭子，鸭肉"
+        },
+        {
+          "word": "pig",
+          "translation": "猪，猪肉 vi. 生小猪"
+        },
+        {
+          "word": "dog",
+          "translation": "狗，丑女人"
+        },
+        {
+          "word": "cat",
+          "translation": "猫，猫科动物"
+        },
+        {
+          "word": "leaf",
+          "translation": "叶子，（书籍等的）一张"
+        },
+        {
+          "word": "leaves",
+          "translation": "树叶，花瓣（leaf的复数） v. 离开（leave的第三人称单数）"
+        },
+        {
+          "word": "branch",
+          "translation": "树枝，分枝"
+        },
+        {
+          "word": "trunk",
+          "translation": "树干，躯干"
+        },
+        {
+          "word": "root",
+          "translation": "根，根源"
+        },
+        {
+          "word": "plant",
+          "translation": "工厂，车间"
+        },
+        {
+          "word": "green",
+          "translation": "绿色，青春 adj. 绿色的"
+        },
+        {
+          "word": "pink",
+          "translation": "粉红色，化身"
+        },
+        {
+          "word": "beautiful",
+          "translation": "美丽的 出色地 出色的 迷人的 迷人地"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this black.",
+          "chinese": "看这个黑色，黑人。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    }
+  ],
+  "grade_3b": [
+    {
+      "unit": "Unit 1",
+      "title": "Colors",
+      "words": [
+        {
+          "word": "aeroplane",
+          "translation": "飞机（等于airplane）"
+        },
+        {
+          "word": "bus",
+          "translation": "公共汽车 乘公共汽车"
+        },
+        {
+          "word": "ship",
+          "translation": "船，舰"
+        },
+        {
+          "word": "car",
+          "translation": "汽车，车厢"
+        },
+        {
+          "word": "pineapple",
+          "translation": "菠萝，凤梨 adj. 凤梨科的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this aeroplane.",
+          "chinese": "看这个飞机（等于airplane）。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 2",
+      "title": "Taste",
+      "words": [
+        {
+          "word": "cake",
+          "translation": "蛋糕，块状物"
+        },
+        {
+          "word": "bread",
+          "translation": "面包，生计 vt. 在…上洒面包屑"
+        },
+        {
+          "word": "glass",
+          "translation": "玻璃，玻璃制品"
+        },
+        {
+          "word": "bag",
+          "translation": "袋，猎获物"
+        },
+        {
+          "word": "sweet",
+          "translation": "糖果，乐趣"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this cake.",
+          "chinese": "看这个蛋糕，块状物。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 3",
+      "title": "Sounds",
+      "words": [
+        {
+          "word": "sweet",
+          "translation": "糖果，乐趣"
+        },
+        {
+          "word": "lemon",
+          "translation": "柠檬色的 n. 柠檬"
+        },
+        {
+          "word": "sour",
+          "translation": "酸味，苦事 adj. 酸的"
+        },
+        {
+          "word": "salt",
+          "translation": "盐，风趣"
+        },
+        {
+          "word": "salty",
+          "translation": "咸的，含盐的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this sweet.",
+          "chinese": "看这个糖果，乐趣。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 4",
+      "title": "Animals",
+      "words": [
+        {
+          "word": "coffee",
+          "translation": "咖啡，咖啡豆"
+        },
+        {
+          "word": "bitter",
+          "translation": "苦味，苦啤酒 adj. 苦的"
+        },
+        {
+          "word": "tiger",
+          "translation": "老虎，凶暴的人"
+        },
+        {
+          "word": "lion",
+          "translation": "狮子，名人"
+        },
+        {
+          "word": "panda",
+          "translation": "熊猫，猫熊"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this coffee.",
+          "chinese": "看这个咖啡，咖啡豆。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 5",
+      "title": "Toys",
+      "words": [
+        {
+          "word": "monkey",
+          "translation": "猴子，顽童 vi. 胡闹"
+        },
+        {
+          "word": "clever",
+          "translation": "聪明的，机灵的"
+        },
+        {
+          "word": "strong",
+          "translation": "坚强的，强壮的"
+        },
+        {
+          "word": "toy train",
+          "translation": "玩具火车，小火车"
+        },
+        {
+          "word": "doll",
+          "translation": "洋娃娃，玩偶"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this monkey.",
+          "chinese": "看这个猴子，顽童 vi. 胡闹。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 6",
+      "title": "Food and drinks",
+      "words": [
+        {
+          "word": "skateboard",
+          "translation": "溜冰板 vi. 用滑板滑行"
+        },
+        {
+          "word": "robot",
+          "translation": "机器人，遥控设备"
+        },
+        {
+          "word": "lovely",
+          "translation": "可爱的，令人愉快的"
+        },
+        {
+          "word": "hat",
+          "translation": "帽子 vt. 给……戴上帽子 vi. 供应帽子，制造帽子"
+        },
+        {
+          "word": "scarf",
+          "translation": "围巾，嵌接"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this skateboard.",
+          "chinese": "看这个溜冰板 vi. 用滑板滑行。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 7",
+      "title": "Activities",
+      "words": [
+        {
+          "word": "jacket",
+          "translation": "羽绒滑雪衫，西装短外套"
+        },
+        {
+          "word": "a pair of gloves",
+          "translation": "na. 一副手套  一双手套，表达一双手套时用"
+        },
+        {
+          "word": "a pair of socks",
+          "translation": ""
+        },
+        {
+          "word": "a pair of shoes",
+          "translation": "na. 一双鞋，一双鞋子  不是一只鞋子"
+        },
+        {
+          "word": "funny",
+          "translation": "滑稽人物，笑话"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this jacket.",
+          "chinese": "看这个羽绒滑雪衫，西装短外套。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 8",
+      "title": "Birthday",
+      "words": [
+        {
+          "word": "his",
+          "translation": "他的"
+        },
+        {
+          "word": "circle",
+          "translation": "循环，周期"
+        },
+        {
+          "word": "square",
+          "translation": "平方，广场"
+        },
+        {
+          "word": "triangle",
+          "translation": "三角（形），三角关系"
+        },
+        {
+          "word": "star",
+          "translation": "星，恒星"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this his.",
+          "chinese": "看这个他的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 9",
+      "title": "On the farm",
+      "words": [
+        {
+          "word": "rectangle",
+          "translation": "矩形，长方形"
+        },
+        {
+          "word": "house",
+          "translation": "住宅，家庭"
+        },
+        {
+          "word": "sky",
+          "translation": "天空，顶点 vt. 把…投向空中"
+        },
+        {
+          "word": "sea",
+          "translation": "海，海洋"
+        },
+        {
+          "word": "mountain",
+          "translation": "山，山脉"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this rectangle.",
+          "chinese": "看这个矩形，长方形。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 10",
+      "title": "My body",
+      "words": [
+        {
+          "word": "river",
+          "translation": "河，江"
+        },
+        {
+          "word": "plant a tree",
+          "translation": ""
+        },
+        {
+          "word": "have a picnic",
+          "translation": "举行野餐，去野餐"
+        },
+        {
+          "word": "ice-skate",
+          "translation": "溜冰，滑冰"
+        },
+        {
+          "word": "ski",
+          "translation": "滑雪橇 vi. 滑雪 adj. 滑雪（用）的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this river.",
+          "chinese": "看这个河，江。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 11",
+      "title": "Tea time",
+      "words": [
+        {
+          "word": "body",
+          "translation": "身体，主体"
+        },
+        {
+          "word": "head",
+          "translation": "头，头痛"
+        },
+        {
+          "word": "shoulder",
+          "translation": "肩，肩膀"
+        },
+        {
+          "word": "arm",
+          "translation": "手臂，武器"
+        },
+        {
+          "word": "finger",
+          "translation": "手指，指针"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this body.",
+          "chinese": "看这个身体，主体。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 12",
+      "title": "Monsters",
+      "words": [
+        {
+          "word": "hand",
+          "translation": "手，手艺"
+        },
+        {
+          "word": "knee",
+          "translation": "膝盖，膝 vt. 用膝盖碰"
+        },
+        {
+          "word": "leg",
+          "translation": "腿，支柱"
+        },
+        {
+          "word": "foot",
+          "translation": "脚，英尺"
+        },
+        {
+          "word": "feet",
+          "translation": "脚（foot的复数形式），尺"
+        },
+        {
+          "word": "park",
+          "translation": "公园，停车场 vt. 停放"
+        },
+        {
+          "word": "cinema",
+          "translation": "电影，电影院"
+        },
+        {
+          "word": "zoo",
+          "translation": "动物园，<美俚>（铁路货车的最后一节）守车"
+        },
+        {
+          "word": "our",
+          "translation": "我们的"
+        },
+        {
+          "word": "class",
+          "translation": "阶级，班级"
+        },
+        {
+          "word": "party",
+          "translation": "政党，党派"
+        },
+        {
+          "word": "take a photograph",
+          "translation": "un. 摄影  照相，拍…的照片"
+        },
+        {
+          "word": "parent",
+          "translation": "父亲（或母亲），父母亲"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this hand.",
+          "chinese": "看这个手，手艺。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    }
+  ],
+  "grade_4a": [
+    {
+      "unit": "Unit 1",
+      "title": "Meeting new people",
+      "words": [
+        {
+          "word": "eleven",
+          "translation": "十一，十一个 n. 十一"
+        },
+        {
+          "word": "twelve",
+          "translation": "十二，十二个 n. 十二"
+        },
+        {
+          "word": "thirteen",
+          "translation": "十三，十三岁"
+        },
+        {
+          "word": "fourteen",
+          "translation": "十四，十四个"
+        },
+        {
+          "word": "fifteen",
+          "translation": "十五，十五个"
+        },
+        {
+          "word": "sixteen",
+          "translation": "十六 adj. 十六的，十六个的"
+        },
+        {
+          "word": "classmate",
+          "translation": "同班同学"
+        },
+        {
+          "word": "paint",
+          "translation": "油漆，绘画"
+        },
+        {
+          "word": "draw",
+          "translation": "平局，抽签 vi. 拉"
+        },
+        {
+          "word": "read",
+          "translation": "阅读，读物 adj. 有学问的 vi. 读"
+        },
+        {
+          "word": "write",
+          "translation": "写，写字"
+        },
+        {
+          "word": "swim",
+          "translation": "游泳，漂浮"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this eleven.",
+          "chinese": "看这个十一，十一个 n. 十一。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 2",
+      "title": "How old are you?",
+      "words": [
+        {
+          "word": "jump",
+          "translation": "跳跃，暴涨"
+        },
+        {
+          "word": "fast",
+          "translation": "斋戒，绝食 adj. 快速的"
+        },
+        {
+          "word": "picture",
+          "translation": "照片，图画"
+        },
+        {
+          "word": "very",
+          "translation": "非常，很"
+        },
+        {
+          "word": "well",
+          "translation": "井，源泉 adj. 良好的"
+        },
+        {
+          "word": "fly",
+          "translation": "飞行，苍蝇"
+        },
+        {
+          "word": "high",
+          "translation": "高水平，天空"
+        },
+        {
+          "word": "happy",
+          "translation": "幸福的，高兴的"
+        },
+        {
+          "word": "hungry",
+          "translation": "饥饿的，渴望的"
+        },
+        {
+          "word": "thirsty",
+          "translation": "口渴的，口干的"
+        },
+        {
+          "word": "sad",
+          "translation": "难过的，悲哀的"
+        },
+        {
+          "word": "full",
+          "translation": "全部，完整 adj. 完全的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this jump.",
+          "chinese": "看这个跳跃，暴涨。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 3",
+      "title": "What do you do?",
+      "words": [
+        {
+          "word": "tired",
+          "translation": "疲倦，对…腻烦（tire的过去分词形式） adj. 疲倦的"
+        },
+        {
+          "word": "new",
+          "translation": "新的，新鲜的"
+        },
+        {
+          "word": "back",
+          "translation": "后面，背部"
+        },
+        {
+          "word": "biscuit",
+          "translation": "小点心，饼干"
+        },
+        {
+          "word": "then",
+          "translation": "然后，当时 n. 那时 adv. 然后"
+        },
+        {
+          "word": "uncle",
+          "translation": "叔叔，伯父"
+        },
+        {
+          "word": "aunt",
+          "translation": "阿姨，姑妈"
+        },
+        {
+          "word": "cousin",
+          "translation": "堂兄弟姊妹，表兄弟姊妹"
+        },
+        {
+          "word": "police",
+          "translation": "警察，警方"
+        },
+        {
+          "word": "officer",
+          "translation": "军官，警官"
+        },
+        {
+          "word": "doctor",
+          "translation": "修理，篡改"
+        },
+        {
+          "word": "nurse",
+          "translation": "看护，护理"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this tired.",
+          "chinese": "看这个疲倦，对…腻烦（tire的过去分词形式） adj. 疲倦的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 4",
+      "title": "A new classmate",
+      "words": [
+        {
+          "word": "teacher",
+          "translation": "教师，导师"
+        },
+        {
+          "word": "student",
+          "translation": "学生，学者"
+        },
+        {
+          "word": "firefighter",
+          "translation": "消防队员"
+        },
+        {
+          "word": "cook",
+          "translation": "厨师，厨子 vt. 烹调"
+        },
+        {
+          "word": "bus driver",
+          "translation": "na. (公共汽车)驾驶员，轰炸机驾驶员  公车司机"
+        },
+        {
+          "word": "coat",
+          "translation": "外套 vt. 覆盖…的表面"
+        },
+        {
+          "word": "shirt",
+          "translation": "衬衫，汗衫"
+        },
+        {
+          "word": "blouse",
+          "translation": "宽松的上衣，女装衬衫 vt. 使…宽松下垂 vi. 宽松下垂"
+        },
+        {
+          "word": "T-shirt",
+          "translation": "短袖圆领汗衫"
+        },
+        {
+          "word": "skirt",
+          "translation": "裙子 vt. 绕过，回避"
+        },
+        {
+          "word": "sweater",
+          "translation": "毛线衣，运动衫"
+        },
+        {
+          "word": "jeans",
+          "translation": "牛仔裤，工装裤"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this teacher.",
+          "chinese": "看这个教师，导师。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 5",
+      "title": "My friends",
+      "words": [
+        {
+          "word": "shorts",
+          "translation": "短裤"
+        },
+        {
+          "word": "pink",
+          "translation": "粉红色，化身"
+        },
+        {
+          "word": "friend",
+          "translation": "朋友，助手"
+        },
+        {
+          "word": "canteen",
+          "translation": "食堂，小卖部"
+        },
+        {
+          "word": "computer lab",
+          "translation": "微机室，电脑教室"
+        },
+        {
+          "word": "office",
+          "translation": "办公室，政府机关"
+        },
+        {
+          "word": "gym",
+          "translation": "健身房，体育"
+        },
+        {
+          "word": "behind",
+          "translation": "落后于，支持"
+        },
+        {
+          "word": "in front of",
+          "translation": "na. 在…的前面  在……前面，在……的前面"
+        },
+        {
+          "word": "building",
+          "translation": "建筑，建筑物 v. 建筑"
+        },
+        {
+          "word": "lesson",
+          "translation": "教训，课 vt. 教训"
+        },
+        {
+          "word": "lunch",
+          "translation": "午餐 vt. 吃午餐，供给午餐 vi. 吃午餐"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this shorts.",
+          "chinese": "看这个短裤。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 6",
+      "title": "In the school",
+      "words": [
+        {
+          "word": "supermarket",
+          "translation": "超级市场，自助售货商店"
+        },
+        {
+          "word": "post office",
+          "translation": "邮局，邮政部门"
+        },
+        {
+          "word": "restaurant",
+          "translation": "餐馆，饭店"
+        },
+        {
+          "word": "next to",
+          "translation": "紧邻，在…近旁"
+        },
+        {
+          "word": "between",
+          "translation": "在…之间 adv. 在中间"
+        },
+        {
+          "word": "street",
+          "translation": "街道 adj. 街道的"
+        },
+        {
+          "word": "shop",
+          "translation": "商店，店铺 vt. 购物 vi. 购物"
+        },
+        {
+          "word": "near",
+          "translation": "近的，亲近的"
+        },
+        {
+          "word": "city",
+          "translation": "城市，都市 adj. 城市的"
+        },
+        {
+          "word": "many",
+          "translation": "许多，许多人 adj. 许多的"
+        },
+        {
+          "word": "some",
+          "translation": "一些，某个"
+        },
+        {
+          "word": "a packet of sweets",
+          "translation": ""
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this supermarket.",
+          "chinese": "看这个超级市场，自助售货商店。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 7",
+      "title": "At home",
+      "words": [
+        {
+          "word": "a loaf of bread",
+          "translation": "一条面包，一个面包"
+        },
+        {
+          "word": "a bowl of noodles",
+          "translation": ""
+        },
+        {
+          "word": "a bar of chocolate",
+          "translation": "na. 一块巧克力  一条巧克力，一块巧克力糖"
+        },
+        {
+          "word": "a packet of biscuits",
+          "translation": ""
+        },
+        {
+          "word": "a bottle of water",
+          "translation": "一瓶水，一杯水"
+        },
+        {
+          "word": "hay",
+          "translation": "干草 vt. 把晒干 vi. 割草晒干"
+        },
+        {
+          "word": "grass",
+          "translation": "草，草地"
+        },
+        {
+          "word": "corn",
+          "translation": "（美）玉米，（英）谷物"
+        },
+        {
+          "word": "meat",
+          "translation": "肉，肉类（食用）"
+        },
+        {
+          "word": "Don't litter.",
+          "translation": ""
+        },
+        {
+          "word": "Don't walk on the grass.",
+          "translation": ""
+        },
+        {
+          "word": "Don't pick flowers.",
+          "translation": ""
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this a loaf of bread.",
+          "chinese": "看这个一条面包，一个面包。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 8",
+      "title": "A new flat",
+      "words": [
+        {
+          "word": "Don't throw stones.",
+          "translation": ""
+        },
+        {
+          "word": "farm",
+          "translation": "农场，农家"
+        },
+        {
+          "word": "rubbish",
+          "translation": "垃圾，废物"
+        },
+        {
+          "word": "visit",
+          "translation": "访问，参观"
+        },
+        {
+          "word": "bin",
+          "translation": "箱子，容器"
+        },
+        {
+          "word": "sketchbook",
+          "translation": "小品集，写生簿"
+        },
+        {
+          "word": "cap",
+          "translation": "盖，帽子 vt. 覆盖"
+        },
+        {
+          "word": "camera",
+          "translation": "照相机，摄影机"
+        },
+        {
+          "word": "aviary",
+          "translation": "鸟类饲养场，大型鸟舍"
+        },
+        {
+          "word": "fountain",
+          "translation": "喷泉，泉水"
+        },
+        {
+          "word": "pond",
+          "translation": "池塘 vt. 筑成池塘 vi. 筑成池塘"
+        },
+        {
+          "word": "far away",
+          "translation": "远方的，老早老早以前的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this Don't throw stones..",
+          "chinese": "看这个。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 9",
+      "title": "At the shop",
+      "words": [
+        {
+          "word": "road",
+          "translation": "公路，马路"
+        },
+        {
+          "word": "take",
+          "translation": "拿，获得 vt. 拿"
+        },
+        {
+          "word": "sunny",
+          "translation": "阳光充足的，和煦的"
+        },
+        {
+          "word": "rainy",
+          "translation": "下雨的，多雨的"
+        },
+        {
+          "word": "cloudy",
+          "translation": "多云的，阴天的"
+        },
+        {
+          "word": "windy",
+          "translation": "多风的，有风的"
+        },
+        {
+          "word": "warm",
+          "translation": "取暖，加热 adj. 温暖的"
+        },
+        {
+          "word": "hot",
+          "translation": "热的，辣的"
+        },
+        {
+          "word": "wet",
+          "translation": "雨天，湿气 adj.  潮湿的"
+        },
+        {
+          "word": "dry",
+          "translation": "干涸 adj. 干的，口渴的"
+        },
+        {
+          "word": "January",
+          "translation": "一月"
+        },
+        {
+          "word": "February",
+          "translation": "二月"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this road.",
+          "chinese": "看这个公路，马路。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 10",
+      "title": "Around the city",
+      "words": [
+        {
+          "word": "March",
+          "translation": ""
+        },
+        {
+          "word": "April",
+          "translation": "四月"
+        },
+        {
+          "word": "May",
+          "translation": ""
+        },
+        {
+          "word": "June",
+          "translation": "六月，琼（人名"
+        },
+        {
+          "word": "July",
+          "translation": "七月"
+        },
+        {
+          "word": "August",
+          "translation": ""
+        },
+        {
+          "word": "September",
+          "translation": "九月"
+        },
+        {
+          "word": "October",
+          "translation": "十月"
+        },
+        {
+          "word": "November",
+          "translation": "十一月"
+        },
+        {
+          "word": "December",
+          "translation": "十二月"
+        },
+        {
+          "word": "China",
+          "translation": "中国 n. china，瓷器 adj. 中国的"
+        },
+        {
+          "word": "Australia",
+          "translation": "澳大利亚，澳洲"
+        },
+        {
+          "word": "always",
+          "translation": "永远，一直"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this March.",
+          "chinese": "看这个。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    }
+  ],
+  "grade_4b": [
+    {
+      "unit": "Unit 1",
+      "title": "My classroom",
+      "words": [
+        {
+          "word": "watermelon",
+          "translation": "西瓜"
+        },
+        {
+          "word": "grape",
+          "translation": "葡萄，葡萄酒"
+        },
+        {
+          "word": "plum",
+          "translation": "李子，梅子"
+        },
+        {
+          "word": "cherry",
+          "translation": "樱桃，樱桃树"
+        },
+        {
+          "word": "strawberry",
+          "translation": "草莓，草莓色"
+        },
+        {
+          "word": "a glass of",
+          "translation": "det. 一杯  一玻璃杯，表示一杯用"
+        },
+        {
+          "word": "juice",
+          "translation": "（水果）汁，液"
+        },
+        {
+          "word": "hard",
+          "translation": "努力的，硬的"
+        },
+        {
+          "word": "soft",
+          "translation": "柔性，柔软的东西"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this watermelon.",
+          "chinese": "看这个西瓜。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 2",
+      "title": "Our school",
+      "words": [
+        {
+          "word": "rough",
+          "translation": "艰苦，高低不平的地面"
+        },
+        {
+          "word": "smooth",
+          "translation": "平滑部分，一块平地 adj. 顺利的"
+        },
+        {
+          "word": "sharp",
+          "translation": "尖头，骗子"
+        },
+        {
+          "word": "blunt",
+          "translation": "钝的，不锋利的"
+        },
+        {
+          "word": "thick",
+          "translation": "最拥挤部分，活动最多部分"
+        },
+        {
+          "word": "thin",
+          "translation": "细小部分 adj. 薄的，瘦的"
+        },
+        {
+          "word": "knife",
+          "translation": "刀，匕首 vt. 用刀切"
+        },
+        {
+          "word": "pencil",
+          "translation": "铅笔，笔状物 vt. 用铅笔写"
+        },
+        {
+          "word": "pencil case",
+          "translation": "铅笔盒，铅笔袋  文具盒"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this rough.",
+          "chinese": "看这个艰苦，高低不平的地面。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 3",
+      "title": "Music",
+      "words": [
+        {
+          "word": "hill",
+          "translation": "小山，丘陵"
+        },
+        {
+          "word": "lawn",
+          "translation": "草地，草坪"
+        },
+        {
+          "word": "path",
+          "translation": "道路，小路"
+        },
+        {
+          "word": "bench",
+          "translation": "长凳，工作台"
+        },
+        {
+          "word": "shadow",
+          "translation": "阴影，影子"
+        },
+        {
+          "word": "sun",
+          "translation": "太阳 vt. 使晒 vi. 晒太阳"
+        },
+        {
+          "word": "the sun",
+          "translation": "阳，东曦"
+        },
+        {
+          "word": "rise",
+          "translation": "上升，高地"
+        },
+        {
+          "word": "high",
+          "translation": "高水平，天空"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this hill.",
+          "chinese": "看这个小山，丘陵。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 4",
+      "title": "Hobbies",
+      "words": [
+        {
+          "word": "at noon",
+          "translation": "na. 在中午  在正午，正午时"
+        },
+        {
+          "word": "go down",
+          "translation": "na. 下去，(飞机)坠落"
+        },
+        {
+          "word": "play football",
+          "translation": "na. 踢足球，对难办的事采取踢皮球的态度  玩足球"
+        },
+        {
+          "word": "play table tennis",
+          "translation": "打乒乓球，打桌球"
+        },
+        {
+          "word": "play volleyball",
+          "translation": "打排球，玩排球"
+        },
+        {
+          "word": "play badminton",
+          "translation": "打羽毛球，打羽球"
+        },
+        {
+          "word": "play basketball",
+          "translation": "打篮球，玩篮球"
+        },
+        {
+          "word": "sport",
+          "translation": "运动，游戏"
+        },
+        {
+          "word": "poster",
+          "translation": "海报，广告"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this at noon.",
+          "chinese": "看这个na. 在中午  在正午，正午时。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 5",
+      "title": "Sport",
+      "words": [
+        {
+          "word": "join",
+          "translation": "参加，结合"
+        },
+        {
+          "word": "club",
+          "translation": "俱乐部，社团"
+        },
+        {
+          "word": "bone",
+          "translation": "骨，骨骼 vt. 剔去...的骨"
+        },
+        {
+          "word": "cat food",
+          "translation": "猫的食物 猫粮"
+        },
+        {
+          "word": "dog food",
+          "translation": "狗粮，狗食"
+        },
+        {
+          "word": "fish",
+          "translation": "鱼，鱼类 vt. 钓鱼"
+        },
+        {
+          "word": "parrot",
+          "translation": "鹦鹉，学舌者"
+        },
+        {
+          "word": "tortoise",
+          "translation": "龟，乌龟（等于testudo）"
+        },
+        {
+          "word": "cute",
+          "translation": "可爱的，漂亮的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this join.",
+          "chinese": "看这个参加，结合。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 6",
+      "title": "Jobs",
+      "words": [
+        {
+          "word": "bedroom",
+          "translation": "卧室 adj. 两性关系的，城郊住宅区的"
+        },
+        {
+          "word": "living room",
+          "translation": "客厅，起居室  客厅系列"
+        },
+        {
+          "word": "bathroom",
+          "translation": "浴室，厕所"
+        },
+        {
+          "word": "kitchen",
+          "translation": "厨房，炊具"
+        },
+        {
+          "word": "homework",
+          "translation": "家庭作业，课外作业"
+        },
+        {
+          "word": "model plane",
+          "translation": "模型飞机，飞机模型"
+        },
+        {
+          "word": "wash",
+          "translation": "洗涤，洗的衣服"
+        },
+        {
+          "word": "dinner",
+          "translation": "晚餐，晚宴"
+        },
+        {
+          "word": "quiet",
+          "translation": "安静，和平 adj. 安静的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this bedroom.",
+          "chinese": "看这个卧室 adj. 两性关系的，城郊住宅区的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 7",
+      "title": "My day",
+      "words": [
+        {
+          "word": "loud",
+          "translation": "大声的，高声的"
+        },
+        {
+          "word": "bell",
+          "translation": "铃，钟"
+        },
+        {
+          "word": "television",
+          "translation": "电视，电视机"
+        },
+        {
+          "word": "TV",
+          "translation": "abbr. 电视（television）"
+        },
+        {
+          "word": "sound",
+          "translation": "声音，语音"
+        },
+        {
+          "word": "noisy",
+          "translation": ".嘈杂的，喧闹的"
+        },
+        {
+          "word": "ring",
+          "translation": "戒指，铃声"
+        },
+        {
+          "word": "watch TV",
+          "translation": ""
+        },
+        {
+          "word": "seven o'clock",
+          "translation": "七点钟，七点"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this loud.",
+          "chinese": "看这个大声的，高声的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 8",
+      "title": "Days of the week",
+      "words": [
+        {
+          "word": "a quarter past seven",
+          "translation": ""
+        },
+        {
+          "word": "half past seven",
+          "translation": ""
+        },
+        {
+          "word": "a quarter to eight",
+          "translation": ""
+        },
+        {
+          "word": "get up",
+          "translation": "na. 起床，起身"
+        },
+        {
+          "word": "brush my teeth",
+          "translation": "刷牙，刷我的牙"
+        },
+        {
+          "word": "wash my face",
+          "translation": ""
+        },
+        {
+          "word": "have breakfast",
+          "translation": "吃早饭，吃早餐"
+        },
+        {
+          "word": "always",
+          "translation": "永远，一直"
+        },
+        {
+          "word": "usually",
+          "translation": "通常，经常"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this a quarter past seven.",
+          "chinese": "看这个。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 9",
+      "title": "Daily life",
+      "words": [
+        {
+          "word": "often",
+          "translation": "常常，时常"
+        },
+        {
+          "word": "sometimes",
+          "translation": "有时，间或"
+        },
+        {
+          "word": "never",
+          "translation": "从未，决不"
+        },
+        {
+          "word": "Monday",
+          "translation": "星期一"
+        },
+        {
+          "word": "Tuesday",
+          "translation": "星期二"
+        },
+        {
+          "word": "Wednesday",
+          "translation": "星期三"
+        },
+        {
+          "word": "Thursday",
+          "translation": "星期四"
+        },
+        {
+          "word": "Friday",
+          "translation": "星期五"
+        },
+        {
+          "word": "Saturday",
+          "translation": "星期六"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this often.",
+          "chinese": "看这个常常，时常。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 10",
+      "title": "Water",
+      "words": [
+        {
+          "word": "Sunday",
+          "translation": "星期日，礼拜日"
+        },
+        {
+          "word": "Chinese chess",
+          "translation": "象棋  中国象棋，棋路-中国象棋"
+        },
+        {
+          "word": "at weekends",
+          "translation": "在周末，每逢周末"
+        },
+        {
+          "word": "piano",
+          "translation": "钢琴"
+        },
+        {
+          "word": "violin",
+          "translation": "小提琴，小提琴手"
+        },
+        {
+          "word": "triangle",
+          "translation": "三角（形），三角关系"
+        },
+        {
+          "word": "drum",
+          "translation": "鼓，鼓声 vi. 击鼓"
+        },
+        {
+          "word": "music",
+          "translation": "音乐，乐曲"
+        },
+        {
+          "word": "the Spring Festival",
+          "translation": ""
+        },
+        {
+          "word": "the Dragon Boat Festival",
+          "translation": ""
+        },
+        {
+          "word": "the Mid-autumn Festival",
+          "translation": ""
+        },
+        {
+          "word": "the Double Ninth Festival",
+          "translation": ""
+        },
+        {
+          "word": "festival",
+          "translation": "节日，庆祝"
+        },
+        {
+          "word": "rice dumpling",
+          "translation": "粽子，汤圆"
+        },
+        {
+          "word": "duckling",
+          "translation": "小鸭子"
+        },
+        {
+          "word": "swan",
+          "translation": "天鹅，天鹅星座 vi. 游荡"
+        },
+        {
+          "word": "nest",
+          "translation": "巢，窝"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this Sunday.",
+          "chinese": "看这个星期日，礼拜日。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    }
+  ],
+  "grade_5a": [
+    {
+      "unit": "Unit 1",
+      "title": "My birthday",
+      "words": [
+        {
+          "word": "first",
+          "translation": "第一 n. 第一，开始"
+        },
+        {
+          "word": "second",
+          "translation": "第二 n. 秒，第二名"
+        },
+        {
+          "word": "third",
+          "translation": "第三，三分之一 adj. 第三的"
+        },
+        {
+          "word": "fourth",
+          "translation": "第四 n. 第四，月的第四日"
+        },
+        {
+          "word": "fifth",
+          "translation": "第五 n. 第五，五分之一 adj. 第五的"
+        },
+        {
+          "word": "sixth",
+          "translation": "月的第六日，（与the连用的）第六个"
+        },
+        {
+          "word": "party",
+          "translation": "政党，党派"
+        },
+        {
+          "word": "begin",
+          "translation": "开始，首先 vt. 开始"
+        },
+        {
+          "word": "bring",
+          "translation": "带来，促使"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this first.",
+          "chinese": "看这个第一 n. 第一，开始。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 2",
+      "title": "Friends",
+      "words": [
+        {
+          "word": "wear",
+          "translation": "衣物，磨损"
+        },
+        {
+          "word": "favourite",
+          "translation": "特别喜爱的人（或物） adj. 特别受喜爱的"
+        },
+        {
+          "word": "taxi",
+          "translation": "出租汽车 vt. 使滑行，用出租车送 vi. 乘出租车"
+        },
+        {
+          "word": "underground",
+          "translation": "地下，地铁"
+        },
+        {
+          "word": "zebra",
+          "translation": "斑马 adj. 有斑纹的"
+        },
+        {
+          "word": "crossing",
+          "translation": "十字路口，杂交"
+        },
+        {
+          "word": "traffic",
+          "translation": "交通，运输"
+        },
+        {
+          "word": "light",
+          "translation": "光，光线"
+        },
+        {
+          "word": "lights",
+          "translation": "灯光（light的复数），（供食用的）家畜的肺脏 v. 点亮（light的三单形式）"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this wear.",
+          "chinese": "看这个衣物，磨损。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 3",
+      "title": "My future",
+      "words": [
+        {
+          "word": "pavement",
+          "translation": "人行道 路面"
+        },
+        {
+          "word": "live",
+          "translation": "活的，生动的"
+        },
+        {
+          "word": "leave",
+          "translation": "离开，留下"
+        },
+        {
+          "word": "by",
+          "translation": "通过，被"
+        },
+        {
+          "word": "on foot",
+          "translation": "na. 步行，在进行中"
+        },
+        {
+          "word": "arrive",
+          "translation": "到达，成功"
+        },
+        {
+          "word": "arrive at",
+          "translation": "到达，得出  抵达"
+        },
+        {
+          "word": "cross",
+          "translation": "交叉，十字"
+        },
+        {
+          "word": "worker",
+          "translation": "工人，劳动者"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this pavement.",
+          "chinese": "看这个人行道 路面。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 4",
+      "title": "Grandfather's toy shop",
+      "words": [
+        {
+          "word": "pilot",
+          "translation": "飞行员，领航员 adj. 试点的 v. 驾驶"
+        },
+        {
+          "word": "farmer",
+          "translation": "农夫，农民"
+        },
+        {
+          "word": "shop",
+          "translation": "商店，店铺 vt. 购物 vi. 购物"
+        },
+        {
+          "word": "assistant",
+          "translation": "助手，助理"
+        },
+        {
+          "word": "fly",
+          "translation": "飞行，苍蝇"
+        },
+        {
+          "word": "help",
+          "translation": "帮助，补救办法"
+        },
+        {
+          "word": "sick",
+          "translation": "厌恶的，病态的"
+        },
+        {
+          "word": "write an e-mail",
+          "translation": ""
+        },
+        {
+          "word": "go shopping",
+          "translation": "na. 去买东西  去购物，逛街"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this pilot.",
+          "chinese": "看这个飞行员，领航员 adj. 试点的 v. 驾驶。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 5",
+      "title": "Visiting Guangzhou",
+      "words": [
+        {
+          "word": "play chess",
+          "translation": "na. 下象棋  下棋，下国际象棋"
+        },
+        {
+          "word": "once",
+          "translation": "一次，曾经 conj. 一旦 n. 一次"
+        },
+        {
+          "word": "twice",
+          "translation": "两次，两倍"
+        },
+        {
+          "word": "talk",
+          "translation": "谈话，演讲"
+        },
+        {
+          "word": "Internet",
+          "translation": ""
+        },
+        {
+          "word": "the Internet",
+          "translation": ""
+        },
+        {
+          "word": "same",
+          "translation": "相同的，同一的"
+        },
+        {
+          "word": "different",
+          "translation": "不同的，个别的"
+        },
+        {
+          "word": "both",
+          "translation": "既…且… adj. 两个的，两者的 pron. 双方都"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this play chess.",
+          "chinese": "看这个na. 下象棋  下棋，下国际象棋。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 6",
+      "title": "Family life",
+      "words": [
+        {
+          "word": "all",
+          "translation": "全部 adj. 全部的 adv. 全然地，越发 pron. 全部"
+        },
+        {
+          "word": "class",
+          "translation": "阶级，班级"
+        },
+        {
+          "word": "each other",
+          "translation": "彼此  互相，相互"
+        },
+        {
+          "word": "together",
+          "translation": "新潮的，情绪稳定的"
+        },
+        {
+          "word": "north",
+          "translation": ""
+        },
+        {
+          "word": "south",
+          "translation": "南方，南边"
+        },
+        {
+          "word": "west",
+          "translation": "西，西方"
+        },
+        {
+          "word": "east",
+          "translation": "东方，东风"
+        },
+        {
+          "word": "study",
+          "translation": "学习，研究"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this all.",
+          "chinese": "看这个全部 adj. 全部的 adv. 全然地，越发 pron. 全部。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 7",
+      "title": "A fire engine",
+      "words": [
+        {
+          "word": "a lot of",
+          "translation": "det. 许多  大量，很多"
+        },
+        {
+          "word": "hotel",
+          "translation": "旅馆，饭店"
+        },
+        {
+          "word": "bank",
+          "translation": "银行，岸"
+        },
+        {
+          "word": "hospital",
+          "translation": "医院"
+        },
+        {
+          "word": "bakery",
+          "translation": "面包店"
+        },
+        {
+          "word": "museum",
+          "translation": "博物馆"
+        },
+        {
+          "word": "cinema",
+          "translation": "电影，电影院"
+        },
+        {
+          "word": "along",
+          "translation": "沿着，顺着 adv. 一起"
+        },
+        {
+          "word": "turn",
+          "translation": "转弯，变化"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this a lot of.",
+          "chinese": "看这个det. 许多  大量，很多。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 8",
+      "title": "At the helper's shop",
+      "words": [
+        {
+          "word": "button",
+          "translation": "按钮，纽扣 vt. 扣住"
+        },
+        {
+          "word": "zip",
+          "translation": "拉链，精力"
+        },
+        {
+          "word": "pocket",
+          "translation": "口袋，钱"
+        },
+        {
+          "word": "need",
+          "translation": "需要，要求"
+        },
+        {
+          "word": "put on",
+          "translation": "na. 假话  穿上，上演"
+        },
+        {
+          "word": "try on",
+          "translation": "na. 试穿，搞恶作剧(以试探能否被容忍)"
+        },
+        {
+          "word": "fever",
+          "translation": "发烧，发热"
+        },
+        {
+          "word": "toothache",
+          "translation": "牙痛"
+        },
+        {
+          "word": "cough",
+          "translation": "咳嗽，咳嗽声"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this button.",
+          "chinese": "看这个按钮，纽扣 vt. 扣住。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 9",
+      "title": "The fire",
+      "words": [
+        {
+          "word": "cold",
+          "translation": "寒冷，感冒 adj. 寒冷的"
+        },
+        {
+          "word": "well",
+          "translation": "井，源泉 adj. 良好的"
+        },
+        {
+          "word": "medicine",
+          "translation": "药，医学"
+        },
+        {
+          "word": "first",
+          "translation": "第一 n. 第一，开始"
+        },
+        {
+          "word": "next",
+          "translation": "然后，下次"
+        },
+        {
+          "word": "then",
+          "translation": "然后，当时 n. 那时 adv. 然后"
+        },
+        {
+          "word": "finally",
+          "translation": "最后，终于"
+        },
+        {
+          "word": "tea",
+          "translation": "茶叶，茶树"
+        },
+        {
+          "word": "boil",
+          "translation": "沸腾，煮沸"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this cold.",
+          "chinese": "看这个寒冷，感冒 adj. 寒冷的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 10",
+      "title": "Wind",
+      "words": [
+        {
+          "word": "pour",
+          "translation": "倾泻，流出"
+        },
+        {
+          "word": "drink",
+          "translation": "酒，饮料"
+        },
+        {
+          "word": "gently",
+          "translation": "轻轻地，温柔地"
+        },
+        {
+          "word": "strongly",
+          "translation": "强有力地，坚强地"
+        },
+        {
+          "word": "slowly",
+          "translation": "缓慢地，慢慢地"
+        },
+        {
+          "word": "quickly",
+          "translation": "迅速地，很快地"
+        },
+        {
+          "word": "blow",
+          "translation": "吹，打击"
+        },
+        {
+          "word": "happily",
+          "translation": "快乐地，幸福地"
+        },
+        {
+          "word": "smoke",
+          "translation": "烟，抽烟"
+        },
+        {
+          "word": "start",
+          "translation": "开始，起点 vt. 开始"
+        },
+        {
+          "word": "campfire",
+          "translation": "营火，营火会"
+        },
+        {
+          "word": "match",
+          "translation": "使比赛，使相配"
+        },
+        {
+          "word": "careful",
+          "translation": "仔细的，小心的"
+        },
+        {
+          "word": "safety",
+          "translation": "安全，保险"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this pour.",
+          "chinese": "看这个倾泻，流出。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    }
+  ],
+  "grade_5b": [
+    {
+      "unit": "Unit 1",
+      "title": "What should I do?",
+      "words": [
+        {
+          "word": "school bag",
+          "translation": "na. 书包  求购书包，学生包"
+        },
+        {
+          "word": "brush",
+          "translation": "刷子，画笔"
+        },
+        {
+          "word": "paints",
+          "translation": "绘画颜料，绘画作品（paint的复数形式） v. 绘画（paint的第三人称单数形式）"
+        },
+        {
+          "word": "crayon",
+          "translation": "蜡笔，有色粉笔 vt. 以蜡笔作画"
+        },
+        {
+          "word": "notebook",
+          "translation": "笔记本，笔记簿"
+        },
+        {
+          "word": "glue",
+          "translation": "胶，各种胶合物 vt. 粘合"
+        },
+        {
+          "word": "tape",
+          "translation": "胶带，磁带"
+        },
+        {
+          "word": "put",
+          "translation": "掷，笨蛋"
+        },
+        {
+          "word": "egg",
+          "translation": "蛋，卵子"
+        },
+        {
+          "word": "cocoon",
+          "translation": "茧，卵囊 vt. 把……紧紧包住"
+        },
+        {
+          "word": "caterpillar",
+          "translation": "有履带装置的 n.  毛虫，履带车"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this school bag.",
+          "chinese": "看这个na. 书包  求购书包，学生包。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 2",
+      "title": "Watching grow",
+      "words": [
+        {
+          "word": "chicken",
+          "translation": "鸡肉，小鸡"
+        },
+        {
+          "word": "duckling",
+          "translation": "小鸭子"
+        },
+        {
+          "word": "puppy",
+          "translation": "小狗，幼犬"
+        },
+        {
+          "word": "grow",
+          "translation": "发展，生长"
+        },
+        {
+          "word": "fly",
+          "translation": "飞行，苍蝇"
+        },
+        {
+          "word": "was",
+          "translation": "be的第一和第三人称单数过去式"
+        },
+        {
+          "word": "were",
+          "translation": "是，在（are的过去式）"
+        },
+        {
+          "word": "drill",
+          "translation": "训练，钻孔机"
+        },
+        {
+          "word": "lorry",
+          "translation": "（英）卡车，货车"
+        },
+        {
+          "word": "motorbike",
+          "translation": "摩托车"
+        },
+        {
+          "word": "outside",
+          "translation": "外面的，外部的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this chicken.",
+          "chinese": "看这个鸡肉，小鸡。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 3",
+      "title": "Food and drinks",
+      "words": [
+        {
+          "word": "sleep",
+          "translation": "睡眠 vi. 睡，睡觉"
+        },
+        {
+          "word": "another",
+          "translation": "另一个，另一个人 adj. 又一"
+        },
+        {
+          "word": "noise",
+          "translation": "噪音，响声"
+        },
+        {
+          "word": "heard",
+          "translation": "听到（hear的过去式和过去分词），闻知"
+        },
+        {
+          "word": "sat",
+          "translation": "abbr. （美国）学业能力倾向测验（Scholastic Aptitude Test，是高中生升入大学必须通过的测验）"
+        },
+        {
+          "word": "meat",
+          "translation": "肉，肉类（食用）"
+        },
+        {
+          "word": "pork",
+          "translation": "猪肉 vt. 与女子性交"
+        },
+        {
+          "word": "beef",
+          "translation": "牛肉，肌肉"
+        },
+        {
+          "word": "chicken",
+          "translation": "鸡肉，小鸡"
+        },
+        {
+          "word": "fish",
+          "translation": "鱼，鱼类 vt. 钓鱼"
+        },
+        {
+          "word": "fruit",
+          "translation": "水果，产物 vt. 使……结果实 vi. 结果实"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this sleep.",
+          "chinese": "看这个睡眠 vi. 睡，睡觉。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 4",
+      "title": "My favourite things",
+      "words": [
+        {
+          "word": "vegetable",
+          "translation": "蔬菜，植物"
+        },
+        {
+          "word": "tomato",
+          "translation": "番茄，西红柿"
+        },
+        {
+          "word": "potato",
+          "translation": "土豆，马铃薯"
+        },
+        {
+          "word": "carrot",
+          "translation": "胡萝卜 诱饵"
+        },
+        {
+          "word": "cabbage",
+          "translation": "卷心菜，甘蓝菜"
+        },
+        {
+          "word": "bean",
+          "translation": "豆，嘴峰"
+        },
+        {
+          "word": "rice",
+          "translation": "稻，米饭 vt. 把…捣成米糊状"
+        },
+        {
+          "word": "drink",
+          "translation": "酒，饮料"
+        },
+        {
+          "word": "milk",
+          "translation": "牛奶，乳状物 vt. 榨取"
+        },
+        {
+          "word": "had",
+          "translation": "有，吃"
+        },
+        {
+          "word": "eat",
+          "translation": "吃，喝"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this vegetable.",
+          "chinese": "看这个蔬菜，植物。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 5",
+      "title": "Movies",
+      "words": [
+        {
+          "word": "healthy",
+          "translation": "健康的，健全的"
+        },
+        {
+          "word": "did",
+          "translation": "做（do的过去式）"
+        },
+        {
+          "word": "keep ... away",
+          "translation": ""
+        },
+        {
+          "word": "ticket",
+          "translation": "加标签于，指派"
+        },
+        {
+          "word": "ticket",
+          "translation": "加标签于，指派"
+        },
+        {
+          "word": "office",
+          "translation": "办公室，政府机关"
+        },
+        {
+          "word": "exit",
+          "translation": "出口，通道"
+        },
+        {
+          "word": "entrance",
+          "translation": "入口，进入 vt. 使出神"
+        },
+        {
+          "word": "seat",
+          "translation": "座位，所在地"
+        },
+        {
+          "word": "film",
+          "translation": "电影，薄膜"
+        },
+        {
+          "word": "funny",
+          "translation": "滑稽人物，笑话"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this healthy.",
+          "chinese": "看这个健康的，健全的。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 6",
+      "title": "School subjects",
+      "words": [
+        {
+          "word": "princess",
+          "translation": "公主，王妃"
+        },
+        {
+          "word": "see a film",
+          "translation": "看电影，去看电影"
+        },
+        {
+          "word": "Chinese",
+          "translation": "中文，汉语"
+        },
+        {
+          "word": "English",
+          "translation": "英语，英国人"
+        },
+        {
+          "word": "Maths",
+          "translation": ""
+        },
+        {
+          "word": "Art",
+          "translation": ""
+        },
+        {
+          "word": "Music",
+          "translation": ""
+        },
+        {
+          "word": "IT",
+          "translation": ""
+        },
+        {
+          "word": "PE",
+          "translation": "abbr. 体育课，体能训练（physical education）"
+        },
+        {
+          "word": "class",
+          "translation": "阶级，班级"
+        },
+        {
+          "word": "subject",
+          "translation": "主题，科目"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this princess.",
+          "chinese": "看这个公主，王妃。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 7",
+      "title": "Holidays",
+      "words": [
+        {
+          "word": "telephone",
+          "translation": "（美）电话，电话机"
+        },
+        {
+          "word": "smoking",
+          "translation": "抽烟，冒气 v. 吸烟"
+        },
+        {
+          "word": "swimming",
+          "translation": "游泳，目眩 adj. 游泳的"
+        },
+        {
+          "word": "walk",
+          "translation": "步行，走"
+        },
+        {
+          "word": "sign",
+          "translation": "迹象，符号"
+        },
+        {
+          "word": "cloud",
+          "translation": "云，阴云"
+        },
+        {
+          "word": "rain",
+          "translation": "雨，下雨"
+        },
+        {
+          "word": "snow",
+          "translation": "雪，积雪"
+        },
+        {
+          "word": "snowy",
+          "translation": "下雪的，多雪的"
+        },
+        {
+          "word": "storm",
+          "translation": "暴风雨，大动荡 vt. 猛攻"
+        },
+        {
+          "word": "stormy",
+          "translation": "暴风雨的，猛烈的"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this telephone.",
+          "chinese": "看这个（美）电话，电话机。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 8",
+      "title": "Travel",
+      "words": [
+        {
+          "word": "fog",
+          "translation": "雾，烟雾"
+        },
+        {
+          "word": "foggy",
+          "translation": "有雾的，模糊的"
+        },
+        {
+          "word": "yesterday",
+          "translation": "昨天，往昔 adv. 昨天"
+        },
+        {
+          "word": "degree",
+          "translation": "程度，等级"
+        },
+        {
+          "word": "weather",
+          "translation": "天气，气象"
+        },
+        {
+          "word": "make",
+          "translation": "使得，进行"
+        },
+        {
+          "word": "bookshelf",
+          "translation": "书架"
+        },
+        {
+          "word": "mirror",
+          "translation": "镜子，真实的写照"
+        },
+        {
+          "word": "cushion",
+          "translation": "垫子，起缓解作用之物"
+        },
+        {
+          "word": "cupboard",
+          "translation": "碗柜，食橱"
+        },
+        {
+          "word": "bed",
+          "translation": "床，基础"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this fog.",
+          "chinese": "看这个雾，烟雾。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 9",
+      "title": "Stories",
+      "words": [
+        {
+          "word": "lamp",
+          "translation": "灯，照射器 vt. 照亮 vi. 发亮"
+        },
+        {
+          "word": "sofa",
+          "translation": "沙发，长椅"
+        },
+        {
+          "word": "furniture",
+          "translation": "家具，设备"
+        },
+        {
+          "word": "next",
+          "translation": "然后，下次"
+        },
+        {
+          "word": "give",
+          "translation": "弹性，弯曲"
+        },
+        {
+          "word": "move",
+          "translation": "移动，步骤"
+        },
+        {
+          "word": "window",
+          "translation": "窗，窗口"
+        },
+        {
+          "word": "wall",
+          "translation": "墙壁，围墙"
+        },
+        {
+          "word": "science museum",
+          "translation": "科学馆  科学博物馆，科技博物馆"
+        },
+        {
+          "word": "art museum",
+          "translation": "美术馆  艺术博物馆，美术博物馆"
+        },
+        {
+          "word": "history museum",
+          "translation": "历史博物馆，如历史博物馆"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this lamp.",
+          "chinese": "看这个灯，照射器 vt. 照亮 vi. 发亮。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    },
+    {
+      "unit": "Unit 10",
+      "title": "Nature",
+      "words": [
+        {
+          "word": "insect museum",
+          "translation": ""
+        },
+        {
+          "word": "car museum",
+          "translation": ""
+        },
+        {
+          "word": "railway museum",
+          "translation": ""
+        },
+        {
+          "word": "perform",
+          "translation": "执行，完成"
+        },
+        {
+          "word": "dance",
+          "translation": "舞蹈，舞会"
+        },
+        {
+          "word": "useful",
+          "translation": "有用的，有益的"
+        },
+        {
+          "word": "really",
+          "translation": "实际上，事实上"
+        },
+        {
+          "word": "Christmas",
+          "translation": "圣诞节，圣诞节期间"
+        },
+        {
+          "word": "Easter",
+          "translation": "复活节"
+        },
+        {
+          "word": "Halloween",
+          "translation": "万圣节前夕（指十月三十一日夜晚）"
+        },
+        {
+          "word": "Thanksgiving",
+          "translation": ""
+        },
+        {
+          "word": "find",
+          "translation": "发现 vi. 裁决 vt. 查找，找到"
+        },
+        {
+          "word": "hide",
+          "translation": "躲藏，兽皮"
+        },
+        {
+          "word": "holiday",
+          "translation": "假日，节日"
+        },
+        {
+          "word": "present",
+          "translation": "现在，礼物"
+        },
+        {
+          "word": "giant",
+          "translation": "巨人，伟人"
+        },
+        {
+          "word": "castle",
+          "translation": "城堡，象棋中的车 vt. 置…于城堡中"
+        }
+      ],
+      "sentences": [
+        {
+          "english": "Look at this insect museum.",
+          "chinese": "看这个。"
+        }
+      ],
+      "text": "",
+      "tips": []
+    }
   ]
 }
