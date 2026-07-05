@@ -1754,25 +1754,37 @@
   "grade_2a": [
     {
       "unit": "Unit 1",
-      "title": "Hello",
+      "title": "晨间日常动作",
       "words": [
         {
-          "word": "morning",
-          "translation": "早晨，黎明"
+          "word": "get up",
+          "translation": "起床"
         },
         {
-          "word": "afternoon",
-          "translation": "午后，下午"
+          "word": "brush my teeth",
+          "translation": "刷牙"
         },
         {
-          "word": "evening",
-          "translation": "晚上，傍晚"
+          "word": "wash my face",
+          "translation": "洗脸"
+        },
+        {
+          "word": "have breakfast",
+          "translation": "吃早餐；吃早饭"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this morning.",
-          "chinese": "看这个早晨，黎明。"
+          "english": "I get up in the morning.",
+          "chinese": "我早上起床。"
+        },
+        {
+          "english": "I brush my teeth and wash my face.",
+          "chinese": "我刷牙洗脸。"
+        },
+        {
+          "english": "I have breakfast at seven.",
+          "chinese": "我七点吃早餐。"
         }
       ],
       "text": "",
@@ -1780,25 +1792,33 @@
     },
     {
       "unit": "Unit 2",
-      "title": "I'm Danny",
+      "title": "方位介词短语",
       "words": [
         {
-          "word": "night",
-          "translation": "夜晚，晚上"
+          "word": "on the desk",
+          "translation": "在书桌上"
         },
         {
-          "word": "boy",
-          "translation": "男孩，男人"
+          "word": "in the box",
+          "translation": "在盒子里"
         },
         {
-          "word": "girl",
-          "translation": "女孩，姑娘"
+          "word": "under the bed",
+          "translation": "在床底下"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this night.",
-          "chinese": "看这个夜晚，晚上。"
+          "english": "The book is on the desk.",
+          "chinese": "书在书桌上。"
+        },
+        {
+          "english": "Where is the ball? It is in the box.",
+          "chinese": "球在哪里？在盒子里。"
+        },
+        {
+          "english": "My shoes are under the bed.",
+          "chinese": "我的鞋子在床底下。"
         }
       ],
       "text": "",
@@ -1806,25 +1826,33 @@
     },
     {
       "unit": "Unit 3",
-      "title": "Things I like to do",
+      "title": "出行交通方式",
       "words": [
         {
-          "word": "big",
-          "translation": "大的，重要的"
+          "word": "by car",
+          "translation": "乘小汽车"
         },
         {
-          "word": "small",
-          "translation": "小件物品，矮小的人 adj. 少的"
+          "word": "on foot",
+          "translation": "步行"
         },
         {
-          "word": "seven",
-          "translation": "七个，七 n. 七个"
+          "word": "by bus",
+          "translation": "乘公共汽车"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this big.",
-          "chinese": "看这个大的，重要的。"
+          "english": "My father goes to work by car.",
+          "chinese": "我爸爸乘小汽车上班。"
+        },
+        {
+          "english": "I go to school on foot.",
+          "chinese": "我步行去学校。"
+        },
+        {
+          "english": "They go to the park by bus.",
+          "chinese": "他们乘公共汽车去公园。"
         }
       ],
       "text": "",
@@ -1832,25 +1860,41 @@
     },
     {
       "unit": "Unit 4",
-      "title": "My family",
+      "title": "运动类词汇",
       "words": [
         {
-          "word": "eight",
-          "translation": "八，八个"
+          "word": "run",
+          "translation": "跑；奔跑"
         },
         {
-          "word": "nine",
-          "translation": "九，九个 num. 九"
+          "word": "jump",
+          "translation": "跳；跃；跳跃"
         },
         {
-          "word": "ten",
-          "translation": "十个，十"
+          "word": "play ping-pong",
+          "translation": "打乒乓球"
+        },
+        {
+          "word": "play basketball",
+          "translation": "打篮球"
+        },
+        {
+          "word": "play football",
+          "translation": "踢足球"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this eight.",
-          "chinese": "看这个八，八个。"
+          "english": "I can run and jump.",
+          "chinese": "我会跑和跳。"
+        },
+        {
+          "english": "He likes to play ping-pong.",
+          "chinese": "他喜欢打乒乓球。"
+        },
+        {
+          "english": "Let's play football in the afternoon.",
+          "chinese": "我们下午去踢足球吧。"
         }
       ],
       "text": "",
@@ -1858,25 +1902,41 @@
     },
     {
       "unit": "Unit 5",
-      "title": "My classmates",
+      "title": "天空相关事物",
       "words": [
         {
-          "word": "run",
-          "translation": "奔跑，赛跑"
+          "word": "in the sky",
+          "translation": "在天空中"
         },
         {
-          "word": "write",
-          "translation": "写，写字"
+          "word": "star",
+          "translation": "星"
         },
         {
-          "word": "swim",
-          "translation": "游泳，漂浮"
+          "word": "sun",
+          "translation": "太阳"
+        },
+        {
+          "word": "cloud",
+          "translation": "云；云朵"
+        },
+        {
+          "word": "moon",
+          "translation": "月亮；月球"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this run.",
-          "chinese": "看这个奔跑，赛跑。"
+          "english": "The sun is in the sky.",
+          "chinese": "太阳在天空中。"
+        },
+        {
+          "english": "Look at the moon and stars at night.",
+          "chinese": "晚上看月亮和星星。"
+        },
+        {
+          "english": "There are some clouds in the sky.",
+          "chinese": "天空中有些云朵。"
         }
       ],
       "text": "",
@@ -1884,25 +1944,37 @@
     },
     {
       "unit": "Unit 6",
-      "title": "My friends",
+      "title": "海洋场景与海洋生物",
       "words": [
         {
-          "word": "fly",
-          "translation": "飞行，苍蝇"
+          "word": "in the sea",
+          "translation": "在海里"
         },
         {
-          "word": "young",
-          "translation": "年轻人，（动物的）崽"
+          "word": "seahorse",
+          "translation": "海马"
         },
         {
-          "word": "old",
-          "translation": "陈旧的，古老的"
+          "word": "dolphin",
+          "translation": "海豚"
+        },
+        {
+          "word": "clownfish",
+          "translation": "小丑鱼"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this fly.",
-          "chinese": "看这个飞行，苍蝇。"
+          "english": "Dolphins live in the sea.",
+          "chinese": "海豚生活在海里。"
+        },
+        {
+          "english": "Look! It is a cute seahorse.",
+          "chinese": "看！是一只可爱的海马。"
+        },
+        {
+          "english": "The clownfish is orange and white.",
+          "chinese": "小丑鱼是橙白相间的。"
         }
       ],
       "text": "",
@@ -1910,25 +1982,41 @@
     },
     {
       "unit": "Unit 7",
-      "title": "In the playground",
+      "title": "四季",
       "words": [
         {
-          "word": "hair",
-          "translation": "头发，毛发"
+          "word": "spring",
+          "translation": "春天；春季"
         },
         {
-          "word": "head",
-          "translation": "头，头痛"
+          "word": "summer",
+          "translation": "夏天；夏季"
         },
         {
-          "word": "face",
-          "translation": "脸，表面"
+          "word": "autumn",
+          "translation": "秋天；秋季"
+        },
+        {
+          "word": "winter",
+          "translation": "冬天；冬季"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this hair.",
-          "chinese": "看这个头发，毛发。"
+          "english": "Spring is green and warm.",
+          "chinese": "春天是绿色而温暖的。"
+        },
+        {
+          "english": "It is hot in summer.",
+          "chinese": "夏天天气炎热。"
+        },
+        {
+          "english": "I like autumn best.",
+          "chinese": "我最喜欢秋天。"
+        },
+        {
+          "english": "It snows in winter.",
+          "chinese": "冬天会下雪。"
         }
       ],
       "text": "",
@@ -1936,25 +2024,45 @@
     },
     {
       "unit": "Unit 8",
-      "title": "In the park",
+      "title": "水果类",
       "words": [
         {
-          "word": "slide",
-          "translation": "滑动，幻灯片"
+          "word": "fruit",
+          "translation": "水果"
         },
         {
-          "word": "swing",
-          "translation": "摇摆，摆动"
+          "word": "apple",
+          "translation": "苹果"
         },
         {
-          "word": "seesaw",
-          "translation": "跷跷板，秋千 adj. 交互的"
+          "word": "pear",
+          "translation": "梨"
+        },
+        {
+          "word": "banana",
+          "translation": "香蕉"
+        },
+        {
+          "word": "grape",
+          "translation": "葡萄"
+        },
+        {
+          "word": "orange",
+          "translation": "橙子；柑橘"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this slide.",
-          "chinese": "看这个滑动，幻灯片。"
+          "english": "Do you like fruit?",
+          "chinese": "你喜欢水果吗？"
+        },
+        {
+          "english": "I have an apple and a banana.",
+          "chinese": "我有一个苹果和一根香蕉。"
+        },
+        {
+          "english": "These grapes are sweet.",
+          "chinese": "这些葡萄很甜。"
         }
       ],
       "text": "",
@@ -1962,25 +2070,45 @@
     },
     {
       "unit": "Unit 9",
-      "title": "In the classroom",
+      "title": "感官动词",
       "words": [
         {
-          "word": "bag",
-          "translation": "袋，猎获物"
+          "word": "smell",
+          "translation": "闻（气味）"
         },
         {
-          "word": "box",
-          "translation": "箱，盒子"
+          "word": "taste",
+          "translation": "尝（味道）"
         },
         {
-          "word": "desk",
-          "translation": "办公桌，服务台"
+          "word": "touch",
+          "translation": "触摸；碰"
+        },
+        {
+          "word": "see",
+          "translation": "看见；见到"
+        },
+        {
+          "word": "hear",
+          "translation": "听见；听到"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this bag.",
-          "chinese": "看这个袋，猎获物。"
+          "english": "I can smell the flower.",
+          "chinese": "我能闻到花香。"
+        },
+        {
+          "english": "Taste the soup. It's yummy.",
+          "chinese": "尝尝这汤。很好喝。"
+        },
+        {
+          "english": "Touch this card. It is smooth.",
+          "chinese": "摸摸这张卡片。它是光滑的。"
+        },
+        {
+          "english": "What can you see and hear?",
+          "chinese": "你能看见什么和听到什么？"
         }
       ],
       "text": "",
@@ -1988,97 +2116,33 @@
     },
     {
       "unit": "Unit 10",
-      "title": "Animals in the zoo",
+      "title": "休闲、家务类动作短语",
       "words": [
         {
-          "word": "chair",
-          "translation": "椅子，讲座"
+          "word": "draw a picture",
+          "translation": "画画"
         },
         {
-          "word": "bowl",
-          "translation": "碗，木球"
+          "word": "read a book",
+          "translation": "读书"
         },
         {
-          "word": "plate",
-          "translation": "碟，金属板"
+          "word": "make breakfast",
+          "translation": "做早餐"
         }
       ],
       "sentences": [
         {
-          "english": "Look at this chair.",
-          "chinese": "看这个椅子，讲座。"
-        }
-      ],
-      "text": "",
-      "tips": []
-    },
-    {
-      "unit": "Unit 11",
-      "title": "Weather",
-      "words": [
-        {
-          "word": "spoon",
-          "translation": "匙，勺子"
+          "english": "I draw a picture in my room.",
+          "chinese": "我在我的房间里画画。"
         },
         {
-          "word": "chopsticks",
-          "translation": "筷子"
+          "english": "My father likes to read a book.",
+          "chinese": "我爸爸喜欢看书。"
         },
         {
-          "word": "sun",
-          "translation": "太阳 vt. 使晒 vi. 晒太阳"
-        }
-      ],
-      "sentences": [
-        {
-          "english": "Look at this spoon.",
-          "chinese": "看这个匙，勺子。"
-        }
-      ],
-      "text": "",
-      "tips": []
-    },
-    {
-      "unit": "Unit 12",
-      "title": "Plants",
-      "words": [
-        {
-          "word": "moon",
-          "translation": "月亮，月球"
-        },
-        {
-          "word": "star",
-          "translation": "星，恒星"
-        },
-        {
-          "word": "fox",
-          "translation": "狐狸，狡猾的人 vt. 欺骗"
-        },
-        {
-          "word": "hippo",
-          "translation": "河马，吐根"
-        },
-        {
-          "word": "meat",
-          "translation": "肉，肉类（食用）"
-        },
-        {
-          "word": "grass",
-          "translation": "草，草地"
-        },
-        {
-          "word": "flower",
-          "translation": "花，精华"
-        },
-        {
-          "word": "tree",
-          "translation": "树，木料"
-        }
-      ],
-      "sentences": [
-        {
-          "english": "Look at this moon.",
-          "chinese": "看这个月亮，月球。"
+          "english": "My mother makes breakfast every day.",
+          "chinese": "我妈妈每天做早餐。"
         }
       ],
       "text": "",
