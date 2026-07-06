@@ -80,7 +80,7 @@ function FloatingDecorations({ theme }) {
 }
 
 export default function App() {
-  const [grade, setGrade] = useState('1b') // '1a' or '1b'
+  const [grade, setGrade] = useState('2a') // Default to '2a'
   const [activeView, setActiveView] = useState('dashboard') // 'dashboard', 'flashcards', 'quiz', 'glossary', 'worksheet'
   const [selectedUnit, setSelectedUnit] = useState(null) // null = all units, or unit object
   const [bookmarkedWords, setBookmarkedWords] = useState([])
