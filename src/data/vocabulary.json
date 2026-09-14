@@ -1757,6 +1757,46 @@
       "title": "晨间日常动作",
       "words": [
         {
+          "word": "morning",
+          "translation": "早晨；上午"
+        },
+        {
+          "word": "up",
+          "translation": "向上"
+        },
+        {
+          "word": "teeth",
+          "translation": "牙齿（tooth复数）"
+        },
+        {
+          "word": "face",
+          "translation": "脸"
+        },
+        {
+          "word": "dressed",
+          "translation": "穿好衣服的"
+        },
+        {
+          "word": "ready",
+          "translation": "准备好的"
+        },
+        {
+          "word": "Mum",
+          "translation": "妈妈"
+        },
+        {
+          "word": "Dad",
+          "translation": "爸爸"
+        },
+        {
+          "word": "school",
+          "translation": "学校"
+        },
+        {
+          "word": "checklist",
+          "translation": "清单"
+        },
+        {
           "word": "get up",
           "translation": "起床"
         },
@@ -1770,25 +1810,41 @@
         },
         {
           "word": "have breakfast",
-          "translation": "吃早餐；吃早饭"
+          "translation": "吃早餐"
+        },
+        {
+          "word": "be ready for",
+          "translation": "为……做好准备"
         }
       ],
       "sentences": [
         {
-          "english": "I get up in the morning.",
-          "chinese": "我早上起床。"
+          "english": "Good morning.",
+          "chinese": "早上好。"
         },
         {
-          "english": "I brush my teeth and wash my face.",
-          "chinese": "我刷牙洗脸。"
+          "english": "Have breakfast, Shenshen!",
+          "chinese": "申申，吃早餐！"
         },
         {
-          "english": "I have breakfast at seven.",
-          "chinese": "我七点吃早餐。"
+          "english": "I brush my teeth and then wash my face.",
+          "chinese": "我刷牙然后洗脸。"
+        },
+        {
+          "english": "Yes, Mum!",
+          "chinese": "好的，妈妈！"
+        },
+        {
+          "english": "I'm ready for school, Dad!",
+          "chinese": "爸爸，我准备好去上学了！"
         }
       ],
       "text": "",
-      "tips": []
+      "tips": [
+        "黑体为重点单词和句型，请家长帮助贴在课本第9页。",
+        "teeth 是 tooth 的不规则复数形式（单数 tooth，复数 teeth）。",
+        "be ready for 表示“为……做好准备”，后面接名词，例如：I'm ready for school!"
+      ]
     },
     {
       "unit": "Unit 2",
