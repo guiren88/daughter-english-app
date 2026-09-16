@@ -926,7 +926,10 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
             margin: '0 auto 1.5rem auto'
           }}>
             <div>
-              <strong>测验范围:</strong> {activeUnit ? `${activeUnit.unit} — ${activeUnit.title}` : '全册单词总测试 (全量词库)'} 
+              <strong>测验范围:</strong> {activeUnit ? `${activeUnit.unit} — ${activeUnit.title}` : '全册单词总测试 (全量词库)'}
+              {activeUnit && activeUnit.isNew && (
+                <span className="unit-new-badge" style={{ marginLeft: '0.4rem' }}>NEW</span>
+              )}
               <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginLeft: '0.4rem' }}>
                 ({activeUnit ? `${activeUnit.words.length} 个单词` : `共 ${units.reduce((acc, u) => acc + u.words.length, 0)} 个单词`})
               </span>
@@ -961,7 +964,9 @@ export default function Quiz({ grade, units, selectedUnit, setSelectedUnit, play
                   >
                     <option value="">-- 选择课时 --</option>
                     {units.map(u => (
-                      <option key={u.unit} value={u.unit}>{u.unit}: {u.title}</option>
+                      <option key={u.unit} value={u.unit}>
+                        {u.unit}: {u.title}{u.isNew ? ' ✨ (NEW)' : ''}
+                      </option>
                     ))}
                   </select>
                 </div>

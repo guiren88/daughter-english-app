@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CheckCircle, Award, Bookmark, BookOpen, Layers, AlertCircle } from 'lucide-react'
+import { CheckCircle, Award, Bookmark, BookOpen, Layers, AlertCircle, Sparkles } from 'lucide-react'
 
 export default function Dashboard({ 
   grade, 
@@ -510,12 +510,20 @@ export default function Dashboard({
             return (
               <div 
                 key={unit.unit} 
-                className="glass-card unit-card stagger-item"
+                className={`glass-card unit-card stagger-item ${unit.isNew ? 'is-new' : ''}`}
                 style={{ '--index': index }}
               >
                 <div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                    <span className="unit-num">{unit.unit}</span>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+                      <span className="unit-num">{unit.unit}</span>
+                      {unit.isNew && (
+                        <span className="unit-new-badge" title="最新录入/更新单元">
+                          <Sparkles size={11} className="new-badge-sparkle" />
+                          <span>NEW</span>
+                        </span>
+                      )}
+                    </div>
                     <button 
                       onClick={(e) => {
                         e.stopPropagation();

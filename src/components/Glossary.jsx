@@ -173,7 +173,9 @@ export default function Glossary({
         >
           <option value="all">所有单元</option>
           {dropdownUnits.map(u => (
-            <option key={u.unit} value={u.unit}>{u.unit}: {u.title}</option>
+            <option key={u.unit} value={u.unit}>
+              {u.unit}: {u.title}{u.isNew ? ' ✨ (NEW)' : ''}
+            </option>
           ))}
         </select>
 

@@ -144,7 +144,9 @@ export default function Flashcards({
           style={{ flex: 1, maxWidth: '280px' }}
         >
           {units.map(u => (
-            <option key={u.unit} value={u.unit}>{u.unit}: {u.title}</option>
+            <option key={u.unit} value={u.unit}>
+              {u.unit}: {u.title}{u.isNew ? ' ✨ (NEW)' : ''}
+            </option>
           ))}
         </select>
 

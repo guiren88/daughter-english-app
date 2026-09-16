@@ -63,7 +63,9 @@ export default function Worksheet({ grade, units, selectedUnit, setSelectedUnit,
               style={{ padding: '0.35rem 0.75rem', borderRadius: '8px' }}
             >
               {units.map(u => (
-                <option key={u.unit} value={u.unit}>{u.unit}: {u.title}</option>
+                <option key={u.unit} value={u.unit}>
+                  {u.unit}: {u.title}{u.isNew ? ' ✨ (NEW)' : ''}
+                </option>
               ))}
             </select>
           </div>
