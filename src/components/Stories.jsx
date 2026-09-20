@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   BookOpen, ChevronLeft, ChevronRight, Volume2, 
-  CheckCircle, HelpCircle, Award, Sparkles, Eye, EyeOff, RotateCcw
+  CheckCircle, HelpCircle, Award, Sparkles, Eye, EyeOff, RotateCcw,
+  Play, Pause
 } from 'lucide-react';
 import storiesData from '../data/stories.json';
 
@@ -30,6 +31,64 @@ export default function Stories({
   const [isReadingQuiz, setIsReadingQuiz] = useState(false);
   const [speechRate, setSpeechRate] = useState(0.85); // Child-friendly slow pace
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+
+  // Auto-play refs to avoid stale closure issues in speech callbacks
+  const autoPlayTimerRef = useRef(null);
+  const isAutoPlayingRef = useRef(false);
+  const currentPageRef = useRef(currentPage);
+  const activeStoryRef = useRef(activeStory);
+
+  useEffect(() => {
+    currentPageRef.current = currentPage;
+  }, [currentPage]);
+
+  useEffect(() => {
+    isAutoPlayingRef.current = isAutoPlaying;
+  }, [isAutoPlaying]);
+
+  useEffect(() => {
+    activeStoryRef.current = activeStory;
+  }, [activeStory]);
+
+  const stopAutoPlay = () => {
+    setIsAutoPlaying(false);
+    isAutoPlayingRef.current = false;
+    if (autoPlayTimerRef.current) {
+      clearTimeout(autoPlayTimerRef.current);
+      autoPlayTimerRef.current = null;
+    }
+  };
+
+  const startAutoPlay = () => {
+    setIsAutoPlaying(true);
+    isAutoPlayingRef.current = true;
+    if (activeStory && activeStory.pages[currentPage]) {
+      speakSentence(activeStory.pages[currentPage].sentenceEn);
+    }
+  };
+
+  const toggleAutoPlay = () => {
+    if (isAutoPlaying) {
+      stopAutoPlay();
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        setIsSpeaking(false);
+      }
+    } else {
+      startAutoPlay();
+    }
+  };
+
+  // Clean up timers on unmount or view change
+  useEffect(() => {
+    return () => {
+      stopAutoPlay();
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, [activeStory, isReadingQuiz]);
 
   // Quiz state
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -55,6 +114,10 @@ export default function Stories({
   // Read sentence using SpeechSynthesis
   const speakSentence = (text, rate = speechRate) => {
     if (!('speechSynthesis' in window)) return;
+    if (autoPlayTimerRef.current) {
+      clearTimeout(autoPlayTimerRef.current);
+      autoPlayTimerRef.current = null;
+    }
     window.speechSynthesis.cancel();
     
     setIsSpeaking(true);
@@ -63,14 +126,37 @@ export default function Stories({
     utterance.rate = rate;
     utterance.pitch = 1.05; // Slightly cheerful pitch
     
-    utterance.onend = () => setIsSpeaking(false);
-    utterance.onerror = () => setIsSpeaking(false);
+    utterance.onend = () => {
+      setIsSpeaking(false);
+      if (isAutoPlayingRef.current && activeStoryRef.current) {
+        autoPlayTimerRef.current = setTimeout(() => {
+          if (!isAutoPlayingRef.current) return;
+          const cur = currentPageRef.current;
+          const pages = activeStoryRef.current.pages;
+          if (cur + 1 < pages.length) {
+            setCurrentPage(cur + 1);
+            speakSentence(pages[cur + 1].sentenceEn);
+          } else {
+            // Reached the end of story
+            stopAutoPlay();
+          }
+        }, 1800); // 1.8s pause between pages
+      }
+    };
+
+    utterance.onerror = () => {
+      setIsSpeaking(false);
+      if (isAutoPlayingRef.current) {
+        stopAutoPlay();
+      }
+    };
 
     window.speechSynthesis.speak(utterance);
   };
 
   // Start reading a story
   const handleStartStory = (story) => {
+    stopAutoPlay();
     setActiveStory(story);
     setCurrentPage(0);
     setIsReadingQuiz(false);
@@ -480,7 +566,31 @@ export default function Stories({
         </div>
 
         {/* Utility Toggles */}
-        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <button 
+            className="ctrl-action-btn"
+            onClick={toggleAutoPlay}
+            style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '0.35rem', 
+              padding: '0.4rem 0.75rem', 
+              borderRadius: '12px', 
+              fontSize: '0.8rem',
+              background: isAutoPlaying ? 'linear-gradient(135deg, #10b981, #059669)' : 'rgba(255,255,255,0.05)',
+              color: isAutoPlaying ? '#ffffff' : 'var(--text-primary)',
+              borderColor: isAutoPlaying ? 'var(--accent-green)' : 'var(--border-glass)',
+              boxShadow: isAutoPlaying ? '0 0 14px rgba(16, 185, 129, 0.45)' : 'none',
+              fontWeight: isAutoPlaying ? 'bold' : 'normal',
+              cursor: 'pointer',
+              transition: 'all 0.25s ease'
+            }}
+            title="自动翻页并朗读完整故事"
+          >
+            {isAutoPlaying ? <Pause size={15} /> : <Play size={15} />}
+            <span>{isAutoPlaying ? '正在自动播放...' : '自动播放'}</span>
+          </button>
+
           <button 
             className="ctrl-action-btn"
             onClick={() => setShowChinese(!showChinese)}
