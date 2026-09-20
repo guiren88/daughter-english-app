@@ -1358,8 +1358,39 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.98);
 }
 
-/* Extra card glows in different views */
 .glass-card:hover {
   box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.3), 0 0 20px var(--accent-pink-glow);
+}
+
+/* =========================================
+   📖 Story Reader & Catalog Styles
+========================================= */
+.story-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-pink) !important;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.4), 0 0 25px var(--accent-pink-glow) !important;
+}
+
+@keyframes story-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+.story-page-card {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+@media (max-width: 640px) {
+  .stories-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .story-page-card {
+    padding: 2rem 1rem !important;
+  }
 }
 

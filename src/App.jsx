@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { BookOpen, GraduationCap, LayoutDashboard, HelpCircle, FileText, Star, Volume2, VolumeX } from 'lucide-react'
+import { BookOpen, GraduationCap, LayoutDashboard, HelpCircle, FileText, Star, Volume2, VolumeX, Sparkles } from 'lucide-react'
 import Dashboard from './components/Dashboard'
 import Flashcards from './components/Flashcards'
 import Quiz from './components/Quiz'
 import Glossary from './components/Glossary'
 import Worksheet from './components/Worksheet'
+import Stories from './components/Stories'
 import vocabData from './data/vocabulary.json'
 
 function FloatingDecorations({ theme }) {
@@ -382,6 +383,13 @@ export default function App() {
             <span>单词卡</span>
           </button>
           <button 
+            className={`nav-btn ${activeView === 'stories' ? 'active' : ''}`}
+            onClick={() => setActiveView('stories')}
+          >
+            <Sparkles size={18} />
+            <span>绘本故事</span>
+          </button>
+          <button 
             className={`nav-btn ${activeView === 'quiz' ? 'active' : ''}`}
             onClick={() => setActiveView('quiz')}
           >
@@ -522,6 +530,16 @@ export default function App() {
               onMarkUnitCompleted={toggleUnitCompleted}
               completedUnits={completedUnits}
               playAudio={playAudio}
+              setActiveView={setActiveView}
+            />
+          )}
+
+          {activeView === 'stories' && (
+            <Stories 
+              grade={grade}
+              onAwardStars={awardStars}
+              playAudio={playAudio}
+              initialUnit={selectedUnit}
               setActiveView={setActiveView}
             />
           )}

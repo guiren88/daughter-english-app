@@ -1,0 +1,231 @@
+{
+  "grade_2a": [
+    {
+      "id": "2a_u1",
+      "grade": "2a",
+      "unit": "Unit 1",
+      "title": "Shenshen's Busy Morning",
+      "titleCn": "申申忙碌的早晨",
+      "coverEmoji": "☀️",
+      "badge": "2A 重点课文拓展",
+      "summary": "跟着申申一起度过元气满满的早晨：起床、刷牙洗脸、享用早餐，准备开开心心上学去！",
+      "coreWords": [
+        "morning",
+        "get up",
+        "brush my teeth",
+        "wash my face",
+        "have breakfast",
+        "dressed",
+        "ready",
+        "school",
+        "Mum",
+        "Dad",
+        "checklist"
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "sceneEmoji": "⏰",
+          "character": "Alarm Clock",
+          "sentenceEn": "Ring, ring! Good morning, Shenshen! It is seven in the morning.",
+          "sentenceCn": "叮铃铃！早上好，申申！现在是早上七点钟。",
+          "focusWord": "Good morning"
+        },
+        {
+          "pageNumber": 2,
+          "sceneEmoji": "🛏️",
+          "character": "Shenshen",
+          "sentenceEn": "Time to get up! Shenshen gets out of bed with a big smile.",
+          "sentenceCn": "该起床啦！申申面带大大的微笑从床上爬起来。",
+          "focusWord": "get up"
+        },
+        {
+          "pageNumber": 3,
+          "sceneEmoji": "🪥",
+          "character": "Shenshen",
+          "sentenceEn": "I brush my teeth and then wash my face. My face is fresh and clean!",
+          "sentenceCn": "我刷牙然后洗脸。我的小脸蛋清新又干净！",
+          "focusWord": "brush my teeth"
+        },
+        {
+          "pageNumber": 4,
+          "sceneEmoji": "👗",
+          "character": "Shenshen",
+          "sentenceEn": "Look at my checklist! Now I am dressed in my pretty clothes.",
+          "sentenceCn": "看看我的备忘清单！现在我已经穿好漂亮的衣服了。",
+          "focusWord": "dressed"
+        },
+        {
+          "pageNumber": 5,
+          "sceneEmoji": "🥞",
+          "character": "Mum & Shenshen",
+          "sentenceEn": "Mum says, 'Have breakfast, Shenshen!' 'Yes, Mum! Milk and eggs are delicious!'",
+          "sentenceCn": "妈妈说：“申申，吃早餐啦！”“好的，妈妈！牛奶和鸡蛋真美味！”",
+          "focusWord": "Have breakfast"
+        },
+        {
+          "pageNumber": 6,
+          "sceneEmoji": "🎒",
+          "character": "Shenshen & Dad",
+          "sentenceEn": "'I'm ready for school, Dad!' Shenshen takes her schoolbag and waves happily.",
+          "sentenceCn": "“爸爸，我准备好去上学了！”申申背起小书包，开心地挥挥手。",
+          "focusWord": "ready for school"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Shenshen do after brushing her teeth?",
+          "questionCn": "申申刷完牙之后做了什么？",
+          "options": [
+            "Wash her face (洗脸)",
+            "Go to sleep (去睡觉)",
+            "Play games (玩游戏)"
+          ],
+          "answer": 0,
+          "explanation": "根据课文句子：'I brush my teeth and then wash my face'（我刷牙然后洗脸）。"
+        },
+        {
+          "question": "Who says 'Have breakfast, Shenshen!'?",
+          "questionCn": "是谁说“申申，吃早餐！”的？",
+          "options": [
+            "Dad (爸爸)",
+            "Mum (妈妈)",
+            "Teacher (老师)"
+          ],
+          "answer": 1,
+          "explanation": "根据课文：'Mum says: Have breakfast, Shenshen!'"
+        },
+        {
+          "question": "Is Shenshen ready for school at the end?",
+          "questionCn": "故事最后申申准备好去上学了吗？",
+          "options": [
+            "No, she is sleepy.",
+            "Yes, she is ready for school!",
+            "She is looking for books."
+          ],
+          "answer": 1,
+          "explanation": "根据最后一句：'I'm ready for school, Dad!'"
+        }
+      ]
+    },
+    {
+      "id": "2a_u2",
+      "grade": "2a",
+      "unit": "Unit 2",
+      "title": "The Mystery of the Messy Room",
+      "titleCn": "乱糟糟房间的大搜寻",
+      "coverEmoji": "🧸",
+      "badge": "最新上线 ✨",
+      "summary": "天哪，房间真是一团糟！小球到底躲到哪里去了？快和申申一起整理房间，找出红球吧！",
+      "coreWords": [
+        "room",
+        "box",
+        "bed",
+        "desk",
+        "shelf",
+        "where",
+        "mess",
+        "toy",
+        "under the bed",
+        "in the box",
+        "on the desk",
+        "on the shelf",
+        "tidy the room",
+        "let's"
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "sceneEmoji": "🌪️",
+          "character": "Mum",
+          "sentenceEn": "Oh, look at the room! What a mess! Toys are on the floor.",
+          "sentenceCn": "天哪，看看这个房间！真是一团糟！玩具都在地板上。",
+          "focusWord": "What a mess"
+        },
+        {
+          "pageNumber": 2,
+          "sceneEmoji": "🔍",
+          "character": "Shenshen",
+          "sentenceEn": "Where's my red ball? Is it on the desk? No, it isn't.",
+          "sentenceCn": "我的红球在哪里呢？它在书桌上吗？不，不在上面。",
+          "focusWord": "on the desk"
+        },
+        {
+          "pageNumber": 3,
+          "sceneEmoji": "🛏️",
+          "character": "Shenshen",
+          "sentenceEn": "Look under the bed! Oh, yes! The red ball is under the bed!",
+          "sentenceCn": "看床底下！哦，找到了！红色的球就在床底下！",
+          "focusWord": "under the bed"
+        },
+        {
+          "pageNumber": 4,
+          "sceneEmoji": "🧹",
+          "character": "Mum",
+          "sentenceEn": "Mum says, 'Let's tidy the room together!' Shenshen says, 'All right!'",
+          "sentenceCn": "妈妈说：“咱们一起整理房间吧！”申申说：“好的，没问题！”",
+          "focusWord": "tidy the room"
+        },
+        {
+          "pageNumber": 5,
+          "sceneEmoji": "📦",
+          "character": "Shenshen",
+          "sentenceEn": "What about the toys? Put them in the big toy box!",
+          "sentenceCn": "那玩具呢？把它们收进大玩具箱里！",
+          "focusWord": "in the box"
+        },
+        {
+          "pageNumber": 6,
+          "sceneEmoji": "📚",
+          "character": "Shenshen",
+          "sentenceEn": "Put the storybooks on the shelf. The shelf looks so neat!",
+          "sentenceCn": "把故事书放在书架上。书架看起来好整齐！",
+          "focusWord": "on the shelf"
+        },
+        {
+          "pageNumber": 7,
+          "sceneEmoji": "✨",
+          "character": "Shenshen & Mum",
+          "sentenceEn": "My room is tidy now! I like it very much! Good job, Shenshen!",
+          "sentenceCn": "我的房间现在真整洁！我非常喜欢它！做得很棒，申申！",
+          "focusWord": "room is tidy"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where did Shenshen find her red ball?",
+          "questionCn": "申申在哪里找到了她的小红球？",
+          "options": [
+            "Under the bed (在床底下)",
+            "On the shelf (在架子上)",
+            "In the box (在盒子里)"
+          ],
+          "answer": 0,
+          "explanation": "故事第3页：'Look under the bed! The red ball is under the bed!'"
+        },
+        {
+          "question": "Where should the toys be put?",
+          "questionCn": "玩具应该收纳到哪里？",
+          "options": [
+            "Under the desk (在桌子下)",
+            "In the box (在箱子里)",
+            "On the bed (在床上)"
+          ],
+          "answer": 1,
+          "explanation": "故事第5页：'What about the toys? Put them in the big toy box!'"
+        },
+        {
+          "question": "Where are the books placed?",
+          "questionCn": "书本被整齐地放在哪里？",
+          "options": [
+            "On the shelf (在架子上)",
+            "In the box (在盒子里)",
+            "Under the chair (在椅子下)"
+          ],
+          "answer": 0,
+          "explanation": "故事第6页：'Put the storybooks on the shelf.'"
+        }
+      ]
+    }
+  ]
+}

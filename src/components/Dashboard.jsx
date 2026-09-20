@@ -550,10 +550,10 @@ export default function Dashboard({
                     <div className="progress-bar" style={{ width: isCompleted ? '100%' : '15%' }}></div>
                   </div>
                   
-                  <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.25rem' }}>
+                  <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1.25rem' }}>
                     <button 
                       className="action-btn"
-                      style={{ flex: 1, padding: '0.5rem 1rem', fontSize: '0.9rem', borderRadius: '8px' }}
+                      style={{ flex: 1, padding: '0.45rem 0.5rem', fontSize: '0.85rem', borderRadius: '8px' }}
                       onClick={() => onSelectUnit(unit, 'flashcards')}
                     >
                       背单词
@@ -562,8 +562,8 @@ export default function Dashboard({
                       className="action-btn"
                       style={{ 
                         flex: 1, 
-                        padding: '0.5rem 1rem', 
-                        fontSize: '0.9rem', 
+                        padding: '0.45rem 0.5rem', 
+                        fontSize: '0.85rem', 
                         borderRadius: '8px', 
                         background: 'rgba(255,255,255,0.05)',
                         border: '1px solid var(--border-glass)'
@@ -571,6 +571,22 @@ export default function Dashboard({
                       onClick={() => onSelectUnit(unit, 'quiz')}
                     >
                       去测试
+                    </button>
+                    <button 
+                      className="action-btn"
+                      style={{ 
+                        flex: 1, 
+                        padding: '0.45rem 0.5rem', 
+                        fontSize: '0.85rem', 
+                        borderRadius: '8px', 
+                        background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(139, 92, 246, 0.2))',
+                        border: '1px solid var(--accent-pink)',
+                        color: 'var(--text-primary)'
+                      }}
+                      onClick={() => onSelectUnit(unit, 'stories')}
+                      title="阅读该单元同步微故事绘本"
+                    >
+                      📖 绘本
                     </button>
                   </div>
                 </div>
