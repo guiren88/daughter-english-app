@@ -5,6 +5,7 @@ import {
   Play, Pause
 } from 'lucide-react';
 import storiesData from '../data/stories.json';
+import { initVoices, speakNatural } from '../utils/speech';
 
 export default function Stories({ 
   grade, 
@@ -108,50 +109,48 @@ export default function Stories({
 
   // Auto scroll to top on page change
   useEffect(() => {
+    initVoices();
+  }, []);
+
+  useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage, activeStory, isReadingQuiz]);
 
-  // Read sentence using SpeechSynthesis
+  // Read sentence using high-quality natural voice engine
   const speakSentence = (text, rate = speechRate) => {
-    if (!('speechSynthesis' in window)) return;
     if (autoPlayTimerRef.current) {
       clearTimeout(autoPlayTimerRef.current);
       autoPlayTimerRef.current = null;
     }
-    window.speechSynthesis.cancel();
     
-    setIsSpeaking(true);
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    utterance.rate = rate;
-    utterance.pitch = 1.05; // Slightly cheerful pitch
-    
-    utterance.onend = () => {
-      setIsSpeaking(false);
-      if (isAutoPlayingRef.current && activeStoryRef.current) {
-        autoPlayTimerRef.current = setTimeout(() => {
-          if (!isAutoPlayingRef.current) return;
-          const cur = currentPageRef.current;
-          const pages = activeStoryRef.current.pages;
-          if (cur + 1 < pages.length) {
-            setCurrentPage(cur + 1);
-            speakSentence(pages[cur + 1].sentenceEn);
-          } else {
-            // Reached the end of story
-            stopAutoPlay();
-          }
-        }, 1800); // 1.8s pause between pages
+    speakNatural(text, {
+      rate,
+      pitch: 1.02,
+      accent: 'us',
+      onStart: () => setIsSpeaking(true),
+      onEnd: () => {
+        setIsSpeaking(false);
+        if (isAutoPlayingRef.current && activeStoryRef.current) {
+          autoPlayTimerRef.current = setTimeout(() => {
+            if (!isAutoPlayingRef.current) return;
+            const cur = currentPageRef.current;
+            const pages = activeStoryRef.current.pages;
+            if (cur + 1 < pages.length) {
+              setCurrentPage(cur + 1);
+              speakSentence(pages[cur + 1].sentenceEn);
+            } else {
+              stopAutoPlay();
+            }
+          }, 1800);
+        }
+      },
+      onError: () => {
+        setIsSpeaking(false);
+        if (isAutoPlayingRef.current) {
+          stopAutoPlay();
+        }
       }
-    };
-
-    utterance.onerror = () => {
-      setIsSpeaking(false);
-      if (isAutoPlayingRef.current) {
-        stopAutoPlay();
-      }
-    };
-
-    window.speechSynthesis.speak(utterance);
+    });
   };
 
   // Start reading a story

@@ -6,6 +6,7 @@ import Quiz from './components/Quiz'
 import Glossary from './components/Glossary'
 import Worksheet from './components/Worksheet'
 import Stories from './components/Stories'
+import { initVoices, speakNatural } from './utils/speech'
 import vocabData from './data/vocabulary.json'
 
 function FloatingDecorations({ theme }) {
@@ -177,16 +178,17 @@ export default function App() {
   const sourceNodeRef = React.useRef(null);
   const currentTextRef = React.useRef("");
 
+  useEffect(() => {
+    initVoices();
+  }, []);
+
   const fallbackSpeechSynthesis = (text) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const textToSpeak = text.replace(/[\/\\]/g, ' ').trim();
-      const utterance = new SpeechSynthesisUtterance(textToSpeak);
-      utterance.lang = 'en-US';
-      utterance.rate = 0.85;
-      utterance.volume = Math.min(1.0, volume);
-      window.speechSynthesis.speak(utterance);
-    }
+    speakNatural(text, {
+      rate: 0.85,
+      pitch: 1.0,
+      accent: 'us',
+      volume: Math.min(1.0, volume)
+    });
   };
 
   // Global Text-To-Speech Pronunciation Helper (Web Audio API Youdao TTS with Native Fallback)
