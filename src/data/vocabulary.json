@@ -1844,42 +1844,122 @@
         "黑体为重点单词和句型，请家长帮助贴在课本第9页。",
         "teeth 是 tooth 的不规则复数形式（单数 tooth，复数 teeth）。",
         "be ready for 表示“为……做好准备”，后面接名词，例如：I'm ready for school!"
-      ],
-      "isNew": true
+      ]
     },
     {
       "unit": "Unit 2",
-      "title": "方位介词短语",
+      "title": "整理房间与方位",
+      "isNew": true,
       "words": [
         {
-          "word": "on the desk",
-          "translation": "在书桌上"
+          "word": "room",
+          "translation": "房间"
+        },
+        {
+          "word": "box",
+          "translation": "盒子；箱子"
+        },
+        {
+          "word": "bed",
+          "translation": "床"
+        },
+        {
+          "word": "desk",
+          "translation": "书桌"
+        },
+        {
+          "word": "shelf",
+          "translation": "架子"
+        },
+        {
+          "word": "where",
+          "translation": "在哪里"
+        },
+        {
+          "word": "mess",
+          "translation": "混乱；脏乱"
+        },
+        {
+          "word": "toy",
+          "translation": "玩具"
+        },
+        {
+          "word": "right",
+          "translation": "正确的；右边"
+        },
+        {
+          "word": "can",
+          "translation": "能"
+        },
+        {
+          "word": "put",
+          "translation": "放"
+        },
+        {
+          "word": "under the bed",
+          "translation": "在床下"
         },
         {
           "word": "in the box",
           "translation": "在盒子里"
         },
         {
-          "word": "under the bed",
-          "translation": "在床底下"
+          "word": "on the desk",
+          "translation": "在书桌上"
+        },
+        {
+          "word": "on the shelf",
+          "translation": "在架子上"
+        },
+        {
+          "word": "tidy the room",
+          "translation": "整理房间"
+        },
+        {
+          "word": "let's",
+          "translation": "让我们（let us）"
         }
       ],
       "sentences": [
         {
-          "english": "The book is on the desk.",
-          "chinese": "书在书桌上。"
+          "english": "Where's my ball?",
+          "chinese": "我的球在哪里？"
         },
         {
-          "english": "Where is the ball? It is in the box.",
-          "chinese": "球在哪里？在盒子里。"
+          "english": "What a mess!",
+          "chinese": "真是一团糟！"
         },
         {
-          "english": "My shoes are under the bed.",
-          "chinese": "我的鞋子在床底下。"
+          "english": "Let's tidy the room together.",
+          "chinese": "咱们一起整理房间吧。"
+        },
+        {
+          "english": "Put the books on the shelf.",
+          "chinese": "把书放在架子上。"
+        },
+        {
+          "english": "Oh, no. Please put it under the bed.",
+          "chinese": "哦，不。请把它放在床下。"
+        },
+        {
+          "english": "My room is tidy. I like it very much.",
+          "chinese": "我的房间很整洁。我非常喜欢它。"
+        },
+        {
+          "english": "What about the toys? In the box?",
+          "chinese": "那玩具呢？放在盒子里？"
+        },
+        {
+          "english": "All right.",
+          "chinese": "好的；没问题。"
         }
       ],
       "text": "",
-      "tips": []
+      "tips": [
+        "let's 是 let us 的缩写形式，表示“让我们……”，后面接动词原形（如 Let's tidy the room）。",
+        "核心四大方位介词短语：on the desk（在书桌上）、in the box（在盒子里）、under the bed（在床下）、on the shelf（在架子上）。",
+        "实用生活感叹句：What a mess!（真是一团糟！）"
+      ]
     },
     {
       "unit": "Unit 3",
