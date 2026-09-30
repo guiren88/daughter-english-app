@@ -1849,7 +1849,6 @@
     {
       "unit": "Unit 2",
       "title": "整理房间与方位",
-      "isNew": true,
       "words": [
         {
           "word": "room",
@@ -1966,34 +1965,112 @@
       "title": "出行交通方式",
       "words": [
         {
-          "word": "by car",
-          "translation": "乘小汽车"
+          "word": "car",
+          "translation": "汽车；小汽车"
         },
         {
-          "word": "on foot",
-          "translation": "步行"
+          "word": "bus",
+          "translation": "公交车；公共汽车"
+        },
+        {
+          "word": "underground",
+          "translation": "地铁（英式，常指伦敦地铁）"
+        },
+        {
+          "word": "metro",
+          "translation": "地铁"
+        },
+        {
+          "word": "foot",
+          "translation": "脚；脚步"
+        },
+        {
+          "word": "London",
+          "translation": "伦敦"
+        },
+        {
+          "word": "bookmark",
+          "translation": "书签"
+        },
+        {
+          "word": "colour",
+          "translation": "涂色；颜色"
+        },
+        {
+          "word": "postcard",
+          "translation": "明信片"
+        },
+        {
+          "word": "cut",
+          "translation": "剪；切"
+        },
+        {
+          "word": "love",
+          "translation": "喜爱；热爱"
+        },
+        {
+          "word": "by car",
+          "translation": "乘汽车"
         },
         {
           "word": "by bus",
-          "translation": "乘公共汽车"
+          "translation": "乘公交"
+        },
+        {
+          "word": "on foot",
+          "translation": "步行；走路"
+        },
+        {
+          "word": "on the way",
+          "translation": "在路上"
+        },
+        {
+          "word": "a postcard from London",
+          "translation": "一张来自伦敦的明信片"
+        },
+        {
+          "word": "I see",
+          "translation": "我知道了；我明白了"
         }
       ],
       "sentences": [
         {
-          "english": "My father goes to work by car.",
-          "chinese": "我爸爸乘小汽车上班。"
+          "english": "How do you go?",
+          "chinese": "你怎么去？"
         },
         {
-          "english": "I go to school on foot.",
-          "chinese": "我步行去学校。"
+          "english": "Go by car?",
+          "chinese": "乘汽车去吗？"
         },
         {
-          "english": "They go to the park by bus.",
-          "chinese": "他们乘公共汽车去公园。"
+          "english": "Go on foot?",
+          "chinese": "步行去吗？"
+        },
+        {
+          "english": "I go to school by bus.",
+          "chinese": "我乘公交去学校。"
+        },
+        {
+          "english": "I love this red bus.",
+          "chinese": "我喜欢这个红色公交车。"
+        },
+        {
+          "english": "But what's this?",
+          "chinese": "但是这是什么？"
+        },
+        {
+          "english": "Oh, it's the London Underground.",
+          "chinese": "哦，它是伦敦地铁。"
         }
       ],
       "text": "",
-      "tips": []
+      "tips": [
+        "请家长帮助将本单元重点贴在课本第21页。",
+        "交通介词固定搭配：乘车用 by（by car, by bus, by metro），步行用 on（on foot，特别注意不用 by）。",
+        "underground 与 metro 都表示“地铁”，英国特别是伦敦常称作 the Underground，上海地铁官方常写为 Metro。",
+        "询问出行交通方式常用疑问句：“How do you go?”（你怎么去？）。"
+      ],
+      "isNew": true
     },
     {
       "unit": "Unit 4",

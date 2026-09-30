@@ -115,7 +115,7 @@
       "title": "The Mystery of the Messy Room",
       "titleCn": "乱糟糟房间的大搜寻",
       "coverEmoji": "🧸",
-      "badge": "最新上线 ✨",
+      "badge": "2A 重点课文拓展",
       "summary": "天哪，房间真是一团糟！小球到底躲到哪里去了？快和申申一起整理房间，找出红球吧！",
       "coreWords": [
         "room",
@@ -224,6 +224,114 @@
           ],
           "answer": 0,
           "explanation": "故事第6页：'Put the storybooks on the shelf.'"
+        }
+      ]
+    },
+    {
+      "id": "2a_u3",
+      "grade": "2a",
+      "unit": "Unit 3",
+      "title": "A Postcard from London",
+      "titleCn": "来自伦敦的明信片",
+      "coverEmoji": "🚌",
+      "badge": "最新上线 ✨",
+      "summary": "申申收到了一张来自伦敦的精美明信片，上面有大红色的双层巴士和著名的伦敦地铁！快来认识各种有趣的交通方式吧！",
+      "coreWords": [
+        "car",
+        "bus",
+        "underground",
+        "foot",
+        "London",
+        "postcard",
+        "by car",
+        "by bus",
+        "on foot",
+        "love",
+        "How do you go?"
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "sceneEmoji": "✉️",
+          "character": "Shenshen",
+          "sentenceEn": "Look! Here is a postcard from London! Lily sends it to Shenshen.",
+          "sentenceCn": "看！这是一张来自伦敦的明信片！莉莉寄给申申的。",
+          "focusWord": "a postcard from London"
+        },
+        {
+          "pageNumber": 2,
+          "sceneEmoji": "🚌",
+          "character": "Shenshen",
+          "sentenceEn": "Wow, look at the big red bus! Shenshen says, 'I love this red bus!'",
+          "sentenceCn": "哇，看这辆大大的红色公共汽车！申申说：“我喜欢这个红色公交车！”",
+          "focusWord": "love this red bus"
+        },
+        {
+          "pageNumber": 3,
+          "sceneEmoji": "🚇",
+          "character": "Lily's Postcard",
+          "sentenceEn": "But what's this? Oh, it's the London Underground! Trains go fast under the ground.",
+          "sentenceCn": "但是这是什么？哦，它是伦敦地铁！列车在地下跑得飞快。",
+          "focusWord": "London Underground"
+        },
+        {
+          "pageNumber": 4,
+          "sceneEmoji": "🚗",
+          "character": "Mum",
+          "sentenceEn": "'How do you go to school, Shenshen?' Mum asks. 'Go by car? No, we don't.'",
+          "sentenceCn": "妈妈问：“申申，你怎么去学校呀？乘汽车去吗？不，我们不坐汽车。”",
+          "focusWord": "How do you go"
+        },
+        {
+          "pageNumber": 5,
+          "sceneEmoji": "🚍",
+          "character": "Shenshen",
+          "sentenceEn": "'I go to school by bus!' Shenshen says happily. 'The bus is big and fun.'",
+          "sentenceCn": "“我乘公交去学校！”申申开心地说。“公交车又大又有趣。”",
+          "focusWord": "go to school by bus"
+        },
+        {
+          "pageNumber": 6,
+          "sceneEmoji": "🚶‍♀️",
+          "character": "Shenshen & Dad",
+          "sentenceEn": "'Sometimes I go on foot with Dad. We walk and talk on the way.' 'I see, that is great!'",
+          "sentenceCn": "“有时我和爸爸一起走路去。我们在路上边走边聊。”“我知道啦，那太好啦！”",
+          "focusWord": "go on foot"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where is the postcard from?",
+          "questionCn": "明信片来自哪里？",
+          "options": [
+            "London (伦敦)",
+            "Beijing (北京)",
+            "Shanghai (上海)"
+          ],
+          "answer": 0,
+          "explanation": "第一页提到：'Here is a postcard from London.'（这是一张来自伦敦的明信片）。"
+        },
+        {
+          "question": "What does Shenshen love on the postcard?",
+          "questionCn": "申申喜欢明信片上的什么？",
+          "options": [
+            "The small boat (小船)",
+            "The big red bus (红色大公交车)",
+            "The yellow bicycle (黄色自行车)"
+          ],
+          "answer": 1,
+          "explanation": "第二页课文：'I love this red bus!'（我喜欢这个红色公交车！）"
+        },
+        {
+          "question": "How does Shenshen usually go to school?",
+          "questionCn": "申申通常怎么去学校？",
+          "options": [
+            "By bus (乘公交车)",
+            "By plane (坐飞机)",
+            "By ship (坐大轮船)"
+          ],
+          "answer": 0,
+          "explanation": "第五页课文：'I go to school by bus!'（我乘公交去学校！）"
         }
       ]
     }
