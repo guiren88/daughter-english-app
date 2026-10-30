@@ -234,7 +234,7 @@
       "title": "A Postcard from London",
       "titleCn": "来自伦敦的明信片",
       "coverEmoji": "🚌",
-      "badge": "最新上线 ✨",
+      "badge": "2A 重点课文拓展",
       "summary": "申申收到了一张来自伦敦的精美明信片，上面有大红色的双层巴士和著名的伦敦地铁！快来认识各种有趣的交通方式吧！",
       "coreWords": [
         "car",
@@ -332,6 +332,224 @@
           ],
           "answer": 0,
           "explanation": "第五页课文：'I go to school by bus!'（我乘公交去学校！）"
+        }
+      ]
+    },
+    {
+      "id": "2a_u4",
+      "grade": "2a",
+      "unit": "Unit 4",
+      "title": "Do Our Best on Sports Day!",
+      "titleCn": "运动会，我们竭尽全力！",
+      "coverEmoji": "🏓",
+      "badge": "最新上线 ✨",
+      "summary": "操场上真热闹！跑步、跳远、踢足球、打篮球，还有精彩的乒乓球挑战！快和申申一起做热身运动，勇敢试一试吧！",
+      "coreWords": [
+        "sports",
+        "run",
+        "jump",
+        "football",
+        "basketball",
+        "ping-pong",
+        "do a warm-up",
+        "have a go",
+        "out",
+        "try again",
+        "best",
+        "Well done"
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "sceneEmoji": "🏃",
+          "character": "Shenshen & Friends",
+          "sentenceEn": "It is Sports Day at school! We love to play sports. We can run fast and jump high!",
+          "sentenceCn": "今天是学校运动会！我们热爱做运动。我们可以跑得快、跳得高！",
+          "focusWord": "play sports"
+        },
+        {
+          "pageNumber": 2,
+          "sceneEmoji": "🤸",
+          "character": "PE Teacher",
+          "sentenceEn": "Coach says, 'But you should do a warm-up first! Let's do our best today!'",
+          "sentenceCn": "教练说：“但你们应该先做热身运动！今天让我们竭尽全力！”",
+          "focusWord": "do a warm-up"
+        },
+        {
+          "pageNumber": 3,
+          "sceneEmoji": "🏓",
+          "character": "Shenshen",
+          "sentenceEn": "Lily plays ping-pong. Shenshen says, 'Wow, you can play ping-pong very well. Can I have a go?'",
+          "sentenceCn": "莉莉在打乒乓球。申申说：“哇，你乒乓球打得非常好。我能试一试吗？”",
+          "focusWord": "have a go"
+        },
+        {
+          "pageNumber": 4,
+          "sceneEmoji": "😮",
+          "character": "Shenshen",
+          "sentenceEn": "Shenshen hits the ping-pong ball hard. 'Oh, no! The ball's out!' Shenshen says.",
+          "sentenceCn": "申申用力击打乒乓球。“哦，不！球出界了！”申申说道。",
+          "focusWord": "The ball's out"
+        },
+        {
+          "pageNumber": 5,
+          "sceneEmoji": "🌟",
+          "character": "Lily & Shenshen",
+          "sentenceEn": "'Try again, Shenshen!' Lily smiles. Shenshen hits a great shot! 'Well done!'",
+          "sentenceCn": "“再试一次，申申！”莉莉微笑着鼓励。申申打出了漂亮的一球！“做得好！”",
+          "focusWord": "Try again"
+        },
+        {
+          "pageNumber": 6,
+          "sceneEmoji": "⚽",
+          "character": "Classmates",
+          "sentenceEn": "After ping-pong, the children cheer, 'Let's play football and play basketball together!'",
+          "sentenceCn": "打完乒乓球后，孩子们欢呼道：“我们一起踢足球、打篮球吧！”",
+          "focusWord": "play football"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should the children do before playing sports?",
+          "questionCn": "做运动之前，孩子们应该先做什么？",
+          "options": [
+            "Do a warm-up (做热身运动)",
+            "Play a board game (玩桌游)",
+            "Go to sleep (去睡觉)"
+          ],
+          "answer": 0,
+          "explanation": "根据课文重点句型：'But you should do a warm-up.'（但你应该做热身运动。）"
+        },
+        {
+          "question": "What does Shenshen say when she wants to try playing ping-pong?",
+          "questionCn": "当申申想尝试打乒乓球时，她是怎么说的？",
+          "options": [
+            "The ball's out! (球出界了！)",
+            "Can I have a go? (我能试一试吗？)",
+            "Good morning! (早上好！)"
+          ],
+          "answer": 1,
+          "explanation": "根据课文句子：'Wow, you can play ping-pong very well. Can I have a go?'"
+        },
+        {
+          "question": "When the ball is out, what does Lily say to encourage Shenshen?",
+          "questionCn": "当球出界时，莉莉说了什么来鼓励申申？",
+          "options": [
+            "Try again! (再试一次！)",
+            "What a mess! (真是一团糟！)",
+            "Goodbye! (再见！)"
+          ],
+          "answer": 0,
+          "explanation": "根据故事第5页：'Try again, Shenshen!'（再试一次，申申！）"
+        }
+      ]
+    },
+    {
+      "id": "2a_u5",
+      "grade": "2a",
+      "unit": "Unit 5",
+      "title": "Rita's Magical Sky Log",
+      "titleCn": "莉塔的奇妙天空观察记",
+      "coverEmoji": "🌤️",
+      "badge": "最新上线 ✨",
+      "summary": "从清晨太阳升起、正午白云朵朵，到夜晚明月与钻石般闪亮的繁星，跟着莉塔一起记录天空的奇妙变化吧！",
+      "coreWords": [
+        "sky",
+        "sun",
+        "moon",
+        "star",
+        "cloud",
+        "high in the sky",
+        "behind the clouds",
+        "come up",
+        "go down",
+        "come out",
+        "at night",
+        "diamond"
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "sceneEmoji": "🌅",
+          "character": "Rita",
+          "sentenceEn": "Hello! Look, this is my sky log. In the morning, the sun comes up. Good morning, Mr Sun!",
+          "sentenceCn": "你好！看，这是我的天空记录。在早晨，太阳升起来了。早上好，太阳先生！",
+          "focusWord": "comes up"
+        },
+        {
+          "pageNumber": 2,
+          "sceneEmoji": "☁️",
+          "character": "Rita",
+          "sentenceEn": "Where's Mr Sun now? Oh, he is behind the clouds! I like the white clouds. They're white and soft.",
+          "sentenceCn": "现在太阳先生在哪里？哦，他在云朵的后面！我喜欢白云，它们又白又软。",
+          "focusWord": "behind the clouds"
+        },
+        {
+          "pageNumber": 3,
+          "sceneEmoji": "☀️",
+          "character": "Mr Sun & Rita",
+          "sentenceEn": "In the afternoon, Mr Sun comes out again. The sun is high in the sky. It's big and yellow!",
+          "sentenceCn": "到了下午，太阳先生又出来了。太阳高高挂在天空中，它又大又黄！",
+          "focusWord": "high in the sky"
+        },
+        {
+          "pageNumber": 4,
+          "sceneEmoji": "🌇",
+          "character": "Rita",
+          "sentenceEn": "In the evening, the sun goes down in the west. The moon comes out in the evening.",
+          "sentenceCn": "傍晚时分，太阳在西边落下。月亮在傍晚出来了。",
+          "focusWord": "goes down"
+        },
+        {
+          "pageNumber": 5,
+          "sceneEmoji": "✨",
+          "character": "Rita",
+          "sentenceEn": "At night, the moon and the stars come out. I can see small stars in the sky. They're small and bright!",
+          "sentenceCn": "在夜晚，月亮和星星都出来了。我能看到天空中的小星星，它们又小又亮！",
+          "focusWord": "at night"
+        },
+        {
+          "pageNumber": 6,
+          "sceneEmoji": "💎",
+          "character": "Rita",
+          "sentenceEn": "The little star is like a diamond in the sky. Good night, Mr Sun! Good night, moon and stars!",
+          "sentenceCn": "小星星就像天空中的一颗钻石。晚安，太阳先生！晚安，月亮和星星！",
+          "focusWord": "like a diamond"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When does the sun come up?",
+          "questionCn": "太阳在什么时候升起？",
+          "options": [
+            "In the morning (在早晨)",
+            "In the afternoon (在下午)",
+            "At night (在夜晚)"
+          ],
+          "answer": 0,
+          "explanation": "根据故事第1页：'In the morning, the sun comes up.'（早晨，太阳升起。）"
+        },
+        {
+          "question": "Where is Mr Sun when Rita cannot see him clearly?",
+          "questionCn": "当莉塔找不到太阳先生时，太阳先生躲在哪里？",
+          "options": [
+            "Under the bed (在床底下)",
+            "Behind the clouds (在云朵的后面)",
+            "In the box (在盒子里)"
+          ],
+          "answer": 1,
+          "explanation": "根据故事第2页：'Where's Mr Sun now? Oh, he is behind the clouds!'（他在云朵的后面！）"
+        },
+        {
+          "question": "What comes out at night and looks like a diamond?",
+          "questionCn": "什么在夜晚出来，并且像一颗钻石？",
+          "options": [
+            "The little star (小星星)",
+            "The white cloud (白云)",
+            "The red bus (红色公交车)"
+          ],
+          "answer": 0,
+          "explanation": "根据故事第6页：'The little star is like a diamond in the sky.'（小星星像天空中的一颗钻石。）"
         }
       ]
     }

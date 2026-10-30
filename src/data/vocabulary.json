@@ -2069,92 +2069,251 @@
         "交通介词固定搭配：乘车用 by（by car, by bus, by metro），步行用 on（on foot，特别注意不用 by）。",
         "underground 与 metro 都表示“地铁”，英国特别是伦敦常称作 the Underground，上海地铁官方常写为 Metro。",
         "询问出行交通方式常用疑问句：“How do you go?”（你怎么去？）。"
-      ],
-      "isNew": true
+      ]
     },
     {
       "unit": "Unit 4",
-      "title": "运动类词汇",
+      "title": "体育运动与热身",
       "words": [
+        {
+          "word": "sports",
+          "translation": "运动（复数）"
+        },
         {
           "word": "run",
           "translation": "跑；奔跑"
         },
         {
-          "word": "jump",
-          "translation": "跳；跃；跳跃"
+          "word": "football",
+          "translation": "足球"
         },
         {
-          "word": "play ping-pong",
-          "translation": "打乒乓球"
+          "word": "jump",
+          "translation": "跳；跳跃"
+        },
+        {
+          "word": "basketball",
+          "translation": "篮球"
+        },
+        {
+          "word": "ping-pong",
+          "translation": "乒乓球"
+        },
+        {
+          "word": "best",
+          "translation": "最好"
+        },
+        {
+          "word": "out",
+          "translation": "出；在外；出界"
+        },
+        {
+          "word": "have a go",
+          "translation": "试一试"
+        },
+        {
+          "word": "try again",
+          "translation": "再试一次"
+        },
+        {
+          "word": "should",
+          "translation": "应该"
+        },
+        {
+          "word": "board game",
+          "translation": "桌游；棋盘游戏"
+        },
+        {
+          "word": "play sports",
+          "translation": "做运动"
+        },
+        {
+          "word": "play football",
+          "translation": "踢足球"
         },
         {
           "word": "play basketball",
           "translation": "打篮球"
         },
         {
-          "word": "play football",
-          "translation": "踢足球"
+          "word": "play ping-pong",
+          "translation": "打乒乓球"
+        },
+        {
+          "word": "do a warm-up",
+          "translation": "做热身运动"
         }
       ],
       "sentences": [
         {
-          "english": "I can run and jump.",
-          "chinese": "我会跑和跳。"
+          "english": "Do our best.",
+          "chinese": "我们竭尽全力。"
         },
         {
-          "english": "He likes to play ping-pong.",
-          "chinese": "他喜欢打乒乓球。"
+          "english": "Wow, you can play ping-pong very well. Can I have a go?",
+          "chinese": "哇，你乒乓球打得非常好。我能试一试吗？"
         },
         {
-          "english": "Let's play football in the afternoon.",
-          "chinese": "我们下午去踢足球吧。"
+          "english": "But you should do a warm-up.",
+          "chinese": "但你应该做热身运动。"
+        },
+        {
+          "english": "Oh, no! The ball's out.",
+          "chinese": "哦，不！球出界了。"
+        },
+        {
+          "english": "Try again.",
+          "chinese": "再试一次。"
+        },
+        {
+          "english": "Well done!",
+          "chinese": "做得好！"
+        },
+        {
+          "english": "Let's play football.",
+          "chinese": "我们踢足球吧。"
         }
       ],
       "text": "",
-      "tips": []
+      "tips": [
+        "请家长帮助将本单元重点贴在课本第27页。",
+        "球类运动固定搭配：play + 球类名词（中间不加 the），如 play football（踢足球）、play basketball（打篮球）、play ping-pong（打乒乓球）。",
+        "情态动词 can（能/会）和 should（应该）后面都必须接动词原形，如 you can play...、you should do a warm-up。",
+        "运动鼓励与礼貌用语：Do our best.（我们竭尽全力）、Can I have a go?（我能试一试吗？）、Try again.（再试一次）、Well done!（做得好！）"
+      ],
+      "isNew": true
     },
     {
       "unit": "Unit 5",
-      "title": "天空相关事物",
+      "title": "天空与昼夜景象",
       "words": [
         {
-          "word": "in the sky",
-          "translation": "在天空中"
-        },
-        {
-          "word": "star",
-          "translation": "星"
+          "word": "sky",
+          "translation": "天空"
         },
         {
           "word": "sun",
           "translation": "太阳"
         },
         {
+          "word": "moon",
+          "translation": "月亮；月球"
+        },
+        {
+          "word": "star",
+          "translation": "星星"
+        },
+        {
           "word": "cloud",
           "translation": "云；云朵"
         },
         {
-          "word": "moon",
-          "translation": "月亮；月球"
+          "word": "high",
+          "translation": "高的；高高地"
+        },
+        {
+          "word": "behind",
+          "translation": "在……后面"
+        },
+        {
+          "word": "bright",
+          "translation": "明亮的"
+        },
+        {
+          "word": "evening",
+          "translation": "傍晚；晚上"
+        },
+        {
+          "word": "night",
+          "translation": "夜晚"
+        },
+        {
+          "word": "diamond",
+          "translation": "钻石"
+        },
+        {
+          "word": "in the sky",
+          "translation": "在天空中"
+        },
+        {
+          "word": "high in the sky",
+          "translation": "高高挂在天空中"
+        },
+        {
+          "word": "behind the clouds",
+          "translation": "在云朵后面"
+        },
+        {
+          "word": "come up",
+          "translation": "升起；出来（如太阳升起）"
+        },
+        {
+          "word": "go down",
+          "translation": "落下（如太阳落山）"
+        },
+        {
+          "word": "come out",
+          "translation": "出来；出现（如月亮星星出来）"
+        },
+        {
+          "word": "in the evening",
+          "translation": "在傍晚；在晚上"
+        },
+        {
+          "word": "at night",
+          "translation": "在夜晚"
         }
       ],
       "sentences": [
         {
-          "english": "The sun is in the sky.",
-          "chinese": "太阳在天空中。"
+          "english": "Where's Mr Sun? He is behind the clouds.",
+          "chinese": "太阳先生在哪里？他在云朵的后面。"
         },
         {
-          "english": "Look at the moon and stars at night.",
-          "chinese": "晚上看月亮和星星。"
+          "english": "The sun comes up in the morning.",
+          "chinese": "太阳在早晨升起。"
         },
         {
-          "english": "There are some clouds in the sky.",
-          "chinese": "天空中有些云朵。"
+          "english": "The sun is high in the sky.",
+          "chinese": "太阳高高挂在天空中。"
+        },
+        {
+          "english": "The sun goes down at night.",
+          "chinese": "太阳在夜晚落下。"
+        },
+        {
+          "english": "The moon comes out in the evening.",
+          "chinese": "月亮在傍晚出来。"
+        },
+        {
+          "english": "The moon and the stars come out at night.",
+          "chinese": "月亮和星星在夜晚出来。"
+        },
+        {
+          "english": "I can see small stars in the sky. They're small and bright.",
+          "chinese": "我能看到天空中的小星星。它们又小又亮。"
+        },
+        {
+          "english": "The little star is like a diamond.",
+          "chinese": "小星星像一颗钻石。"
+        },
+        {
+          "english": "I like the white clouds. They're white and soft.",
+          "chinese": "我喜欢白云。它们又白又软。"
+        },
+        {
+          "english": "He's behind me.",
+          "chinese": "他在我的后面。"
         }
       ],
       "text": "",
-      "tips": []
+      "tips": [
+        "时间介词重点区分：in the morning（在早上）、in the afternoon（在下午）、in the evening（在傍晚/晚上），但“在夜晚”固定搭配为 at night（不用 in）！",
+        "第三人称单数动词变化：主语是单数（The sun / The moon / He）时动词加 -s/-es（comes up, goes down, comes out）；主语是复数（The moon and stars / They）时用动词原形（come out）。",
+        "方位介词 behind（在……后面）后接人称代词宾格，例如：He's behind me.（不能写 I 或 my）；注意句子顺序：The moon is behind the clouds.（月亮在云朵后面）。",
+        "天空观察日志（Sky Log）核心句型：Look, this is my sky log. The sun is in the sky. It's big and yellow. The clouds are in the sky. They're white and soft."
+      ],
+      "isNew": true
     },
     {
       "unit": "Unit 6",
