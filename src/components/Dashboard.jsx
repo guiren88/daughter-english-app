@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { CheckCircle, Award, Bookmark, BookOpen, Layers, AlertCircle, Sparkles } from 'lucide-react'
+import { CheckCircle, Award, Bookmark, BookOpen, Layers, AlertCircle, Sparkles, Volume2, Gamepad2, Gift } from 'lucide-react'
+import { COMPANION_PROFILES, getPlayerLevel, STICKER_COLLECTION, playCuteEffect } from '../utils/wordVisuals'
 
 export default function Dashboard({ 
   grade, 
@@ -14,12 +15,18 @@ export default function Dashboard({
   showOnlyMistakes,
   setShowOnlyMistakes,
   mistakes,
-  studyHistory
+  studyHistory,
+  stars = 0,
+  theme = 'kuromi',
+  playAudio
 }) {
   const [unitFilter, setUnitFilter] = useState('all'); // 'all' or 'completed'
   const [showMoreGrades, setShowMoreGrades] = useState(() => {
     return ['3', '4', '5'].some(num => grade.startsWith(num));
   });
+  const [quoteIdx, setQuoteIdx] = useState(0);
+  const [petBouncing, setPetBouncing] = useState(false);
+  const [showStickerModal, setShowStickerModal] = useState(false);
 
   // Compute dashboard metrics
   const totalUnits = units.length;
@@ -31,6 +38,23 @@ export default function Dashboard({
   const filteredUnits = unitFilter === 'completed'
     ? units.filter(unit => completedUnits.includes(`${grade}_${unit.unit}`))
     : units;
+
+  // Companion & Level info
+  const companion = COMPANION_PROFILES[theme] || COMPANION_PROFILES.kuromi;
+  const currentQuote = companion.quotes[quoteIdx % companion.quotes.length];
+  const { current: curLevel, next: nextLevel, progress: levelProgress } = getPlayerLevel(stars);
+  const unlockedStickers = STICKER_COLLECTION.filter(s => s.check(stars, completedUnits.length));
+
+  const handlePetInteract = () => {
+    setPetBouncing(true);
+    playCuteEffect('pet');
+    const nextQ = (quoteIdx + 1) % companion.quotes.length;
+    setQuoteIdx(nextQ);
+    if (playAudio) {
+      playAudio(companion.quotes[nextQ].en);
+    }
+    setTimeout(() => setPetBouncing(false), 700);
+  };
 
   // Study Streak & Check-in Calculation
   const studyDates = studyHistory ? studyHistory.map(h => h.date) : [];
@@ -99,13 +123,13 @@ export default function Dashboard({
   return (
     <div>
       {/* Dashboard top section */}
-      <div className="dashboard-header" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2.5rem' }}>
+      <div className="dashboard-header" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '1.75rem' }}>
         <div>
           <h1 style={{ fontSize: '2.25rem', marginBottom: '0.5rem' }}>
             {grade.toUpperCase()} 英语核心知识点看板
           </h1>
           <p style={{ color: 'var(--text-secondary)' }}>
-            欢迎来到小学英语核心词汇与句法训练营
+            欢迎来到小学英语核心词汇、绘本故事与趣味闯关乐园 ✨
           </p>
         </div>
 
@@ -189,6 +213,212 @@ export default function Dashboard({
           </div>
         </div>
       </div>
+
+      {/* Interactive Companion Buddy & Level Progression Pod */}
+      <div className="glass-card no-print" style={{
+        padding: '1.35rem 1.75rem',
+        marginBottom: '2rem',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        gap: '1.25rem',
+        background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.14), rgba(139, 92, 246, 0.14))',
+        border: '1.5px solid var(--border-glass-focus)'
+      }}>
+        {/* Left: Companion Mascot + Speech Bubble */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.1rem', flex: '1 1 360px' }}>
+          <div
+            onClick={handlePetInteract}
+            style={{
+              width: '72px',
+              height: '72px',
+              borderRadius: '50%',
+              background: 'rgba(255,255,255,0.12)',
+              border: '2px solid var(--accent-pink)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '2.6rem',
+              cursor: 'pointer',
+              flexShrink: 0,
+              boxShadow: '0 0 20px rgba(236, 72, 153, 0.3)',
+              transform: petBouncing ? 'scale(1.18) rotate(-8deg)' : 'scale(1)',
+              transition: 'transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)'
+            }}
+            title="点击摸摸头，听我讲英语！"
+          >
+            {theme === 'kuromi' ? (
+              <img src="/kuromi_icon.png" alt="Kuromi" style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} />
+            ) : (
+              companion.avatar
+            )}
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+              <span style={{ fontWeight: '800', fontSize: '1.05rem', color: 'var(--accent-pink)' }}>
+                {companion.name}
+              </span>
+              <button
+                onClick={handlePetInteract}
+                style={{
+                  background: 'rgba(255,255,255,0.1)',
+                  border: '1px solid var(--border-glass)',
+                  borderRadius: '999px',
+                  padding: '0.15rem 0.65rem',
+                  fontSize: '0.78rem',
+                  color: 'var(--text-primary)',
+                  cursor: 'pointer',
+                  fontWeight: 'bold'
+                }}
+              >
+                {companion.foodIcon || companion.foodEmoji} 喂{companion.foodName} / 摸摸头
+              </button>
+            </div>
+
+            <div
+              onClick={() => playAudio && playAudio(currentQuote.en)}
+              style={{
+                background: 'rgba(0,0,0,0.2)',
+                padding: '0.5rem 0.9rem',
+                borderRadius: '14px',
+                cursor: 'pointer',
+                border: '1px solid rgba(255,255,255,0.08)'
+              }}
+              title="点击朗读英文鼓励句"
+            >
+              <div style={{ fontWeight: '700', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <Volume2 size={15} style={{ color: 'var(--accent-pink)', flexShrink: 0 }} />
+                <span>"{currentQuote.en}"</span>
+              </div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '0.15rem', paddingLeft: '1.3rem' }}>
+                {currentQuote.cn}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right: Level Rank Bar & Sticker Book Button */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.55rem', minWidth: '270px', flex: '0 1 320px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ fontWeight: '800', fontSize: '0.98rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+              <span>{curLevel.badge}</span>
+              <span>Lv.{curLevel.level} {curLevel.title}</span>
+            </span>
+            <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 'bold' }}>
+              {nextLevel ? `距离 Lv.${nextLevel.level} 还需 ${nextLevel.minStars - stars} ⭐` : '已达最高传奇等级!'}
+            </span>
+          </div>
+
+          <div style={{ height: '10px', background: 'rgba(0,0,0,0.3)', borderRadius: '999px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
+            <div style={{
+              width: `${levelProgress}%`,
+              height: '100%',
+              background: 'linear-gradient(90deg, #fbbf24, #ec4899, #8b5cf6)',
+              borderRadius: '999px',
+              transition: 'width 0.5s ease'
+            }} />
+          </div>
+
+          <div style={{ display: 'flex', gap: '0.6rem', marginTop: '0.2rem' }}>
+            <button
+              onClick={() => setShowStickerModal(!showStickerModal)}
+              style={{
+                flex: 1,
+                padding: '0.45rem 0.85rem',
+                borderRadius: '999px',
+                border: '1px solid var(--accent-pink)',
+                background: 'rgba(236, 72, 153, 0.15)',
+                color: 'var(--text-primary)',
+                fontWeight: 'bold',
+                fontSize: '0.85rem',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.35rem'
+              }}
+            >
+              <Gift size={15} />
+              <span>贴纸图鉴 ({unlockedStickers.length}/{STICKER_COLLECTION.length})</span>
+            </button>
+
+            <button
+              onClick={() => setActiveView('games')}
+              style={{
+                flex: 1,
+                padding: '0.45rem 0.85rem',
+                borderRadius: '999px',
+                border: 'none',
+                background: 'linear-gradient(135deg, #ec4899, #8b5cf6)',
+                color: '#fff',
+                fontWeight: 'bold',
+                fontSize: '0.85rem',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.35rem',
+                boxShadow: '0 4px 12px rgba(236, 72, 153, 0.35)'
+              }}
+            >
+              <Gamepad2 size={15} />
+              <span>去玩消消乐</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Collectible Sticker Book Drawer */}
+      {showStickerModal && (
+        <div className="glass-card no-print view-transition" style={{ marginBottom: '2rem', padding: '1.5rem', border: '2px solid var(--accent-pink)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <h3 style={{ fontSize: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span>🎁 我的魔法贴纸收集册</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--accent-pink)' }}>
+                (已收集 {unlockedStickers.length} / {STICKER_COLLECTION.length} 张)
+              </span>
+            </h3>
+            <button
+              onClick={() => setShowStickerModal(false)}
+              style={{ background: 'transparent', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', fontWeight: 'bold' }}
+            >
+              收起 ✖
+            </button>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(135px, 1fr))', gap: '0.85rem' }}>
+            {STICKER_COLLECTION.map((st) => {
+              const unlocked = st.check(stars, completedUnits.length);
+              return (
+                <div
+                  key={st.id}
+                  onClick={() => unlocked && playCuteEffect('match')}
+                  style={{
+                    padding: '0.9rem 0.6rem',
+                    borderRadius: '16px',
+                    textAlign: 'center',
+                    background: unlocked ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.2)',
+                    border: unlocked ? '1.5px solid var(--accent-pink)' : '1px dashed var(--border-glass)',
+                    opacity: unlocked ? 1 : 0.55,
+                    cursor: unlocked ? 'pointer' : 'default',
+                    transition: 'transform 0.2s ease'
+                  }}
+                >
+                  <div style={{ fontSize: '2.4rem', filter: unlocked ? 'none' : 'grayscale(100%)', marginBottom: '0.3rem' }}>
+                    {unlocked ? st.emoji : '🔒'}
+                  </div>
+                  <div style={{ fontWeight: '800', fontSize: '0.9rem' }}>{st.name}</div>
+                  <div style={{ fontSize: '0.75rem', color: unlocked ? 'var(--accent-green)' : 'var(--text-muted)', marginTop: '0.15rem' }}>
+                    {unlocked ? '✨ 已点亮' : st.reqText}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Stats Cards Row */}
       <div className="stats-row">
@@ -550,43 +780,56 @@ export default function Dashboard({
                     <div className="progress-bar" style={{ width: isCompleted ? '100%' : '15%' }}></div>
                   </div>
                   
-                  <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1.25rem' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.45rem', marginTop: '1.15rem' }}>
                     <button 
                       className="action-btn"
-                      style={{ flex: 1, padding: '0.45rem 0.5rem', fontSize: '0.85rem', borderRadius: '8px' }}
+                      style={{ padding: '0.45rem 0.5rem', fontSize: '0.85rem', borderRadius: '8px' }}
                       onClick={() => onSelectUnit(unit, 'flashcards')}
                     >
-                      背单词
+                      🃏 背单词
                     </button>
                     <button 
                       className="action-btn"
                       style={{ 
-                        flex: 1, 
                         padding: '0.45rem 0.5rem', 
                         fontSize: '0.85rem', 
                         borderRadius: '8px', 
-                        background: 'rgba(255,255,255,0.05)',
-                        border: '1px solid var(--border-glass)'
-                      }}
-                      onClick={() => onSelectUnit(unit, 'quiz')}
-                    >
-                      去测试
-                    </button>
-                    <button 
-                      className="action-btn"
-                      style={{ 
-                        flex: 1, 
-                        padding: '0.45rem 0.5rem', 
-                        fontSize: '0.85rem', 
-                        borderRadius: '8px', 
-                        background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(139, 92, 246, 0.2))',
+                        background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.22), rgba(139, 92, 246, 0.22))',
                         border: '1px solid var(--accent-pink)',
+                        color: 'var(--text-primary)'
+                      }}
+                      onClick={() => onSelectUnit(unit, 'games')}
+                      title="玩该单元泡泡消消乐与拼词游戏"
+                    >
+                      🎮 玩游戏
+                    </button>
+                    <button 
+                      className="action-btn"
+                      style={{ 
+                        padding: '0.45rem 0.5rem', 
+                        fontSize: '0.85rem', 
+                        borderRadius: '8px', 
+                        background: 'rgba(255,255,255,0.06)',
+                        border: '1px solid var(--border-glass)',
                         color: 'var(--text-primary)'
                       }}
                       onClick={() => onSelectUnit(unit, 'stories')}
                       title="阅读该单元同步微故事绘本"
                     >
-                      📖 绘本
+                      📖 读绘本
+                    </button>
+                    <button 
+                      className="action-btn"
+                      style={{ 
+                        padding: '0.45rem 0.5rem', 
+                        fontSize: '0.85rem', 
+                        borderRadius: '8px', 
+                        background: 'rgba(255,255,255,0.06)',
+                        border: '1px solid var(--border-glass)'
+                      }}
+                      onClick={() => onSelectUnit(unit, 'quiz')}
+                    >
+                      ⚡ 去测试
                     </button>
                   </div>
                 </div>

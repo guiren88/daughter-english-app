@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Volume2, Star, Search, Filter, AlertCircle, Check, ChevronLeft } from 'lucide-react'
+import { Volume2, Star, Search, AlertCircle, Check, ChevronLeft } from 'lucide-react'
+import { getWordEmoji } from '../utils/wordVisuals'
 
 export default function Glossary({
   vocabData,
@@ -16,13 +17,12 @@ export default function Glossary({
   setActiveView
 }) {
   const [searchTerm, setSearchTerm] = useState('');
-  const [gradeFilter, setGradeFilter] = useState(currentGrade || 'all'); // 'all', '1a', '1b'
+  const [gradeFilter, setGradeFilter] = useState(currentGrade || 'all');
   const [unitFilter, setUnitFilter] = useState('all');
   const [showAllGrades, setShowAllGrades] = useState(() => {
     return ['3', '4', '5'].some(num => (currentGrade || '').startsWith(num));
   });
 
-  // Sync gradeFilter with currentGrade when currentGrade changes
   useEffect(() => {
     if (currentGrade) {
       setGradeFilter(currentGrade);
@@ -32,25 +32,22 @@ export default function Glossary({
     }
   }, [currentGrade]);
 
-  // Reset unit filter when grade filter changes
   useEffect(() => {
     setUnitFilter('all');
   }, [gradeFilter])
 
-  // Get units list for the Unit dropdown based on selected grade
   const getDropdownUnits = () => {
     if (gradeFilter === 'all') return [];
     return vocabData[`grade_${gradeFilter}`] || [];
   }
 
-  // Compile words database based on Grade filter
   let allWords = [];
   
   Object.keys(vocabData).forEach(key => {
     const gradeVal = key.replace('grade_', '');
     const isHighGrade = ['3', '4', '5'].some(num => gradeVal.startsWith(num));
     if (isHighGrade && !showAllGrades) {
-      return; // Skip high grades if not toggled
+      return;
     }
     if (gradeFilter === 'all' || gradeFilter === gradeVal) {
       vocabData[key].forEach(unit => {
@@ -66,29 +63,20 @@ export default function Glossary({
     }
   });
 
-  // Filter words based on search term, unit, bookmarks, and mistakes
   const filteredWords = allWords.filter(wordObj => {
     const isBookmarked = bookmarkedWords.some(w => w.word === wordObj.word && w.grade === wordObj.grade);
     const isMistake = mistakes.some(m => m.word === wordObj.word && m.grade === wordObj.grade);
     
-    // Search match
     const matchesSearch = 
       wordObj.word.toLowerCase().includes(searchTerm.toLowerCase()) ||
       wordObj.translation.includes(searchTerm);
       
-    // Unit match
     const matchesUnit = unitFilter === 'all' || wordObj.unitName === unitFilter;
-    
-    // Bookmarks match
     const matchesBookmark = !showOnlyBookmarks || isBookmarked;
-
-    // Mistakes match
     const matchesMistake = !showOnlyMistakes || isMistake;
     
     return matchesSearch && matchesUnit && matchesBookmark && matchesMistake;
   });
-
-
 
   const dropdownUnits = getDropdownUnits();
 
@@ -96,7 +84,7 @@ export default function Glossary({
     <div className="glass-card">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }} className="no-print">
         <h2 style={{ fontSize: '1.75rem', fontFamily: 'var(--font-title)', marginBottom: 0 }}>
-          🔍 核心词汇索引大纲 (全量 1A - 5B 词库)
+          🔍 核心词汇索引大纲 (点击单词即可发音)
         </h2>
         <button 
           className="ctrl-action-btn"
@@ -112,7 +100,6 @@ export default function Glossary({
 
       {/* Glossary Filtering Controls */}
       <div className="glossary-controls" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '0.75rem', marginBottom: '2rem' }}>
-        {/* 1. Search Query Input */}
         <div style={{ position: 'relative' }}>
           <Search 
             size={18} 
@@ -128,7 +115,6 @@ export default function Glossary({
           />
         </div>
 
-        {/* 2. Grade Filter Select */}
         <select 
           className="select-dropdown"
           value={gradeFilter}
@@ -163,7 +149,6 @@ export default function Glossary({
           )}
         </select>
 
-        {/* 3. Unit Filter Select (Disabled when All Grades selected) */}
         <select 
           className="select-dropdown"
           value={unitFilter}
@@ -179,7 +164,6 @@ export default function Glossary({
           ))}
         </select>
 
-        {/* 4. Only Bookmarks Toggle */}
         <label 
           className="option-btn" 
           style={{ 
@@ -207,7 +191,6 @@ export default function Glossary({
           />
         </label>
 
-        {/* 5. Only Mistakes Toggle */}
         <label 
           className="option-btn" 
           style={{ 
@@ -253,6 +236,7 @@ export default function Glossary({
             <tbody>
               {filteredWords.map((item, idx) => {
                 const isStarred = bookmarkedWords.some(w => w.word === item.word && w.grade === item.grade);
+                const emoji = getWordEmoji(item.word, item.translation);
                 return (
                   <tr key={idx} className="stagger-item" style={{ '--index': Math.min(idx, 15) }}>
                     <td style={{ color: 'var(--text-muted)' }}>{idx + 1}</td>
@@ -271,8 +255,14 @@ export default function Glossary({
                         {item.grade.toUpperCase()}
                       </span>
                     </td>
-                    <td className="cell-word">
-                      {item.word}
+                    <td
+                      className="cell-word"
+                      style={{ cursor: 'pointer' }}
+                      onClick={() => playAudio(item.word)}
+                      title="点击发音"
+                    >
+                      <span style={{ marginRight: '0.45rem', fontSize: '1.2rem' }}>{emoji}</span>
+                      <span>{item.word}</span>
                       {mistakes.some(m => m.word === item.word && m.grade === item.grade) && (
                         <span 
                           style={{ 

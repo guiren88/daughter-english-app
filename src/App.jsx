@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import { BookOpen, GraduationCap, LayoutDashboard, HelpCircle, FileText, Star, Volume2, VolumeX, Sparkles } from 'lucide-react'
+import { BookOpen, LayoutDashboard, HelpCircle, FileText, Star, Volume2, VolumeX, Sparkles, Gamepad2 } from 'lucide-react'
 import Dashboard from './components/Dashboard'
 import Flashcards from './components/Flashcards'
 import Quiz from './components/Quiz'
 import Glossary from './components/Glossary'
 import Worksheet from './components/Worksheet'
 import Stories from './components/Stories'
+import Games from './components/Games'
 import { initVoices, speakNatural } from './utils/speech'
+import { getPlayerLevel } from './utils/wordVisuals'
 import vocabData from './data/vocabulary.json'
 
 function FloatingDecorations({ theme }) {
@@ -83,7 +85,7 @@ function FloatingDecorations({ theme }) {
 
 export default function App() {
   const [grade, setGrade] = useState('2a') // Default to '2a'
-  const [activeView, setActiveView] = useState('dashboard') // 'dashboard', 'flashcards', 'quiz', 'glossary', 'worksheet'
+  const [activeView, setActiveView] = useState('dashboard') // 'dashboard', 'flashcards', 'games', 'stories', 'quiz', 'glossary', 'worksheet'
   const [selectedUnit, setSelectedUnit] = useState(null) // null = all units, or unit object
   const [bookmarkedWords, setBookmarkedWords] = useState([])
   const [completedUnits, setCompletedUnits] = useState([])
@@ -269,6 +271,7 @@ export default function App() {
   }
 
   const brand = getThemeBrand();
+  const { current: curLevel } = getPlayerLevel(stars);
 
   // Load user data from localStorage
   useEffect(() => {
@@ -333,7 +336,7 @@ export default function App() {
     };
     const required = limits[newTheme] || 0;
     if (stars < required) {
-      alert(`🔒 解锁【${newTheme === 'melody' ? '美乐蒂' : newTheme === 'cinnamoroll' ? '大耳狗' : newTheme === 'purin' ? '布丁狗' : '皮卡丘'}主题】需要完成测试获得 ${required} 颗星星 ⭐！\n您当前拥有 ${stars} 颗星星，继续挑战获取更多星星吧！`);
+      alert(`🔒 解锁【${newTheme === 'melody' ? '美乐蒂' : newTheme === 'cinnamoroll' ? '大耳狗' : newTheme === 'purin' ? '布丁狗' : '皮卡丘'}主题】需要完成测试或玩游戏获得 ${required} 颗星星 ⭐！\n您当前拥有 ${stars} 颗星星，继续挑战获取更多星星吧！`);
       return;
     }
     setTheme(newTheme);
@@ -369,7 +372,7 @@ export default function App() {
           )}
           <span className="nav-brand-text" style={{ fontSize: '1.35rem' }}>{brand.text}</span>
         </div>
-        <div className="nav-links">
+        <div className="nav-links" style={{ flexWrap: 'wrap', alignItems: 'center' }}>
           <button 
             className={`nav-btn ${activeView === 'dashboard' ? 'active' : ''}`}
             onClick={() => { setActiveView('dashboard'); setSelectedUnit(null); }}
@@ -383,6 +386,13 @@ export default function App() {
           >
             <BookOpen size={18} />
             <span>单词卡</span>
+          </button>
+          <button 
+            className={`nav-btn ${activeView === 'games' ? 'active' : ''}`}
+            onClick={() => setActiveView('games')}
+          >
+            <Gamepad2 size={18} />
+            <span>游乐场</span>
           </button>
           <button 
             className={`nav-btn ${activeView === 'stories' ? 'active' : ''}`}
@@ -413,24 +423,28 @@ export default function App() {
             <span>线下练习纸</span>
           </button>
 
-          {/* Stars Count Display */}
+          {/* Stars & Level Badge Display */}
           <div className="stars-badge no-print" style={{ 
             display: 'flex', 
             alignItems: 'center', 
-            gap: '0.35rem', 
+            gap: '0.4rem', 
             background: 'linear-gradient(135deg, #fbbf24, #f59e0b)', 
             color: '#1e1b4b',
-            padding: '0.4rem 0.8rem', 
-            borderRadius: '8px', 
+            padding: '0.4rem 0.85rem', 
+            borderRadius: '999px', 
             fontWeight: '800',
-            fontSize: '0.9rem',
-            boxShadow: '0 0 10px rgba(245, 158, 11, 0.4)',
-            border: '1px solid rgba(255,255,255,0.2)',
-            cursor: 'default',
+            fontSize: '0.88rem',
+            boxShadow: '0 0 12px rgba(245, 158, 11, 0.4)',
+            border: '1px solid rgba(255,255,255,0.25)',
+            cursor: 'pointer',
             marginRight: '0.25rem'
-          }} title="我的儿童学习星星积分">
-            <span>⭐</span>
-            <span>{stars}</span>
+          }}
+          onClick={() => setActiveView('dashboard')}
+          title={`当前等级: Lv.${curLevel.level} ${curLevel.title}`}
+          >
+            <span>{curLevel.badge} Lv.{curLevel.level}</span>
+            <span style={{ opacity: 0.4 }}>|</span>
+            <span>⭐ {stars}</span>
           </div>
 
           {/* Volume Control Slider */}
@@ -449,7 +463,6 @@ export default function App() {
               onChange={(e) => {
                 const vol = parseFloat(e.target.value);
                 setVolume(vol);
-                // Speak a short feedback tone so the user hears the update
                 if ('speechSynthesis' in window) {
                   window.speechSynthesis.cancel();
                   const utterance = new SpeechSynthesisUtterance("volume");
@@ -487,7 +500,7 @@ export default function App() {
               background: 'rgba(0,0,0,0.15)',
               color: 'var(--text-primary)',
               cursor: 'pointer',
-              marginLeft: '0.5rem'
+              marginLeft: '0.25rem'
             }}
           >
             <option value="kuromi" style={{ background: '#15102a', color: '#fff' }}>😈 酷洛米主题 (免费)</option>
@@ -518,6 +531,9 @@ export default function App() {
               setShowOnlyMistakes={setShowOnlyMistakes}
               mistakes={mistakes}
               studyHistory={studyHistory}
+              stars={stars}
+              theme={theme}
+              playAudio={playAudio}
             />
           )}
           
@@ -532,6 +548,19 @@ export default function App() {
               onMarkUnitCompleted={toggleUnitCompleted}
               completedUnits={completedUnits}
               playAudio={playAudio}
+              onAwardStars={awardStars}
+              setActiveView={setActiveView}
+            />
+          )}
+
+          {activeView === 'games' && (
+            <Games
+              grade={grade}
+              units={currentUnits}
+              selectedUnit={selectedUnit}
+              setSelectedUnit={setSelectedUnit}
+              playAudio={playAudio}
+              onAwardStars={awardStars}
               setActiveView={setActiveView}
             />
           )}
