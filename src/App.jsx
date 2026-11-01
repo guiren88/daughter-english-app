@@ -273,6 +273,22 @@ export default function App() {
   const brand = getThemeBrand();
   const { current: curLevel } = getPlayerLevel(stars);
 
+  // Sync browser tab title & dynamic favicon with theme and grade
+  useEffect(() => {
+    document.title = `${brand.text} (${grade.toUpperCase()}) ✨ 牛津英语趣味学习乐园`;
+    const favEl = document.getElementById('dynamic-favicon');
+    if (favEl) {
+      if (theme === 'kuromi') {
+        favEl.type = 'image/png';
+        favEl.href = '/favicon.png';
+      } else {
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">${brand.emoji}</text></svg>`;
+        favEl.type = 'image/svg+xml';
+        favEl.href = `data:image/svg+xml,${encodeURIComponent(svg)}`;
+      }
+    }
+  }, [theme, grade, brand.text, brand.emoji]);
+
   // Load user data from localStorage
   useEffect(() => {
     try {
