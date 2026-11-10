@@ -345,7 +345,7 @@ export default function Dashboard({
             </button>
 
             <button
-              onClick={() => setActiveView('games')}
+              onClick={() => setActiveView('exam')}
               style={{
                 flex: 1,
                 padding: '0.45rem 0.85rem',
@@ -363,8 +363,8 @@ export default function Dashboard({
                 boxShadow: '0 4px 12px rgba(236, 72, 153, 0.35)'
               }}
             >
-              <Gamepad2 size={15} />
-              <span>去玩消消乐</span>
+              <Award size={15} />
+              <span>期中真题模考</span>
             </button>
           </div>
         </div>
@@ -671,6 +671,26 @@ export default function Dashboard({
           )}
         </h2>
         <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <button 
+            className="action-btn"
+            style={{ 
+              padding: '0.45rem 1.25rem', 
+              fontSize: '0.85rem', 
+              borderRadius: '20px', 
+              background: 'linear-gradient(135deg, #ec4899, #8b5cf6)',
+              color: '#fff',
+              fontWeight: 'bold',
+              border: 'none',
+              boxShadow: '0 0 10px rgba(236, 72, 153, 0.4)',
+              cursor: 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.35rem'
+            }}
+            onClick={() => setActiveView('exam')}
+          >
+            <span>📝 2A期中真题模考与错题纠错</span>
+          </button>
           <button 
             className="action-btn"
             style={{ 

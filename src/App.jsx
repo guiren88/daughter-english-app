@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { BookOpen, LayoutDashboard, HelpCircle, FileText, Star, Volume2, VolumeX, Sparkles, Gamepad2 } from 'lucide-react'
+import { BookOpen, LayoutDashboard, HelpCircle, FileText, Star, Volume2, VolumeX, Sparkles, Gamepad2, GraduationCap } from 'lucide-react'
 import Dashboard from './components/Dashboard'
 import Flashcards from './components/Flashcards'
 import Quiz from './components/Quiz'
@@ -7,6 +7,7 @@ import Glossary from './components/Glossary'
 import Worksheet from './components/Worksheet'
 import Stories from './components/Stories'
 import Games from './components/Games'
+import ExamPapers from './components/ExamPapers'
 import { initVoices, speakNatural } from './utils/speech'
 import { getPlayerLevel } from './utils/wordVisuals'
 import vocabData from './data/vocabulary.json'
@@ -425,6 +426,13 @@ export default function App() {
             <span>随堂测</span>
           </button>
           <button 
+            className={`nav-btn ${activeView === 'exam' ? 'active' : ''}`}
+            onClick={() => setActiveView('exam')}
+          >
+            <GraduationCap size={18} />
+            <span>真题试卷</span>
+          </button>
+          <button 
             className={`nav-btn ${activeView === 'glossary' ? 'active' : ''}`}
             onClick={() => setActiveView('glossary')}
           >
@@ -630,6 +638,16 @@ export default function App() {
               units={currentUnits}
               selectedUnit={selectedUnit}
               setSelectedUnit={setSelectedUnit}
+              setActiveView={setActiveView}
+            />
+          )}
+
+          {activeView === 'exam' && (
+            <ExamPapers
+              grade={grade}
+              playAudio={playAudio}
+              onAwardStars={awardStars}
+              onAddStudyRecord={addStudyRecord}
               setActiveView={setActiveView}
             />
           )}

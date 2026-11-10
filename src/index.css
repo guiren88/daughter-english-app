@@ -1394,3 +1394,63 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
+/* =========================================
+   Exam Papers & Mock Tests Styles
+========================================= */
+.exam-papers-view.print-preview {
+  background: #ffffff !important;
+  color: #111827 !important;
+  padding: 2.5rem 3rem !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25) !important;
+}
+
+.exam-papers-view.print-preview .glass-card {
+  background: transparent !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: none !important;
+  color: #111827 !important;
+}
+
+.exam-papers-view.print-preview h1,
+.exam-papers-view.print-preview h2,
+.exam-papers-view.print-preview h3,
+.exam-papers-view.print-preview p,
+.exam-papers-view.print-preview span {
+  color: #111827 !important;
+}
+
+.exam-papers-view.print-preview button {
+  background: #f9fafb !important;
+  color: #111827 !important;
+  border: 1px solid #d1d5db !important;
+}
+
+@media print {
+  .exam-papers-view {
+    padding: 0 !important;
+    max-width: 100% !important;
+    background: transparent !important;
+    color: black !important;
+  }
+  .exam-papers-view .glass-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.5rem 0 !important;
+    color: black !important;
+  }
+  .exam-papers-view h1,
+  .exam-papers-view h2,
+  .exam-papers-view h3,
+  .exam-papers-view p,
+  .exam-papers-view span {
+    color: black !important;
+  }
+  .print-student-info {
+    border: 1px solid #000 !important;
+    color: black !important;
+  }
+}
