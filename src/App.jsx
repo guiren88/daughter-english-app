@@ -648,6 +648,7 @@ export default function App() {
               playAudio={playAudio}
               onAwardStars={awardStars}
               onAddStudyRecord={addStudyRecord}
+              onAddMistake={addMistake}
               setActiveView={setActiveView}
             />
           )}

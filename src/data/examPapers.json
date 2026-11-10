@@ -1,15 +1,459 @@
 [
   {
+    "id": "shenlilo_mistakes_target",
+    "grade": "2a",
+    "title": "🎯 沈礼洛专属·10张试卷红笔错题全收录清零卷",
+    "subtitle": "100% 覆盖洛洛在学校卷面上被红笔圈出的全部失分题（含听力、字母、语法、情景、看图）",
+    "timeLimit": "25分钟",
+    "badge": "洛洛专属靶向提分",
+    "summary": "把 10 张照片里老师用红笔批改的所有错题浓缩成一张闯关卷！每做完一题都有专属错因剖析，帮洛洛把所有丢分点一次性变成得分强项！",
+    "sections": [
+      {
+        "sectionTitle": "第一关：🎧 听力应答与辨音红笔错题重练",
+        "sectionDesc": "点击【🔊 播放听力录音】听考官读题，选出正确选项（作答后揭晓听力原文）",
+        "questions": [
+          {
+            "id": "err_l1",
+            "type": "listening",
+            "audioText": "How is the weather today?",
+            "prompt": "🎧 听录音提问，选出最恰当的应答句：",
+            "options": [
+              { "text": "A. It's rain.", "val": "A" },
+              { "text": "B. It's rainy.", "val": "B" }
+            ],
+            "correct": "B",
+            "analysis": "【洛洛卷7/卷9失分题】洛洛当时误选了 A！\n🎧 听力原文：“How is the weather today?”（今天天气怎么样？）\n💡 考点剖析：描述天气状况在 is 后面要用形容词 rainy（下雨的/多雨的），不能直接用名词 rain！记住口诀：It's sunny / rainy / cloudy / windy！",
+            "isTargetError": true,
+            "mistakeWord": { "word": "rainy", "translation": "下雨的；多雨的" }
+          },
+          {
+            "id": "err_l2",
+            "type": "listening",
+            "audioText": "Look at the girl! She can skip rope very fast!",
+            "prompt": "🎧 听录音句子，选出最合适的应答句：",
+            "options": [
+              { "text": "A. Wow, she's cool!", "val": "A" },
+              { "text": "B. Put on new clothes.", "val": "B" }
+            ],
+            "correct": "A",
+            "analysis": "【洛洛卷9失分题】洛洛当时误选了 B！\n🎧 听力原文：“Look at the girl! She can skip rope very fast!”（看那个女孩！她跳绳跳得好快！）\n💡 考点剖析：看到别人运动很厉害，应该夸奖“Wow, she's cool!”（哇，她太酷了！），而不是让她穿新衣服。",
+            "isTargetError": true
+          },
+          {
+            "id": "err_l3",
+            "type": "listening",
+            "audioText": "Class is over. Let's go to the playground!",
+            "prompt": "🎧 听录音句子，选出最恰当的同伴回应：",
+            "options": [
+              { "text": "A. Let's throw sandbags.", "val": "A" },
+              { "text": "B. I'm ready.", "val": "B" }
+            ],
+            "correct": "A",
+            "analysis": "【洛洛卷9失分题】洛洛当时误选了 B！\n🎧 听力原文：“Class is over. Let's go to the playground!”（下课啦，我们去操场吧！）\n💡 考点剖析：去操场玩耍时，顺着提议说“Let's throw sandbags.”（我们去丢沙包吧！）最符合操场语境。",
+            "isTargetError": true
+          },
+          {
+            "id": "err_l4",
+            "type": "listening",
+            "audioText": "Put the ball in the box, please.",
+            "prompt": "🎧 听录音，选出你在句子中听到的核心家具/物品单词：",
+            "options": [
+              { "text": "A. books (书本)", "val": "A" },
+              { "text": "B. bookshelf (书架)", "val": "B" },
+              { "text": "C. box (盒子/箱子)", "val": "C" }
+            ],
+            "correct": "C",
+            "analysis": "【洛洛卷7失分题】洛洛当时误选了 B（bookshelf）！\n🎧 听力原文：“Put the ball in the box, please.”\n💡 考点剖析：注意区分 b 开头家族的发音：box /bɒks/（短促的奥+ks音）vs books /bʊks/ vs bookshelf（书架，有两个音节）。",
+            "isTargetError": true,
+            "mistakeWord": { "word": "box", "translation": "盒子；箱子" }
+          }
+        ]
+      },
+      {
+        "sectionTitle": "第二关：🔤 字母左右邻居与词性分类红笔错题",
+        "sectionDesc": "攻克卷1、卷2中被红笔圈出的字母顺序与不同类单词陷阱",
+        "questions": [
+          {
+            "id": "err_v1",
+            "type": "choice",
+            "prompt": "【字母邻居】请选出 Kk 左边和右边的正确邻居： _______  Kk  _______",
+            "options": [
+              { "text": "A. Ii , Ll", "val": "A" },
+              { "text": "B. Jj , Ll", "val": "B" },
+              { "text": "C. Hh , Jj", "val": "C" }
+            ],
+            "correct": "B",
+            "analysis": "【洛洛卷1失分题】洛洛在卷子上把 Kk 左边写成了 Ti/Ii！\n💡 考点剖析：背诵字母歌 H-I-J-K-L-M-N，K 前面紧挨着的是 J（Jj），后面是 L（Ll），所以是 Jj, Kk, Ll！",
+            "isTargetError": true
+          },
+          {
+            "id": "err_v2",
+            "type": "choice",
+            "prompt": "【字母邻居】请选出小写字母 o 和 q 的正确左右邻居：\n① ___ o ___      ② ___ q ___",
+            "options": [
+              { "text": "A. ① m o p   ② b q d", "val": "A" },
+              { "text": "B. ① n o p   ② p q r", "val": "B" },
+              { "text": "C. ① l o n   ② o q p", "val": "C" }
+            ],
+            "correct": "B",
+            "analysis": "【洛洛卷2失分题】洛洛在四线三格里把 o 前面写成了 m，q 旁边写成了 b！\n💡 考点剖析：L-M-N-O-P-Q-R-S-T！o 的前面是 n（不是 m），后面是 p；q 的前面是 p，后面是 r（注意小写 p 和 q、b 和 d 的朝向）！",
+            "isTargetError": true
+          },
+          {
+            "id": "err_v3",
+            "type": "odd_one_out",
+            "prompt": "【选出不同类的单词】从下列四个词中找出不同类的一项：",
+            "options": [
+              { "text": "A. face (脸)", "val": "A" },
+              { "text": "B. teeth (牙齿)", "val": "B" },
+              { "text": "C. brush (刷)", "val": "C" },
+              { "text": "D. head (头)", "val": "D" }
+            ],
+            "correct": "C",
+            "analysis": "【洛洛卷2失分题】洛洛当时误选了 A（face）！\n💡 考点剖析：face（脸）、teeth（牙齿）、head（头）全部都是【身体部位名词】；只有 brush（刷）是【动作动词】（如 brush my teeth），所以不同类的是 C！",
+            "isTargetError": true,
+            "mistakeWord": { "word": "brush", "translation": "刷（动词）" }
+          }
+        ]
+      },
+      {
+        "sectionTitle": "第三关：⚡ 冠词、介词与逻辑推理红笔错题",
+        "sectionDesc": "攻克卷2、卷8中失分的定冠词 the、固定搭配 ready for 及上下文推理",
+        "questions": [
+          {
+            "id": "err_g1",
+            "type": "choice",
+            "prompt": "I can see _______ sun by day. (我在白天能看见太阳。)",
+            "options": [
+              { "text": "A. a", "val": "A" },
+              { "text": "B. /", "val": "B" },
+              { "text": "C. the", "val": "C" }
+            ],
+            "correct": "C",
+            "analysis": "【洛洛卷8失分题】洛洛误选了 A（a）！\n💡 满分秘诀：世界上独一无二的天体（太阳 the sun、月亮 the moon、天空 the sky）前面必须加定冠词【the】，永远不能用 a sun！",
+            "isTargetError": true,
+            "mistakeWord": { "word": "the sun", "translation": "太阳（独一无二加the）" }
+          },
+          {
+            "id": "err_g2",
+            "type": "choice",
+            "prompt": "I'm ready _______ school, Mum! (妈妈，我准备好去上学啦！)",
+            "options": [
+              { "text": "A. of", "val": "A" },
+              { "text": "B. for", "val": "B" },
+              { "text": "C. in", "val": "C" }
+            ],
+            "correct": "B",
+            "analysis": "【洛洛卷8失分题】洛洛误选了 C（in）！\n💡 满分秘诀：固定词组 'be ready for + 名词' 表示“为……做好准备”。I'm ready for school, Dad/Mum! 是 2A Unit 1 课文原句！",
+            "isTargetError": true,
+            "mistakeWord": { "word": "be ready for", "translation": "为……做好准备" }
+          },
+          {
+            "id": "err_g3",
+            "type": "choice",
+            "prompt": "I live far away from my school. I go to school _______ .",
+            "options": [
+              { "text": "A. on foot (步行)", "val": "A" },
+              { "text": "B. by bus (乘公交车)", "val": "B" },
+              { "text": "C. by a bus", "val": "C" }
+            ],
+            "correct": "B",
+            "analysis": "【洛洛卷2失分题】洛洛误选了 A（on foot）！\n💡 满分秘诀：做题要先读懂前半句线索——'I live far away from my school'（我家住得离学校很远）！住得很远就不能走路（on foot）了，必须坐公交车（by bus，且中间不加 a）！",
+            "isTargetError": true,
+            "mistakeWord": { "word": "by bus", "translation": "乘公交" }
+          }
+        ]
+      },
+      {
+        "sectionTitle": "第四关：💬 情景交际与看图细节红笔错题",
+        "sectionDesc": "攻克卷2、卷10中失分的人称主客体转换、单复数陷阱与看图球类辨析",
+        "questions": [
+          {
+            "id": "err_s1",
+            "type": "judge",
+            "prompt": "【情景判断】想告诉别人“你自己”跑步跑得很快，你可以说：You can run fast.",
+            "options": [
+              { "text": "√ (正确)", "val": "√" },
+              { "text": "× (错误)", "val": "×" }
+            ],
+            "correct": "×",
+            "analysis": "【洛洛卷2失分题】洛洛误打了 √！\n💡 满分秘诀：中文题干里“想告诉别人，你跑步跑得很快”意思是向别人介绍“我”跑得快，所以开口说话时要用第一人称【I can run fast.】！如果说 You can run fast 就变成夸对方跑得快啦！",
+            "isTargetError": true
+          },
+          {
+            "id": "err_s2",
+            "type": "judge",
+            "prompt": "【情景判断】别人问你怎么去上学（How do you go to school?），你回答说：I like this red bus.",
+            "options": [
+              { "text": "√ (正确)", "val": "√" },
+              { "text": "× (错误)", "val": "×" }
+            ],
+            "correct": "×",
+            "analysis": "【洛洛卷2失分题】洛洛误打了 √！\n💡 满分秘诀：别人问的是【怎么去上学（出行方式）】，应该回答 'I go to school by bus / on foot.'；回答 'I like this red bus.'（我喜欢这辆红巴士）属于答非所问！",
+            "isTargetError": true
+          },
+          {
+            "id": "err_s3",
+            "type": "judge",
+            "prompt": "【情景判断】夜空中看到了“很多星星”，你可以说：I can see a star.",
+            "options": [
+              { "text": "√ (正确)", "val": "√" },
+              { "text": "× (错误)", "val": "×" }
+            ],
+            "correct": "×",
+            "analysis": "【洛洛卷2失分题】洛洛误打了 √！\n💡 满分秘诀：题干抓关键词【很多星星】= 复数 stars！而 'a star' 只代表“一颗星星”，数量对不上！正确说法是 'I can see stars / many stars.'。",
+            "isTargetError": true
+          },
+          {
+            "id": "err_s4",
+            "type": "judge",
+            "prompt": "【情景判断】想问申申她今天过得怎么样，你可以说：How is Shenshen?",
+            "options": [
+              { "text": "√ (正确)", "val": "√" },
+              { "text": "× (错误)", "val": "×" }
+            ],
+            "correct": "√",
+            "analysis": "【洛洛卷2失分题】洛洛误打了 ×！\n💡 满分秘诀：当面问对方用 'How are you?'，询问第三人（申申）今天怎么样，把 are 换成单数 is，即 'How is Shenshen?'，完全正确！",
+            "isTargetError": true
+          },
+          {
+            "id": "err_s5",
+            "type": "judge",
+            "prompt": "【卷10看图判断】在操场篮球架下，两个小男孩正在拍着篮球玩耍。判断句子：The boy can play football.",
+            "options": [
+              { "text": "√ (与图相符)", "val": "√" },
+              { "text": "× (与图不符)", "val": "×" }
+            ],
+            "correct": "×",
+            "analysis": "【洛洛卷10失分题】洛洛误打了 √！\n💡 满分秘诀：图片背景里有明显的【篮球架和篮筐】，男孩手里拍的是篮球（play basketball），而不是踢足球（play football）！看图题一定要看清手里的球和旁边的球架哦！",
+            "isTargetError": true,
+            "mistakeWord": { "word": "play basketball", "translation": "打篮球" }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "listening_special_sim",
+    "grade": "2a",
+    "title": "🎧 2A 期中听力专项突破·AI 语音播报仿真卷",
+    "subtitle": "完整还原松江学校期中卷与复习单4、练习卷1-5全部听力题型",
+    "timeLimit": "20分钟",
+    "badge": "AI 语音听力考场",
+    "summary": "不用找老师要录音文件！点击喇叭即可播放仿真考官语音，专项训练【听音辨词】、【听音辨句】、【听问句选应答句】与【听短文选答案】！",
+    "sections": [
+      {
+        "sectionTitle": "一、Listen and choose 听录音，选出你听到的单词或短语",
+        "sectionDesc": "仔细听发音细节（注意尾音与元音区别），选出正确的一项",
+        "questions": [
+          {
+            "id": "lis_w1",
+            "type": "listening",
+            "audioText": "Time to get ready for school!",
+            "prompt": "🎧 1. 听录音，选出听到的短语：",
+            "options": [
+              { "text": "A. get dressed", "val": "A" },
+              { "text": "B. get ready", "val": "B" },
+              { "text": "C. wash your face", "val": "C" }
+            ],
+            "correct": "B",
+            "analysis": "🎧 听力原文：“Time to get ready for school!”（该准备好去上学啦！），听到的是 B. get ready。"
+          },
+          {
+            "id": "lis_w2",
+            "type": "listening",
+            "audioText": "Look! The little star is high in the sky.",
+            "prompt": "🎧 2. 听录音，选出听到的单词：",
+            "options": [
+              { "text": "A. sky (天空)", "val": "A" },
+              { "text": "B. fly (飞)", "val": "B" },
+              { "text": "C. my (我的)", "val": "C" }
+            ],
+            "correct": "A",
+            "analysis": "🎧 听力原文：“Look! The little star is high in the sky.”，听到的是 A. sky。"
+          },
+          {
+            "id": "lis_w3",
+            "type": "listening",
+            "audioText": "We can play basketball in the afternoon.",
+            "prompt": "🎧 3. 听录音，选出听到的球类运动：",
+            "options": [
+              { "text": "A. basketball", "val": "A" },
+              { "text": "B. football", "val": "B" },
+              { "text": "C. ping-pong ball", "val": "C" }
+            ],
+            "correct": "A",
+            "analysis": "🎧 听力原文：“We can play basketball in the afternoon.”，听到的是 A. basketball。"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "二、Listen and choose 听录音，选出听到的完整句子",
+        "sectionDesc": "注意分辨句子中相近的介词（on/in）与动词（see/use, tidy/have）",
+        "questions": [
+          {
+            "id": "lis_s1",
+            "type": "listening",
+            "audioText": "I have a tidy room.",
+            "prompt": "🎧 1. 听录音，选出听到的句子：",
+            "options": [
+              { "text": "A. I can tidy my room.", "val": "A" },
+              { "text": "B. I have a tidy room.", "val": "B" }
+            ],
+            "correct": "B",
+            "analysis": "🎧 听力原文：“I have a tidy room.”（我有一个整洁的房间。），注意区分动词 can tidy 与 have a tidy。"
+          },
+          {
+            "id": "lis_s2",
+            "type": "listening",
+            "audioText": "You use metro in Shanghai.",
+            "prompt": "🎧 2. 听录音，选出听到的句子：",
+            "options": [
+              { "text": "A. You see \"metro\" in Shanghai.", "val": "A" },
+              { "text": "B. You use \"metro\" in Shanghai.", "val": "B" }
+            ],
+            "correct": "B",
+            "analysis": "🎧 听力原文：“You use 'metro' in Shanghai.”（在上海你们使用 metro 这个词。），注意区分 see 和 use。"
+          },
+          {
+            "id": "lis_s3",
+            "type": "listening",
+            "audioText": "Put the toys on the box.",
+            "prompt": "🎧 3. 听录音，选出听到的句子：",
+            "options": [
+              { "text": "A. Put the toys on the box.", "val": "A" },
+              { "text": "B. Put the toys in the box.", "val": "B" }
+            ],
+            "correct": "A",
+            "analysis": "🎧 听力原文：“Put the toys on the box.”（把玩具放在盒子上面。），听清方位介词是 on 还是 in！"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "三、Listen and choose 听问句或上句，选出最恰当的应答句",
+        "sectionDesc": "期中听力高频拉分题：听懂对方说的句子，选出合乎礼貌与逻辑的回答",
+        "questions": [
+          {
+            "id": "lis_r1",
+            "type": "listening",
+            "audioText": "Have breakfast, Shenshen!",
+            "prompt": "🎧 1. 听妈妈说的话，选出申申的回答：",
+            "options": [
+              { "text": "A. OK, Mum.", "val": "A" },
+              { "text": "B. Thank you, Mum.", "val": "B" }
+            ],
+            "correct": "A",
+            "analysis": "🎧 听力原文：“Have breakfast, Shenshen!”（申申，吃早餐啦！），回答“OK, Mum.”（好的，妈妈）。"
+          },
+          {
+            "id": "lis_r2",
+            "type": "listening",
+            "audioText": "How do you go to school?",
+            "prompt": "🎧 2. 听问题，选出正确的回答：",
+            "options": [
+              { "text": "A. I go to school by bus.", "val": "A" },
+              { "text": "B. I go to school in the morning.", "val": "B" }
+            ],
+            "correct": "A",
+            "analysis": "🎧 听力原文：“How do you go to school?”（你怎么去上学？），询问交通方式应选 A（by bus），B 回答的是时间。"
+          },
+          {
+            "id": "lis_r3",
+            "type": "listening",
+            "audioText": "Wow, you can play ping-pong very well. Can I have a go?",
+            "prompt": "🎧 3. 听同伴的请求，选出最恰当的回答：",
+            "options": [
+              { "text": "A. Yes, of course.", "val": "A" },
+              { "text": "B. That's right.", "val": "B" }
+            ],
+            "correct": "A",
+            "analysis": "🎧 听力原文：“Can I have a go?”（我能试一试吗？），大方的回应是“Yes, of course.”（当然可以啦！）。"
+          },
+          {
+            "id": "lis_r4",
+            "type": "listening",
+            "audioText": "When does Mr Sun go down?",
+            "prompt": "🎧 4. 听关于太阳先生的问题，选出正确回答：",
+            "options": [
+              { "text": "A. He goes down at night.", "val": "A" },
+              { "text": "B. I can see Mr Sun.", "val": "B" }
+            ],
+            "correct": "A",
+            "analysis": "🎧 听力原文：“When does Mr Sun go down?”（太阳先生什么时候落山？），回答“He goes down at night.”。"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "四、Listen and choose 听短文独白，选择正确答案（复习任务单4压轴听力）",
+        "sectionDesc": "点击播放听小女孩的自我介绍录音，完成 5 道听力理解题",
+        "questions": [
+          {
+            "id": "lis_p1",
+            "type": "listening",
+            "audioText": "Hello! I am a happy girl. Every morning, I go to school by metro.",
+            "prompt": "🎧 1. I go to school by _______ .",
+            "options": [
+              { "text": "A. car", "val": "A" },
+              { "text": "B. metro", "val": "B" },
+              { "text": "C. bus", "val": "C" }
+            ],
+            "correct": "B",
+            "analysis": "🎧 录音原文：“Every morning, I go to school by metro.”，选 B。"
+          },
+          {
+            "id": "lis_p2",
+            "type": "listening",
+            "audioText": "At school, I love the playground. I often play on the slide.",
+            "prompt": "🎧 2. I often play on the _______ .",
+            "options": [
+              { "text": "A. swing (秋千)", "val": "A" },
+              { "text": "B. seesaw (跷跷板)", "val": "B" },
+              { "text": "C. slide (滑梯)", "val": "C" }
+            ],
+            "correct": "C",
+            "analysis": "🎧 录音原文：“I often play on the slide.”（我经常玩滑梯），选 C。"
+          },
+          {
+            "id": "lis_p3",
+            "type": "listening",
+            "audioText": "I like sports very much. I can jump very well.",
+            "prompt": "🎧 3. I can _______ very well.",
+            "options": [
+              { "text": "A. jump", "val": "A" },
+              { "text": "B. swim", "val": "B" },
+              { "text": "C. run", "val": "C" }
+            ],
+            "correct": "A",
+            "analysis": "🎧 录音原文：“I can jump very well.”，选 A。"
+          },
+          {
+            "id": "lis_p4",
+            "type": "listening",
+            "audioText": "After class, I help Miss Li clean the floor. Miss Li says: Well done, you are a great girl!",
+            "prompt": "🎧 4. I help Miss Li _______ , and I am a _______ girl.",
+            "options": [
+              { "text": "A. clean the floor ; great", "val": "A" },
+              { "text": "B. pack the books ; happy", "val": "B" },
+              { "text": "C. wash lunch boxes ; busy", "val": "C" }
+            ],
+            "correct": "A",
+            "analysis": "🎧 录音原文：“I help Miss Li clean the floor... you are a great girl!”，选 A。"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "midterm_u1_u5_std",
     "grade": "2a",
-    "title": "2A Units 1-5 阶段综合等第评估真题卷",
+    "title": "🏆 2A Units 1-5 阶段综合等第评估真题卷 (标准大卷)",
     "subtitle": "上海立信会计金融学院附属松江学校 2025/2026学年第一学期",
     "timeLimit": "40分钟",
     "badge": "松江学校期中真题",
-    "summary": "完整收录学校期中阶段综合评估卷的核心笔试部分：不同类单词、单项语法、情景交际及 Minmin 房间大整理阅读理解题。",
+    "summary": "完整收录学校期中阶段综合评估卷的核心笔试部分：不同类单词、单项语法、看图选句及 Minmin 房间大整理阅读理解题。",
     "sections": [
       {
-        "sectionTitle": "一、Read and choose 选出不同类的单词",
+        "sectionTitle": "一、Read and choose 选出不同类的单词 (共10题，含A/B两卷真题)",
         "sectionDesc": "从每组四个选项中选出词性或类别不同的一项",
         "questions": [
           {
@@ -76,6 +520,45 @@
             ],
             "correct": "B",
             "analysis": "sun、moon、star 都是天体名词，cloudy 是天气形容词（多云的），所以选 B。"
+          },
+          {
+            "id": "p1_q6",
+            "type": "odd_one_out",
+            "prompt": "选出不同类的单词：",
+            "options": [
+              { "text": "star (星星)", "val": "A" },
+              { "text": "moon (月亮)", "val": "B" },
+              { "text": "sun (太阳)", "val": "C" },
+              { "text": "shine (照耀/发光)", "val": "D" }
+            ],
+            "correct": "D",
+            "analysis": "star、moon、sun 都是天体名词，shine 是动词（照耀/发光），所以选 D。"
+          },
+          {
+            "id": "p1_q7",
+            "type": "odd_one_out",
+            "prompt": "选出不同类的单词：",
+            "options": [
+              { "text": "read (读)", "val": "A" },
+              { "text": "yellow (黄色)", "val": "B" },
+              { "text": "black (黑色)", "val": "C" },
+              { "text": "blue (蓝色)", "val": "D" }
+            ],
+            "correct": "A",
+            "analysis": "yellow、black、blue 都是颜色类词，read 是动作动词（阅读），所以选 A。"
+          },
+          {
+            "id": "p1_q8",
+            "type": "odd_one_out",
+            "prompt": "选出不同类的单词：",
+            "options": [
+              { "text": "behind (在……后面)", "val": "A" },
+              { "text": "under (在……下面)", "val": "B" },
+              { "text": "where (在哪里)", "val": "C" },
+              { "text": "on (在……上面)", "val": "D" }
+            ],
+            "correct": "C",
+            "analysis": "behind、under、on 都是方位介词，where 是特殊疑问词（在哪里），所以选 C。"
           }
         ]
       },
@@ -142,11 +625,35 @@
             ],
             "correct": "C",
             "analysis": "在早晨（in the morning）做的事情是吃早餐（have breakfast）。go to bed 是去睡觉，have lunch 是吃午饭。"
+          },
+          {
+            "id": "p1_c6",
+            "type": "choice",
+            "prompt": "—Brush _______ teeth.  —OK. I brush _______ teeth.",
+            "options": [
+              { "text": "my, my", "val": "A" },
+              { "text": "your, your", "val": "B" },
+              { "text": "your, my", "val": "C" }
+            ],
+            "correct": "C",
+            "analysis": "妈妈叮嘱你：“刷你的牙（Brush your teeth）”，你回答：“好的，我刷我的牙（I brush my teeth）”，故选 C。"
+          },
+          {
+            "id": "p1_c7",
+            "type": "choice",
+            "prompt": "The moon _______ in the morning.",
+            "options": [
+              { "text": "goes up (升起)", "val": "A" },
+              { "text": "goes down (落下)", "val": "B" },
+              { "text": "in the sky", "val": "C" }
+            ],
+            "correct": "B",
+            "analysis": "早晨太阳升起（The sun comes up），而月亮在早晨落下（The moon goes down in the morning），且句子缺少谓语动词，故选 B。"
           }
         ]
       },
       {
-        "sectionTitle": "三、Part IV Reading 综合阅读理解",
+        "sectionTitle": "三、Part IV Reading 综合阅读理解：帮 Minmin 整理房间",
         "sectionDesc": "阅读对话，判断下列句子是否正确（正确选 √，错误选 ×）",
         "passage": "Shenshen: Minmin, Look at your room. What a mess!\nLily: Let's tidy the room together.\nShenshen: OK. I can put the pencils in the pencil case.\nLily: Oh, I can put the ball in the box.\nXiaojiang: I can put the books on the shelf.\nXiaotian: Great! Let me put the box on the desk.\nMinmin: Oh, no. Please put it under the bed.\nXiaotian: OK. Let me put the box under the bed.\nMinmin: Let me clean the floor. Now the room is tidy.",
         "passageCn": "申申：敏敏，看你的房间。真是一团糟！\n莉莉：咱们一起整理房间吧。\n申申：好的，我可以把铅笔放进铅笔盒里。\n莉莉：哦，我可以把球放进盒子里。\n小江：我可以把书放在书架上。\n小天：太好了！让我把盒子放在桌子上。\n敏敏：哦，不。请把它放在床底下。\n小天：好的。让我把盒子放在床底下。\n敏敏：让我来拖地。现在房间整齐了。",
@@ -211,192 +718,136 @@
     ]
   },
   {
-    "id": "shenlilo_mistakes_target",
-    "grade": "2a",
-    "title": "🎯 沈礼洛专属·高频易错与丢分陷阱特训卷",
-    "subtitle": "精准攻克试卷红笔圈错题：定冠词 the、固定介词、人称主客体混淆",
-    "timeLimit": "20分钟",
-    "badge": "重点靶向纠错",
-    "summary": "针对女儿在学校试卷上失分的 6 大题型进行靶向突破，彻底扫清知识盲点，帮她把丢的分数彻底赢回来！",
-    "sections": [
-      {
-        "sectionTitle": "专项一：定冠词与固定介词搭配突破",
-        "sectionDesc": "试卷失分重灾区：独一无二天体、准备上学、远距离出行",
-        "questions": [
-          {
-            "id": "err_q1",
-            "type": "choice",
-            "prompt": "I can see _______ sun by day. (我在白天能看到太阳。)",
-            "options": [
-              { "text": "a", "val": "A" },
-              { "text": "/", "val": "B" },
-              { "text": "the", "val": "C" }
-            ],
-            "correct": "C",
-            "analysis": "【洛洛考试失分点】洛洛在卷子上误选了 A！\n解析：太阳是世界上独一无二的天体，前面必须加定冠词 the（the sun, the moon, the sky），绝对不能用 a sun！",
-            "isTargetError": true
-          },
-          {
-            "id": "err_q2",
-            "type": "choice",
-            "prompt": "I'm ready _______ school, Mum! (妈妈，我准备好去上学啦！)",
-            "options": [
-              { "text": "of", "val": "A" },
-              { "text": "for", "val": "B" },
-              { "text": "in", "val": "C" }
-            ],
-            "correct": "B",
-            "analysis": "【洛洛考试失分点】洛洛在卷子上误选了 C！\n解析：固定搭配是 'be ready for + 名词'（为……做好准备）。ready for school 是第1单元核心必背句型！",
-            "isTargetError": true
-          },
-          {
-            "id": "err_q3",
-            "type": "choice",
-            "prompt": "I live far away from my school. I go to school _______ . (我家离学校很远，我乘……去上学。)",
-            "options": [
-              { "text": "on foot (步行)", "val": "A" },
-              { "text": "by bus (乘公交)", "val": "B" },
-              { "text": "by a bus", "val": "C" }
-            ],
-            "correct": "B",
-            "analysis": "【洛洛考试失分点】洛洛在卷子上误选了 A！\n解析：前半句明确提示 'I live far away'（住得很远），不能走路去（on foot），应该乘公交车（by bus）。注意乘车短语介词后不加冠词，不能写 by a bus。",
-            "isTargetError": true
-          }
-        ]
-      },
-      {
-        "sectionTitle": "专项二：情景交际与人称单复数判断",
-        "sectionDesc": "试卷判断题陷阱：区分第一人称/第二人称、单数 a 与复数很多",
-        "questions": [
-          {
-            "id": "err_q4",
-            "type": "judge",
-            "prompt": "想告诉别人你自己跑步跑得很快，你可以说：You can run fast.",
-            "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
-            ],
-            "correct": "×",
-            "analysis": "【洛洛考试失分点】洛洛误打了 √！\n解析：想告诉别人“我自己”跑步快，应该用第一人称 'I can run fast.'。而 'You can run fast.' 是对别人说“你跑得快”，人称混淆了！",
-            "isTargetError": true
-          },
-          {
-            "id": "err_q5",
-            "type": "judge",
-            "prompt": "看到了很多星星，你可以说：I can see a star.",
-            "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
-            ],
-            "correct": "×",
-            "analysis": "【洛洛考试失分点】洛洛误打了 √！\n解析：题干明确说了“看到了很多星星（many stars）”，而 'a star' 只代表一颗星星，数量不一致，应该说 'I can see stars.'！",
-            "isTargetError": true
-          },
-          {
-            "id": "err_q6",
-            "type": "judge",
-            "prompt": "别人问你怎么去上学（How do you go to school?），你回答说：I like this red bus.",
-            "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
-            ],
-            "correct": "×",
-            "analysis": "【洛洛考试失分点】洛洛误打了 √！\n解析：别人问的是交通方式（How），回答应该回答怎么去（如 I go to school by bus.），而 'I like this red bus.' 是表达喜好，答非所问！",
-            "isTargetError": true
-          },
-          {
-            "id": "err_q7",
-            "type": "judge",
-            "prompt": "想问申申今天过得怎么样，你可以问：How is Shenshen?",
-            "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
-            ],
-            "correct": "√",
-            "analysis": "【洛洛考试失分点】洛洛误打了 ×！\n解析：询问某人近况/过得如何正是用 'How is + 人名?'（如 How is Shenshen? / How are you?），表达完全规范正确！",
-            "isTargetError": true
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "task_paper_2_combo",
     "grade": "2a",
-    "title": "2A 阶段复习任务单 2 实战强化卷",
-    "subtitle": "松江学校二年级 (3) 班阶段复习作业全真还原",
+    "title": "📝 2A 阶段复习任务单 2 & 3 实战强化卷",
+    "subtitle": "松江学校二年级 (3) 班阶段复习单全真还原（含选词填空、问答配对、晚餐对话）",
     "timeLimit": "25分钟",
     "badge": "学校任务单全真版",
-    "summary": "包含字母左右邻居、动词与生活短语搭配、选词填空与课后公园运动阅读短文。",
+    "summary": "涵盖任务单2和任务单3的全部精华题型：语法选择、6选5选词填空、情景问答配对、晚餐肉丸对话及公园运动短文。",
     "sections": [
       {
-        "sectionTitle": "一、Choose the best answer 最佳选择",
-        "sectionDesc": "生活常识与核心语法选择题",
+        "sectionTitle": "一、Read and choose 选词填空专项 (每词限用一次)",
+        "sectionDesc": "从方框词库 [ A. a  |  B. feet  |  C. by  |  D. In  |  E. put  |  F. foot ] 中选出最合适的词",
         "questions": [
           {
-            "id": "p2_c1",
+            "id": "p2_fill1",
             "type": "choice",
-            "prompt": "In the morning, I _______ breakfast.",
+            "prompt": "1. We go to school on _______ . (我们步行去上学。)",
             "options": [
-              { "text": "have (吃)", "val": "A" },
-              { "text": "wash (洗)", "val": "B" },
-              { "text": "brush (刷)", "val": "C" }
+              { "text": "B. feet", "val": "B" },
+              { "text": "F. foot", "val": "F" },
+              { "text": "C. by", "val": "C" }
             ],
-            "correct": "A",
-            "analysis": "固定搭配吃早餐是 have breakfast。洗脸是 wash my face，刷牙是 brush my teeth。"
+            "correct": "F",
+            "analysis": "固定短语“步行”是 on foot（用单数 foot，不用复数 feet）！"
           },
           {
-            "id": "p2_c2",
+            "id": "p2_fill2",
             "type": "choice",
-            "prompt": "—What a mess!  —_______",
+            "prompt": "2. _______ the morning, I get up at 6:30.",
             "options": [
-              { "text": "Sorry. (对不起)", "val": "A" },
-              { "text": "All right. (好的)", "val": "B" },
-              { "text": "Oh, no. (哦不)", "val": "C" }
+              { "text": "D. In", "val": "D" },
+              { "text": "C. by", "val": "C" },
+              { "text": "A. a", "val": "A" }
             ],
-            "correct": "A",
-            "analysis": "妈妈批评房间太乱了（What a mess!），懂事的孩子应礼貌地道歉说“Sorry.”。"
+            "correct": "D",
+            "analysis": "固定搭配“在早上”是 In the morning（句首首字母大写）。"
           },
           {
-            "id": "p2_c3",
+            "id": "p2_fill3",
             "type": "choice",
-            "prompt": "The stars _______ like a diamond.",
+            "prompt": "3. I go to school _______ bus. (我乘公交去上学。)",
             "options": [
-              { "text": "are", "val": "A" },
-              { "text": "is", "val": "B" },
-              { "text": "am", "val": "C" }
+              { "text": "C. by", "val": "C" },
+              { "text": "E. put", "val": "E" },
+              { "text": "F. foot", "val": "F" }
             ],
-            "correct": "A",
-            "analysis": "主语是复数名词 The stars（星星们），be 动词必须用 are！若是单数 The little star 则用 is。"
+            "correct": "C",
+            "analysis": "乘公交车固定搭配用介词 by（by bus）。"
           },
           {
-            "id": "p2_c4",
+            "id": "p2_fill4",
             "type": "choice",
-            "prompt": "—_______ do you go to school?  —By car.",
+            "prompt": "4. You can _______ the box under the bed. (你可以把盒子放在床下。)",
             "options": [
-              { "text": "How (怎么)", "val": "A" },
-              { "text": "What (什么)", "val": "B" },
-              { "text": "Who (谁)", "val": "C" }
+              { "text": "A. a", "val": "A" },
+              { "text": "E. put", "val": "E" },
+              { "text": "D. In", "val": "D" }
             ],
-            "correct": "A",
-            "analysis": "答句是出行方式 By car（乘汽车），对交通方式提问必须用疑问词 How（怎样/怎么）。"
+            "correct": "E",
+            "analysis": "can 后面接动词原形 put（放），put the box under the bed。"
           },
           {
-            "id": "p2_c5",
+            "id": "p2_fill5",
             "type": "choice",
-            "prompt": "—I love this red bus.  —Yes, you can see _______ in London.",
+            "prompt": "5. It's _______ postcard from London. (这是一张来自伦敦的明信片。)",
             "options": [
-              { "text": "it", "val": "A" },
-              { "text": "this", "val": "B" },
-              { "text": "them", "val": "C" }
+              { "text": "A. a", "val": "A" },
+              { "text": "C. by", "val": "C" },
+              { "text": "D. In", "val": "D" }
             ],
             "correct": "A",
-            "analysis": "前句提到的是单数名词 this red bus（这辆红公交），后句再次代指单数物体必须用代词 it。"
+            "analysis": "postcard 是可数名词单数，前面加不定冠词 a（a postcard from London）。"
           }
         ]
       },
       {
-        "sectionTitle": "二、Read and judge 公园运动阅读判断题",
+        "sectionTitle": "二、Read and choose 情景问答与晚餐对话补全",
+        "sectionDesc": "根据上下文语境，选出最恰当的句子完成日常交际",
+        "questions": [
+          {
+            "id": "p2_dlg1",
+            "type": "choice",
+            "prompt": "—How are you today?  —_______",
+            "options": [
+              { "text": "A. I like sunny days.", "val": "A" },
+              { "text": "B. Yes, of course.", "val": "B" },
+              { "text": "C. I'm great.", "val": "C" }
+            ],
+            "correct": "C",
+            "analysis": "询问今天身体/心情好不好（How are you today?），回答“I'm great.”（我棒极了）。"
+          },
+          {
+            "id": "p2_dlg2",
+            "type": "choice",
+            "prompt": "—What weather do you like?  —_______",
+            "options": [
+              { "text": "A. I like sunny days.", "val": "A" },
+              { "text": "B. Thank you.", "val": "B" },
+              { "text": "C. I'm sorry.", "val": "C" }
+            ],
+            "correct": "A",
+            "analysis": "询问你喜欢什么天气（What weather do you like?），回答“I like sunny days.”（我喜欢晴天）。"
+          },
+          {
+            "id": "p2_dlg3",
+            "type": "choice",
+            "prompt": "【家庭晚餐对话】妈妈喊：“It's dinner time. _______” 申申回答：“I'm coming, Mum.”",
+            "options": [
+              { "text": "A. We have meatballs too.", "val": "A" },
+              { "text": "B. Let's have dinner together.", "val": "B" },
+              { "text": "C. I like vegetables.", "val": "C" }
+            ],
+            "correct": "B",
+            "analysis": "到晚饭时间了（It's dinner time），妈妈呼唤大家“Let's have dinner together.”（我们一起吃晚饭吧）。"
+          },
+          {
+            "id": "p2_dlg4",
+            "type": "choice",
+            "prompt": "【家庭晚餐对话】妈妈说：“We have some vegetables.” 申申开心回应：“_______” 爸爸接着说：“We have meatballs too!”",
+            "options": [
+              { "text": "A. I like vegetables.", "val": "A" },
+              { "text": "B. Let's have dinner together.", "val": "B" },
+              { "text": "C. Try again.", "val": "C" }
+            ],
+            "correct": "A",
+            "analysis": "妈妈说有蔬菜（vegetables），申申回应“I like vegetables.”（我喜欢吃蔬菜）上下衔接最自然。"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "三、Read and judge 公园运动阅读判断题",
         "sectionDesc": "阅读短文，判断句子是否与短文相符（相符 √，不相符 ×）",
         "passage": "Today is sunny. Shenshen and Minmin are in the park. Shenshen can run and jump. Minmin can play ping-pong and football very well. They wear sports shoes and do a warm-up. Then they play happily(开心地). They like sports very much.",
         "passageCn": "今天天气晴朗。申申和敏敏在公园里。申申会跑和跳。敏敏乒乓球和足球踢得非常好。他们穿上运动鞋，做热身运动。然后他们开心地玩耍。他们非常喜欢运动。",
@@ -463,14 +914,14 @@
   {
     "id": "bilingual_reading_linlin_danny",
     "grade": "2a",
-    "title": "2A 读写强化·双城记与操场情景阅读卷",
+    "title": "📖 2A 读写强化·双城记与操场情景阅读拔高卷",
     "subtitle": "包含上海琳琳与伦敦丹尼自我介绍，以及课后操场跳绳情景对话",
     "timeLimit": "25分钟",
     "badge": "读写能力拔高",
-    "summary": "考察对较长语篇的提取与理解能力，涉及城市、年龄、喜爱的游戏、宠物及交通方式。",
+    "summary": "考察对较长语篇的对比提取能力（上海 vs 伦敦、步行 vs 公交、乒乓 vs 足球）以及操场运动安全对话逻辑。",
     "sections": [
       {
-        "sectionTitle": "一、Read and choose 琳琳与丹尼的自我介绍",
+        "sectionTitle": "一、Read and choose 琳琳与丹尼的双城自我介绍",
         "sectionDesc": "阅读两位小朋友的短文，选出最佳选项",
         "passage": "Hello! I am Linlin. I live in Shanghai. I am seven. I can play ping-pong very well. I go to school on foot every day. I like playing hide-and-seek with my friends. I like my friend very much.\n\nI am Danny. I live in London. I am also(也) seven. Every day, I go to school by bus. I like dogs. I have two pet dogs. They're cute. I like playing hide-and-seek with my dogs. And I can play football very well.",
         "passageCn": "你好！我是琳琳。我住在上海。我今年7岁。我乒乓球打得非常好。我每天步行去上学。我喜欢和我的朋友玩捉迷藏。我很喜欢我的朋友。\n\n我是丹尼。我住在伦敦。我也7岁。每天我乘公交去上学。我喜欢狗，我有两只宠物狗，它们很可爱。我喜欢和我的小狗玩捉迷藏。而且我足球踢得非常好。",
@@ -538,32 +989,44 @@
         ]
       },
       {
-        "sectionTitle": "二、Read and choose 操场运动意外与情景对话补全",
-        "sectionDesc": "下课了，同伴邀请跳绳，踩到脚后的礼貌与安全提醒对话",
+        "sectionTitle": "二、Read and choose 操场运动安全对话补全 (卷10压轴题)",
+        "sectionDesc": "方框选项：[ A. And I should do warm-ups too. | B. Let's skip rope together. | C. You should wear sports shoes. | D. Let's go! ]",
         "questions": [
           {
             "id": "dlg_q1",
             "type": "choice",
-            "prompt": "下课了，你想邀请同桌一起跳绳，你可以说：",
+            "prompt": "第1~2步：男孩说：“1. Class is over.” 同伴提议：“2. _______” 男孩高兴地答应：“3. Great! Let's go!”",
             "options": [
-              { "text": "Let's skip rope together. (我们一起跳绳吧。)", "val": "A" },
-              { "text": "And I should do warm-ups too.", "val": "B" },
-              { "text": "You should wear sports shoes.", "val": "C" }
+              { "text": "A. And I should do warm-ups too.", "val": "A" },
+              { "text": "B. Let's skip rope together. (我们一起跳绳吧。)", "val": "B" },
+              { "text": "C. You should wear sports shoes.", "val": "C" }
             ],
-            "correct": "A",
-            "analysis": "提出一起跳绳的建议用 'Let's skip rope together.'。"
+            "correct": "B",
+            "analysis": "下课了（Class is over），先提出运动建议“Let's skip rope together.”（我们一起跳绳吧），对方才会回答“Great! Let's go!”。"
           },
           {
             "id": "dlg_q2",
             "type": "choice",
-            "prompt": "跳绳不小心崴到了脚喊 'Ouch! My foot!'，同桌关心并提醒穿运动鞋，可以说：",
+            "prompt": "第3~4步：跳绳时同伴突然喊：“4. Ouch! My foot! (哎哟！我的脚！)” 男孩连忙提醒：“5. Be careful! _______”",
             "options": [
-              { "text": "Great! Let's go!", "val": "A" },
-              { "text": "Be careful! You should wear sports shoes.", "val": "B" },
-              { "text": "I can run very fast.", "val": "C" }
+              { "text": "A. And I should do warm-ups too.", "val": "A" },
+              { "text": "C. You should wear sports shoes. (你应该穿运动鞋。)", "val": "C" },
+              { "text": "D. Let's go!", "val": "D" }
             ],
-            "correct": "B",
-            "analysis": "脚受伤时应该提醒“小心！你应该穿运动鞋（Be careful! You should wear sports shoes.）”。"
+            "correct": "C",
+            "analysis": "因为脚痛（My foot!），所以提醒对方“Be careful! You should wear sports shoes.”（小心！你应该穿运动鞋。）。"
+          },
+          {
+            "id": "dlg_q3",
+            "type": "choice",
+            "prompt": "第5步：受伤的男孩恍然大悟，点头说：“6. OK. _______”",
+            "options": [
+              { "text": "A. And I should do warm-ups too. (而且我也应该做热身运动。)", "val": "A" },
+              { "text": "B. Let's skip rope together.", "val": "B" },
+              { "text": "C. You should wear sports shoes.", "val": "C" }
+            ],
+            "correct": "A",
+            "analysis": "接受对方的穿鞋建议后，自己补充说“OK. And I should do warm-ups too.”（好的，而且我也应该做热身运动），注意句尾的 too（也）！"
           }
         ]
       }
