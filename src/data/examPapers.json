@@ -559,6 +559,666 @@
     ]
   },
   {
+    "id": "u1_task_paper_1",
+    "grade": "2a",
+    "title": "☀️ 2A U1 任务单 (Period 1)·早晨作息与James清单全真卷",
+    "subtitle": "上海立信会计金融学院附属松江学校 2A U1 任务单 (Period 1)（含 AI 听力、字母寻宝、看图打勾与 James 清单排序）",
+    "timeLimit": "25分钟",
+    "badge": "最新新增 ✨ U1任务单",
+    "summary": "100% 还原《2A U1 任务单 (Period 1)》正反两页全部题目！重点攻克 Tie your shoelaces vs Tidy your room 看图辨析，以及 James Morning Checklist 阅读排序中的“先穿衣还是先刷牙”高频失分陷阱！",
+    "sections": [
+      {
+        "sectionTitle": "Part 1 Listening — I. Listen and choose (听录音，选出所听句子中含有的单词)",
+        "sectionDesc": "点击【🔊 点击听考官读题】，选出你在句子中听到的时间、动作或发音相近词",
+        "questions": [
+          {
+            "id": "u1p1_l1_1",
+            "type": "listening",
+            "audioText": "It is seven thirty in the morning. Time to go to school!",
+            "prompt": "🎧 1. 听录音，选出所听句子中含有的时间短语：",
+            "options": [
+              {
+                "text": "A. six thirty (6:30)",
+                "val": "A"
+              },
+              {
+                "text": "B. seven thirty (7:30)",
+                "val": "B"
+              },
+              {
+                "text": "C. eight o'clock (8:00)",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U1任务单1 听力I-1】\n🎧 听力原文：“It is seven thirty in the morning.”（现在是早上七点半 7:30。）\n💡 辨音技巧：抓准数字 seven（7）和 thirty（30），选 B！"
+          },
+          {
+            "id": "u1p1_l1_2",
+            "type": "listening",
+            "audioText": "Good morning, Shenshen! Please get up now.",
+            "prompt": "🎧 2. 听录音，选出所听句子中含有的动作短语：",
+            "options": [
+              {
+                "text": "A. get up (起床)",
+                "val": "A"
+              },
+              {
+                "text": "B. go to school (去上学)",
+                "val": "B"
+              },
+              {
+                "text": "C. have class (上课)",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 听力I-2】\n🎧 听力原文：“Good morning, Shenshen! Please get up now.”（早上好，申申！请现在起床。）选 A. get up！",
+            "mistakeWord": {
+              "word": "get up",
+              "translation": "起床"
+            }
+          },
+          {
+            "id": "u1p1_l1_3",
+            "type": "listening",
+            "audioText": "I brush my teeth every morning and every night.",
+            "prompt": "🎧 3. 听录音，选出所听句子中含有的动词：",
+            "options": [
+              {
+                "text": "A. wash (洗)",
+                "val": "A"
+              },
+              {
+                "text": "B. hurry (快点/匆忙)",
+                "val": "B"
+              },
+              {
+                "text": "C. brush (刷)",
+                "val": "C"
+              }
+            ],
+            "correct": "C",
+            "analysis": "【U1任务单1 听力I-3】\n🎧 听力原文：“I brush my teeth every morning and every night.”\n💡 考点剖析：刷牙搭配动词 brush（brush my teeth），洗脸搭配动词 wash（wash my face）。",
+            "mistakeWord": {
+              "word": "brush my teeth",
+              "translation": "刷牙"
+            }
+          },
+          {
+            "id": "u1p1_l1_4",
+            "type": "listening",
+            "audioText": "What a busy day! Let us play together after school.",
+            "prompt": "🎧 4. 听录音，选出句子中先出现的 ay 韵脚单词（It is a nice day!）：",
+            "options": [
+              {
+                "text": "A. day (天/日子)",
+                "val": "A"
+              },
+              {
+                "text": "B. play (玩耍)",
+                "val": "B"
+              },
+              {
+                "text": "C. say (说)",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 听力I-4】\n🎧 听力重点考查自然拼读 -ay 字母组合（/eɪ/）：d-ay -> day（一天），pl-ay -> play（玩），s-ay -> say（说）。"
+          },
+          {
+            "id": "u1p1_l1_5",
+            "type": "listening",
+            "audioText": "Hurry up! Don't be late for school!",
+            "prompt": "🎧 5. 听录音，选出所听句子中含有的 a_e 相对开音节单词：",
+            "options": [
+              {
+                "text": "A. late (迟到的)",
+                "val": "A"
+              },
+              {
+                "text": "B. lake (湖泊)",
+                "val": "B"
+              },
+              {
+                "text": "C. make (制作)",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 听力I-5】\n🎧 听力原文：“Hurry up! Don't be late for school!”（快点！上学别迟到啦！）注意尾音 /t/（late）与 /k/（lake / make）的区别！"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 1 Listening — II & III. 听音选答句与日常作息排序",
+        "sectionDesc": "听问句选出最恰当的回答，并按早晨到夜晚的时间顺序给图片编号",
+        "questions": [
+          {
+            "id": "u1p1_l2_1",
+            "type": "listening",
+            "audioText": "What do you do in the morning, Shenshen?",
+            "prompt": "🎧 1. 听录音提问，选择最恰当的答语：",
+            "options": [
+              {
+                "text": "A. I wash my face and brush my teeth.",
+                "val": "A"
+              },
+              {
+                "text": "B. I usually get up at 6:30.",
+                "val": "B"
+              },
+              {
+                "text": "C. It's 6:30.",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 听力II-1】\n🎧 听力问句：“What do you do in the morning, Shenshen?”（你早上做什么？）\n💡 审题技巧：问 What do you do（做什么动作），回答 A（我洗脸和刷牙）；如果问 When do you get up 才选 B；问 What time is it 才选 C。"
+          },
+          {
+            "id": "u1p1_l2_2",
+            "type": "listening",
+            "audioText": "Brush your teeth and wash your face, Shenshen!",
+            "prompt": "🎧 2. 听妈妈的叮嘱，选择最恰当的答语：",
+            "options": [
+              {
+                "text": "A. Thank you!",
+                "val": "A"
+              },
+              {
+                "text": "B. I'm doing it. (我正在做呢。)",
+                "val": "B"
+              },
+              {
+                "text": "C. You're welcome.",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U1任务单1 听力II-2】\n🎧 听力原文：“Brush your teeth and wash your face, Shenshen!”（申申，去刷牙洗脸！）回答“I'm doing it.”（我正在做呢！）最地道。"
+          },
+          {
+            "id": "u1p1_l2_3",
+            "type": "listening",
+            "audioText": "When do you go to school?",
+            "prompt": "🎧 3. 听录音提问，选择最恰当的答语：",
+            "options": [
+              {
+                "text": "A. I go to school at 7:30.",
+                "val": "A"
+              },
+              {
+                "text": "B. I go to school by bike.",
+                "val": "B"
+              },
+              {
+                "text": "C. Yes, I do.",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 听力II-3】\n🎧 听力问句：“When do you go to school?”（你什么时候去上学？）\n💡 区分疑问词：When 问【时间】（选 A. at 7:30）；How 问【交通方式】（选 B. by bike）。"
+          },
+          {
+            "id": "u1p1_l2_4",
+            "type": "listening",
+            "audioText": "Hurry up! It's eight o'clock!",
+            "prompt": "🎧 4. 听录音提醒，选择最恰当的后续回应：",
+            "options": [
+              {
+                "text": "A. It's time for class. (该上课了。)",
+                "val": "A"
+              },
+              {
+                "text": "B. It's 12:00.",
+                "val": "B"
+              },
+              {
+                "text": "C. I have four classes.",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 听力II-4】\n🎧 听力原文：“Hurry up! It's eight o'clock!”（快点！八点钟啦！）紧接着回应“It's time for class.”（该上课了）。"
+          },
+          {
+            "id": "u1p1_l2_5",
+            "type": "listening",
+            "audioText": "When do you go to bed at night?",
+            "prompt": "🎧 5. 听录音提问，选择最恰当的答语：",
+            "options": [
+              {
+                "text": "A. I go to bed at 9:30.",
+                "val": "A"
+              },
+              {
+                "text": "B. I like sleeping.",
+                "val": "B"
+              },
+              {
+                "text": "C. No, I'm not.",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 听力II-5】\n🎧 听力问句：“When do you go to bed at night?”（你晚上几点睡觉？）回答“I go to bed at 9:30.”（我九点半睡觉）。"
+          },
+          {
+            "id": "u1p1_l3_1",
+            "type": "listening",
+            "audioText": "Number 1: I get up at six thirty in the morning. Number 2: I have breakfast at seven o clock. Number 3: I go to school by school bus. Number 4: We have class at school. Number 5: Good night! I go to bed at nine.",
+            "prompt": "🎧【III. 听录音给五幅图排序】卷面第一行依次是：【🍽️吃早餐】、【📖上课】、【🌙睡觉】；第二行依次是：【⏰起床】、【🚌坐校车上学】。请选出正确的编号：",
+            "options": [
+              {
+                "text": "A. 第一行 ( 2 ) ( 4 ) ( 5 ) ；第二行 ( 1 ) ( 3 )",
+                "val": "A"
+              },
+              {
+                "text": "B. 第一行 ( 1 ) ( 2 ) ( 3 ) ；第二行 ( 4 ) ( 5 )",
+                "val": "B"
+              },
+              {
+                "text": "C. 第一行 ( 3 ) ( 4 ) ( 5 ) ；第二行 ( 1 ) ( 2 )",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 听力III】\n💡 时间顺序：1. 起床 (第二行左1) -> 2. 吃早餐 (第一行左1) -> 3. 坐校车上学 (第二行右1) -> 4. 上课 (第一行中) -> 5. 睡觉 (第一行右1)。所以第一行填 (2)(4)(5)，第二行填 (1)(3)！"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 2 Reading and Writing — I & II. 字母寻宝与看图选句打“√”",
+        "sectionDesc": "还原试卷第 2 页上半部分：在字母网格中圈单词 + 根据插图给正确句子打“√”",
+        "questions": [
+          {
+            "id": "u1p1_rw1_1",
+            "type": "choice",
+            "prompt": "【I. Read and circle 字母表格寻宝】请在卷面 4×14 的字母网格中找出方框里的 4 个核心动词 [ get | brush | wash | have ]，它们的准确位置是：",
+            "options": [
+              {
+                "text": "A. 第1行 get(第4-6列)、第2行 brush(第9-13列)、第3行 wash(第2-5列)、第4行 have(第7-10列)",
+                "val": "A"
+              },
+              {
+                "text": "B. 全部都在第1行里",
+                "val": "B"
+              },
+              {
+                "text": "C. 竖着排列在第1列里",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 笔试I】\n💡 寻宝坐标指南：\n• 第1行：s n e 【g e t】 r u l p k g m e\n• 第2行：f g v w m j k o 【b r u s h】 z\n• 第3行：q 【w a s h】 n t y k p s c x b\n• 第4行：p d x z c v 【h a v e】 u i o m\n刚好每一行藏着一个单词，引导洛洛按行从左往右找就能全部圈出来！"
+          },
+          {
+            "id": "u1p1_rw2_1",
+            "type": "choice",
+            "prompt": "【II-1 看图打“√”】图 1 画着【👦🥱 小男孩刚睡醒坐在床上伸懒腰】，应该在哪句前打“√”？",
+            "options": [
+              {
+                "text": "a. ( √ ) Get up, Shenshen.",
+                "val": "a"
+              },
+              {
+                "text": "b. ( √ ) Get ready for bed, Shenshen.",
+                "val": "b"
+              }
+            ],
+            "correct": "a",
+            "analysis": "【U1任务单1 笔试II-1】伸懒腰刚醒来是“起床”（Get up, Shenshen.）；b 选项 Get ready for bed 是“准备上床睡觉”。"
+          },
+          {
+            "id": "u1p1_rw2_2",
+            "type": "choice",
+            "prompt": "【II-2 看图打“√”】图 2 画着【👧🪥 小女孩站在洗漱台镜子前刷牙】，应该在哪句前打“√”？",
+            "options": [
+              {
+                "text": "a. ( √ ) Wash your hands, Shenshen.",
+                "val": "a"
+              },
+              {
+                "text": "b. ( √ ) Brush your teeth, Shenshen.",
+                "val": "b"
+              }
+            ],
+            "correct": "b",
+            "analysis": "【U1任务单1 笔试II-2】手里拿着牙刷在刷牙，所以选 b. Brush your teeth, Shenshen.（a 是洗手 Wash your hands）。"
+          },
+          {
+            "id": "u1p1_rw2_3",
+            "type": "choice",
+            "prompt": "【II-3 看图打“√”】图 3 画着【👦👟 小朋友坐在矮凳上弯腰系鞋带】，应该在哪句前打“√”？",
+            "options": [
+              {
+                "text": "a. ( √ ) Tie your shoelaces, Shenshen.",
+                "val": "a"
+              },
+              {
+                "text": "b. ( √ ) Tidy your room, Shenshen.",
+                "val": "b"
+              }
+            ],
+            "correct": "a",
+            "analysis": "【U1任务单1 笔试II-3 · 🎯形近词防坑】\n💡 重点区分两个 T 开头的动词：Tie your shoelaces 是【系鞋带】；Tidy your room 是【整理房间】。图3在系鞋带，选 a！",
+            "isTargetError": true,
+            "mistakeWord": {
+              "word": "tie your shoelaces",
+              "translation": "系鞋带"
+            }
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 2 Reading and Writing — III. Read and number (读 James 的早晨清单，用 1—6 排序)",
+        "sectionDesc": "🚨 全卷最易错阅读题！请仔细阅读左侧短文，切勿凭日常习惯盲目排顺序！",
+        "passage": "This is my morning checklist. I get up and put on my clothes at 7:00 in the morning. Then, I brush my teeth and wash my face. After that(在那之后), I have my breakfast. At 7:30, my mum drives me to school. What a busy morning!",
+        "passageCn": "这是我的早晨任务清单。我早上 7:00 起床并穿上衣服。然后，我刷牙并洗脸。在那之后，我吃早餐。在 7:30，我妈妈开车送我去学校。真是忙碌的早晨啊！",
+        "questions": [
+          {
+            "id": "u1p1_rw3_1",
+            "type": "choice",
+            "prompt": "【关键细节定位 1】根据 James 的短文，他早上 7:00 起床（get up = 1）之后，紧接着做的【第 2 件事】是什么？",
+            "options": [
+              {
+                "text": "A. brush my teeth (刷牙)",
+                "val": "A"
+              },
+              {
+                "text": "B. put on my clothes (穿上衣服)",
+                "val": "B"
+              },
+              {
+                "text": "C. wash my face (洗脸)",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U1任务单1 笔试III · 🚨头号陷阱！】\n很多小朋友平时习惯起床先刷牙，就会把 brush my teeth 标成 2！\n但请看短文第一句原话：“I get up and put on my clothes at 7:00 in the morning. Then, I brush my teeth and wash my face.”\n所以第 1 件是 get up，第 2 件必须是【put on my clothes】（穿衣服），第 3 件才是 brush my teeth（刷牙），第 4 件是 wash my face（洗脸）！",
+            "isTargetError": true,
+            "mistakeWord": {
+              "word": "put on my clothes",
+              "translation": "穿上衣服"
+            }
+          },
+          {
+            "id": "u1p1_rw3_2",
+            "type": "choice",
+            "prompt": "【完整清单 1—6 终极排序】按照右侧【My morning】方框从上到下的 6 行顺序（①get up / ②brush my teeth / ③wash my face / ④put on my clothes / ⑤have breakfast / ⑥go to school），方框里从上往下填入的正确数字顺序是：",
+            "options": [
+              {
+                "text": "A. [ 1 ] -> [ 3 ] -> [ 4 ] -> [ 2 ] -> [ 5 ] -> [ 6 ]",
+                "val": "A"
+              },
+              {
+                "text": "B. [ 1 ] -> [ 2 ] -> [ 3 ] -> [ 4 ] -> [ 5 ] -> [ 6 ]",
+                "val": "B"
+              },
+              {
+                "text": "C. [ 1 ] -> [ 4 ] -> [ 3 ] -> [ 2 ] -> [ 6 ] -> [ 5 ]",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U1任务单1 笔试III 标准答案】\n按照短文动作先后顺序：\n1. get up (第1行填 1)\n2. put on my clothes (第4行填 2)\n3. brush my teeth (第2行填 3)\n4. wash my face (第3行填 4)\n5. have breakfast (第5行填 5)\n6. go to school (第6行填 6)\n所以右侧方框从上往下依次填：【 1, 3, 4, 2, 5, 6 】！",
+            "isTargetError": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "starter_task_paper_1_2",
+    "grade": "2a",
+    "title": "🌱 2A Starter 任务单 (Period 1 & 2)·字母基础与小蚂蚁阅读卷",
+    "subtitle": "上海立信会计金融学院附属松江学校 2A Starter 任务单 Period 1 + Period 2 + 口语卷精华合集",
+    "timeLimit": "25分钟",
+    "badge": "Starter 衔接全真卷",
+    "summary": "完整收录《2A Starter 任务单 Period 1 & 2》！涵盖大小写配对判断（Pb/Qp防混）、字母邻居、补全单词连线、语法单选以及《A little ant and a bird（小蚂蚁与小鸟）》阅读排序！",
+    "sections": [
+      {
+        "sectionTitle": "Starter Period 1 — 二 & 三. 大小写配对判断与字母左右邻居",
+        "sectionDesc": "火眼金睛辨别大小写是否同属一个字母，并准确写出 Nn, Ll, Hh 的左右邻居",
+        "questions": [
+          {
+            "id": "st_p1_1",
+            "type": "choice",
+            "prompt": "【二、Read and judge 大小写配对判断】请判断下列 8 组字母的大小写是否一致：\n1. Kt   2. Oo   3. Dd   4. Yz   5. Ii   6. Fe   7. Pb   8. Qp",
+            "options": [
+              {
+                "text": "A. 只有 2.Oo、3.Dd、5.Ii 是 √，其余 1.Kt、4.Yz、6.Fe、7.Pb、8.Qp 全部是 ×",
+                "val": "A"
+              },
+              {
+                "text": "B. 2.Oo、3.Dd、5.Ii、7.Pb、8.Qp 是 √",
+                "val": "B"
+              },
+              {
+                "text": "C. 全部都是 √",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【Starter Period 1 第二大题】\n💡 避坑指南：第 7 题 Pb（大写 P 配了小写 b，正确应为 Pp）和第 8 题 Qp（大写 Q 配了小写 p，正确应为 Qq）是最容易看走眼的陷阱！只有 2.Oo (√)、3.Dd (√)、5.Ii (√) 三组完全一致！",
+            "isTargetError": true
+          },
+          {
+            "id": "st_p1_2",
+            "type": "choice",
+            "prompt": "【三、Look and write 写出所给字母的左右邻居】\n1. ____ Nn ____    2. ____ Ll ____    3. ____ Hh ____",
+            "options": [
+              {
+                "text": "A. 1. Mm Nn Oo  |  2. Kk Ll Mm  |  3. Gg Hh Ii",
+                "val": "A"
+              },
+              {
+                "text": "B. 1. Ll Nn Oo  |  2. Jj Ll Mm  |  3. Ff Hh Ii",
+                "val": "B"
+              },
+              {
+                "text": "C. 1. Mm Nn Pp  |  2. Ii Ll Mm  |  3. Gg Hh Jj",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【Starter Period 1 第三大题】\n💡 字母序口诀：G-H-I（Gg Hh Ii），K-L-M（Kk Ll Mm），M-N-O（Mm Nn Oo）！注意题目给的是大小写组合，写邻居时也要写一大一小哦！"
+          },
+          {
+            "id": "st_p1_3",
+            "type": "choice",
+            "prompt": "【四、Write and line 填所缺首字母并连图】\n① ___ird (🐦小鸟)  ② ___at (🐱小猫)  ③ ___us (🚌公交车)  ④ ___ar (🚗小汽车)  ⑤ ___pple (🍎苹果)",
+            "options": [
+              {
+                "text": "A. ① b (bird)  ② c (cat)  ③ b (bus)  ④ c (car)  ⑤ a (apple)",
+                "val": "A"
+              },
+              {
+                "text": "B. ① d (dird)  ② c (cat)  ③ d (dus)  ④ c (car)  ⑤ a (apple)",
+                "val": "B"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【Starter Period 1 第四大题】\n① bird 鸟（连右上角小鸟，首字母 b 属于 Bb）；\n② cat 猫（连右下角小猫，首字母 c 属于 Cc）；\n③ bus 公交车（连中间巴士，首字母 b 属于 Bb）；\n④ car 汽车（连正面小汽车，首字母 c 属于 Cc）；\n⑤ apple 苹果（连右上角苹果，首字母 a 属于 Aa）。"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Starter Period 1 — 五. Read and choose (选择最佳答案)",
+        "sectionDesc": "考查日常礼貌交际、介词 for、be going back to、冠词 a/an 辨析、选择疑问句 or 及名词复数",
+        "questions": [
+          {
+            "id": "st_p1_c1",
+            "type": "choice",
+            "prompt": "1. — Let me help you. (让我来帮你吧。)  — ____________",
+            "options": [
+              {
+                "text": "A. Don't worry.",
+                "val": "A"
+              },
+              {
+                "text": "B. Thank you.",
+                "val": "B"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【Starter P1 第五题-1】别人主动提供帮助说“Let me help you.”，要礼貌回答“Thank you.”（谢谢你）。"
+          },
+          {
+            "id": "st_p1_c2",
+            "type": "choice",
+            "prompt": "2. The toy dog is _________ you. (这只玩具小狗是送给你的。)",
+            "options": [
+              {
+                "text": "A. to",
+                "val": "A"
+              },
+              {
+                "text": "B. for",
+                "val": "B"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【Starter P1 第五题-2】表示“给……的礼物”用介词【for】（This is for you / The toy dog is for you）。"
+          },
+          {
+            "id": "st_p1_c3",
+            "type": "choice",
+            "prompt": "3. I'm _________ back to London. (我要回伦敦去了。)",
+            "options": [
+              {
+                "text": "A. going",
+                "val": "A"
+              },
+              {
+                "text": "B. go",
+                "val": "B"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【Starter P1 第五题-3】前面已经有 be 动词 am（I'm = I am），后面动词要用 -ing 形式【going】（I'm going back to London.）。"
+          },
+          {
+            "id": "st_p1_c4",
+            "type": "choice",
+            "prompt": "4. Shenshen gives a ________ panda to Lily.",
+            "options": [
+              {
+                "text": "A. animal",
+                "val": "A"
+              },
+              {
+                "text": "B. toy",
+                "val": "B"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【Starter P1 第五题-4】空前面是冠词 a，且表示“一只玩具熊猫”，用【a toy panda】（animal 是元音开头要用 an，且语义不通）。"
+          },
+          {
+            "id": "st_p1_c5",
+            "type": "choice",
+            "prompt": "5. A toy panda ______ a toy train? (想要一只玩具熊猫还是一辆玩具火车？)",
+            "options": [
+              {
+                "text": "A. and (和)",
+                "val": "A"
+              },
+              {
+                "text": "B. or (还是/或者)",
+                "val": "B"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【Starter P1 第五题-5】注意句末是问号“？”，让对方二选一的【选择疑问句】中间用连词【or】（还是）！"
+          },
+          {
+            "id": "st_p1_c6",
+            "type": "choice",
+            "prompt": "6. Draw two big ________. (画两只大眼睛。)",
+            "options": [
+              {
+                "text": "A. eyes",
+                "val": "A"
+              },
+              {
+                "text": "B. eye",
+                "val": "B"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【Starter P1 第五题-6】前面有数字 two（两只），可数名词必须加 -s 用复数【eyes】！"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Starter Period 2 — 一~三. 小动物藏词、数字圈选与《小蚂蚁和小鸟》故事阅读",
+        "sectionDesc": "阅读《A little ant and a bird》童话短文，给插图排序并为小蚂蚁选出最佳建议",
+        "passage": "A little ant and a bird\nOne day, a little ant falls into (掉入) the river (河). A bird sees the little ant.\nLittle Ant: Oh, no! Help! Help!\nBird: Let me help you, little ant! Use the leaf (树叶) and stand (站) on it. You can do it.\nLittle Ant: OK. Let me try! Oh, I can do it. Thank you.\nBird: Good job.",
+        "passageCn": "《小蚂蚁和小鸟》\n一天，一只小蚂蚁掉进了河里。一只小鸟看见了小蚂蚁。\n小蚂蚁：哦，不！救命！救命！\n小鸟：让我来帮你，小蚂蚁！用这片树叶，站到它上面。你可以做到的！\n小蚂蚁：好的，让我试一试！哇，我做到啦。谢谢你！\n小鸟：做得好！",
+        "questions": [
+          {
+            "id": "st_p2_1",
+            "type": "choice",
+            "prompt": "【一、Circle and read 小动物身上藏着的单词】三条小动物长条里分别藏着哪些我们学过的英语单词？",
+            "options": [
+              {
+                "text": "A. ① wash, brush, touch, splash  |  ② face, tooth, head  |  ③ breakfast, milk, egg, apple",
+                "val": "A"
+              },
+              {
+                "text": "B. ① car, bus, metro  |  ② sun, moon, star  |  ③ run, jump, swim",
+                "val": "B"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【Starter Period 2 第一大题】\n① 第一条（洗漱动作）：w-a-s-h (wash)、b-r-u-s-h (brush)、t-o-u-c-h (touch)、s-p-l-a-s-h (splash)\n② 第二条（身体部位）：f-a-c-e (face)、t-o-o-t-h (tooth)、h-e-a-d (head)\n③ 第三条（早餐食物）：b-r-e-a-k-f-a-s-t (breakfast)、m-i-l-k (milk)、e-g-g (egg)、a-p-p-l-e (apple)！"
+          },
+          {
+            "id": "st_p2_2",
+            "type": "choice",
+            "prompt": "【三、故事图片排序】卷面三幅图从左到右依次是：【左图：小蚂蚁站在树叶船上】、【中图：小蚂蚁在岸上感谢小鸟】、【右图：小蚂蚁掉进水里喊救命】。请按故事发展顺序 1—3 为三幅图编号：",
+            "options": [
+              {
+                "text": "A. 从左到右依次填：( 2 )  ( 3 )  ( 1 )",
+                "val": "A"
+              },
+              {
+                "text": "B. 从左到右依次填：( 1 )  ( 2 )  ( 3 )",
+                "val": "B"
+              },
+              {
+                "text": "C. 从左到右依次填：( 3 )  ( 1 )  ( 2 )",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【Starter Period 2 第三大题】\n💡 故事发展顺序：\n第 1 步：小蚂蚁掉进河里喊“Help! Help!” -> 对应最右边的图，填 ( 1 )；\n第 2 步：小鸟丢下树叶，小蚂蚁站在树叶上 -> 对应最左边的图，填 ( 2 )；\n第 3 步：小蚂蚁平安上岸对小鸟说“Thank you” -> 对应中间的图，填 ( 3 )。\n所以从左到右三个圆圈依次填：【 2, 3, 1 】！"
+          },
+          {
+            "id": "st_p2_3",
+            "type": "choice",
+            "prompt": "【三、故事拓展思考】小蚂蚁掉进河里差点淹着，现在它要学新本领，小鸟会给它什么好建议呢？",
+            "options": [
+              {
+                "text": "A. It's time to learn to swim. (是时候学游泳啦。)",
+                "val": "A"
+              },
+              {
+                "text": "B. It's time to learn to fly. (是时候学飞翔啦。)",
+                "val": "B"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【Starter Period 2 压轴题】\n💡 逻辑推理：小蚂蚁没有翅膀不会飞（fly），它是因为掉进河里不会游泳才遇到危险的，所以小鸟建议它学游泳：“It's time to learn to swim.” 选 A！"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "shenlilo_mistakes_target",
     "grade": "2a",
     "title": "🎯 沈礼洛专属·10张试卷红笔错题全收录清零卷",

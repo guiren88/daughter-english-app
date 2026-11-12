@@ -1815,6 +1815,26 @@
         {
           "word": "be ready for",
           "translation": "为……做好准备"
+        },
+        {
+          "word": "put on my clothes",
+          "translation": "穿上衣服"
+        },
+        {
+          "word": "tie your shoelaces",
+          "translation": "系鞋带"
+        },
+        {
+          "word": "get ready for bed",
+          "translation": "准备睡觉"
+        },
+        {
+          "word": "morning checklist",
+          "translation": "早晨任务清单"
+        },
+        {
+          "word": "after that",
+          "translation": "在那之后"
         }
       ],
       "sentences": [
@@ -1843,7 +1863,8 @@
       "tips": [
         "黑体为重点单词和句型，请家长帮助贴在课本第9页。",
         "teeth 是 tooth 的不规则复数形式（单数 tooth，复数 teeth）。",
-        "be ready for 表示“为……做好准备”，后面接名词，例如：I'm ready for school!"
+        "be ready for 表示“为……做好准备”，后面接名词，例如：I'm ready for school!",
+        "阅读排序必考陷阱（James 的 Morning Checklist）：做排序题不能凭自己的生活习惯猜顺序，必须严格按短文里的先后词（at 7:00 -> Then -> After that -> At 7:30）定位！如短文先写 get up and put on my clothes，再写 brush my teeth，穿衣服就必须排在刷牙前面！"
       ]
     },
     {
