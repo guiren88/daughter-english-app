@@ -1,5 +1,564 @@
 [
   {
+    "id": "u6_task_paper_1",
+    "grade": "2a",
+    "title": "🌊 2A U6 任务单 1·海洋生物与语法全真同步卷",
+    "subtitle": "上海立信会计金融学院附属松江学校 2A Unit 6 任务单 1（100% 原卷题型还原 + AI 听力播报）",
+    "timeLimit": "25分钟",
+    "badge": "最新新增 ✨ U6任务单1",
+    "summary": "完整收录最新上传的《2A U6 任务单 1》全部听力与读写题！专项突破 seahorse/clownfish/dolphin 海洋生物词汇、fishes 复数用法、以及 three clowns（小丑 vs 小丑鱼）等高频审题陷阱！",
+    "sections": [
+      {
+        "sectionTitle": "Part 1 Listening — I. Listen and choose (听录音，选出听到的单词)",
+        "sectionDesc": "点击【🔊 点击听考官读题】，仔细分辨形近词与发音，选出你听到的单词",
+        "questions": [
+          {
+            "id": "u6_l1_1",
+            "type": "listening",
+            "audioText": "seahorse. Look at the cute seahorse in the sea.",
+            "prompt": "🎧 1. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. horse (马)",
+                "val": "A"
+              },
+              {
+                "text": "B. seahorse (海马)",
+                "val": "B"
+              },
+              {
+                "text": "C. house (房子)",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单1 听力I-1】\n🎧 听力原文：“seahorse. Look at the cute seahorse in the sea.”\n💡 辨音技巧：sea（海）+ horse（马）= seahorse（海马）！注意区分短词 horse（马）和发音含 /aʊ/ 的 house（房子）。",
+            "mistakeWord": {
+              "word": "seahorse",
+              "translation": "海马"
+            }
+          },
+          {
+            "id": "u6_l1_2",
+            "type": "listening",
+            "audioText": "clownfish. I am a small clownfish.",
+            "prompt": "🎧 2. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. clownfish (小丑鱼)",
+                "val": "A"
+              },
+              {
+                "text": "B. goldfish (金鱼)",
+                "val": "B"
+              },
+              {
+                "text": "C. fish (鱼)",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 听力I-2】\n🎧 听力原文：“clownfish. I am a small clownfish.”\n💡 辨音技巧：开头是 /klaʊn/（clown 小丑），合起来是 clownfish（小丑鱼）；B 项开头是 /gəʊld/（goldfish 金鱼）。",
+            "mistakeWord": {
+              "word": "clownfish",
+              "translation": "小丑鱼"
+            }
+          },
+          {
+            "id": "u6_l1_3",
+            "type": "listening",
+            "audioText": "dolphin. The dolphin can jump high.",
+            "prompt": "🎧 3. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. dolphin (海豚)",
+                "val": "A"
+              },
+              {
+                "text": "B. dog (狗)",
+                "val": "B"
+              },
+              {
+                "text": "C. diamond (钻石)",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 听力I-3】\n🎧 听力原文：“dolphin. The dolphin can jump high.”\n💡 辨音技巧：字母组合 ph 发 /f/ 的音，dolphin 读作 /ˈdɒlfɪn/（海豚），不要和 Unit 5 学过的 diamond（钻石）混淆哦！",
+            "mistakeWord": {
+              "word": "dolphin",
+              "translation": "海豚"
+            }
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 1 Listening — II. Listen and choose (听录音，选出听到的句子)",
+        "sectionDesc": "点击播放录音，特别留意句中的助动词（do / can）和句尾地点词（in the sea / in the sky / here）",
+        "questions": [
+          {
+            "id": "u6_l2_1",
+            "type": "listening",
+            "audioText": "What do you see in the sea?",
+            "prompt": "🎧 1. 听录音，选出你听到的句子：",
+            "options": [
+              {
+                "text": "A. What do you see in the sea?",
+                "val": "A"
+              },
+              {
+                "text": "B. What can you see in the sky?",
+                "val": "B"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 听力II-1】\n🎧 听力原文：“What do you see in the sea?”（你在海里看到了什么？）\n💡 审题关键：抓两个关键词——中间是【do】，句尾是【in the sea】（在海里），而不是 in the sky（在天空中）！",
+            "mistakeWord": {
+              "word": "in the sea",
+              "translation": "在海里"
+            }
+          },
+          {
+            "id": "u6_l2_2",
+            "type": "listening",
+            "audioText": "Xiaopu can swim in the sea.",
+            "prompt": "🎧 2. 听录音，选出你听到的句子：",
+            "options": [
+              {
+                "text": "A. Xiaopu can swim in the sea.",
+                "val": "A"
+              },
+              {
+                "text": "B. Xiaopu can swim here.",
+                "val": "B"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 听力II-2】\n🎧 听力原文：“Xiaopu can swim in the sea.”（小浦能在海里游泳。）\n💡 审题关键：句尾是三个词 in the sea，不是单音节词 here。"
+          },
+          {
+            "id": "u6_l2_3",
+            "type": "listening",
+            "audioText": "Can you see the blue sky?",
+            "prompt": "🎧 3. 听录音，选出你听到的句子：",
+            "options": [
+              {
+                "text": "A. Can you see the blue sky?",
+                "val": "A"
+              },
+              {
+                "text": "B. Can you see the sun?",
+                "val": "B"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 听力II-3】\n🎧 听力原文：“Can you see the blue sky?”（你能看见蓝天吗？）\n💡 审题关键：听到颜色词 blue 和 sky，选 A。"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 1 Listening — III & IV. 听音排序与看图笑脸判断",
+        "sectionDesc": "还原试卷左下半页的【III. Listen and number】与【IV. 判断图片是否符合 ☺ / ☹】",
+        "questions": [
+          {
+            "id": "u6_l3_1",
+            "type": "listening",
+            "audioText": "Number 1: Look at the blue sea! Number 2: I can see a clever dolphin. Number 3: Here is a small clownfish. Number 4: And a cute seahorse!",
+            "prompt": "🎧【III. 听录音给图片编号】卷面四幅图依次为：【图① 🐠小丑鱼】、【图② 🐡海马】、【图③ 🌊大海海底】、【图④ 🐬海豚】。请听录音，选出正确的括号编号顺序：",
+            "options": [
+              {
+                "text": "A. ( 3 )  ( 4 )  ( 1 )  ( 2 )",
+                "val": "A"
+              },
+              {
+                "text": "B. ( 1 )  ( 2 )  ( 3 )  ( 4 )",
+                "val": "B"
+              },
+              {
+                "text": "C. ( 2 )  ( 3 )  ( 4 )  ( 1 )",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 听力III】\n🎧 听力顺序：1. blue sea (图③大海填1) -> 2. dolphin (图④海豚填2) -> 3. clownfish (图①小丑鱼填3) -> 4. seahorse (图②海马填4)。\n💡 填空技巧：按从左到右四幅图的括号位置，依次填入 ( 3 ) ( 4 ) ( 1 ) ( 2 )！"
+          },
+          {
+            "id": "u6_l4_1",
+            "type": "listening",
+            "audioText": "Look at the sky. I can see the sun and white clouds.",
+            "prompt": "🎧【IV-1 听音判断画笑脸/哭脸】卷面第 1 图画着【☀️☁️ 蓝天上的太阳和两朵白云】。请听录音判断图片是否相符：",
+            "options": [
+              {
+                "text": "☺ (符合录音内容)",
+                "val": "☺"
+              },
+              {
+                "text": "☹ (不符合录音内容)",
+                "val": "☹"
+              }
+            ],
+            "correct": "☺",
+            "analysis": "【U6任务单1 听力IV-1】\n🎧 听力原文：“Look at the sky. I can see the sun and white clouds.”（看天空，我能看见太阳和白云。）与第1幅图完全一致，画笑脸 ☺！"
+          },
+          {
+            "id": "u6_l4_2",
+            "type": "listening",
+            "audioText": "Look! The dolphin can play with a ball in the sea.",
+            "prompt": "🎧【IV-2 听音判断画笑脸/哭脸】卷面第 2 图画着【🐘⚽ 一头大象用长鼻子顶着球】。请听录音判断图片是否相符：",
+            "options": [
+              {
+                "text": "☺ (符合录音内容)",
+                "val": "☺"
+              },
+              {
+                "text": "☹ (不符合录音内容)",
+                "val": "☹"
+              }
+            ],
+            "correct": "☹",
+            "analysis": "【U6任务单1 听力IV-2】\n🎧 听力原文：“Look! The dolphin can play with a ball in the sea.”（看！海豚在海里玩球。）\n💡 审题关键：图片里玩球的是陆地上的大象（elephant），不是海豚（dolphin），所以不相符，画哭脸 ☹！"
+          },
+          {
+            "id": "u6_l4_3",
+            "type": "listening",
+            "audioText": "What do you see in the sea? I see two cute seahorses.",
+            "prompt": "🎧【IV-3 听音判断画笑脸/哭脸】卷面第 3 图画着【🐡🐡 一粉一蓝两只面对面的海马】。请听录音判断图片是否相符：",
+            "options": [
+              {
+                "text": "☺ (符合录音内容)",
+                "val": "☺"
+              },
+              {
+                "text": "☹ (不符合录音内容)",
+                "val": "☹"
+              }
+            ],
+            "correct": "☺",
+            "analysis": "【U6任务单1 听力IV-3】\n🎧 听力原文：“What do you see in the sea? I see two cute seahorses.”（你在海里看到了什么？我看到了两只可爱的海马。）与图3完全相符，画笑脸 ☺！"
+          },
+          {
+            "id": "u6_l4_4",
+            "type": "listening",
+            "audioText": "Look at the seahorse! It can swim in the sea.",
+            "prompt": "🎧【IV-4 听音判断画笑脸/哭脸】卷面第 4 图画着【🐴 一匹棕色的骏马站在陆地上】。请听录音判断图片是否相符：",
+            "options": [
+              {
+                "text": "☺ (符合录音内容)",
+                "val": "☺"
+              },
+              {
+                "text": "☹ (不符合录音内容)",
+                "val": "☹"
+              }
+            ],
+            "correct": "☹",
+            "analysis": "【U6任务单1 听力IV-4】\n🎧 听力原文说的是海里的 seahorse（海马），但图4画的是陆地上的 horse（马），千万别被尾音 horse 骗啦！画哭脸 ☹！"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 2 Vocabulary and Grammar — I. Look and write (看图选词填空·六选五)",
+        "sectionDesc": "方框词库：[ swim | clownfish | dolphins | cloud | football | seahorses ]（共6个词，5幅图，有1个多余干扰词）",
+        "questions": [
+          {
+            "id": "u6_vw_1",
+            "type": "choice",
+            "prompt": "1. 【看图1：⚽ 一只黑白相间的足球】请选择正确的单词抄写在四线三格内：",
+            "options": [
+              {
+                "text": "A. football",
+                "val": "A"
+              },
+              {
+                "text": "B. swim",
+                "val": "B"
+              },
+              {
+                "text": "C. cloud",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 笔试I-1】图1是足球，对应单词 football！抄写时注意字母 f 占上中两格（或上中下三格），t 占上中两格，ll 占上中两格。",
+            "mistakeWord": {
+              "word": "football",
+              "translation": "足球"
+            }
+          },
+          {
+            "id": "u6_vw_2",
+            "type": "choice",
+            "prompt": "2. 【看图2：🏊‍♀️ 一个小朋友正在水池里游泳】请选择正确的单词抄写在四线三格内：",
+            "options": [
+              {
+                "text": "A. swim",
+                "val": "A"
+              },
+              {
+                "text": "B. dolphins",
+                "val": "B"
+              },
+              {
+                "text": "C. seahorses",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 笔试I-2】图2是游泳的动作，对应动词 swim！抄写时注意 s, w, m 都在中格，i 的小圆点在中格上方。",
+            "mistakeWord": {
+              "word": "swim",
+              "translation": "游泳"
+            }
+          },
+          {
+            "id": "u6_vw_3",
+            "type": "choice",
+            "prompt": "3. 【看图3：🐬🐬 两只蓝色的海豚跃出水面】请选择正确的单词抄写在四线三格内（注意单复数！）：",
+            "options": [
+              {
+                "text": "A. clownfish",
+                "val": "A"
+              },
+              {
+                "text": "B. dolphins",
+                "val": "B"
+              },
+              {
+                "text": "C. seahorses",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单1 笔试I-3】图3是两只海豚，对应词库里的复数单词【dolphins】（别漏抄末尾的复数 s 哦！词库里的 seahorses 是多余干扰项）。",
+            "isTargetError": true,
+            "mistakeWord": {
+              "word": "dolphin",
+              "translation": "海豚（复数 dolphins）"
+            }
+          },
+          {
+            "id": "u6_vw_4",
+            "type": "choice",
+            "prompt": "4. 【看图4：🐠 一条橙白相间的小丑鱼】请选择正确的单词抄写在四线三格内：",
+            "options": [
+              {
+                "text": "A. clownfish",
+                "val": "A"
+              },
+              {
+                "text": "B. seahorses",
+                "val": "B"
+              },
+              {
+                "text": "C. cloud",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 笔试I-4】图4是小丑鱼，对应合成词【clownfish】（clown + fish 中间不留空格）！",
+            "mistakeWord": {
+              "word": "clownfish",
+              "translation": "小丑鱼"
+            }
+          },
+          {
+            "id": "u6_vw_5",
+            "type": "choice",
+            "prompt": "5. 【看图5：☁️ 一朵带着笑脸的白云】请选择正确的单词抄写在四线三格内：",
+            "options": [
+              {
+                "text": "A. cloud",
+                "val": "A"
+              },
+              {
+                "text": "B. football",
+                "val": "B"
+              },
+              {
+                "text": "C. seahorses",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单1 笔试I-5】图5是云朵，对应单词【cloud】！至此 5 个空填完，方框里的 seahorses（海马）是多余不用填的干扰词。",
+            "mistakeWord": {
+              "word": "cloud",
+              "translation": "云；云朵"
+            }
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 2 Vocabulary and Grammar — II. Read and choose (选出最恰当的答案)",
+        "sectionDesc": "综合考查 Unit 4 ~ Unit 6 核心语法、常识与固定搭配",
+        "questions": [
+          {
+            "id": "u6_rc_1",
+            "type": "choice",
+            "prompt": "1. We can see many _________ in the sea.",
+            "options": [
+              {
+                "text": "A. birds (鸟)",
+                "val": "A"
+              },
+              {
+                "text": "B. fishes (各种各样的鱼)",
+                "val": "B"
+              },
+              {
+                "text": "C. monkeys (猴子)",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单1 笔试II-1】\n💡 考点剖析：句末地点是 in the sea（在大海里），海里能看到许多不同种类的鱼【fishes】（birds 在天上，monkeys 在树上）。记住：表示“多种多样的鱼类”时，fish 的复数加 -es 变成 fishes！",
+            "isTargetError": true,
+            "mistakeWord": {
+              "word": "fishes",
+              "translation": "（各种各样的）鱼类"
+            }
+          },
+          {
+            "id": "u6_rc_2",
+            "type": "choice",
+            "prompt": "2. What colour is the sky at night? It's _________.",
+            "options": [
+              {
+                "text": "A. blue (蓝色的)",
+                "val": "A"
+              },
+              {
+                "text": "B. red (红色的)",
+                "val": "B"
+              },
+              {
+                "text": "C. black (黑色的)",
+                "val": "C"
+              }
+            ],
+            "correct": "C",
+            "analysis": "【U6任务单1 笔试II-2】\n💡 审题陷阱：千万看清句尾的时间是【at night】（在夜晚）！白天的天空是 blue，但夜晚的天空是黑色的【black】！",
+            "isTargetError": true
+          },
+          {
+            "id": "u6_rc_3",
+            "type": "choice",
+            "prompt": "3. I am a clownfish. I am _________.",
+            "options": [
+              {
+                "text": "A. swim (游泳 - 动词)",
+                "val": "A"
+              },
+              {
+                "text": "B. small (小的 - 形容词)",
+                "val": "B"
+              },
+              {
+                "text": "C. red (红色的)",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单1 笔试II-3】\n💡 语法+课文双重考点：\n① 语法铁律：be动词 am 后面只能接形容词，不能直接接动词原形 swim（要说游泳必须用 I can swim），先排除 A；\n② 课文常识：小丑鱼是橙白相间的，体型小小巧巧（I am small and cute），所以选 B. small！",
+            "isTargetError": true,
+            "mistakeWord": {
+              "word": "small",
+              "translation": "小的"
+            }
+          },
+          {
+            "id": "u6_rc_4",
+            "type": "choice",
+            "prompt": "4. What can Shenshen do? She can _______ high.",
+            "options": [
+              {
+                "text": "A. play ping-pong",
+                "val": "A"
+              },
+              {
+                "text": "B. run",
+                "val": "B"
+              },
+              {
+                "text": "C. jump",
+                "val": "C"
+              }
+            ],
+            "correct": "C",
+            "analysis": "【U6任务单1 笔试II-4】\n💡 固定搭配：空后面跟着副词【high】（高高地），只能搭配【jump high】（跳得高）！如果是 run 要搭配 fast（run fast 跑得快）。"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 2 Vocabulary and Grammar — III. Read and judge (看图判断对错 √ 或 ×)",
+        "sectionDesc": "⚠️ 终极审题大考验！本大题藏有两处上海二年级最经典的“文字游戏陷阱”，做题时一定要睁大眼睛！",
+        "questions": [
+          {
+            "id": "u6_rj_1",
+            "type": "judge",
+            "prompt": "1. I am small and cute. 【配图：一只小巧可爱的黄色海马 🐡】",
+            "options": [
+              {
+                "text": "√ (图文相符)",
+                "val": "√"
+              },
+              {
+                "text": "× (图文不符)",
+                "val": "×"
+              }
+            ],
+            "correct": "√",
+            "analysis": "【U6任务单1 笔试III-1】句子意思是“我又小又可爱”，配图是一只小巧可爱的海马，图文相符，打 √！"
+          },
+          {
+            "id": "u6_rj_2",
+            "type": "judge",
+            "prompt": "2. I see three clowns. 【配图：三条橙白条纹的小丑鱼 🐠🐠🐠】",
+            "options": [
+              {
+                "text": "√ (图文相符)",
+                "val": "√"
+              },
+              {
+                "text": "× (图文不符)",
+                "val": "×"
+              }
+            ],
+            "correct": "×",
+            "analysis": "【U6任务单1 笔试III-2 · 🚨全卷最大陷阱题！】\n千万别打 √！请仔细看句尾单词：写的是【three clowns】（三个马戏团小丑 🤡），把后面的 fish 给吞掉啦！\n图片里画的是三条小丑鱼，英文必须写【three clownfish】才对！少了一个 fish 意思完全变了，所以必须打 ×！",
+            "isTargetError": true,
+            "mistakeWord": {
+              "word": "clown",
+              "translation": "小丑（注意不是小丑鱼 clownfish！）"
+            }
+          },
+          {
+            "id": "u6_rj_3",
+            "type": "judge",
+            "prompt": "3. Is this a goldfish? No. 【配图：一只红色的章鱼/八爪鱼 🐙】",
+            "options": [
+              {
+                "text": "√ (图文相符)",
+                "val": "√"
+              },
+              {
+                "text": "× (图文不符)",
+                "val": "×"
+              }
+            ],
+            "correct": "√",
+            "analysis": "【U6任务单1 笔试III-3 · 🚨逻辑转弯陷阱题！】\n很多小朋友看到图片不是金鱼（goldfish）就顺手打 ×，那就掉进陷阱啦！\n请把整句话读完：“Is this a goldfish? No.”（这是一条金鱼吗？不，不是。）\n图片画的是章鱼🐙，确实不是金鱼，所以这句“自问自答”说得完全正确！图文相符，必须打 √！",
+            "isTargetError": true,
+            "mistakeWord": {
+              "word": "goldfish",
+              "translation": "金鱼"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "shenlilo_mistakes_target",
     "grade": "2a",
     "title": "🎯 沈礼洛专属·10张试卷红笔错题全收录清零卷",
@@ -18,13 +577,22 @@
             "audioText": "How is the weather today?",
             "prompt": "🎧 听录音提问，选出最恰当的应答句：",
             "options": [
-              { "text": "A. It's rain.", "val": "A" },
-              { "text": "B. It's rainy.", "val": "B" }
+              {
+                "text": "A. It's rain.",
+                "val": "A"
+              },
+              {
+                "text": "B. It's rainy.",
+                "val": "B"
+              }
             ],
             "correct": "B",
             "analysis": "【洛洛卷7/卷9失分题】洛洛当时误选了 A！\n🎧 听力原文：“How is the weather today?”（今天天气怎么样？）\n💡 考点剖析：描述天气状况在 is 后面要用形容词 rainy（下雨的/多雨的），不能直接用名词 rain！记住口诀：It's sunny / rainy / cloudy / windy！",
             "isTargetError": true,
-            "mistakeWord": { "word": "rainy", "translation": "下雨的；多雨的" }
+            "mistakeWord": {
+              "word": "rainy",
+              "translation": "下雨的；多雨的"
+            }
           },
           {
             "id": "err_l2",
@@ -32,8 +600,14 @@
             "audioText": "Look at the girl! She can skip rope very fast!",
             "prompt": "🎧 听录音句子，选出最合适的应答句：",
             "options": [
-              { "text": "A. Wow, she's cool!", "val": "A" },
-              { "text": "B. Put on new clothes.", "val": "B" }
+              {
+                "text": "A. Wow, she's cool!",
+                "val": "A"
+              },
+              {
+                "text": "B. Put on new clothes.",
+                "val": "B"
+              }
             ],
             "correct": "A",
             "analysis": "【洛洛卷9失分题】洛洛当时误选了 B！\n🎧 听力原文：“Look at the girl! She can skip rope very fast!”（看那个女孩！她跳绳跳得好快！）\n💡 考点剖析：看到别人运动很厉害，应该夸奖“Wow, she's cool!”（哇，她太酷了！），而不是让她穿新衣服。",
@@ -45,8 +619,14 @@
             "audioText": "Class is over. Let's go to the playground!",
             "prompt": "🎧 听录音句子，选出最恰当的同伴回应：",
             "options": [
-              { "text": "A. Let's throw sandbags.", "val": "A" },
-              { "text": "B. I'm ready.", "val": "B" }
+              {
+                "text": "A. Let's throw sandbags.",
+                "val": "A"
+              },
+              {
+                "text": "B. I'm ready.",
+                "val": "B"
+              }
             ],
             "correct": "A",
             "analysis": "【洛洛卷9失分题】洛洛当时误选了 B！\n🎧 听力原文：“Class is over. Let's go to the playground!”（下课啦，我们去操场吧！）\n💡 考点剖析：去操场玩耍时，顺着提议说“Let's throw sandbags.”（我们去丢沙包吧！）最符合操场语境。",
@@ -58,14 +638,26 @@
             "audioText": "Put the ball in the box, please.",
             "prompt": "🎧 听录音，选出你在句子中听到的核心家具/物品单词：",
             "options": [
-              { "text": "A. books (书本)", "val": "A" },
-              { "text": "B. bookshelf (书架)", "val": "B" },
-              { "text": "C. box (盒子/箱子)", "val": "C" }
+              {
+                "text": "A. books (书本)",
+                "val": "A"
+              },
+              {
+                "text": "B. bookshelf (书架)",
+                "val": "B"
+              },
+              {
+                "text": "C. box (盒子/箱子)",
+                "val": "C"
+              }
             ],
             "correct": "C",
             "analysis": "【洛洛卷7失分题】洛洛当时误选了 B（bookshelf）！\n🎧 听力原文：“Put the ball in the box, please.”\n💡 考点剖析：注意区分 b 开头家族的发音：box /bɒks/（短促的奥+ks音）vs books /bʊks/ vs bookshelf（书架，有两个音节）。",
             "isTargetError": true,
-            "mistakeWord": { "word": "box", "translation": "盒子；箱子" }
+            "mistakeWord": {
+              "word": "box",
+              "translation": "盒子；箱子"
+            }
           }
         ]
       },
@@ -78,9 +670,18 @@
             "type": "choice",
             "prompt": "【字母邻居】请选出 Kk 左边和右边的正确邻居： _______  Kk  _______",
             "options": [
-              { "text": "A. Ii , Ll", "val": "A" },
-              { "text": "B. Jj , Ll", "val": "B" },
-              { "text": "C. Hh , Jj", "val": "C" }
+              {
+                "text": "A. Ii , Ll",
+                "val": "A"
+              },
+              {
+                "text": "B. Jj , Ll",
+                "val": "B"
+              },
+              {
+                "text": "C. Hh , Jj",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "【洛洛卷1失分题】洛洛在卷子上把 Kk 左边写成了 Ti/Ii！\n💡 考点剖析：背诵字母歌 H-I-J-K-L-M-N，K 前面紧挨着的是 J（Jj），后面是 L（Ll），所以是 Jj, Kk, Ll！",
@@ -91,9 +692,18 @@
             "type": "choice",
             "prompt": "【字母邻居】请选出小写字母 o 和 q 的正确左右邻居：\n① ___ o ___      ② ___ q ___",
             "options": [
-              { "text": "A. ① m o p   ② b q d", "val": "A" },
-              { "text": "B. ① n o p   ② p q r", "val": "B" },
-              { "text": "C. ① l o n   ② o q p", "val": "C" }
+              {
+                "text": "A. ① m o p   ② b q d",
+                "val": "A"
+              },
+              {
+                "text": "B. ① n o p   ② p q r",
+                "val": "B"
+              },
+              {
+                "text": "C. ① l o n   ② o q p",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "【洛洛卷2失分题】洛洛在四线三格里把 o 前面写成了 m，q 旁边写成了 b！\n💡 考点剖析：L-M-N-O-P-Q-R-S-T！o 的前面是 n（不是 m），后面是 p；q 的前面是 p，后面是 r（注意小写 p 和 q、b 和 d 的朝向）！",
@@ -104,15 +714,30 @@
             "type": "odd_one_out",
             "prompt": "【选出不同类的单词】从下列四个词中找出不同类的一项：",
             "options": [
-              { "text": "A. face (脸)", "val": "A" },
-              { "text": "B. teeth (牙齿)", "val": "B" },
-              { "text": "C. brush (刷)", "val": "C" },
-              { "text": "D. head (头)", "val": "D" }
+              {
+                "text": "A. face (脸)",
+                "val": "A"
+              },
+              {
+                "text": "B. teeth (牙齿)",
+                "val": "B"
+              },
+              {
+                "text": "C. brush (刷)",
+                "val": "C"
+              },
+              {
+                "text": "D. head (头)",
+                "val": "D"
+              }
             ],
             "correct": "C",
             "analysis": "【洛洛卷2失分题】洛洛当时误选了 A（face）！\n💡 考点剖析：face（脸）、teeth（牙齿）、head（头）全部都是【身体部位名词】；只有 brush（刷）是【动作动词】（如 brush my teeth），所以不同类的是 C！",
             "isTargetError": true,
-            "mistakeWord": { "word": "brush", "translation": "刷（动词）" }
+            "mistakeWord": {
+              "word": "brush",
+              "translation": "刷（动词）"
+            }
           }
         ]
       },
@@ -125,42 +750,78 @@
             "type": "choice",
             "prompt": "I can see _______ sun by day. (我在白天能看见太阳。)",
             "options": [
-              { "text": "A. a", "val": "A" },
-              { "text": "B. /", "val": "B" },
-              { "text": "C. the", "val": "C" }
+              {
+                "text": "A. a",
+                "val": "A"
+              },
+              {
+                "text": "B. /",
+                "val": "B"
+              },
+              {
+                "text": "C. the",
+                "val": "C"
+              }
             ],
             "correct": "C",
             "analysis": "【洛洛卷8失分题】洛洛误选了 A（a）！\n💡 满分秘诀：世界上独一无二的天体（太阳 the sun、月亮 the moon、天空 the sky）前面必须加定冠词【the】，永远不能用 a sun！",
             "isTargetError": true,
-            "mistakeWord": { "word": "the sun", "translation": "太阳（独一无二加the）" }
+            "mistakeWord": {
+              "word": "the sun",
+              "translation": "太阳（独一无二加the）"
+            }
           },
           {
             "id": "err_g2",
             "type": "choice",
             "prompt": "I'm ready _______ school, Mum! (妈妈，我准备好去上学啦！)",
             "options": [
-              { "text": "A. of", "val": "A" },
-              { "text": "B. for", "val": "B" },
-              { "text": "C. in", "val": "C" }
+              {
+                "text": "A. of",
+                "val": "A"
+              },
+              {
+                "text": "B. for",
+                "val": "B"
+              },
+              {
+                "text": "C. in",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "【洛洛卷8失分题】洛洛误选了 C（in）！\n💡 满分秘诀：固定词组 'be ready for + 名词' 表示“为……做好准备”。I'm ready for school, Dad/Mum! 是 2A Unit 1 课文原句！",
             "isTargetError": true,
-            "mistakeWord": { "word": "be ready for", "translation": "为……做好准备" }
+            "mistakeWord": {
+              "word": "be ready for",
+              "translation": "为……做好准备"
+            }
           },
           {
             "id": "err_g3",
             "type": "choice",
             "prompt": "I live far away from my school. I go to school _______ .",
             "options": [
-              { "text": "A. on foot (步行)", "val": "A" },
-              { "text": "B. by bus (乘公交车)", "val": "B" },
-              { "text": "C. by a bus", "val": "C" }
+              {
+                "text": "A. on foot (步行)",
+                "val": "A"
+              },
+              {
+                "text": "B. by bus (乘公交车)",
+                "val": "B"
+              },
+              {
+                "text": "C. by a bus",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "【洛洛卷2失分题】洛洛误选了 A（on foot）！\n💡 满分秘诀：做题要先读懂前半句线索——'I live far away from my school'（我家住得离学校很远）！住得很远就不能走路（on foot）了，必须坐公交车（by bus，且中间不加 a）！",
             "isTargetError": true,
-            "mistakeWord": { "word": "by bus", "translation": "乘公交" }
+            "mistakeWord": {
+              "word": "by bus",
+              "translation": "乘公交"
+            }
           }
         ]
       },
@@ -173,8 +834,14 @@
             "type": "judge",
             "prompt": "【情景判断】想告诉别人“你自己”跑步跑得很快，你可以说：You can run fast.",
             "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
             ],
             "correct": "×",
             "analysis": "【洛洛卷2失分题】洛洛误打了 √！\n💡 满分秘诀：中文题干里“想告诉别人，你跑步跑得很快”意思是向别人介绍“我”跑得快，所以开口说话时要用第一人称【I can run fast.】！如果说 You can run fast 就变成夸对方跑得快啦！",
@@ -185,8 +852,14 @@
             "type": "judge",
             "prompt": "【情景判断】别人问你怎么去上学（How do you go to school?），你回答说：I like this red bus.",
             "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
             ],
             "correct": "×",
             "analysis": "【洛洛卷2失分题】洛洛误打了 √！\n💡 满分秘诀：别人问的是【怎么去上学（出行方式）】，应该回答 'I go to school by bus / on foot.'；回答 'I like this red bus.'（我喜欢这辆红巴士）属于答非所问！",
@@ -197,8 +870,14 @@
             "type": "judge",
             "prompt": "【情景判断】夜空中看到了“很多星星”，你可以说：I can see a star.",
             "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
             ],
             "correct": "×",
             "analysis": "【洛洛卷2失分题】洛洛误打了 √！\n💡 满分秘诀：题干抓关键词【很多星星】= 复数 stars！而 'a star' 只代表“一颗星星”，数量对不上！正确说法是 'I can see stars / many stars.'。",
@@ -209,8 +888,14 @@
             "type": "judge",
             "prompt": "【情景判断】想问申申她今天过得怎么样，你可以说：How is Shenshen?",
             "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
             ],
             "correct": "√",
             "analysis": "【洛洛卷2失分题】洛洛误打了 ×！\n💡 满分秘诀：当面问对方用 'How are you?'，询问第三人（申申）今天怎么样，把 are 换成单数 is，即 'How is Shenshen?'，完全正确！",
@@ -221,13 +906,22 @@
             "type": "judge",
             "prompt": "【卷10看图判断】在操场篮球架下，两个小男孩正在拍着篮球玩耍。判断句子：The boy can play football.",
             "options": [
-              { "text": "√ (与图相符)", "val": "√" },
-              { "text": "× (与图不符)", "val": "×" }
+              {
+                "text": "√ (与图相符)",
+                "val": "√"
+              },
+              {
+                "text": "× (与图不符)",
+                "val": "×"
+              }
             ],
             "correct": "×",
             "analysis": "【洛洛卷10失分题】洛洛误打了 √！\n💡 满分秘诀：图片背景里有明显的【篮球架和篮筐】，男孩手里拍的是篮球（play basketball），而不是踢足球（play football）！看图题一定要看清手里的球和旁边的球架哦！",
             "isTargetError": true,
-            "mistakeWord": { "word": "play basketball", "translation": "打篮球" }
+            "mistakeWord": {
+              "word": "play basketball",
+              "translation": "打篮球"
+            }
           }
         ]
       }
@@ -252,9 +946,18 @@
             "audioText": "Time to get ready for school!",
             "prompt": "🎧 1. 听录音，选出听到的短语：",
             "options": [
-              { "text": "A. get dressed", "val": "A" },
-              { "text": "B. get ready", "val": "B" },
-              { "text": "C. wash your face", "val": "C" }
+              {
+                "text": "A. get dressed",
+                "val": "A"
+              },
+              {
+                "text": "B. get ready",
+                "val": "B"
+              },
+              {
+                "text": "C. wash your face",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "🎧 听力原文：“Time to get ready for school!”（该准备好去上学啦！），听到的是 B. get ready。"
@@ -265,9 +968,18 @@
             "audioText": "Look! The little star is high in the sky.",
             "prompt": "🎧 2. 听录音，选出听到的单词：",
             "options": [
-              { "text": "A. sky (天空)", "val": "A" },
-              { "text": "B. fly (飞)", "val": "B" },
-              { "text": "C. my (我的)", "val": "C" }
+              {
+                "text": "A. sky (天空)",
+                "val": "A"
+              },
+              {
+                "text": "B. fly (飞)",
+                "val": "B"
+              },
+              {
+                "text": "C. my (我的)",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "🎧 听力原文：“Look! The little star is high in the sky.”，听到的是 A. sky。"
@@ -278,9 +990,18 @@
             "audioText": "We can play basketball in the afternoon.",
             "prompt": "🎧 3. 听录音，选出听到的球类运动：",
             "options": [
-              { "text": "A. basketball", "val": "A" },
-              { "text": "B. football", "val": "B" },
-              { "text": "C. ping-pong ball", "val": "C" }
+              {
+                "text": "A. basketball",
+                "val": "A"
+              },
+              {
+                "text": "B. football",
+                "val": "B"
+              },
+              {
+                "text": "C. ping-pong ball",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "🎧 听力原文：“We can play basketball in the afternoon.”，听到的是 A. basketball。"
@@ -297,8 +1018,14 @@
             "audioText": "I have a tidy room.",
             "prompt": "🎧 1. 听录音，选出听到的句子：",
             "options": [
-              { "text": "A. I can tidy my room.", "val": "A" },
-              { "text": "B. I have a tidy room.", "val": "B" }
+              {
+                "text": "A. I can tidy my room.",
+                "val": "A"
+              },
+              {
+                "text": "B. I have a tidy room.",
+                "val": "B"
+              }
             ],
             "correct": "B",
             "analysis": "🎧 听力原文：“I have a tidy room.”（我有一个整洁的房间。），注意区分动词 can tidy 与 have a tidy。"
@@ -309,8 +1036,14 @@
             "audioText": "You use metro in Shanghai.",
             "prompt": "🎧 2. 听录音，选出听到的句子：",
             "options": [
-              { "text": "A. You see \"metro\" in Shanghai.", "val": "A" },
-              { "text": "B. You use \"metro\" in Shanghai.", "val": "B" }
+              {
+                "text": "A. You see \"metro\" in Shanghai.",
+                "val": "A"
+              },
+              {
+                "text": "B. You use \"metro\" in Shanghai.",
+                "val": "B"
+              }
             ],
             "correct": "B",
             "analysis": "🎧 听力原文：“You use 'metro' in Shanghai.”（在上海你们使用 metro 这个词。），注意区分 see 和 use。"
@@ -321,8 +1054,14 @@
             "audioText": "Put the toys on the box.",
             "prompt": "🎧 3. 听录音，选出听到的句子：",
             "options": [
-              { "text": "A. Put the toys on the box.", "val": "A" },
-              { "text": "B. Put the toys in the box.", "val": "B" }
+              {
+                "text": "A. Put the toys on the box.",
+                "val": "A"
+              },
+              {
+                "text": "B. Put the toys in the box.",
+                "val": "B"
+              }
             ],
             "correct": "A",
             "analysis": "🎧 听力原文：“Put the toys on the box.”（把玩具放在盒子上面。），听清方位介词是 on 还是 in！"
@@ -339,8 +1078,14 @@
             "audioText": "Have breakfast, Shenshen!",
             "prompt": "🎧 1. 听妈妈说的话，选出申申的回答：",
             "options": [
-              { "text": "A. OK, Mum.", "val": "A" },
-              { "text": "B. Thank you, Mum.", "val": "B" }
+              {
+                "text": "A. OK, Mum.",
+                "val": "A"
+              },
+              {
+                "text": "B. Thank you, Mum.",
+                "val": "B"
+              }
             ],
             "correct": "A",
             "analysis": "🎧 听力原文：“Have breakfast, Shenshen!”（申申，吃早餐啦！），回答“OK, Mum.”（好的，妈妈）。"
@@ -351,8 +1096,14 @@
             "audioText": "How do you go to school?",
             "prompt": "🎧 2. 听问题，选出正确的回答：",
             "options": [
-              { "text": "A. I go to school by bus.", "val": "A" },
-              { "text": "B. I go to school in the morning.", "val": "B" }
+              {
+                "text": "A. I go to school by bus.",
+                "val": "A"
+              },
+              {
+                "text": "B. I go to school in the morning.",
+                "val": "B"
+              }
             ],
             "correct": "A",
             "analysis": "🎧 听力原文：“How do you go to school?”（你怎么去上学？），询问交通方式应选 A（by bus），B 回答的是时间。"
@@ -363,8 +1114,14 @@
             "audioText": "Wow, you can play ping-pong very well. Can I have a go?",
             "prompt": "🎧 3. 听同伴的请求，选出最恰当的回答：",
             "options": [
-              { "text": "A. Yes, of course.", "val": "A" },
-              { "text": "B. That's right.", "val": "B" }
+              {
+                "text": "A. Yes, of course.",
+                "val": "A"
+              },
+              {
+                "text": "B. That's right.",
+                "val": "B"
+              }
             ],
             "correct": "A",
             "analysis": "🎧 听力原文：“Can I have a go?”（我能试一试吗？），大方的回应是“Yes, of course.”（当然可以啦！）。"
@@ -375,8 +1132,14 @@
             "audioText": "When does Mr Sun go down?",
             "prompt": "🎧 4. 听关于太阳先生的问题，选出正确回答：",
             "options": [
-              { "text": "A. He goes down at night.", "val": "A" },
-              { "text": "B. I can see Mr Sun.", "val": "B" }
+              {
+                "text": "A. He goes down at night.",
+                "val": "A"
+              },
+              {
+                "text": "B. I can see Mr Sun.",
+                "val": "B"
+              }
             ],
             "correct": "A",
             "analysis": "🎧 听力原文：“When does Mr Sun go down?”（太阳先生什么时候落山？），回答“He goes down at night.”。"
@@ -393,9 +1156,18 @@
             "audioText": "Hello! I am a happy girl. Every morning, I go to school by metro.",
             "prompt": "🎧 1. I go to school by _______ .",
             "options": [
-              { "text": "A. car", "val": "A" },
-              { "text": "B. metro", "val": "B" },
-              { "text": "C. bus", "val": "C" }
+              {
+                "text": "A. car",
+                "val": "A"
+              },
+              {
+                "text": "B. metro",
+                "val": "B"
+              },
+              {
+                "text": "C. bus",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "🎧 录音原文：“Every morning, I go to school by metro.”，选 B。"
@@ -406,9 +1178,18 @@
             "audioText": "At school, I love the playground. I often play on the slide.",
             "prompt": "🎧 2. I often play on the _______ .",
             "options": [
-              { "text": "A. swing (秋千)", "val": "A" },
-              { "text": "B. seesaw (跷跷板)", "val": "B" },
-              { "text": "C. slide (滑梯)", "val": "C" }
+              {
+                "text": "A. swing (秋千)",
+                "val": "A"
+              },
+              {
+                "text": "B. seesaw (跷跷板)",
+                "val": "B"
+              },
+              {
+                "text": "C. slide (滑梯)",
+                "val": "C"
+              }
             ],
             "correct": "C",
             "analysis": "🎧 录音原文：“I often play on the slide.”（我经常玩滑梯），选 C。"
@@ -419,9 +1200,18 @@
             "audioText": "I like sports very much. I can jump very well.",
             "prompt": "🎧 3. I can _______ very well.",
             "options": [
-              { "text": "A. jump", "val": "A" },
-              { "text": "B. swim", "val": "B" },
-              { "text": "C. run", "val": "C" }
+              {
+                "text": "A. jump",
+                "val": "A"
+              },
+              {
+                "text": "B. swim",
+                "val": "B"
+              },
+              {
+                "text": "C. run",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "🎧 录音原文：“I can jump very well.”，选 A。"
@@ -432,9 +1222,18 @@
             "audioText": "After class, I help Miss Li clean the floor. Miss Li says: Well done, you are a great girl!",
             "prompt": "🎧 4. I help Miss Li _______ , and I am a _______ girl.",
             "options": [
-              { "text": "A. clean the floor ; great", "val": "A" },
-              { "text": "B. pack the books ; happy", "val": "B" },
-              { "text": "C. wash lunch boxes ; busy", "val": "C" }
+              {
+                "text": "A. clean the floor ; great",
+                "val": "A"
+              },
+              {
+                "text": "B. pack the books ; happy",
+                "val": "B"
+              },
+              {
+                "text": "C. wash lunch boxes ; busy",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "🎧 录音原文：“I help Miss Li clean the floor... you are a great girl!”，选 A。"
@@ -461,10 +1260,22 @@
             "type": "odd_one_out",
             "prompt": "选出不同类的单词：",
             "options": [
-              { "text": "swim (游泳)", "val": "A" },
-              { "text": "jump (跳)", "val": "B" },
-              { "text": "rope (绳子)", "val": "C" },
-              { "text": "run (跑)", "val": "D" }
+              {
+                "text": "swim (游泳)",
+                "val": "A"
+              },
+              {
+                "text": "jump (跳)",
+                "val": "B"
+              },
+              {
+                "text": "rope (绳子)",
+                "val": "C"
+              },
+              {
+                "text": "run (跑)",
+                "val": "D"
+              }
             ],
             "correct": "C",
             "analysis": "swim、jump、run 都是表示动作的动词，rope 是名词（绳子），所以选 C。"
@@ -474,10 +1285,22 @@
             "type": "odd_one_out",
             "prompt": "选出不同类的单词：",
             "options": [
-              { "text": "desk (书桌)", "val": "A" },
-              { "text": "bed (床)", "val": "B" },
-              { "text": "shelf (架子)", "val": "C" },
-              { "text": "clean (打扫/干净的)", "val": "D" }
+              {
+                "text": "desk (书桌)",
+                "val": "A"
+              },
+              {
+                "text": "bed (床)",
+                "val": "B"
+              },
+              {
+                "text": "shelf (架子)",
+                "val": "C"
+              },
+              {
+                "text": "clean (打扫/干净的)",
+                "val": "D"
+              }
             ],
             "correct": "D",
             "analysis": "desk、bed、shelf 都是房间家具名词，clean 是动词或形容词，所以选 D。"
@@ -487,10 +1310,22 @@
             "type": "odd_one_out",
             "prompt": "选出不同类的单词：",
             "options": [
-              { "text": "car (汽车)", "val": "A" },
-              { "text": "bus (公交车)", "val": "B" },
-              { "text": "metro (地铁)", "val": "C" },
-              { "text": "foot (脚)", "val": "D" }
+              {
+                "text": "car (汽车)",
+                "val": "A"
+              },
+              {
+                "text": "bus (公交车)",
+                "val": "B"
+              },
+              {
+                "text": "metro (地铁)",
+                "val": "C"
+              },
+              {
+                "text": "foot (脚)",
+                "val": "D"
+              }
             ],
             "correct": "D",
             "analysis": "car、bus、metro 都是交通工具车辆，foot 是人体部位名词，所以选 D。"
@@ -500,10 +1335,22 @@
             "type": "odd_one_out",
             "prompt": "选出不同类的单词：",
             "options": [
-              { "text": "we (我们)", "val": "A" },
-              { "text": "he (他)", "val": "B" },
-              { "text": "my (我的)", "val": "C" },
-              { "text": "I (我)", "val": "D" }
+              {
+                "text": "we (我们)",
+                "val": "A"
+              },
+              {
+                "text": "he (他)",
+                "val": "B"
+              },
+              {
+                "text": "my (我的)",
+                "val": "C"
+              },
+              {
+                "text": "I (我)",
+                "val": "D"
+              }
             ],
             "correct": "C",
             "analysis": "we、he、I 都是人称代词主格，my 是形容词性物主代词（表示“我的”），所以选 C。"
@@ -513,10 +1360,22 @@
             "type": "odd_one_out",
             "prompt": "选出不同类的单词：",
             "options": [
-              { "text": "sun (太阳)", "val": "A" },
-              { "text": "cloudy (多云的)", "val": "B" },
-              { "text": "moon (月亮)", "val": "C" },
-              { "text": "star (星星)", "val": "D" }
+              {
+                "text": "sun (太阳)",
+                "val": "A"
+              },
+              {
+                "text": "cloudy (多云的)",
+                "val": "B"
+              },
+              {
+                "text": "moon (月亮)",
+                "val": "C"
+              },
+              {
+                "text": "star (星星)",
+                "val": "D"
+              }
             ],
             "correct": "B",
             "analysis": "sun、moon、star 都是天体名词，cloudy 是天气形容词（多云的），所以选 B。"
@@ -526,10 +1385,22 @@
             "type": "odd_one_out",
             "prompt": "选出不同类的单词：",
             "options": [
-              { "text": "star (星星)", "val": "A" },
-              { "text": "moon (月亮)", "val": "B" },
-              { "text": "sun (太阳)", "val": "C" },
-              { "text": "shine (照耀/发光)", "val": "D" }
+              {
+                "text": "star (星星)",
+                "val": "A"
+              },
+              {
+                "text": "moon (月亮)",
+                "val": "B"
+              },
+              {
+                "text": "sun (太阳)",
+                "val": "C"
+              },
+              {
+                "text": "shine (照耀/发光)",
+                "val": "D"
+              }
             ],
             "correct": "D",
             "analysis": "star、moon、sun 都是天体名词，shine 是动词（照耀/发光），所以选 D。"
@@ -539,10 +1410,22 @@
             "type": "odd_one_out",
             "prompt": "选出不同类的单词：",
             "options": [
-              { "text": "read (读)", "val": "A" },
-              { "text": "yellow (黄色)", "val": "B" },
-              { "text": "black (黑色)", "val": "C" },
-              { "text": "blue (蓝色)", "val": "D" }
+              {
+                "text": "read (读)",
+                "val": "A"
+              },
+              {
+                "text": "yellow (黄色)",
+                "val": "B"
+              },
+              {
+                "text": "black (黑色)",
+                "val": "C"
+              },
+              {
+                "text": "blue (蓝色)",
+                "val": "D"
+              }
             ],
             "correct": "A",
             "analysis": "yellow、black、blue 都是颜色类词，read 是动作动词（阅读），所以选 A。"
@@ -552,10 +1435,22 @@
             "type": "odd_one_out",
             "prompt": "选出不同类的单词：",
             "options": [
-              { "text": "behind (在……后面)", "val": "A" },
-              { "text": "under (在……下面)", "val": "B" },
-              { "text": "where (在哪里)", "val": "C" },
-              { "text": "on (在……上面)", "val": "D" }
+              {
+                "text": "behind (在……后面)",
+                "val": "A"
+              },
+              {
+                "text": "under (在……下面)",
+                "val": "B"
+              },
+              {
+                "text": "where (在哪里)",
+                "val": "C"
+              },
+              {
+                "text": "on (在……上面)",
+                "val": "D"
+              }
             ],
             "correct": "C",
             "analysis": "behind、under、on 都是方位介词，where 是特殊疑问词（在哪里），所以选 C。"
@@ -571,9 +1466,18 @@
             "type": "choice",
             "prompt": "—What's this?  —_______ is an underground.",
             "options": [
-              { "text": "This", "val": "A" },
-              { "text": "It", "val": "B" },
-              { "text": "That", "val": "C" }
+              {
+                "text": "This",
+                "val": "A"
+              },
+              {
+                "text": "It",
+                "val": "B"
+              },
+              {
+                "text": "That",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "问句中用 this 提问（What's this?），答句中必须用代词 It 来代指事物（It is an underground）。"
@@ -583,9 +1487,18 @@
             "type": "choice",
             "prompt": "—Let's tidy the room together.  —_______",
             "options": [
-              { "text": "All right.", "val": "A" },
-              { "text": "Sorry.", "val": "B" },
-              { "text": "You can do it.", "val": "C" }
+              {
+                "text": "All right.",
+                "val": "A"
+              },
+              {
+                "text": "Sorry.",
+                "val": "B"
+              },
+              {
+                "text": "You can do it.",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "别人提议一起整理房间（Let's tidy the room together.），欣然赞同应用“All right.”（好的/没问题）。"
@@ -595,9 +1508,18 @@
             "type": "choice",
             "prompt": "—Oh, no! The ball's out.  —_______",
             "options": [
-              { "text": "Well done.", "val": "A" },
-              { "text": "Great!", "val": "B" },
-              { "text": "Try again.", "val": "C" }
+              {
+                "text": "Well done.",
+                "val": "A"
+              },
+              {
+                "text": "Great!",
+                "val": "B"
+              },
+              {
+                "text": "Try again.",
+                "val": "C"
+              }
             ],
             "correct": "C",
             "analysis": "球出界了（The ball's out.），同伴应当给予鼓励说“Try again.”（再试一次）。"
@@ -607,9 +1529,18 @@
             "type": "choice",
             "prompt": "—_______ is Mr Sun?  —He is high in the sky.",
             "options": [
-              { "text": "Where", "val": "A" },
-              { "text": "What", "val": "B" },
-              { "text": "Which", "val": "C" }
+              {
+                "text": "Where",
+                "val": "A"
+              },
+              {
+                "text": "What",
+                "val": "B"
+              },
+              {
+                "text": "Which",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "回答是高高挂在天空中（地点），询问位置要用疑问词 Where（在哪里）。"
@@ -619,9 +1550,18 @@
             "type": "choice",
             "prompt": "We _______ in the morning.",
             "options": [
-              { "text": "go to bed", "val": "A" },
-              { "text": "have lunch", "val": "B" },
-              { "text": "have breakfast", "val": "C" }
+              {
+                "text": "go to bed",
+                "val": "A"
+              },
+              {
+                "text": "have lunch",
+                "val": "B"
+              },
+              {
+                "text": "have breakfast",
+                "val": "C"
+              }
             ],
             "correct": "C",
             "analysis": "在早晨（in the morning）做的事情是吃早餐（have breakfast）。go to bed 是去睡觉，have lunch 是吃午饭。"
@@ -631,9 +1571,18 @@
             "type": "choice",
             "prompt": "—Brush _______ teeth.  —OK. I brush _______ teeth.",
             "options": [
-              { "text": "my, my", "val": "A" },
-              { "text": "your, your", "val": "B" },
-              { "text": "your, my", "val": "C" }
+              {
+                "text": "my, my",
+                "val": "A"
+              },
+              {
+                "text": "your, your",
+                "val": "B"
+              },
+              {
+                "text": "your, my",
+                "val": "C"
+              }
             ],
             "correct": "C",
             "analysis": "妈妈叮嘱你：“刷你的牙（Brush your teeth）”，你回答：“好的，我刷我的牙（I brush my teeth）”，故选 C。"
@@ -643,9 +1592,18 @@
             "type": "choice",
             "prompt": "The moon _______ in the morning.",
             "options": [
-              { "text": "goes up (升起)", "val": "A" },
-              { "text": "goes down (落下)", "val": "B" },
-              { "text": "in the sky", "val": "C" }
+              {
+                "text": "goes up (升起)",
+                "val": "A"
+              },
+              {
+                "text": "goes down (落下)",
+                "val": "B"
+              },
+              {
+                "text": "in the sky",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "早晨太阳升起（The sun comes up），而月亮在早晨落下（The moon goes down in the morning），且句子缺少谓语动词，故选 B。"
@@ -663,8 +1621,14 @@
             "type": "judge",
             "prompt": "1. Shenshen can put the pencils in the pencil case.",
             "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
             ],
             "correct": "√",
             "analysis": "文中申申说：'I can put the pencils in the pencil case.'，与题干完全一致。"
@@ -674,8 +1638,14 @@
             "type": "judge",
             "prompt": "2. Lily can put the ball on the box.",
             "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
             ],
             "correct": "×",
             "analysis": "莉莉说的是把球放进盒子里（in the box），而不是放在盒子上面（on the box）。"
@@ -685,8 +1655,14 @@
             "type": "judge",
             "prompt": "3. Xiaotian puts the books on the shelf.",
             "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
             ],
             "correct": "×",
             "analysis": "把书放在架子上的是小江（Xiaojiang），小天负责把盒子放床下，所以题干错误。"
@@ -696,8 +1672,14 @@
             "type": "judge",
             "prompt": "4. Minmin cleans the floor.",
             "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
             ],
             "correct": "√",
             "analysis": "敏敏最后说：'Let me clean the floor.'，与题干相符。"
@@ -707,8 +1689,14 @@
             "type": "judge",
             "prompt": "5. The room is tidy.",
             "options": [
-              { "text": "√ (正确)", "val": "√" },
-              { "text": "× (错误)", "val": "×" }
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
             ],
             "correct": "√",
             "analysis": "最后一句说明经过大家帮忙整理后：'Now the room is tidy.'（现在房间整齐了）。"
@@ -735,9 +1723,18 @@
             "type": "choice",
             "prompt": "1. We go to school on _______ . (我们步行去上学。)",
             "options": [
-              { "text": "B. feet", "val": "B" },
-              { "text": "F. foot", "val": "F" },
-              { "text": "C. by", "val": "C" }
+              {
+                "text": "B. feet",
+                "val": "B"
+              },
+              {
+                "text": "F. foot",
+                "val": "F"
+              },
+              {
+                "text": "C. by",
+                "val": "C"
+              }
             ],
             "correct": "F",
             "analysis": "固定短语“步行”是 on foot（用单数 foot，不用复数 feet）！"
@@ -747,9 +1744,18 @@
             "type": "choice",
             "prompt": "2. _______ the morning, I get up at 6:30.",
             "options": [
-              { "text": "D. In", "val": "D" },
-              { "text": "C. by", "val": "C" },
-              { "text": "A. a", "val": "A" }
+              {
+                "text": "D. In",
+                "val": "D"
+              },
+              {
+                "text": "C. by",
+                "val": "C"
+              },
+              {
+                "text": "A. a",
+                "val": "A"
+              }
             ],
             "correct": "D",
             "analysis": "固定搭配“在早上”是 In the morning（句首首字母大写）。"
@@ -759,9 +1765,18 @@
             "type": "choice",
             "prompt": "3. I go to school _______ bus. (我乘公交去上学。)",
             "options": [
-              { "text": "C. by", "val": "C" },
-              { "text": "E. put", "val": "E" },
-              { "text": "F. foot", "val": "F" }
+              {
+                "text": "C. by",
+                "val": "C"
+              },
+              {
+                "text": "E. put",
+                "val": "E"
+              },
+              {
+                "text": "F. foot",
+                "val": "F"
+              }
             ],
             "correct": "C",
             "analysis": "乘公交车固定搭配用介词 by（by bus）。"
@@ -771,9 +1786,18 @@
             "type": "choice",
             "prompt": "4. You can _______ the box under the bed. (你可以把盒子放在床下。)",
             "options": [
-              { "text": "A. a", "val": "A" },
-              { "text": "E. put", "val": "E" },
-              { "text": "D. In", "val": "D" }
+              {
+                "text": "A. a",
+                "val": "A"
+              },
+              {
+                "text": "E. put",
+                "val": "E"
+              },
+              {
+                "text": "D. In",
+                "val": "D"
+              }
             ],
             "correct": "E",
             "analysis": "can 后面接动词原形 put（放），put the box under the bed。"
@@ -783,9 +1807,18 @@
             "type": "choice",
             "prompt": "5. It's _______ postcard from London. (这是一张来自伦敦的明信片。)",
             "options": [
-              { "text": "A. a", "val": "A" },
-              { "text": "C. by", "val": "C" },
-              { "text": "D. In", "val": "D" }
+              {
+                "text": "A. a",
+                "val": "A"
+              },
+              {
+                "text": "C. by",
+                "val": "C"
+              },
+              {
+                "text": "D. In",
+                "val": "D"
+              }
             ],
             "correct": "A",
             "analysis": "postcard 是可数名词单数，前面加不定冠词 a（a postcard from London）。"
@@ -801,9 +1834,18 @@
             "type": "choice",
             "prompt": "—How are you today?  —_______",
             "options": [
-              { "text": "A. I like sunny days.", "val": "A" },
-              { "text": "B. Yes, of course.", "val": "B" },
-              { "text": "C. I'm great.", "val": "C" }
+              {
+                "text": "A. I like sunny days.",
+                "val": "A"
+              },
+              {
+                "text": "B. Yes, of course.",
+                "val": "B"
+              },
+              {
+                "text": "C. I'm great.",
+                "val": "C"
+              }
             ],
             "correct": "C",
             "analysis": "询问今天身体/心情好不好（How are you today?），回答“I'm great.”（我棒极了）。"
@@ -813,9 +1855,18 @@
             "type": "choice",
             "prompt": "—What weather do you like?  —_______",
             "options": [
-              { "text": "A. I like sunny days.", "val": "A" },
-              { "text": "B. Thank you.", "val": "B" },
-              { "text": "C. I'm sorry.", "val": "C" }
+              {
+                "text": "A. I like sunny days.",
+                "val": "A"
+              },
+              {
+                "text": "B. Thank you.",
+                "val": "B"
+              },
+              {
+                "text": "C. I'm sorry.",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "询问你喜欢什么天气（What weather do you like?），回答“I like sunny days.”（我喜欢晴天）。"
@@ -825,9 +1876,18 @@
             "type": "choice",
             "prompt": "【家庭晚餐对话】妈妈喊：“It's dinner time. _______” 申申回答：“I'm coming, Mum.”",
             "options": [
-              { "text": "A. We have meatballs too.", "val": "A" },
-              { "text": "B. Let's have dinner together.", "val": "B" },
-              { "text": "C. I like vegetables.", "val": "C" }
+              {
+                "text": "A. We have meatballs too.",
+                "val": "A"
+              },
+              {
+                "text": "B. Let's have dinner together.",
+                "val": "B"
+              },
+              {
+                "text": "C. I like vegetables.",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "到晚饭时间了（It's dinner time），妈妈呼唤大家“Let's have dinner together.”（我们一起吃晚饭吧）。"
@@ -837,9 +1897,18 @@
             "type": "choice",
             "prompt": "【家庭晚餐对话】妈妈说：“We have some vegetables.” 申申开心回应：“_______” 爸爸接着说：“We have meatballs too!”",
             "options": [
-              { "text": "A. I like vegetables.", "val": "A" },
-              { "text": "B. Let's have dinner together.", "val": "B" },
-              { "text": "C. Try again.", "val": "C" }
+              {
+                "text": "A. I like vegetables.",
+                "val": "A"
+              },
+              {
+                "text": "B. Let's have dinner together.",
+                "val": "B"
+              },
+              {
+                "text": "C. Try again.",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "妈妈说有蔬菜（vegetables），申申回应“I like vegetables.”（我喜欢吃蔬菜）上下衔接最自然。"
@@ -857,8 +1926,14 @@
             "type": "judge",
             "prompt": "1. Today is rainy.",
             "options": [
-              { "text": "√ (相符)", "val": "√" },
-              { "text": "× (不相符)", "val": "×" }
+              {
+                "text": "√ (相符)",
+                "val": "√"
+              },
+              {
+                "text": "× (不相符)",
+                "val": "×"
+              }
             ],
             "correct": "×",
             "analysis": "短文第一句说 'Today is sunny.'（今天晴天），所以今天下雨是错误的。"
@@ -868,8 +1943,14 @@
             "type": "judge",
             "prompt": "2. Shenshen can run and jump.",
             "options": [
-              { "text": "√ (相符)", "val": "√" },
-              { "text": "× (不相符)", "val": "×" }
+              {
+                "text": "√ (相符)",
+                "val": "√"
+              },
+              {
+                "text": "× (不相符)",
+                "val": "×"
+              }
             ],
             "correct": "√",
             "analysis": "短文第二句明确提到 'Shenshen can run and jump.'，完全一致。"
@@ -879,8 +1960,14 @@
             "type": "judge",
             "prompt": "3. Minmin can't play ping-pong.",
             "options": [
-              { "text": "√ (相符)", "val": "√" },
-              { "text": "× (不相符)", "val": "×" }
+              {
+                "text": "√ (相符)",
+                "val": "√"
+              },
+              {
+                "text": "× (不相符)",
+                "val": "×"
+              }
             ],
             "correct": "×",
             "analysis": "文中明确写到 'Minmin can play ping-pong and football very well.'（敏敏乒乓球打得很好），题干说 can't（不会），故错误。"
@@ -890,8 +1977,14 @@
             "type": "judge",
             "prompt": "4. They wear sports shoes and do a warm-up.",
             "options": [
-              { "text": "√ (相符)", "val": "√" },
-              { "text": "× (不相符)", "val": "×" }
+              {
+                "text": "√ (相符)",
+                "val": "√"
+              },
+              {
+                "text": "× (不相符)",
+                "val": "×"
+              }
             ],
             "correct": "√",
             "analysis": "与原文第四句 'They wear sports shoes and do a warm-up.' 完全一致。"
@@ -901,8 +1994,14 @@
             "type": "judge",
             "prompt": "5. They don't like sports.",
             "options": [
-              { "text": "√ (相符)", "val": "√" },
-              { "text": "× (不相符)", "val": "×" }
+              {
+                "text": "√ (相符)",
+                "val": "√"
+              },
+              {
+                "text": "× (不相符)",
+                "val": "×"
+              }
             ],
             "correct": "×",
             "analysis": "最后一句说明 'They like sports very much.'（他们非常喜欢运动），故题干错误。"
@@ -931,9 +2030,18 @@
             "type": "choice",
             "prompt": "1. Linlin lives in _______ .",
             "options": [
-              { "text": "Shanghai", "val": "A" },
-              { "text": "Beijing", "val": "B" },
-              { "text": "London", "val": "C" }
+              {
+                "text": "Shanghai",
+                "val": "A"
+              },
+              {
+                "text": "Beijing",
+                "val": "B"
+              },
+              {
+                "text": "London",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "根据琳琳的介绍：'I live in Shanghai.'，琳琳住在上海。"
@@ -943,9 +2051,18 @@
             "type": "choice",
             "prompt": "2. Danny is _______ .",
             "options": [
-              { "text": "six (6岁)", "val": "A" },
-              { "text": "seven (7岁)", "val": "B" },
-              { "text": "blue", "val": "C" }
+              {
+                "text": "six (6岁)",
+                "val": "A"
+              },
+              {
+                "text": "seven (7岁)",
+                "val": "B"
+              },
+              {
+                "text": "blue",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "丹尼说：'I am also seven.'（我也7岁），故选 B。"
@@ -955,9 +2072,18 @@
             "type": "choice",
             "prompt": "3. Danny likes to play _______ with his dogs.",
             "options": [
-              { "text": "football", "val": "A" },
-              { "text": "ping-pong", "val": "B" },
-              { "text": "hide-and-seek (捉迷藏)", "val": "C" }
+              {
+                "text": "football",
+                "val": "A"
+              },
+              {
+                "text": "ping-pong",
+                "val": "B"
+              },
+              {
+                "text": "hide-and-seek (捉迷藏)",
+                "val": "C"
+              }
             ],
             "correct": "C",
             "analysis": "根据丹尼的句子：'I like playing hide-and-seek with my dogs.'，故选 C。"
@@ -967,9 +2093,18 @@
             "type": "choice",
             "prompt": "4. What can Linlin play very well?",
             "options": [
-              { "text": "Play football.", "val": "A" },
-              { "text": "Play basketball.", "val": "B" },
-              { "text": "Play ping-pong.", "val": "C" }
+              {
+                "text": "Play football.",
+                "val": "A"
+              },
+              {
+                "text": "Play basketball.",
+                "val": "B"
+              },
+              {
+                "text": "Play ping-pong.",
+                "val": "C"
+              }
             ],
             "correct": "C",
             "analysis": "琳琳说：'I can play ping-pong very well.'，故选 C。"
@@ -979,9 +2114,18 @@
             "type": "choice",
             "prompt": "5. How does Danny go to school?",
             "options": [
-              { "text": "On foot. (步行)", "val": "A" },
-              { "text": "By bus. (乘公交)", "val": "B" },
-              { "text": "By car. (乘汽车)", "val": "C" }
+              {
+                "text": "On foot. (步行)",
+                "val": "A"
+              },
+              {
+                "text": "By bus. (乘公交)",
+                "val": "B"
+              },
+              {
+                "text": "By car. (乘汽车)",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "丹尼说：'Every day, I go to school by bus.'，故选 B。"
@@ -997,9 +2141,18 @@
             "type": "choice",
             "prompt": "第1~2步：男孩说：“1. Class is over.” 同伴提议：“2. _______” 男孩高兴地答应：“3. Great! Let's go!”",
             "options": [
-              { "text": "A. And I should do warm-ups too.", "val": "A" },
-              { "text": "B. Let's skip rope together. (我们一起跳绳吧。)", "val": "B" },
-              { "text": "C. You should wear sports shoes.", "val": "C" }
+              {
+                "text": "A. And I should do warm-ups too.",
+                "val": "A"
+              },
+              {
+                "text": "B. Let's skip rope together. (我们一起跳绳吧。)",
+                "val": "B"
+              },
+              {
+                "text": "C. You should wear sports shoes.",
+                "val": "C"
+              }
             ],
             "correct": "B",
             "analysis": "下课了（Class is over），先提出运动建议“Let's skip rope together.”（我们一起跳绳吧），对方才会回答“Great! Let's go!”。"
@@ -1009,9 +2162,18 @@
             "type": "choice",
             "prompt": "第3~4步：跳绳时同伴突然喊：“4. Ouch! My foot! (哎哟！我的脚！)” 男孩连忙提醒：“5. Be careful! _______”",
             "options": [
-              { "text": "A. And I should do warm-ups too.", "val": "A" },
-              { "text": "C. You should wear sports shoes. (你应该穿运动鞋。)", "val": "C" },
-              { "text": "D. Let's go!", "val": "D" }
+              {
+                "text": "A. And I should do warm-ups too.",
+                "val": "A"
+              },
+              {
+                "text": "C. You should wear sports shoes. (你应该穿运动鞋。)",
+                "val": "C"
+              },
+              {
+                "text": "D. Let's go!",
+                "val": "D"
+              }
             ],
             "correct": "C",
             "analysis": "因为脚痛（My foot!），所以提醒对方“Be careful! You should wear sports shoes.”（小心！你应该穿运动鞋。）。"
@@ -1021,9 +2183,18 @@
             "type": "choice",
             "prompt": "第5步：受伤的男孩恍然大悟，点头说：“6. OK. _______”",
             "options": [
-              { "text": "A. And I should do warm-ups too. (而且我也应该做热身运动。)", "val": "A" },
-              { "text": "B. Let's skip rope together.", "val": "B" },
-              { "text": "C. You should wear sports shoes.", "val": "C" }
+              {
+                "text": "A. And I should do warm-ups too. (而且我也应该做热身运动。)",
+                "val": "A"
+              },
+              {
+                "text": "B. Let's skip rope together.",
+                "val": "B"
+              },
+              {
+                "text": "C. You should wear sports shoes.",
+                "val": "C"
+              }
             ],
             "correct": "A",
             "analysis": "接受对方的穿鞋建议后，自己补充说“OK. And I should do warm-ups too.”（好的，而且我也应该做热身运动），注意句尾的 too（也）！"

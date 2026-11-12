@@ -552,6 +552,112 @@
           "explanation": "根据故事第6页：'The little star is like a diamond in the sky.'（小星星像天空中的一颗钻石。）"
         }
       ]
+    },
+    {
+      "id": "2a_u6",
+      "grade": "2a",
+      "unit": "Unit 6",
+      "title": "Xiaopu's Ocean Adventure",
+      "titleCn": "小浦的海底奇遇记",
+      "coverEmoji": "🐬",
+      "badge": "最新上线 ✨",
+      "summary": "小浦潜入蔚蓝的大海游泳啦！快来看看大海里有哪些奇妙的海洋生物——小巧可爱的小丑鱼、成双成对的海马，还有跃出水面的聪明海豚！",
+      "coreWords": [
+        "in the sea",
+        "swim",
+        "fishes",
+        "clownfish",
+        "seahorse",
+        "dolphin",
+        "goldfish",
+        "small",
+        "cute"
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "sceneEmoji": "🌊",
+          "character": "Shenshen & Xiaopu",
+          "sentenceEn": "Look at the blue sea! Xiaopu can swim in the sea happily. What do you see in the sea?",
+          "sentenceCn": "看那蔚蓝的大海！小浦能在海里开心地游泳。你在海里看到了什么？",
+          "focusWord": "in the sea"
+        },
+        {
+          "pageNumber": 2,
+          "sceneEmoji": "🐟",
+          "character": "Xiaopu",
+          "sentenceEn": "Wow! We can see many fishes in the sea! They swim here and there.",
+          "sentenceCn": "哇！我们在海里能看到各种各样的鱼！它们游来游去。",
+          "focusWord": "many fishes"
+        },
+        {
+          "pageNumber": 3,
+          "sceneEmoji": "🐠",
+          "character": "Little Clownfish",
+          "sentenceEn": "'Hello! I am a clownfish. I am small and cute!' Look, there are three clownfish—not three clowns!",
+          "sentenceCn": "“你好！我是一条小丑鱼。我又小又可爱！”看，那里有三条小丑鱼——可不是三个小丑哦！",
+          "focusWord": "clownfish"
+        },
+        {
+          "pageNumber": 4,
+          "sceneEmoji": "🐡",
+          "character": "Seahorses",
+          "sentenceEn": "Look over there! Two cute seahorses are dancing in the sea. They are small and cute too!",
+          "sentenceCn": "看那边！两只可爱的海马正在海里跳舞。它们也又小又可爱！",
+          "focusWord": "seahorse"
+        },
+        {
+          "pageNumber": 5,
+          "sceneEmoji": "🐙",
+          "character": "Shenshen",
+          "sentenceEn": "'Is this a goldfish?' Shenshen asks. 'No! It is an octopus! Goldfish live in a fishbowl.'",
+          "sentenceCn": "“这是一条金鱼吗？”申申问道。“不是！它是一只章鱼！金鱼生活在鱼缸里。”",
+          "focusWord": "goldfish"
+        },
+        {
+          "pageNumber": 6,
+          "sceneEmoji": "🐬",
+          "character": "Dolphins",
+          "sentenceEn": "Splash! Two clever dolphins jump high out of the sea! We love the animals in the sea!",
+          "sentenceCn": "哗啦！两只聪明的海豚高高跃出水面！我们喜爱大海里的动物们！",
+          "focusWord": "dolphin"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What can we see in the sea?",
+          "questionCn": "我们在大海里能看到许多什么？",
+          "options": [
+            "Many fishes (各种各样的鱼)",
+            "Many monkeys (许多猴子)",
+            "Many birds (许多小鸟)"
+          ],
+          "answer": 0,
+          "explanation": "根据故事第2页与任务单原题：'We can see many fishes in the sea.'"
+        },
+        {
+          "question": "What is the little clownfish like?",
+          "questionCn": "小丑鱼是怎么介绍自己的？",
+          "options": [
+            "I am a clownfish. I am small and cute.",
+            "I am a clownfish. I am swim.",
+            "I see three clowns."
+          ],
+          "answer": 0,
+          "explanation": "根据故事第3页与任务单原题：'I am a clownfish. I am small and cute.'（注意 am 后面接形容词 small，不能接动词 swim）。"
+        },
+        {
+          "question": "Which animals jump high out of the sea?",
+          "questionCn": "哪种海洋动物高高跃出了海面？",
+          "options": [
+            "Two horses (两匹陆地上的马)",
+            "Two dolphins (两只海豚)",
+            "Two elephants (两头大象)"
+          ],
+          "answer": 1,
+          "explanation": "根据故事第6页：'Two clever dolphins jump high out of the sea!'"
+        }
+      ]
     }
   ]
 }

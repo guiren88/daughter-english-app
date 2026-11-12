@@ -2320,38 +2320,93 @@
       "title": "海洋场景与海洋生物",
       "words": [
         {
+          "word": "sea",
+          "translation": "海；大海"
+        },
+        {
           "word": "in the sea",
           "translation": "在海里"
         },
         {
           "word": "seahorse",
-          "translation": "海马"
-        },
-        {
-          "word": "dolphin",
-          "translation": "海豚"
+          "translation": "海马（复数 seahorses）"
         },
         {
           "word": "clownfish",
-          "translation": "小丑鱼"
+          "translation": "小丑鱼（单复数同形）"
+        },
+        {
+          "word": "goldfish",
+          "translation": "金鱼（单复数同形）"
+        },
+        {
+          "word": "dolphin",
+          "translation": "海豚（复数 dolphins）"
+        },
+        {
+          "word": "fish",
+          "translation": "鱼；鱼肉"
+        },
+        {
+          "word": "fishes",
+          "translation": "（各种各样的）鱼类"
+        },
+        {
+          "word": "swim",
+          "translation": "游泳"
+        },
+        {
+          "word": "small",
+          "translation": "小的"
+        },
+        {
+          "word": "cute",
+          "translation": "可爱的"
+        },
+        {
+          "word": "clown",
+          "translation": "小丑（易混：clownfish 小丑鱼）"
+        },
+        {
+          "word": "horse",
+          "translation": "马（易混：seahorse 海马）"
         }
       ],
       "sentences": [
         {
-          "english": "Dolphins live in the sea.",
-          "chinese": "海豚生活在海里。"
+          "english": "What do you see in the sea?",
+          "chinese": "你在海里看到了什么？"
         },
         {
-          "english": "Look! It is a cute seahorse.",
-          "chinese": "看！是一只可爱的海马。"
+          "english": "We can see many fishes in the sea.",
+          "chinese": "我们在海里能看到各种各样的鱼。"
         },
         {
-          "english": "The clownfish is orange and white.",
-          "chinese": "小丑鱼是橙白相间的。"
+          "english": "Xiaopu can swim in the sea.",
+          "chinese": "小浦能在海里游泳。"
+        },
+        {
+          "english": "I am a clownfish. I am small and cute.",
+          "chinese": "我是一条小丑鱼。我又小又可爱。"
+        },
+        {
+          "english": "Look! Two cute seahorses and two dolphins.",
+          "chinese": "看！两只可爱的海马和两只海豚。"
+        },
+        {
+          "english": "Is this a goldfish? No.",
+          "chinese": "这是一条金鱼吗？不是。"
         }
       ],
       "text": "",
-      "tips": []
+      "tips": [
+        "合成词巧记法：sea（海）+ horse（马）= seahorse（海马）；clown（小丑）+ fish（鱼）= clownfish（小丑鱼）；gold（金子）+ fish（鱼）= goldfish（金鱼）。",
+        "任务单必考陷阱①：看图题如果写 \"I see three clowns.\" 指的是“三个小丑🤡”，不是“三条小丑鱼（three clownfish）🐠”，遇到小丑鱼图片配 clowns 一定要打 ×！",
+        "任务单必考陷阱②：fish 表示鱼的条数时单复数同形，但表示“大海里许多不同种类的鱼”时用复数 fishes（We can see many fishes in the sea.）；seahorse 和 dolphin 变复数直接加 -s（seahorses, dolphins）。",
+        "任务单必考陷阱③：\"I am a clownfish. I am small.\" 中 am 后面只能接形容词（small / cute），绝不能直接接动词原形 swim（游泳要说 I can swim）！",
+        "任务单必考陷阱④：自问自答判断 \"Is this a goldfish? No.\"（这是金鱼吗？不是。）配图是章鱼🐙时，因为问答意思是“它不是金鱼”，与图片事实完全一致，所以要打 √！"
+      ],
+      "isNew": true
     },
     {
       "unit": "Unit 7",
