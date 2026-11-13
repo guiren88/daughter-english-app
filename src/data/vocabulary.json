@@ -2391,6 +2391,54 @@
         {
           "word": "horse",
           "translation": "马（易混：seahorse 海马）"
+        },
+        {
+          "word": "sea-animal",
+          "translation": "海洋动物"
+        },
+        {
+          "word": "lay",
+          "translation": "产（卵）；下（蛋）"
+        },
+        {
+          "word": "baby",
+          "translation": "宝宝（复数 babies）"
+        },
+        {
+          "word": "watch",
+          "translation": "观看；注视"
+        },
+        {
+          "word": "move up and down",
+          "translation": "上下移动"
+        },
+        {
+          "word": "play hide-and-seek",
+          "translation": "玩捉迷藏"
+        },
+        {
+          "word": "shark",
+          "translation": "鲨鱼（sharp teeth 锋利的牙齿）"
+        },
+        {
+          "word": "sea turtle",
+          "translation": "海龟（hard shell 硬壳）"
+        },
+        {
+          "word": "starfish",
+          "translation": "海星（five legs 五条腿）"
+        },
+        {
+          "word": "jellyfish",
+          "translation": "水母（move up and down 上下移动）"
+        },
+        {
+          "word": "sharp",
+          "translation": "锋利的"
+        },
+        {
+          "word": "shell",
+          "translation": "壳；贝壳"
         }
       ],
       "sentences": [
@@ -2417,6 +2465,26 @@
         {
           "english": "Is this a goldfish? No.",
           "chinese": "这是一条金鱼吗？不是。"
+        },
+        {
+          "english": "What do you like doing in the sea?",
+          "chinese": "你喜欢在海里做什么？"
+        },
+        {
+          "english": "I like playing hide-and-seek in the sea.",
+          "chinese": "我喜欢在海里玩捉迷藏。"
+        },
+        {
+          "english": "I can move up and down in the sea.",
+          "chinese": "我能在海里上下游动。"
+        },
+        {
+          "english": "Let me lay my eggs.",
+          "chinese": "让我来产卵吧。"
+        },
+        {
+          "english": "I like watching you play.",
+          "chinese": "我喜欢看着你们玩耍。"
         }
       ],
       "text": "",
@@ -2425,7 +2493,8 @@
         "任务单必考陷阱①：看图题如果写 \"I see three clowns.\" 指的是“三个小丑🤡”，不是“三条小丑鱼（three clownfish）🐠”，遇到小丑鱼图片配 clowns 一定要打 ×！",
         "任务单必考陷阱②：fish 表示鱼的条数时单复数同形，但表示“大海里许多不同种类的鱼”时用复数 fishes（We can see many fishes in the sea.）；seahorse 和 dolphin 变复数直接加 -s（seahorses, dolphins）。",
         "任务单必考陷阱③：\"I am a clownfish. I am small.\" 中 am 后面只能接形容词（small / cute），绝不能直接接动词原形 swim（游泳要说 I can swim）！",
-        "任务单必考陷阱④：自问自答判断 \"Is this a goldfish? No.\"（这是金鱼吗？不是。）配图是章鱼🐙时，因为问答意思是“它不是金鱼”，与图片事实完全一致，所以要打 √！"
+        "任务单必考陷阱④：自问自答判断 \"Is this a goldfish? No.\"（这是金鱼吗？不是。）配图是章鱼🐙时，因为问答意思是“它不是金鱼”，与图片事实完全一致，所以要打 √！",
+        "U6任务单3高频语法：① Let me + 动词原形（Let me lay my eggs.）；② watch sb. + 动词原形（I like watching you play.）；③ 指示代词近指“这个”用 this，远指“那个”用 that；④ 自己对朋友说话要用第一人称 I（I like swimming.），不能用第三人称名字（Shenshen likes...）！"
       ],
       "isNew": true
     },

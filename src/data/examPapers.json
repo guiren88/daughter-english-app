@@ -1,5 +1,719 @@
 [
   {
+    "id": "u6_task_paper_3",
+    "grade": "2a",
+    "title": "🦈 2A U6 任务单 3·海洋动物与语法阅读全真卷",
+    "subtitle": "上海立信会计金融学院附属松江学校 2A U6 任务单 3（含 AI 听力、be动词/代词、海洋新朋友阅读与思维导图）",
+    "timeLimit": "30分钟",
+    "badge": "最新新增 ✨ U6任务单3",
+    "summary": "100% 还原最新《2A U6 任务单 3》全部题目！涵盖 Let me + 原形、watching you play、be 动词填空、情景人称与 this/that 陷阱，以及鲨鱼/海龟/海星/水母科普阅读与思维导图！",
+    "sections": [
+      {
+        "sectionTitle": "Part 1 Listening — I. Listen and choose (听录音，选出听到的单词)",
+        "sectionDesc": "点击【🔊 点击听考官读题】，仔细分辨易混词与单复数尾音",
+        "questions": [
+          {
+            "id": "u6p3_l1_1",
+            "type": "listening",
+            "audioText": "clownfish. I can see an orange and white clownfish.",
+            "prompt": "🎧 1. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. fish",
+                "val": "A"
+              },
+              {
+                "text": "B. goldfish",
+                "val": "B"
+              },
+              {
+                "text": "C. clownfish",
+                "val": "C"
+              }
+            ],
+            "correct": "C",
+            "analysis": "【U6任务单3 听力I-1】听到 /klaʊnfɪʃ/（小丑鱼），选 C。",
+            "mistakeWord": {
+              "word": "clownfish",
+              "translation": "小丑鱼"
+            }
+          },
+          {
+            "id": "u6p3_l1_2",
+            "type": "listening",
+            "audioText": "sea-animal. What is that sea-animal?",
+            "prompt": "🎧 2. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. seahorse",
+                "val": "A"
+              },
+              {
+                "text": "B. seesaw",
+                "val": "B"
+              },
+              {
+                "text": "C. sea-animal",
+                "val": "C"
+              }
+            ],
+            "correct": "C",
+            "analysis": "【U6任务单3 听力I-2】注意听 sea 后面的词：seahorse（海马）、seesaw（跷跷板）、sea-animal（海洋动物），选 C。",
+            "mistakeWord": {
+              "word": "sea-animal",
+              "translation": "海洋动物"
+            }
+          },
+          {
+            "id": "u6p3_l1_3",
+            "type": "listening",
+            "audioText": "dolphin. The blue dolphin is my friend.",
+            "prompt": "🎧 3. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. doll",
+                "val": "A"
+              },
+              {
+                "text": "B. dolphin",
+                "val": "B"
+              },
+              {
+                "text": "C. ball",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单3 听力I-3】doll（洋娃娃）是单音节，dolphin（海豚）是双音节 /ˈdɒlfɪn/，选 B。"
+          },
+          {
+            "id": "u6p3_l1_4",
+            "type": "listening",
+            "audioText": "make. Let us make a sea-animal bookmark.",
+            "prompt": "🎧 4. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. make",
+                "val": "A"
+              },
+              {
+                "text": "B. take",
+                "val": "B"
+              },
+              {
+                "text": "C. cake",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单3 听力I-4】自然拼读 -ake 家族：m-ake (make 制作)、t-ake (take 拿)、c-ake (cake 蛋糕)，选 A。"
+          },
+          {
+            "id": "u6p3_l1_5",
+            "type": "listening",
+            "audioText": "swim. Nemo likes to swim in the sea.",
+            "prompt": "🎧 5. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. swim",
+                "val": "A"
+              },
+              {
+                "text": "B. swing",
+                "val": "B"
+              },
+              {
+                "text": "C. sing",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单3 听力I-5】swim 尾音是闭唇 /m/，swing（秋千）和 sing（唱歌）尾音是后鼻音 /ŋ/！选 A。"
+          },
+          {
+            "id": "u6p3_l1_6",
+            "type": "listening",
+            "audioText": "in. They live in the blue sea.",
+            "prompt": "🎧 6. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. on",
+                "val": "A"
+              },
+              {
+                "text": "B. in",
+                "val": "B"
+              },
+              {
+                "text": "C. an",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单3 听力I-6】in /ɪn/（在……里面），注意区分 on /ɒn/ 和 an /æn/。选 B。"
+          },
+          {
+            "id": "u6p3_l1_7",
+            "type": "listening",
+            "audioText": "play. I like watching you play.",
+            "prompt": "🎧 7. 听录音，选出你听到的单词：",
+            "options": [
+              {
+                "text": "A. place",
+                "val": "A"
+              },
+              {
+                "text": "B. please",
+                "val": "B"
+              },
+              {
+                "text": "C. play",
+                "val": "C"
+              }
+            ],
+            "correct": "C",
+            "analysis": "【U6任务单3 听力I-7】place 尾音有 /s/，please 尾音有 /z/，play 结尾是干脆的元音 /eɪ/。选 C。"
+          },
+          {
+            "id": "u6p3_l1_8",
+            "type": "listening",
+            "audioText": "babies. Look at the lovely sea-animal babies!",
+            "prompt": "🎧 8. 听录音，选出你听到的单词（注意单复数！）：",
+            "options": [
+              {
+                "text": "A. baby",
+                "val": "A"
+              },
+              {
+                "text": "B. babies",
+                "val": "B"
+              },
+              {
+                "text": "C. body",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单3 听力I-8】听到词尾明显的 /z/ 音，是 baby 的复数形式 babies（把 y 变 i 加 es）！选 B。",
+            "mistakeWord": {
+              "word": "baby",
+              "translation": "宝宝（复数 babies）"
+            }
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 1 Listening — II, III & IV. 听音排序、问答与 Nemo 故事判断",
+        "sectionDesc": "听语音完成单词排序、听问句选答语，并听 Nemo 小短文判断对错",
+        "questions": [
+          {
+            "id": "u6p3_l2_1",
+            "type": "listening",
+            "audioText": "Number 1: seahorse. Number 2: beautiful. Number 3: playing. Number 4: moving. Number 5: together.",
+            "prompt": "🎧【II-2 听音给单词编号】卷面五个单词依次为：[ playing | beautiful | seahorse | together | moving ]。请听录音，选出正确的括号编号：",
+            "options": [
+              {
+                "text": "A. ( 3 )  ( 2 )  ( 1 )  ( 5 )  ( 4 )",
+                "val": "A"
+              },
+              {
+                "text": "B. ( 1 )  ( 2 )  ( 3 )  ( 4 )  ( 5 )",
+                "val": "B"
+              },
+              {
+                "text": "C. ( 2 )  ( 3 )  ( 1 )  ( 4 )  ( 5 )",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单3 听力II-2】录音顺序：1. seahorse (第3词填1) -> 2. beautiful (第2词填2) -> 3. playing (第1词填3) -> 4. moving (第5词填4) -> 5. together (第4词填5)。"
+          },
+          {
+            "id": "u6p3_l3_1",
+            "type": "listening",
+            "audioText": "What colour are the clownfish?",
+            "prompt": "🎧【III-3 听录音选应答句】听清问句中的单复数（is it vs are they），选出正确答句：",
+            "options": [
+              {
+                "text": "A. It's orange and white.",
+                "val": "A"
+              },
+              {
+                "text": "B. They are orange and white.",
+                "val": "B"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单3 听力III-3 · 🎯单复数关键】问句是“What colour are the clownfish?”（用 are 提问复数），回答必须用【They are orange and white.】！若问 What colour is it 才选 A。",
+            "isTargetError": true
+          },
+          {
+            "id": "u6p3_l4_1",
+            "type": "listening",
+            "audioText": "Hello, I am Nemo. I am a small clownfish. Look! The dolphin and the seahorse are my friends. We play hide-and-seek together. I like to swim. The blue sea is my home.",
+            "prompt": "🎧【IV. 听短文判断 Nemo 信息】请听关于 Nemo 的短文，判断下列哪个句子【不符合】录音内容（应打 ×）：",
+            "options": [
+              {
+                "text": "A. 1. Nemo is a goldfish. & 3. They play move-and-freeze together.",
+                "val": "A"
+              },
+              {
+                "text": "B. 2. The dolphin and the seahorse are Nemo’s friends. & 4. Nemo likes to swim.",
+                "val": "B"
+              },
+              {
+                "text": "C. 5. The blue sea is Nemo’s home.",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单3 听力IV】\n短文说 Nemo 是一条 clownfish（不是 goldfish，第1题 ×），它们一起玩 hide-and-seek（不是 move-and-freeze，第3题 ×）；其余 2、4、5 题全部正确（√）！"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 2 Vocabulary and Grammar — II. Read and choose (选出不同类的词)",
+        "sectionDesc": "仔细比较词性（动词/名词/动词-ing）和类别（海洋动物/陆地动物），找出与众不同的那一项",
+        "questions": [
+          {
+            "id": "u6p3_odd_1",
+            "type": "odd_one_out",
+            "prompt": "1. 选出不同类的单词：",
+            "options": [
+              {
+                "text": "A. dolphin (海豚)",
+                "val": "A"
+              },
+              {
+                "text": "B. tiger (老虎)",
+                "val": "B"
+              },
+              {
+                "text": "C. panda (熊猫)",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单3 笔试II-1】tiger（老虎）和 panda（熊猫）是陆地野生动物，dolphin（海豚）是海洋动物，选 A！"
+          },
+          {
+            "id": "u6p3_odd_2",
+            "type": "odd_one_out",
+            "prompt": "2. 选出不同类的单词：",
+            "options": [
+              {
+                "text": "A. lay (产卵/下蛋)",
+                "val": "A"
+              },
+              {
+                "text": "B. baby (宝宝)",
+                "val": "B"
+              },
+              {
+                "text": "C. watch (观看)",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单3 笔试II-2】lay（产卵）和 watch（观看）都是动作动词，只有 baby（宝宝）是名词，选 B！",
+            "mistakeWord": {
+              "word": "lay",
+              "translation": "产（卵）；下（蛋）"
+            }
+          },
+          {
+            "id": "u6p3_odd_3",
+            "type": "odd_one_out",
+            "prompt": "3. 选出不同类的单词：",
+            "options": [
+              {
+                "text": "A. making (正在制作)",
+                "val": "A"
+              },
+              {
+                "text": "B. swimming (正在游泳)",
+                "val": "B"
+              },
+              {
+                "text": "C. sing (唱 - 动词原形)",
+                "val": "C"
+              }
+            ],
+            "correct": "C",
+            "analysis": "【U6任务单3 笔试II-3】making 和 swimming 都是动词的 -ing 形式，只有 sing 是动词原形，选 C！",
+            "isTargetError": true
+          },
+          {
+            "id": "u6p3_odd_4",
+            "type": "odd_one_out",
+            "prompt": "4. 选出不同类的单词（提示：想想哪个词不仅能表示颜色，还能表示一种水果？）：",
+            "options": [
+              {
+                "text": "A. blue (蓝色)",
+                "val": "A"
+              },
+              {
+                "text": "B. orange (橙色；橙子)",
+                "val": "B"
+              },
+              {
+                "text": "C. red (红色)",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单3 笔试II-4】三个选项里 blue 和 red 只表示颜色，只有 orange 既可以表示颜色（橙色）又可以表示水果（橙子）！选 B！"
+          },
+          {
+            "id": "u6p3_odd_5",
+            "type": "odd_one_out",
+            "prompt": "5. 选出不同类的单词：",
+            "options": [
+              {
+                "text": "A. colour (颜色；涂色)",
+                "val": "A"
+              },
+              {
+                "text": "B. cut (剪；切)",
+                "val": "B"
+              },
+              {
+                "text": "C. play (玩)",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单3 笔试II-5】cut（剪）和 play（玩）都是纯动作动词，而 colour 既可作名词“颜色”也可作动词“涂色”（也有部分老师会讲 cut/colour 是手工动作，play 是游戏；校内可留意老师讲评口径）。"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 2 Vocabulary and Grammar — III & V. 语法单选与 be 动词填空",
+        "sectionDesc": "重点攻克 Let me + 原形、watch sb. do、a/an 冠词、can 问答以及 am/is/are 搭配",
+        "questions": [
+          {
+            "id": "u6p3_g_1",
+            "type": "choice",
+            "prompt": "1. Let me ________ my eggs. (让我来产卵吧。)",
+            "options": [
+              {
+                "text": "A. lay",
+                "val": "A"
+              },
+              {
+                "text": "B. laying",
+                "val": "B"
+              },
+              {
+                "text": "C. to lay",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单3 笔试III-1 · 必考语法】Let + 某人 + 【动词原形】！千万不能加 ing 或 to，直接选 A. lay！",
+            "isTargetError": true
+          },
+          {
+            "id": "u6p3_g_2",
+            "type": "choice",
+            "prompt": "2. I like watching you _________. (我喜欢看着你们玩耍。)",
+            "options": [
+              {
+                "text": "A. playing",
+                "val": "A"
+              },
+              {
+                "text": "B. play",
+                "val": "B"
+              },
+              {
+                "text": "C. to play",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单3 笔试III-2 · 课本原句】牛津 2A Unit 6 课文原句是 “I like watching you play.”（watch sb. do sth. 观看某人做某事，后面用动词原形 play）！选 B！",
+            "isTargetError": true,
+            "mistakeWord": {
+              "word": "watch",
+              "translation": "观看（watch sb. play）"
+            }
+          },
+          {
+            "id": "u6p3_g_3",
+            "type": "choice",
+            "prompt": "3. I am _________ elephant. I have _______ long nose.",
+            "options": [
+              {
+                "text": "A. a ... an ...",
+                "val": "A"
+              },
+              {
+                "text": "B. an ... a ...",
+                "val": "B"
+              },
+              {
+                "text": "C. an ... an ...",
+                "val": "C"
+              }
+            ],
+            "correct": "B",
+            "analysis": "【U6任务单3 笔试III-3】elephant 以元音 /e/ 开头，前面用【an】；long 以辅音 /l/ 开头，前面用【a】（an elephant, a long nose）。选 B！"
+          },
+          {
+            "id": "u6p3_g_4",
+            "type": "choice",
+            "prompt": "4. --What can you see?  --I _______ a big horse.",
+            "options": [
+              {
+                "text": "A. see",
+                "val": "A"
+              },
+              {
+                "text": "B. do see",
+                "val": "B"
+              },
+              {
+                "text": "C. can see",
+                "val": "C"
+              }
+            ],
+            "correct": "C",
+            "analysis": "【U6任务单3 笔试III-4】问句里有情态动词 can（What can you see?），回答也用【I can see...】来呼应！选 C！"
+          },
+          {
+            "id": "u6p3_g_5",
+            "type": "choice",
+            "prompt": "5. The stars ________ in the sky. They are small and yellow.",
+            "options": [
+              {
+                "text": "A. am",
+                "val": "A"
+              },
+              {
+                "text": "B. is",
+                "val": "B"
+              },
+              {
+                "text": "C. are",
+                "val": "C"
+              }
+            ],
+            "correct": "C",
+            "analysis": "【U6任务单3 笔试III-5】主语 The stars 是复数（后面也有提示词 They are），所以 be 动词必须用【are】！"
+          },
+          {
+            "id": "u6p3_be_all",
+            "type": "choice",
+            "prompt": "【V. 用合适的 be 动词 (am / is / are) 填空】\n1. I ___ a clownfish. You ___ a goldfish.\n2. My nose ___ long. My eyes ___ big.\n3. The pencils ___ on the table. The bag ___ on the chair.",
+            "options": [
+              {
+                "text": "A. 1. am, are  |  2. is, are  |  3. are, is",
+                "val": "A"
+              },
+              {
+                "text": "B. 1. am, is   |  2. is, is   |  3. is, is",
+                "val": "B"
+              },
+              {
+                "text": "C. 1. is, are  |  2. are, is  |  3. are, is",
+                "val": "C"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单3 笔试V · 口诀记忆】我(I)用 am，你(You)用 are，is 跟着单数跑（My nose / The bag），复数全部都用 are（My eyes / The pencils）！"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 2 Vocabulary and Grammar — VI. Read and judge (情景判断 √ 或 ×)",
+        "sectionDesc": "⚠️ 特别留意说话的人称（I vs 名字）和远近指代词（this 这个 vs that 那个）！",
+        "questions": [
+          {
+            "id": "u6p3_sj_1",
+            "type": "judge",
+            "prompt": "1. 海豚向大家介绍自己，它说：I am a small and blue dolphin.",
+            "options": [
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
+            ],
+            "correct": "√",
+            "analysis": "【U6任务单3 笔试VI-1】海豚用第一人称 I 介绍自己（我是只小小蓝海豚），语法与情景均通顺，打 √！"
+          },
+          {
+            "id": "u6p3_sj_2",
+            "type": "judge",
+            "prompt": "2. Shenshen 喜欢游泳，她对朋友说：Shenshen likes swimming.",
+            "options": [
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
+            ],
+            "correct": "×",
+            "analysis": "【U6任务单3 笔试VI-2 · 🚨人称陷阱！】申申自己对朋友说话时，必须用第一人称“我”——【I like swimming.】，不能像旁白一样说“Shenshen likes swimming.”！所以打 ×！",
+            "isTargetError": true
+          },
+          {
+            "id": "u6p3_sj_3",
+            "type": "judge",
+            "prompt": "3. 邀请别人一起玩，你说：Let's go and play together.",
+            "options": [
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
+            ],
+            "correct": "√",
+            "analysis": "【U6任务单3 笔试VI-3】“让我们一起去玩吧！”表达完全正确，打 √！"
+          },
+          {
+            "id": "u6p3_sj_4",
+            "type": "judge",
+            "prompt": "4. 你想知道【这个】海洋动物是什么，你问：What's that sea-animal?",
+            "options": [
+              {
+                "text": "√ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "× (错误)",
+                "val": "×"
+              }
+            ],
+            "correct": "×",
+            "analysis": "【U6任务单3 笔试VI-4 · 🚨指示代词陷阱！】题干明确写着想知道“【这个】海洋动物”，近指“这个”要用【this】（What's this sea-animal?），而句中写成了表示“那个”的 that！所以必须打 ×！",
+            "isTargetError": true
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Part 3 Reading — 海洋新朋友科普阅读与思维导图",
+        "sectionDesc": "认识鲨鱼 (shark)、海龟 (sea turtle)、海星 (starfish)、水母 (jellyfish)，完成判断与思维导图",
+        "passage": "There are many sea-animals in the sea. Look! They are coming.\n🦈 This is a shark. The shark has sharp (锋利的) teeth.\n🐢 This is a sea turtle. The sea turtle has a hard shell (壳).\n⭐ This is a starfish. The starfish has five legs. It sleeps in the sea.\n🪼 This is a jellyfish. The jellyfish likes moving up and down.\nThey are different. But all of them live in the sea.",
+        "passageCn": "大海里有许多海洋动物。看！它们游过来了。\n🦈 这是一条鲨鱼。鲨鱼有锋利的牙齿。\n🐢 这是一只海龟。海龟有坚硬的壳。\n⭐ 这是一只海星。海星有五条腿。它在海里睡觉。\n🪼 这是一只水母。水母喜欢上下游动。\n它们各不相同，但它们全部都生活在大海里。",
+        "questions": [
+          {
+            "id": "u6p3_r_1",
+            "type": "judge",
+            "prompt": "1. The jellyfish has five legs. (水母有五条腿。)",
+            "options": [
+              {
+                "text": "☺ / √ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "☹ / × (错误)",
+                "val": "×"
+              }
+            ],
+            "correct": "×",
+            "analysis": "【U6任务单3 阅读I-1】短文第三段写的是“The starfish has five legs.”（海星有五条腿），不是水母 jellyfish，所以画哭脸 ☹ / ×！"
+          },
+          {
+            "id": "u6p3_r_2",
+            "type": "judge",
+            "prompt": "2. The starfish sleeps in the sea. (海星在海里睡觉。)",
+            "options": [
+              {
+                "text": "☺ / √ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "☹ / × (错误)",
+                "val": "×"
+              }
+            ],
+            "correct": "√",
+            "analysis": "【U6任务单3 阅读I-2】短文原句：“The starfish has five legs. It sleeps in the sea.” 完全一致，画笑脸 ☺ / √！"
+          },
+          {
+            "id": "u6p3_r_3",
+            "type": "judge",
+            "prompt": "3. The shark lives in the sea. (鲨鱼生活在海里。)",
+            "options": [
+              {
+                "text": "☺ / √ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "☹ / × (错误)",
+                "val": "×"
+              }
+            ],
+            "correct": "√",
+            "analysis": "【U6任务单3 阅读I-3】最后一句“all of them live in the sea”，它们都生活在海里，画笑脸 ☺ / √！"
+          },
+          {
+            "id": "u6p3_r_4",
+            "type": "judge",
+            "prompt": "4. The sea turtle's shell is hard. (海龟的壳是坚硬的。)",
+            "options": [
+              {
+                "text": "☺ / √ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "☹ / × (错误)",
+                "val": "×"
+              }
+            ],
+            "correct": "√",
+            "analysis": "【U6任务单3 阅读I-4】短文原句：“The sea turtle has a hard shell(壳).” 换个说法就是 shell is hard，画笑脸 ☺ / √！"
+          },
+          {
+            "id": "u6p3_r_5",
+            "type": "judge",
+            "prompt": "5. The shark can eat small fishes. (鲨鱼能吃小鱼。)",
+            "options": [
+              {
+                "text": "☺ / √ (正确)",
+                "val": "√"
+              },
+              {
+                "text": "☹ / × (错误)",
+                "val": "×"
+              }
+            ],
+            "correct": "√",
+            "analysis": "【U6任务单3 阅读I-5】鲨鱼有锋利的牙齿（sharp teeth），在海里确实会吃小鱼（常识合理推断），画笑脸 ☺ / √！"
+          },
+          {
+            "id": "u6p3_mindmap",
+            "type": "choice",
+            "prompt": "【II. Think and complete 思维导图填空】\n中间蓝云写主题，周围云朵按特征填海洋动物名称：\n• 中间总主题：________\n• sharp teeth → ________\n• five legs → ________\n• hard shell → sea turtle\n• move up and down → ________\n• 下方空白云（书本学过的海洋生物）：________",
+            "options": [
+              {
+                "text": "A. 主题 sea-animals | 依次填: shark, starfish, jellyfish, 以及 clownfish / dolphin / seahorse 任选其一",
+                "val": "A"
+              },
+              {
+                "text": "B. 主题 sky | 依次填: sun, moon, star, cloud",
+                "val": "B"
+              }
+            ],
+            "correct": "A",
+            "analysis": "【U6任务单3 阅读II 思维导图标准答案】\n• 中间蓝云总主题：sea-animals（或 sea animals）\n• 左上 (sharp teeth 锋利牙齿)：shark\n• 上方 (five legs 五条腿)：starfish\n• 右侧 (hard shell 硬壳)：sea turtle（已填）\n• 左下 (move up and down 上下移动)：jellyfish\n• 正下方空白云（结合课本）：可填 clownfish / seahorse / dolphin！"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "u6_task_paper_1",
     "grade": "2a",
     "title": "🌊 2A U6 任务单 1·海洋生物与语法全真同步卷",
