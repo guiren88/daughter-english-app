@@ -1,0 +1,657 @@
+{
+  "topics": [
+    {
+      "id": "m_g1_add20",
+      "grade": 1,
+      "semester": "上",
+      "chapter": "一年级上册 · 20以内进位加法",
+      "name": "20以内的进位加法",
+      "domain": "数与代数",
+      "emoji": "➕",
+      "description": "熟练使用“凑十法”口算 9加几、8加几、7/6/5加几（如 8+5=13）。"
+    },
+    {
+      "id": "m_g1_sub20",
+      "grade": 1,
+      "semester": "下",
+      "chapter": "一年级下册 · 20以内退位减法",
+      "name": "20以内的退位减法",
+      "domain": "数与代数",
+      "emoji": "➖",
+      "description": "熟练使用“破十法”或“想加算减”口算十几减几（如 15-8=7）。"
+    },
+    {
+      "id": "m_g1_addsub100",
+      "grade": 1,
+      "semester": "下",
+      "chapter": "一年级下册 · 100以内加减法",
+      "name": "100以内的加减法",
+      "domain": "数与代数",
+      "emoji": "💯",
+      "description": "掌握两位数加减一位数/两位数（含进位、退位）的口算与竖式计算。"
+    },
+    {
+      "id": "m_g2a_sort",
+      "grade": 2,
+      "semester": "上",
+      "chapter": "二年级上册 第1单元 分类与整理",
+      "name": "分类与整理（逐层分类）",
+      "domain": "统计与概率",
+      "emoji": "🗂️",
+      "description": "学会按不同标准（颜色、形状、用途）进行一次分类和逐层分类统计。"
+    },
+    {
+      "id": "m_g2a_mul_intro",
+      "grade": 2,
+      "semester": "上",
+      "chapter": "二年级上册 第2单元 1～6的表内乘法",
+      "name": "乘法的初步认识",
+      "domain": "数与代数",
+      "emoji": "✖️",
+      "description": "理解乘法是“求几个相同加数的和”的简便运算（如 3个5相加写作 3×5 或 5×3）。"
+    },
+    {
+      "id": "m_g2a_mul_2_6",
+      "grade": 2,
+      "semester": "上",
+      "chapter": "二年级上册 第2单元 1～6的表内乘法",
+      "name": "2～6的乘法口诀",
+      "domain": "数与代数",
+      "emoji": "🎵",
+      "description": "熟背并灵活运用 1～6 的乘法口诀（如三四十二、五六三十）快速口算。"
+    },
+    {
+      "id": "m_g2a_mul_add_sub",
+      "grade": 2,
+      "semester": "上",
+      "chapter": "二年级上册 第2单元 1～6的表内乘法",
+      "name": "乘加、乘减",
+      "domain": "数与代数",
+      "emoji": "🧮",
+      "description": "记住运算顺序铁律：先算乘法，再算加减法（如 3×4+2=14）。"
+    },
+    {
+      "id": "m_g2a_div_intro",
+      "grade": 2,
+      "semester": "上",
+      "chapter": "二年级上册 第3单元 1～6的表内除法",
+      "name": "平均分与除法的意义",
+      "domain": "数与代数",
+      "emoji": "🍎",
+      "description": "理解“每份分得同样多”叫平均分，区分“按份数等分”和“按每几个一份包含分”。"
+    },
+    {
+      "id": "m_g2a_div_2_6",
+      "grade": 2,
+      "semester": "上",
+      "chapter": "二年级上册 第3单元 1～6的表内除法",
+      "name": "用2～6的乘法口诀求商",
+      "domain": "数与代数",
+      "emoji": "➗",
+      "description": "算除法、想乘法口诀（如 24÷4 想“四六二十四”，商是 6）。"
+    },
+    {
+      "id": "m_g2a_cm_m",
+      "grade": 2,
+      "semester": "上",
+      "chapter": "二年级上册 第4单元 厘米和米",
+      "name": "厘米和米（长度换算）",
+      "domain": "图形与几何",
+      "emoji": "📏",
+      "description": "建立 1厘米、1米的长度观念，牢记 1米 = 100厘米 及线段测量方法。"
+    },
+    {
+      "id": "m_g2a_mul_7_9",
+      "grade": 2,
+      "semester": "上",
+      "chapter": "二年级上册 第5单元 7～9的表内乘、除法",
+      "name": "7～9的乘法口诀",
+      "domain": "数与代数",
+      "emoji": "🌟",
+      "description": "熟背 7、8、9 的乘法口诀（如七八五十六、八九七十二），解决倍数与购物问题。"
+    },
+    {
+      "id": "m_g2a_div_7_9",
+      "grade": 2,
+      "semester": "上",
+      "chapter": "二年级上册 第5单元 7～9的表内乘、除法",
+      "name": "用7～9的乘法口诀求商",
+      "domain": "数与代数",
+      "emoji": "🎯",
+      "description": "运用 7～9 乘法口诀迅速求商（如 63÷7=9），区分“谁是谁的几倍”。"
+    },
+    {
+      "id": "m_g2b_time",
+      "grade": 2,
+      "semester": "下",
+      "chapter": "二年级下册 综合与实践 时间在哪里",
+      "name": "认识时间与时分秒进率",
+      "domain": "综合与实践",
+      "emoji": "⏰",
+      "description": "会认读几时几分，牢记 1时 = 60分、1分 = 60秒，会计算简单的经过时间。"
+    },
+    {
+      "id": "m_g2b_rem_intro",
+      "grade": 2,
+      "semester": "下",
+      "chapter": "二年级下册 第1单元 有余数的除法",
+      "name": "有余数的除法",
+      "domain": "数与代数",
+      "emoji": "🎁",
+      "description": "掌握有余数除法竖式与铁律：“余数一定要比除数小”！"
+    },
+    {
+      "id": "m_g2b_rem_app",
+      "grade": 2,
+      "semester": "下",
+      "chapter": "二年级下册 第1单元 有余数的除法",
+      "name": "有余数除法的应用",
+      "domain": "数与代数",
+      "emoji": "🚣",
+      "description": "区分生活实际中的“进一法”（租船/坐车至少要多加1）和“去尾法”（买东西/做衣服余下不够就舍去）。"
+    },
+    {
+      "id": "m_g2b_num_10000",
+      "grade": 2,
+      "semester": "下",
+      "chapter": "二年级下册 第3单元 万以内数的认识",
+      "name": "万以内数的认识与比较",
+      "domain": "数与代数",
+      "emoji": "🔢",
+      "description": "认识数位顺序（个十百千万），会读写中间/末尾有0的数及比较大小。"
+    },
+    {
+      "id": "m_g2b_addsub_10000",
+      "grade": 2,
+      "semester": "下",
+      "chapter": "二年级下册 第4单元 万以内的加法和减法",
+      "name": "万以内的加减法",
+      "domain": "数与代数",
+      "emoji": "🚀",
+      "description": "掌握几百几十加减及三位数连续进位加、连续退位减的竖式计算。"
+    }
+  ],
+  "dependencies": [
+    { "topicId": "m_g1_sub20", "prerequisiteId": "m_g1_add20", "strength": "hard", "reason": "“想加算减”做20以内退位减法需要20以内进位加法基础" },
+    { "topicId": "m_g1_addsub100", "prerequisiteId": "m_g1_add20", "strength": "hard", "reason": "100以内竖式进位加法依赖20以内进位口算" },
+    { "topicId": "m_g1_addsub100", "prerequisiteId": "m_g1_sub20", "strength": "hard", "reason": "100以内竖式退位减法依赖20以内退位口算" },
+    { "topicId": "m_g2a_mul_intro", "prerequisiteId": "m_g1_add20", "strength": "hard", "reason": "理解乘法需要先把“几个相同加数连加”算准确" },
+    { "topicId": "m_g2a_mul_2_6", "prerequisiteId": "m_g2a_mul_intro", "strength": "hard", "reason": "乘法口诀是从“几个几相加”的乘法意义编出来的" },
+    { "topicId": "m_g2a_mul_add_sub", "prerequisiteId": "m_g2a_mul_2_6", "strength": "hard", "reason": "乘加乘减必须先用乘法口诀算出乘法部分" },
+    { "topicId": "m_g2a_mul_add_sub", "prerequisiteId": "m_g1_addsub100", "strength": "soft", "reason": "算出乘积后需要加减法得到最终结果" },
+    { "topicId": "m_g2a_div_intro", "prerequisiteId": "m_g2a_mul_intro", "strength": "soft", "reason": "平均分与“几个几”的乘法模型互为逆思考" },
+    { "topicId": "m_g2a_div_2_6", "prerequisiteId": "m_g2a_div_intro", "strength": "hard", "reason": "先理解平均分与除法算式含义，才会列式求商" },
+    { "topicId": "m_g2a_div_2_6", "prerequisiteId": "m_g2a_mul_2_6", "strength": "hard", "reason": "用2～6乘法口诀求商必须先背熟2～6的乘法口诀" },
+    { "topicId": "m_g2a_cm_m", "prerequisiteId": "m_g1_addsub100", "strength": "soft", "reason": "1米=100厘米的长度换算与比较需要100以内加减法" },
+    { "topicId": "m_g2a_mul_7_9", "prerequisiteId": "m_g2a_mul_2_6", "strength": "hard", "reason": "7～9的口诀延续2～6的乘法口诀推导方法" },
+    { "topicId": "m_g2a_div_7_9", "prerequisiteId": "m_g2a_mul_7_9", "strength": "hard", "reason": "用7～9的乘法口诀求商必须先掌握7～9乘法口诀" },
+    { "topicId": "m_g2a_div_7_9", "prerequisiteId": "m_g2a_div_2_6", "strength": "soft", "reason": "延续“想乘法口诀求商”的逆向思维方法" },
+    { "topicId": "m_g2b_time", "prerequisiteId": "m_g2a_mul_2_6", "strength": "soft", "reason": "钟面12大格、每格5分（五的口诀）能帮孩子秒读分钟数" },
+    { "topicId": "m_g2b_rem_intro", "prerequisiteId": "m_g2a_div_7_9", "strength": "hard", "reason": "试商时要快速找到“除数×几最接近且小于被除数”，依赖表内乘除法" },
+    { "topicId": "m_g2b_rem_intro", "prerequisiteId": "m_g1_sub20", "strength": "soft", "reason": "求余数需要用被除数减去乘积" },
+    { "topicId": "m_g2b_rem_app", "prerequisiteId": "m_g2b_rem_intro", "strength": "hard", "reason": "解决租船/购物余数问题前，必须先算对商和余数" },
+    { "topicId": "m_g2b_addsub_10000", "prerequisiteId": "m_g2b_num_10000", "strength": "hard", "reason": "万以内加减法需要理解千位、百位、十位、个位对齐" },
+    { "topicId": "m_g2b_addsub_10000", "prerequisiteId": "m_g1_addsub100", "strength": "hard", "reason": "三位数进位退位建立在两位数进位退位规则之上" }
+  ],
+  "questions": [
+    {
+      "id": "m_g1_add20_q1",
+      "topicId": "m_g1_add20",
+      "difficulty": "standard",
+      "prompt": "计算：8 + 7 = (   )",
+      "options": ["14", "15", "16", "13"],
+      "answer": "15",
+      "explanation": "凑十法：把 7 分成 2 和 5，先算 8 + 2 = 10，再算 10 + 5 = 15！"
+    },
+    {
+      "id": "m_g1_add20_q2",
+      "topicId": "m_g1_add20",
+      "difficulty": "challenge",
+      "prompt": "盒子里原有 9 个草莓，妈妈又放进 6 个，现在一共有多少个草莓？",
+      "options": ["14个", "15个", "16个", "17个"],
+      "answer": "15个",
+      "explanation": "9 + 6 = 15（个）。记住口诀：9加几，几减1，十位写1（6-1=5 -> 15）！"
+    },
+    {
+      "id": "m_g1_add20_q3",
+      "topicId": "m_g1_add20",
+      "difficulty": "basic",
+      "prompt": "基础确认：9 + 4 = (   )",
+      "options": ["12", "13", "14", "11"],
+      "answer": "13",
+      "explanation": "把 4 分成 1 和 3，9 + 1 = 10，10 + 3 = 13！"
+    },
+    {
+      "id": "m_g1_sub20_q1",
+      "topicId": "m_g1_sub20",
+      "difficulty": "standard",
+      "prompt": "计算：15 - 8 = (   )",
+      "options": ["6", "7", "8", "9"],
+      "answer": "7",
+      "explanation": "想加算减：8 + (7) = 15，所以 15 - 8 = 7！（或破十法：10 - 8 = 2，2 + 5 = 7）"
+    },
+    {
+      "id": "m_g1_sub20_q2",
+      "topicId": "m_g1_sub20",
+      "difficulty": "challenge",
+      "prompt": "树上有 14 只小鸟，飞走了 6 只，还剩几只？",
+      "options": ["7只", "8只", "9只", "6只"],
+      "answer": "8只",
+      "explanation": "14 - 6 = 8（只）。6 + 8 = 14，所以还剩 8 只。"
+    },
+    {
+      "id": "m_g1_sub20_q3",
+      "topicId": "m_g1_sub20",
+      "difficulty": "basic",
+      "prompt": "基础确认：12 - 9 = (   )",
+      "options": ["2", "3", "4", "5"],
+      "answer": "3",
+      "explanation": "10 - 9 = 1，1 + 2 = 3！"
+    },
+    {
+      "id": "m_g1_addsub100_q1",
+      "topicId": "m_g1_addsub100",
+      "difficulty": "standard",
+      "prompt": "计算：46 + 27 = (   )",
+      "options": ["63", "73", "72", "62"],
+      "answer": "73",
+      "explanation": "个位 6+7=13 写3进1，十位 4+2+1=7，合起来是 73！"
+    },
+    {
+      "id": "m_g1_addsub100_q2",
+      "topicId": "m_g1_addsub100",
+      "difficulty": "challenge",
+      "prompt": "计算：72 - 38 = (   )",
+      "options": ["34", "44", "36", "46"],
+      "answer": "34",
+      "explanation": "个位 2 减 8 不够减，向十位借 1 当 10，12 - 8 = 4；十位 7 借走 1 剩 6，6 - 3 = 3，结果是 34！"
+    },
+    {
+      "id": "m_g1_addsub100_q3",
+      "topicId": "m_g1_addsub100",
+      "difficulty": "basic",
+      "prompt": "基础确认：35 + 20 = (   )",
+      "options": ["55", "37", "45", "65"],
+      "answer": "55",
+      "explanation": "十位相加：30 + 20 = 50，50 + 5 = 55。"
+    },
+    {
+      "id": "m_g2a_sort_q1",
+      "topicId": "m_g2a_sort",
+      "difficulty": "standard",
+      "prompt": "把纽扣先按【颜色】分成两类，再按【扣眼数量】继续分，这叫做（   ）",
+      "options": ["逐层分类", "乱序摆放", "重复计算", "平均分配"],
+      "answer": "逐层分类",
+      "explanation": "先按一个标准分，再在每一类里按第二个标准接着分，叫做“逐层分类”！不管先按颜色还是先按扣眼数，最后的总数都不变。"
+    },
+    {
+      "id": "m_g2a_sort_q2",
+      "topicId": "m_g2a_sort",
+      "difficulty": "challenge",
+      "prompt": "下面哪一项不属于同一类？【🍎苹果、🍌香蕉、🥕胡萝卜、🍇葡萄】",
+      "options": ["🍎苹果", "🍌香蕉", "🥕胡萝卜", "🍇葡萄"],
+      "answer": "🥕胡萝卜",
+      "explanation": "苹果、香蕉、葡萄都是水果，只有胡萝卜是蔬菜！"
+    },
+    {
+      "id": "m_g2a_sort_q3",
+      "topicId": "m_g2a_sort",
+      "difficulty": "basic",
+      "prompt": "基础确认：把图形按“三角形、正方形、圆形”分，这是按（   ）分类。",
+      "options": ["形状", "大小", "颜色", "重量"],
+      "answer": "形状",
+      "explanation": "三角形、正方形、圆形属于不同的“形状”。"
+    },
+    {
+      "id": "m_g2a_mul_intro_q1",
+      "topicId": "m_g2a_mul_intro",
+      "difficulty": "standard",
+      "prompt": "把 4 + 4 + 4 + 4 + 4 改写成乘法算式是（   ）",
+      "options": ["4 × 4", "4 × 5", "4 + 5", "5 + 4"],
+      "answer": "4 × 5",
+      "explanation": "数一数一共有 5 个 4 相加，相同加数是 4，个数是 5，写成乘法算式是 4 × 5（或 5 × 4）！"
+    },
+    {
+      "id": "m_g2a_mul_intro_q2",
+      "topicId": "m_g2a_mul_intro",
+      "difficulty": "challenge",
+      "prompt": "下面哪个加法算式【不能】直接改写成乘法算式？",
+      "options": ["3 + 3 + 3 + 3", "6 + 6 + 6", "5 + 5 + 4", "2 + 2 + 2 + 2 + 2"],
+      "answer": "5 + 5 + 4",
+      "explanation": "只有“几个【相同】的加数相加”才能直接改写成乘法！5 + 5 + 4 加数不完全相同，不能直接改写成单个乘法。"
+    },
+    {
+      "id": "m_g2a_mul_intro_q3",
+      "topicId": "m_g2a_mul_intro",
+      "difficulty": "basic",
+      "prompt": "基础确认：3 × 2 表示（   ）",
+      "options": ["3 和 2 相加", "2 个 3 相加（或 3 个 2 相加）", "3 减去 2", "3 除以 2"],
+      "answer": "2 个 3 相加（或 3 个 2 相加）",
+      "explanation": "3 × 2 = 3 + 3 = 6，也可以表示 2 + 2 + 2 = 6。"
+    },
+    {
+      "id": "m_g2a_mul_2_6_q1",
+      "topicId": "m_g2a_mul_2_6",
+      "difficulty": "standard",
+      "prompt": "每辆玩具小汽车有 4 个轮子，6 辆小汽车一共有多少个轮子？",
+      "options": ["10个", "20个", "24个", "18个"],
+      "answer": "24个",
+      "explanation": "4 × 6 = 24（个），口诀“四六二十四”！"
+    },
+    {
+      "id": "m_g2a_mul_2_6_q2",
+      "topicId": "m_g2a_mul_2_6",
+      "difficulty": "challenge",
+      "prompt": "括号里最大能填几？ (   ) × 5 < 28",
+      "options": ["4", "5", "6", "7"],
+      "answer": "5",
+      "explanation": "五五二十五（25 < 28），五六三十（30 > 28 太大了），所以最大能填 5！"
+    },
+    {
+      "id": "m_g2a_mul_2_6_q3",
+      "topicId": "m_g2a_mul_2_6",
+      "difficulty": "basic",
+      "prompt": "基础确认：口诀“三五十五”可以算出下面哪道算式？",
+      "options": ["3 + 5 = 8", "3 × 5 = 15", "5 - 3 = 2", "15 + 3 = 18"],
+      "answer": "3 × 5 = 15",
+      "explanation": "三五十五对应 3 × 5 = 15 和 5 × 3 = 15。"
+    },
+    {
+      "id": "m_g2a_mul_add_sub_q1",
+      "topicId": "m_g2a_mul_add_sub",
+      "difficulty": "standard",
+      "prompt": "计算：4 × 5 + 3 = (   )",
+      "options": ["32", "23", "12", "20"],
+      "answer": "23",
+      "explanation": "乘加混合运算铁律：【先算乘法，再算加法】！先算 4 × 5 = 20，再算 20 + 3 = 23。"
+    },
+    {
+      "id": "m_g2a_mul_add_sub_q2",
+      "topicId": "m_g2a_mul_add_sub",
+      "difficulty": "challenge",
+      "prompt": "有 4 盘桃子，前 3 盘每盘有 5 个，第 4 盘只有 2 个，一共有几个桃子？",
+      "options": ["17个", "20个", "18个", "14个"],
+      "answer": "17个",
+      "explanation": "列式：3 × 5 + 2 = 15 + 2 = 17（个）（也可以看成 4 × 5 - 3 = 17 个）！"
+    },
+    {
+      "id": "m_g2a_mul_add_sub_q3",
+      "topicId": "m_g2a_mul_add_sub",
+      "difficulty": "basic",
+      "prompt": "基础确认：计算 3 × 3 - 4 时，第一步应该先算（   ）",
+      "options": ["3 - 4", "3 × 3", "3 + 4", "都可以"],
+      "answer": "3 × 3",
+      "explanation": "乘减算式要先算乘法 3 × 3 = 9，再算减法 9 - 4 = 5！"
+    },
+    {
+      "id": "m_g2a_div_intro_q1",
+      "topicId": "m_g2a_div_intro",
+      "difficulty": "standard",
+      "prompt": "把 12 颗糖果【平均分】给 3 个小朋友，每个小朋友分到（   ）颗。",
+      "options": ["3颗", "4颗", "6颗", "9颗"],
+      "answer": "4颗",
+      "explanation": "平均分要求每份分得同样多！12 ÷ 3 = 4（颗），每人分 4 颗。"
+    },
+    {
+      "id": "m_g2a_div_intro_q2",
+      "topicId": "m_g2a_div_intro",
+      "difficulty": "challenge",
+      "prompt": "在算式 18 ÷ 6 = 3 中，6 叫做（   ）",
+      "options": ["被除数", "除数", "商", "积"],
+      "answer": "除数",
+      "explanation": "记住除法算式各部分名称：被除数(18) ÷ 除数(6) = 商(3)！"
+    },
+    {
+      "id": "m_g2a_div_intro_q3",
+      "topicId": "m_g2a_div_intro",
+      "difficulty": "basic",
+      "prompt": "基础确认：下面哪种分法是“平均分”？",
+      "options": ["两份分别是 3 个和 5 个", "三份都是 4 个", "两份分别是 2 个和 6 个", "四份分别是 1、2、3、4 个"],
+      "answer": "三份都是 4 个",
+      "explanation": "每份分得同样多，才叫平均分！"
+    },
+    {
+      "id": "m_g2a_div_2_6_q1",
+      "topicId": "m_g2a_div_2_6",
+      "difficulty": "standard",
+      "prompt": "计算 24 ÷ 4 = (   )，用到的乘法口诀是（   ）",
+      "options": ["6；四六二十四", "4；四四十六", "5；四五二十", "8；三八二十四"],
+      "answer": "6；四六二十四",
+      "explanation": "除数是 4，想“四（六）二十四”，所以 24 ÷ 4 = 6！"
+    },
+    {
+      "id": "m_g2a_div_2_6_q2",
+      "topicId": "m_g2a_div_2_6",
+      "difficulty": "challenge",
+      "prompt": "有 30 朵小红花，每个小组分 5 朵，可以分给几个小组？",
+      "options": ["5个", "6个", "25个", "35个"],
+      "answer": "6个",
+      "explanation": "求 30 里面有几个 5，用除法：30 ÷ 5 = 6（个），口诀“五六三十”！"
+    },
+    {
+      "id": "m_g2a_div_2_6_q3",
+      "topicId": "m_g2a_div_2_6",
+      "difficulty": "basic",
+      "prompt": "基础确认：15 ÷ 3 = (   )",
+      "options": ["3", "4", "5", "6"],
+      "answer": "5",
+      "explanation": "想口诀“三五十五”，商是 5！"
+    },
+    {
+      "id": "m_g2a_cm_m_q1",
+      "topicId": "m_g2a_cm_m",
+      "difficulty": "standard",
+      "prompt": "教室的门高大约是 2（   ），一支铅笔长大约 18（   ）",
+      "options": ["米；厘米", "厘米；米", "米；米", "厘米；厘米"],
+      "answer": "米；厘米",
+      "explanation": "门比小朋友还高，大约 2 米；铅笔比较短，用厘米作单位，大约 18 厘米！"
+    },
+    {
+      "id": "m_g2a_cm_m_q2",
+      "topicId": "m_g2a_cm_m",
+      "difficulty": "challenge",
+      "prompt": "一根绳子长 1 米，剪去 30 厘米后，还剩（   ）厘米。",
+      "options": ["70厘米", "60厘米", "29厘米", "7厘米"],
+      "answer": "70厘米",
+      "explanation": "单位不同先换算！1 米 = 100 厘米，100 厘米 - 30 厘米 = 70 厘米！"
+    },
+    {
+      "id": "m_g2a_cm_m_q3",
+      "topicId": "m_g2a_cm_m",
+      "difficulty": "basic",
+      "prompt": "基础确认：1 米 = (   ) 厘米",
+      "options": ["10", "50", "100", "1000"],
+      "answer": "100",
+      "explanation": "1 米 = 100 厘米，这是长度换算铁律哦！"
+    },
+    {
+      "id": "m_g2a_mul_7_9_q1",
+      "topicId": "m_g2a_mul_7_9",
+      "difficulty": "standard",
+      "prompt": "计算：7 × 8 = (   )",
+      "options": ["54", "56", "63", "49"],
+      "answer": "56",
+      "explanation": "口诀“七八五十六”！注意不要和“六九五十四”搞混啦。"
+    },
+    {
+      "id": "m_g2a_mul_7_9_q2",
+      "topicId": "m_g2a_mul_7_9",
+      "difficulty": "challenge",
+      "prompt": "一本绘本 9 元，买 8 本这样的绘本，带 70 元够吗？",
+      "options": ["够，还剩2元", "不够，差2元", "刚好够", "不够，差12元"],
+      "answer": "不够，差2元",
+      "explanation": "8 × 9 = 72（元），72 元 > 70 元，还差 72 - 70 = 2 元，所以不够！"
+    },
+    {
+      "id": "m_g2a_mul_7_9_q3",
+      "topicId": "m_g2a_mul_7_9",
+      "difficulty": "basic",
+      "prompt": "基础确认：8 × 9 = (   )",
+      "options": ["64", "72", "81", "63"],
+      "answer": "72",
+      "explanation": "口诀“八九七十二”！"
+    },
+    {
+      "id": "m_g2a_div_7_9_q1",
+      "topicId": "m_g2a_div_7_9",
+      "difficulty": "standard",
+      "prompt": "计算：63 ÷ 7 = (   )",
+      "options": ["7", "8", "9", "6"],
+      "answer": "9",
+      "explanation": "想口诀“七九六十三”，所以 63 ÷ 7 = 9！"
+    },
+    {
+      "id": "m_g2a_div_7_9_q2",
+      "topicId": "m_g2a_div_7_9",
+      "difficulty": "challenge",
+      "prompt": "有 56 块巧克力，每 8 块装一盒，可以装几盒？",
+      "options": ["6盒", "7盒", "8盒", "9盒"],
+      "answer": "7盒",
+      "explanation": "56 ÷ 8 = 7（盒），想口诀“七八五十六”！"
+    },
+    {
+      "id": "m_g2a_div_7_9_q3",
+      "topicId": "m_g2a_div_7_9",
+      "difficulty": "basic",
+      "prompt": "基础确认：72 ÷ 8 = (   )",
+      "options": ["7", "8", "9", "6"],
+      "answer": "9",
+      "explanation": "想口诀“八九七十二”，商是 9！"
+    },
+    {
+      "id": "m_g2b_time_q1",
+      "topicId": "m_g2b_time",
+      "difficulty": "standard",
+      "prompt": "分针从数字 12 走到数字 5，经过了（   ）分钟。",
+      "options": ["5分钟", "15分钟", "25分钟", "30分钟"],
+      "answer": "25分钟",
+      "explanation": "钟面每一大格是 5 分钟！走到数字 5 走了 5 大格，5 × 5 = 25（分钟）。"
+    },
+    {
+      "id": "m_g2b_time_q2",
+      "topicId": "m_g2b_time",
+      "difficulty": "challenge",
+      "prompt": "小洛 8:15 开始看英语绘本，看了 30 分钟，看完时是（   ）",
+      "options": ["8:30", "8:45", "9:00", "8:55"],
+      "answer": "8:45",
+      "explanation": "15 分 + 30 分 = 45 分，时针仍在 8 点多，所以是 8:45！"
+    },
+    {
+      "id": "m_g2b_time_q3",
+      "topicId": "m_g2b_time",
+      "difficulty": "basic",
+      "prompt": "基础确认：1 时 = (   ) 分",
+      "options": ["10", "30", "60", "100"],
+      "answer": "60",
+      "explanation": "时间单位不是满百进一，而是满 60 进一：1 时 = 60 分，1 分 = 60 秒！"
+    },
+    {
+      "id": "m_g2b_rem_intro_q1",
+      "topicId": "m_g2b_rem_intro",
+      "difficulty": "standard",
+      "prompt": "计算：29 ÷ 4 = (   ) …… (   )",
+      "options": ["6 …… 5", "7 …… 1", "8 …… 3", "6 …… 1"],
+      "answer": "7 …… 1",
+      "explanation": "想 4 的口诀：四七二十八（最接近且小于29），29 - 28 = 1，余数 1 < 除数 4！不能写 6 余 5（余数比除数大了）。"
+    },
+    {
+      "id": "m_g2b_rem_intro_q2",
+      "topicId": "m_g2b_rem_intro",
+      "difficulty": "challenge",
+      "prompt": "在算式 □ ÷ 6 = 5 …… △ 中，余数 △ 最大可能是（   ）",
+      "options": ["4", "5", "6", "7"],
+      "answer": "5",
+      "explanation": "铁律：【余数一定要比除数小】！除数是 6，余数只能是 1~5，所以余数最大是 5！"
+    },
+    {
+      "id": "m_g2b_rem_intro_q3",
+      "topicId": "m_g2b_rem_intro",
+      "difficulty": "basic",
+      "prompt": "基础确认：17 ÷ 5 = 3 …… (   )",
+      "options": ["1", "2", "3", "4"],
+      "answer": "2",
+      "explanation": "三五十五，17 - 15 = 2，余数是 2！"
+    },
+    {
+      "id": "m_g2b_rem_app_q1",
+      "topicId": "m_g2b_rem_app",
+      "difficulty": "standard",
+      "prompt": "22 个小朋友去划船，每条船最多坐 4 人，【至少】要租几条船？",
+      "options": ["5条", "6条", "4条", "7条"],
+      "answer": "6条",
+      "explanation": "22 ÷ 4 = 5（条）…… 2（人）。剩下的 2 个人不能扔在岸上，也要再租 1 条船，5 + 1 = 6（条）（进一法）！"
+    },
+    {
+      "id": "m_g2b_rem_app_q2",
+      "topicId": "m_g2b_rem_app",
+      "difficulty": "challenge",
+      "prompt": "每本笔记本 5 元，小洛有 23 元，【最多】可以买几本笔记本？",
+      "options": ["3本", "4本", "5本", "6本"],
+      "answer": "4本",
+      "explanation": "23 ÷ 5 = 4（本）…… 3（元）。剩下的 3 元不够再买一本，只能舍去，所以最多买 4 本（去尾法）！"
+    },
+    {
+      "id": "m_g2b_rem_app_q3",
+      "topicId": "m_g2b_rem_app",
+      "difficulty": "basic",
+      "prompt": "基础确认：按“红、黄、蓝、红、黄、蓝……”的规律挂灯笼，第 10 个灯笼是什么颜色？",
+      "options": ["红", "黄", "蓝", "绿"],
+      "answer": "红",
+      "explanation": "3 个为一组循环，10 ÷ 3 = 3（组）…… 1（个），余数是 1，就是每组第 1 个颜色——红色！"
+    },
+    {
+      "id": "m_g2b_num_10000_q1",
+      "topicId": "m_g2b_num_10000",
+      "difficulty": "standard",
+      "prompt": "由 3 个千、5 个百和 8 个一组成的数是（   ）",
+      "options": ["3580", "3508", "3058", "358"],
+      "answer": "3508",
+      "explanation": "千位写 3，百位写 5，十位一个也没有用 0 占位，个位写 8，写作 3508！"
+    },
+    {
+      "id": "m_g2b_num_10000_q2",
+      "topicId": "m_g2b_num_10000",
+      "difficulty": "challenge",
+      "prompt": "用 0、0、4、8 组成一个【只读一个零】的四位数，可以是（   ）",
+      "options": ["4800", "8400", "4008", "8000"],
+      "answer": "4008",
+      "explanation": "读数铁律：末尾的 0 都不读，中间有一个 0 或连续两个 0 只读一个“零”！4008 读作“四千零八”，符合要求。"
+    },
+    {
+      "id": "m_g2b_num_10000_q3",
+      "topicId": "m_g2b_num_10000",
+      "difficulty": "basic",
+      "prompt": "基础确认：999 添上 1 是（   ）",
+      "options": ["100", "990", "1000", "10000"],
+      "answer": "1000",
+      "explanation": "999 再往后数 1 个就是一千（1000）！"
+    },
+    {
+      "id": "m_g2b_addsub_10000_q1",
+      "topicId": "m_g2b_addsub_10000",
+      "difficulty": "standard",
+      "prompt": "计算：360 + 280 = (   )",
+      "options": ["540", "640", "620", "580"],
+      "answer": "640",
+      "explanation": "36 个十加 28 个十等于 64 个十，就是 640！"
+    },
+    {
+      "id": "m_g2b_addsub_10000_q2",
+      "topicId": "m_g2b_addsub_10000",
+      "difficulty": "challenge",
+      "prompt": "计算：503 - 248 = (   )",
+      "options": ["255", "265", "355", "245"],
+      "answer": "255",
+      "explanation": "连续退位减：个位 13-8=5，十位 0 被借走变 9（9-4=5），百位 5 借走 1 变 4（4-2=2），结果是 255！"
+    },
+    {
+      "id": "m_g2b_addsub_10000_q3",
+      "topicId": "m_g2b_addsub_10000",
+      "difficulty": "basic",
+      "prompt": "基础确认：800 - 300 = (   )",
+      "options": ["400", "500", "600", "50"],
+      "answer": "500",
+      "explanation": "8 个百减 3 个百等于 5 个百，就是 500！"
+    }
+  ]
+}

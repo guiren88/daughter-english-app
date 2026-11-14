@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { BookOpen, LayoutDashboard, HelpCircle, FileText, Star, Volume2, VolumeX, Sparkles, Gamepad2, GraduationCap } from 'lucide-react'
+import { BookOpen, LayoutDashboard, HelpCircle, FileText, Star, Volume2, VolumeX, Sparkles, Gamepad2, GraduationCap, Calculator } from 'lucide-react'
 import Dashboard from './components/Dashboard'
 import Flashcards from './components/Flashcards'
 import Quiz from './components/Quiz'
@@ -8,6 +8,7 @@ import Worksheet from './components/Worksheet'
 import Stories from './components/Stories'
 import Games from './components/Games'
 import ExamPapers from './components/ExamPapers'
+import MathArena from './components/MathArena'
 import { initVoices, speakNatural } from './utils/speech'
 import { getPlayerLevel } from './utils/wordVisuals'
 import vocabData from './data/vocabulary.json'
@@ -433,6 +434,13 @@ export default function App() {
             <span>真题试卷</span>
           </button>
           <button 
+            className={`nav-btn ${activeView === 'math' ? 'active' : ''}`}
+            onClick={() => setActiveView('math')}
+          >
+            <Calculator size={18} />
+            <span>数学小关</span>
+          </button>
+          <button 
             className={`nav-btn ${activeView === 'glossary' ? 'active' : ''}`}
             onClick={() => setActiveView('glossary')}
           >
@@ -649,6 +657,14 @@ export default function App() {
               onAwardStars={awardStars}
               onAddStudyRecord={addStudyRecord}
               onAddMistake={addMistake}
+              setActiveView={setActiveView}
+            />
+          )}
+
+          {activeView === 'math' && (
+            <MathArena
+              onAwardStars={awardStars}
+              onAddStudyRecord={addStudyRecord}
               setActiveView={setActiveView}
             />
           )}
